@@ -1,0 +1,16 @@
+Entrada navegável Building_House_01_color01 (2) porta=(141.41, -3.59, 328.90) chegada=(140.76, -4.00, 328.90)
+Entrada navegável Building_House_04_color02 porta=(141.43, -4.51, 365.74) chegada=(140.78, -4.38, 365.74)
+Entrada navegável Building_House_03_color01 porta=(170.10, -4.51, 174.51) chegada=(170.75, -4.52, 174.51)
+Entrada navegável Building_House_03_color03 (2) porta=(285.42, -4.51, 187.67) chegada=(285.42, -4.52, 188.32)
+Entrada navegável Building_House_03_color03 (1) porta=(243.32, -4.51, 127.22) chegada=(243.32, -4.52, 127.87)
+Entrada navegável Building_House_01_color01 (1) porta=(262.70, -3.59, 319.11) chegada=(262.70, -4.00, 318.46)
+Entrada navegável Building_House_03_color02 (1) porta=(313.82, -4.51, 127.17) chegada=(313.82, -4.52, 127.82)
+Entrada navegável Building_House_01_color02 porta=(312.70, -3.59, 319.31) chegada=(312.70, -4.00, 318.66)
+Entrada navegável Building_House_02_color02 (1) porta=(339.62, -3.59, 319.18) chegada=(339.62, -4.00, 318.53)
+Entrada navegável Building_House_02_color03 (1) porta=(290.72, -3.59, 319.18) chegada=(290.72, -4.00, 318.53)
+Entrada navegável Building_House_04_color03 (2) porta=(193.56, -4.51, 321.93) chegada=(193.56, -4.42, 321.28)
+Entrada navegável Building_House_02_color01 (2) porta=(222.62, -3.59, 319.48) chegada=(222.62, -4.00, 318.83)
+Grafo independente: 4735 pontos de calçada, 12424 ligações verificadas no piso; 24 travessias; 12 destinos junto às fachadas.
+Postes identificados pelo prefab Props_Street Light: 127; sem sombras; orçamento 24 luzes.
+Modelos pedestres: 10; animações Idle/Walk originais em controlador independente.
+Terminal no monitor existente Old Monitor 2 em (-4.19, 1.21, 3.50); tela (459.25, 457.50); câmera (-5.12, 1.64, 3.52); WebView externo ainda ausente.

@@ -27,6 +27,8 @@ public class CompanyEntrance : MonoBehaviour
     private bool trocandoCena;
 
     private Vector3 promptPosicaoInicial;
+    private void OnEnable() { InteractionFocus.Register(this, interactionDistance); }
+    private void OnDisable() { InteractionFocus.Remove(this); }
 
     private void Start()
     {
@@ -48,15 +50,20 @@ public class CompanyEntrance : MonoBehaviour
 
     private void Update()
     {
-        if (player == null || trocandoCena)
+        if (Time.timeScale<=0 || player == null || trocandoCena || (WorldSession.Instance != null &&
+            (WorldSession.Instance.Busy || UnityEngine.SceneManagement.SceneManager.GetActiveScene() != gameObject.scene)))
+        {
+            if (interactionPrompt != null) interactionPrompt.SetActive(false);
+            playerNearby = false;
             return;
+        }
 
         float distance = Vector3.Distance(
             player.position,
             transform.position
         );
 
-        if (distance <= interactionDistance)
+        if (distance <= interactionDistance && InteractionFocus.Selected(this, player))
         {
             if (!playerNearby)
             {
@@ -67,7 +74,7 @@ public class CompanyEntrance : MonoBehaviour
             }
 
             if (Keyboard.current != null &&
-                Keyboard.current.eKey.wasPressedThisFrame)
+                Keyboard.current.eKey.wasPressedThisFrame && InteractionFocus.Consume())
             {
                 StartCoroutine(TrocarCena());
             }
@@ -92,6 +99,7 @@ public class CompanyEntrance : MonoBehaviour
 
     private void FlutuarPrompt()
     {
+        promptPosicaoInicial = transform.position + Vector3.up * alturaDoPrompt;
         float movimento =
             Mathf.Sin(
                 Time.time * velocidadeFlutuacao
@@ -122,6 +130,14 @@ public class CompanyEntrance : MonoBehaviour
     {
         trocandoCena = true;
 
+        if (WorldSession.Instance != null)
+        {
+            if (interactionPrompt != null) interactionPrompt.SetActive(false);
+            yield return WorldSession.Instance.RequestTransition(cenaDestino, player);
+            trocandoCena = false;
+            yield break;
+        }
+
         if (interactionPrompt != null)
             interactionPrompt.SetActive(false);
 
@@ -129,6 +145,7 @@ public class CompanyEntrance : MonoBehaviour
         {
             // Fade para PRETO
             yield return FadeManager.Instance.FadeOut();
+            FadeManager.Instance.BeginLoading();
         }
 
         // Troca de cena enquanto está completamente preto

@@ -1,0 +1,2 @@
+using=True camera=True screen=True alpha=1 text=Navegador indisponível.
+ESC para sair. textActive=True characters=38 textBounds=Center: (0.00, -1.28, 0.00), Extents: (79.67, 15.91, 0.00) canvas=True textPos=(9995.72, 1.57, 3.51) cameraPos=(9994.88, 1.64, 3.52)

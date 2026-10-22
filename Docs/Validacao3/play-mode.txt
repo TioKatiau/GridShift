@@ -1,0 +1,73 @@
+PASS SampleScene salto no piso real
+PASS sem impulso extra no ar 0
+PASS sem impulso extra no ar 1
+PASS sem impulso extra no ar 2
+PASS sem impulso extra no ar 3
+PASS sem impulso extra no ar 4
+PASS sem impulso extra no ar 5
+PASS sem impulso extra no ar 6
+PASS sem impulso extra no ar 7
+PASS sem impulso extra no ar 8
+PASS sem impulso extra no ar 9
+PASS sem impulso extra no ar 10
+PASS sem impulso extra no ar 11
+PASS sem impulso extra no ar 12
+PASS sem impulso extra no ar 13
+PASS sem impulso extra no ar 14
+PASS sem impulso extra no ar 15
+PASS sem impulso extra no ar 16
+PASS sem impulso extra no ar 17
+PASS subida e aterrissagem real
+PASS novo salto após aterrissagem
+INPUT edge=True held=True grounded=True blocked=False
+PASS SampleScene input Espaço mantido: exatamente um impulso (1)
+PASS população automática e grafo
+PASS portas reais com acesso navegável
+PASS entrada conectada à calçada
+PASS destino de casa selecionado
+PASS chegada à porta sem atravessar parede
+PASS corredor real para pedestres em sentidos opostos
+PASS destinos opostos configurados
+PASS pedestres em sentidos opostos se liberam sem atravessar um ao outro
+PASS fluxo real por 180s: Vehicle_Truck_separate=2 motivo=Pedestre,Transito_Vehicle_Pick up Truck_color01_separate=53 motivo=Pedestre,Transito_Vehicle_Ambulance_separate=31 motivo=Semaforo,Transito_Vehicle_Police Car_separate=0 motivo=Pedestre,Transito_Vehicle_Pick up Truck_color03_separate=83 motivo=Pedestre,Transito_Vehicle_Pick up Truck_color01_separate=65 motivo=Veiculo,Transito_Vehicle_Car_color02_separate=110 motivo=Semaforo,Transito_Vehicle_Car_color03_separate=25 motivo=Pedestre,Transito_Vehicle_Container_color02_separate=44 motivo=Veiculo,Transito_Vehicle_Truck_color02_separate=109 motivo=Nenhum,Transito_Vehicle_Truck_color01_separate=99 motivo=Nenhum,Transito_Vehicle_Car_color02_separate=53 motivo=Veiculo,Transito_Vehicle_Pick up Truck_color03_separate=3 motivo=Veiculo,Transito_Vehicle_Car_color03_separate=101 motivo=Veiculo,Transito_Vehicle_Truck_color01_separate=140 motivo=Nenhum
+PASS pedestres caminham na geometria real
+PASS Animator Idle/Walk em todos os pedestres
+PASS travessias concluídas: 37
+OBS entrando em fachada 0
+PASS luzes noturnas e orçamento
+PASS rotina de madrugada
+PASS Office salto no piso real
+PASS sem impulso extra no ar 0
+PASS sem impulso extra no ar 1
+PASS sem impulso extra no ar 2
+PASS sem impulso extra no ar 3
+PASS sem impulso extra no ar 4
+PASS sem impulso extra no ar 5
+PASS sem impulso extra no ar 6
+PASS sem impulso extra no ar 7
+PASS sem impulso extra no ar 8
+PASS sem impulso extra no ar 9
+PASS sem impulso extra no ar 10
+PASS sem impulso extra no ar 11
+PASS sem impulso extra no ar 12
+PASS sem impulso extra no ar 13
+PASS sem impulso extra no ar 14
+PASS sem impulso extra no ar 15
+PASS sem impulso extra no ar 16
+PASS sem impulso extra no ar 17
+PASS subida e aterrissagem real
+PASS novo salto após aterrissagem
+INPUT edge=True held=True grounded=True blocked=False
+PASS Office input Espaço mantido: exatamente um impulso (1)
+PASS nenhum gerenciador pedestre no Office
+PASS terminal entra 0
+PASS terminal restaura câmera, FOV, controles e posição 0
+PASS terminal entra 1
+PASS terminal restaura câmera, FOV, controles e posição 1
+PASS terminal entra 2
+PASS terminal restaura câmera, FOV, controles e posição 2
+PASS relógio e aumento de densidade no Office
+PASS retorno à cidade
+PASS postes desligados ao amanhecer
+Errors: 
+RESULT SUCCESS

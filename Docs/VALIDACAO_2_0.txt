@@ -1,0 +1,27 @@
+PASS 15 veículos distribuídos, alinhados e sem sobreposição
+PASS modelos variados: 11
+PASS trânsito simultâneo por 20 s sem colisões entre veículos
+PASS pulo único, gravidade, aterrissagem, bloqueio e pausa
+PASS fila de três veículos: retenção, distância segura e retomada
+PASS malha local sem cabeça, corpo animado preservado e modelo completo nas outras câmeras
+PASS Office ida/volta 1: mesmos veículos, cidade ativa e relógio contínuo
+PASS Office ida/volta 2: mesmos veículos, cidade ativa e relógio contínuo
+PASS Office ida/volta 3: mesmos veículos, cidade ativa e relógio contínuo
+PASS pool e reposição respeitam contagem e ocupação
+PASS densidade reduz a frota gradualmente e preserva o caminhão existente
+RESULT SUCCESS
+Regressão da IA original (versão final):
+TRAFFIC PASS: vermelho: frente antes da faixa e espera
+TRAFFIC PASS: verde: retoma progressivamente
+TRAFFIC PASS: amarelo distante: para
+TRAFFIC PASS: amarelo próximo: termina travessia após vermelho
+TRAFFIC PASS: reta longa: aceleração limitada
+TRAFFIC PASS: obstáculo parado: freia e retoma
+TRAFFIC PASS: saída ocupada: aguarda antes da faixa
+TRAFFIC PASS: conexões variadas: sem salto ou retorno
+TRAFFIC PASS: curva suave -1
+TRAFFIC PASS: curva suave 1
+TRAFFIC RESULT: 10 testes aprovados.
+
+Office: também foram verificados avanço do contador/etapa dos semáforos e preservação dos IDs dos sinais nas três visitas.
+Execução: Unity 6000.0.83f1 em projeto independente, com Play Mode real e renderização desativada. Conferência visual não executada.

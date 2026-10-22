@@ -1,0 +1,5 @@
+Código C#: igual ao compilado na cópia de validação.
+SampleScene e Office: iguais às cenas configuradas e validadas.
+Configuração aplicada diretamente ao projeto em 
+2026-10-22T16:42:05.4258936-03:00
+Backup das cenas anteriores: C:/Users/Gb191/.codex/gridshift-v3-validation-20261022/Backup

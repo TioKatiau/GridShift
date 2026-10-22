@@ -23,6 +23,8 @@ public class TrafficLight : MonoBehaviour
     [SerializeField] private GameObject luzVerde;
 
     private float contador;
+    private bool controlledByGroup;
+    public void SetGroupControl() { controlledByGroup = true; }
 
     private void Start()
     {
@@ -31,6 +33,7 @@ public class TrafficLight : MonoBehaviour
 
     private void Update()
     {
+        if (controlledByGroup) return;
         contador += Time.deltaTime;
 
         switch (estadoAtual)

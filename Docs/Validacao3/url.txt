@@ -1,0 +1,8 @@
+URL: https://urbanlink-flow.onrender.com
+HTTP: 
+200
+Título: 
+UrbanLink Flow — Conecte-se. Simule.
+Verificado: 
+2026-10-22T16:26:02.3268002-03:00
+Não equivale a teste de WebView dentro do jogo.

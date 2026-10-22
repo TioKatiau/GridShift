@@ -1,0 +1,4 @@
+PASS referências de scripts nas duas cenas
+PASS 24 travessias individuais
+PASS 10 testes de trânsito: vermelho, verde, amarelo, obstáculos, saída, conexões e curvas
+RESULT SUCCESS

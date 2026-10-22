@@ -32,15 +32,16 @@ public class TrafficIntersection : MonoBehaviour
             tempoAtual = 1f;
         else if (etapa == 3)
             tempoAtual = tempoVerde;
-        else
+        else if (etapa == 4)
             tempoAtual = tempoAmarelo;
+        else tempoAtual = 1f;
 
         if (contador >= tempoAtual)
         {
             contador = 0f;
             etapa++;
 
-            if (etapa > 4)
+            if (etapa > 5)
                 etapa = 0;
 
             AplicarEstado();
@@ -65,6 +66,7 @@ public class TrafficIntersection : MonoBehaviour
 
             // Ambos vermelhos por 1 segundo
             case 2:
+            case 5:
                 grupoHorizontal.DefinirEstado(TrafficLight.Estado.Vermelho);
                 grupoVertical.DefinirEstado(TrafficLight.Estado.Vermelho);
                 break;

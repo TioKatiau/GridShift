@@ -11,6 +11,17 @@ public class FadeManager : MonoBehaviour
 
     private Image fadeImage;
     private bool fading;
+    private Camera transitionCamera;
+    private TMPro.TMP_Text loadingText;
+    private bool loading;
+    public bool HasTransitionCamera => transitionCamera != null && transitionCamera.isActiveAndEnabled;
+    public void BeginLoading(){
+        if(transitionCamera==null){var go=new GameObject("TransitionCamera");go.transform.SetParent(transform,false);transitionCamera=go.AddComponent<Camera>();transitionCamera.clearFlags=CameraClearFlags.SolidColor;transitionCamera.backgroundColor=new Color(.025f,.03f,.045f);transitionCamera.cullingMask=0;transitionCamera.depth=100;transitionCamera.targetDisplay=0;}
+        transitionCamera.enabled=SystemInfo.graphicsDeviceType!=UnityEngine.Rendering.GraphicsDeviceType.Null;loading=true;loadingText.gameObject.SetActive(true);SetLoadingProgress(-1);
+    }
+    public void SetLoadingProgress(float progress){if(loadingText!=null)loadingText.text="<color=#F0CE38><size=48>GRIDSHIFT</size></color>\n\nPreparando seu destino"+(progress<0?"…":" · "+Mathf.RoundToInt(Mathf.Clamp01(progress)*100)+"%");}
+    public void EndLoading(){loading=false;if(transitionCamera!=null)transitionCamera.enabled=false;if(loadingText!=null)loadingText.gameObject.SetActive(false);}
+    private void Update(){if(loading&&loadingText!=null)loadingText.alpha=.8f+.2f*Mathf.Sin(Time.unscaledTime*3);}
 
     private void Awake()
     {
@@ -25,6 +36,8 @@ public class FadeManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
 
         CriarFade();
+        var label=new GameObject("LoadingLabel",typeof(RectTransform));label.transform.SetParent(transform,false);loadingText=label.AddComponent<TMPro.TextMeshProUGUI>();loadingText.alignment=TMPro.TextAlignmentOptions.Center;loadingText.fontSize=24;loadingText.raycastTarget=false;
+        var lr=loadingText.rectTransform;lr.anchorMin=Vector2.zero;lr.anchorMax=Vector2.one;lr.offsetMin=lr.offsetMax=Vector2.zero;label.SetActive(false);
 
         // Quando uma nova cena terminar de carregar,
         // faz o fade IN automaticamente.
@@ -36,6 +49,7 @@ public class FadeManager : MonoBehaviour
         if (Instance == this)
         {
             SceneManager.sceneLoaded -= AoCarregarCena;
+            Instance = null;
         }
     }
 
@@ -48,6 +62,7 @@ public class FadeManager : MonoBehaviour
 
         CanvasScaler scaler = gameObject.AddComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        scaler.referenceResolution=new Vector2(1920,1080);scaler.matchWidthOrHeight=.5f;
 
         gameObject.AddComponent<GraphicRaycaster>();
 
@@ -56,6 +71,7 @@ public class FadeManager : MonoBehaviour
         imagem.transform.SetParent(transform, false);
 
         fadeImage = imagem.AddComponent<Image>();
+        fadeImage.raycastTarget=false;
 
         fadeImage.color = Color.black;
 
@@ -73,7 +89,7 @@ public class FadeManager : MonoBehaviour
         // Primeira cena também começa com fade IN
         fadeImage.color = Color.black;
 
-        StartCoroutine(FadeIn());
+        if (WorldSession.Instance == null || !WorldSession.Instance.Busy) {EndLoading();StartCoroutine(FadeIn());}
     }
 
     private void AoCarregarCena(
@@ -82,7 +98,7 @@ public class FadeManager : MonoBehaviour
     {
         // Dá um pequeno tempo para a nova cena terminar
         // de inicializar antes de tirar o preto.
-        StartCoroutine(FadeIn());
+        if (WorldSession.Instance == null || !WorldSession.Instance.Busy) {EndLoading();StartCoroutine(FadeIn());}
     }
 
     public IEnumerator FadeOut()
@@ -97,7 +113,7 @@ public class FadeManager : MonoBehaviour
         fading = false;
     }
 
-    private IEnumerator FadeIn()
+    public IEnumerator FadeIn()
     {
         if (fadeImage == null)
             yield break;

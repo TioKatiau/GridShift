@@ -43,6 +43,11 @@ public class RealTimeClock : MonoBehaviour
                 duracaoCicloSegundos;
         }
 
+        if (WorldSession.Instance != null)
+        {
+            WorldSession.Instance.InitializeClock(tempoDoCiclo, duracaoCicloMinutos * 60f);
+            tempoDoCiclo = WorldSession.Instance.ClockTime;
+        }
         AtualizarTudo();
     }
 
@@ -51,7 +56,8 @@ public class RealTimeClock : MonoBehaviour
         float duracaoCicloSegundos =
             duracaoCicloMinutos * 60f;
 
-        tempoDoCiclo += Time.deltaTime;
+        if (WorldSession.Instance != null) tempoDoCiclo = WorldSession.Instance.ClockTime;
+        else tempoDoCiclo += Time.deltaTime;
 
         if (tempoDoCiclo >= duracaoCicloSegundos)
         {
@@ -85,6 +91,7 @@ public class RealTimeClock : MonoBehaviour
 
         horas %= 24;
 
+        if (clockText == null) return;
         clockText.text =
             horas.ToString("00") + ":" +
             minutos.ToString("00");
@@ -151,6 +158,7 @@ public class RealTimeClock : MonoBehaviour
 
     private void SalvarHorario()
     {
+        if (WorldSession.Instance != null) tempoDoCiclo = WorldSession.Instance.ClockTime;
         PlayerPrefs.SetFloat(
             SAVE_KEY,
             tempoDoCiclo

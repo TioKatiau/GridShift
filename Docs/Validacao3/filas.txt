@@ -1,0 +1,2 @@
+PASS fila de três veículos: vermelho, distância segura e retomada progressiva no verde
+RESULT SUCCESS
