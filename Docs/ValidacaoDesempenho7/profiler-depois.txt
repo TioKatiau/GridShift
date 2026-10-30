@@ -1,0 +1,151 @@
+Unity CPU Profiler: inclusive sample time, sampled every fifth frame
+Frames: 60
+Main Thread | avg_ms=16,5537 | calls=60
+Application.Tick | avg_ms=15,4846 | calls=6359
+UpdateScene | avg_ms=13,4977 | calls=12718
+Application.UpdateScene | avg_ms=7,1930 | calls=6359
+UpdateSceneIfNeeded | avg_ms=7,1684 | calls=6359
+PlayerLoop | avg_ms=6,5688 | calls=6419
+Application.TickSceneTracker | avg_ms=5,8984 | calls=6359
+UnityEditor.CoreModule.dll!UnityEditor::EditorApplication.Internal_CallUpdateFunctions() [Invoke] | avg_ms=4,4848 | calls=6359
+EditorApplication.update: Unity.AI.Toolkit.Accounts.AIToolbarButtonLegacy.RetryInitialize | avg_ms=2,5276 | calls=6359
+UnityEngine.CoreModule.dll!UnityEngine.Rendering::RenderPipelineManager.DoRenderLoop_Internal() [Invoke] | avg_ms=1,6282 | calls=30
+Inl_UniversalRenderTotal | avg_ms=1,6062 | calls=30
+Inl_RenderCameraStack | avg_ms=1,5880 | calls=30
+editorBeforeUpdate.Invoke | avg_ms=1,1983 | calls=6359
+RenderLoop.ScheduleDraw | avg_ms=1,1451 | calls=240
+Input.PreUpdate | avg_ms=1,1431 | calls=6359
+Application.TickGlobalCallbacks | avg_ms=1,0867 | calls=6359
+PreLateUpdate.ScriptRunBehaviourLateUpdate | avg_ms=0,9822 | calls=60
+LateBehaviourUpdate | avg_ms=0,9813 | calls=60
+Assembly-CSharp.dll!::GridShiftUwbTerminal.LateUpdate() [Invoke] | avg_ms=0,8488 | calls=60
+UWB.LoadTexture.Apply | avg_ms=0,8382 | calls=28
+Gfx.UploadTextureData | avg_ms=0,8184 | calls=28
+Inl_ScriptableRenderContext.Submit | avg_ms=0,7652 | calls=30
+tickGIInEditor.Invoke | avg_ms=0,7604 | calls=6359
+UniversalRenderPipeline.RenderSingleCameraInternal: MinimapCamera | avg_ms=0,7432 | calls=30
+GI.UpdateScene | avg_ms=0,7399 | calls=6359
+ExecuteRenderGraph | avg_ms=0,7251 | calls=30
+GISceneManager.Update | avg_ms=0,7218 | calls=6359
+Inl_UniversalRenderPipeline.RenderSingleCameraInternal: MinimapCamera | avg_ms=0,6502 | calls=30
+UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.NotifyUpdate() [Invoke] | avg_ms=0,5229 | calls=6419
+InputUpdate | avg_ms=0,4672 | calls=6419
+FlushDirty | avg_ms=0,4433 | calls=12718
+UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.NotifyBeforeUpdate() [Invoke] | avg_ms=0,4283 | calls=6419
+EditorApplication.update: Unity.AppUI.Core.AppUI.EditorUpdate | avg_ms=0,4261 | calls=6359
+RenderLoop.DrawSRPBatcher | avg_ms=0,4242 | calls=210
+WaitForJobGroupID | avg_ms=0,4151 | calls=1000
+Update.ScriptRunBehaviourUpdate | avg_ms=0,3635 | calls=60
+BehaviourUpdate | avg_ms=0,3626 | calls=60
+UIEvents.CanvasManagerEmitOffScreenGeometry | avg_ms=0,3412 | calls=6359
+UGUI.Rendering.EmitWorldScreenspaceCameraGeometry | avg_ms=0,3275 | calls=6359
+GISceneManager.PostUpdate | avg_ms=0,3258 | calls=6359
+SRPBatcher.Flush | avg_ms=0,3060 | calls=330
+EngineJob | avg_ms=0,3008 | calls=1137
+PostLateUpdate.PlayerUpdateCanvases | avg_ms=0,2813 | calls=60
+UIEvents.WillRenderCanvases | avg_ms=0,2705 | calls=60
+UGUI.Rendering.UpdateBatches | avg_ms=0,2702 | calls=60
+DrawOpaqueObjects | avg_ms=0,2534 | calls=30
+FixedUpdate.ScriptRunBehaviourFixedUpdate | avg_ms=0,2520 | calls=50
+FixedBehaviourUpdate | avg_ms=0,2515 | calls=50
+CullScriptable | avg_ms=0,2510 | calls=30
+Gfx.EndAsyncJobFrame | avg_ms=0,2407 | calls=6419
+Director.ProcessFrame | avg_ms=0,2386 | calls=400
+Animators.Update | avg_ms=0,2370 | calls=120
+DrawDepthNormalPrepass | avg_ms=0,2339 | calls=30
+Profiler.FlushCounters | avg_ms=0,2272 | calls=60
+WaitForRenderJobs | avg_ms=0,2259 | calls=6419
+EditorApplication.update: UnityEditor.PackageManager.UI.Internal.ApplicationProxy.OnUpdate | avg_ms=0,2188 | calls=6359
+Application.RequestRepaintForPanels | avg_ms=0,2132 | calls=6359
+Gfx.MapTexture | avg_ms=0,2109 | calls=28
+Profiler.FlushMemoryCounters | avg_ms=0,2025 | calls=60
+FixedUpdate.PhysicsFixedUpdate | avg_ms=0,1946 | calls=50
+tickEditor.Invoke | avg_ms=0,1936 | calls=6359
+PreLateUpdate.DirectorUpdateAnimationEnd | avg_ms=0,1784 | calls=60
+DrawBuffersBatchMode | avg_ms=0,1696 | calls=330
+Inl_ExecuteRenderGraph | avg_ms=0,1678 | calls=30
+Inl_RecordRenderGraph | avg_ms=0,1588 | calls=30
+UnityEngine.IMGUIModule.dll!UnityEngine::GUIUtility.SetSkin() [Invoke] | avg_ms=0,1586 | calls=6359
+Inl_On Record Render Graph | avg_ms=0,1557 | calls=30
+Assembly-CSharp.dll!::TrafficCar.FixedUpdate() [Invoke] | avg_ms=0,1529 | calls=200
+Physics.RunSimulationStage | avg_ms=0,1497 | calls=50
+Physics.Simulate | avg_ms=0,1469 | calls=50
+PxScene.simulate | avg_ms=0,1435 | calls=50
+EditorApplication.update: UnityEditor.Rendering.Universal.SceneViewDrawMode.UpdateSceneViewStates | avg_ms=0,1411 | calls=6359
+EditorApplication.update: Unity.AI.MCP.Editor.Bridge.ProcessCommands | avg_ms=0,1395 | calls=6359
+EditorApplication.update: callback in UnityEditor.Rendering.Universal.MaterialReimporter | avg_ms=0,1394 | calls=6359
+SceneCulling | avg_ms=0,1372 | calls=30
+TransformChangeSystem | avg_ms=0,1312 | calls=2697
+UnityEditor.UIElementsModule.dll!UnityEditor::RetainedMode.RequestRepaintForPanels() [Invoke] | avg_ms=0,1256 | calls=6359
+PostLateUpdate.UpdateAllSkinnedMeshes | avg_ms=0,1215 | calls=60
+EditorApplication.update: Microsoft.Unity.VisualStudio.Editor.VisualStudioIntegration.OnUpdate | avg_ms=0,1207 | calls=6359
+MeshSkinning.Update | avg_ms=0,1199 | calls=60
+Canvas.BuildBatch | avg_ms=0,1186 | calls=70
+PostLateUpdate.UpdateAllRenderers | avg_ms=0,1167 | calls=60
+PostLateUpdate.BatchModeUpdate | avg_ms=0,1130 | calls=60
+PreLateUpdate.DirectorUpdateAnimationBegin | avg_ms=0,1095 | calls=60
+GfxDeviceD3D11.RefreshSafeFrame | avg_ms=0,1082 | calls=60
+UnityEngine.UI.dll!UnityEngine.EventSystems::EventSystem.Update() [Invoke] | avg_ms=0,1065 | calls=60
+UnityEngine.InputModule.dll!UnityEngineInternal.Input::NativeInputSystem.ShouldRunUpdate() [Invoke] | avg_ms=0,1064 | calls=6469
+EarlyUpdate.RendererNotifyInvisible | avg_ms=0,1042 | calls=60
+CullResults.CreateSharedRendererScene | avg_ms=0,1015 | calls=30
+Inl_RenderPipeline.EndCameraRendering | avg_ms=0,0999 | calls=30
+CullSendEvents | avg_ms=0,0996 | calls=30
+afterCullingOutputReady.Invoke | avg_ms=0,0983 | calls=30
+DrawTransparentObjects | avg_ms=0,0983 | calls=30
+EndDynamicVBOFrame | avg_ms=0,0981 | calls=6359
+Gfx.CreateTexture | avg_ms=0,0951 | calls=28
+Assembly-CSharp.dll!::PedestrianAgent.FixedUpdate() [Invoke] | avg_ms=0,0898 | calls=150
+EndRenderQueueExtraction | avg_ms=0,0898 | calls=30
+Animators.WriteJob | avg_ms=0,0845 | calls=180
+EditorApplication.update: Unity.PlasticSCM.Editor.Hub.ProcessHubCommand.RunOnceWhenAccessTokenIsInitialized | avg_ms=0,0826 | calls=6359
+GC.Alloc | avg_ms=0,0813 | calls=30882
+
+SCRIPT SAMPLES
+Assembly-CSharp.dll!::GridShiftUwbTerminal.LateUpdate() [Invoke] | avg_ms=0,8488 | calls=60
+Assembly-CSharp.dll!::TrafficCar.FixedUpdate() [Invoke] | avg_ms=0,1529 | calls=200
+Physics.RunSimulationStage | avg_ms=0,1497 | calls=50
+Physics.Simulate | avg_ms=0,1469 | calls=50
+Assembly-CSharp.dll!::PedestrianAgent.FixedUpdate() [Invoke] | avg_ms=0,0898 | calls=150
+GC.Alloc | avg_ms=0,0813 | calls=30882
+Assembly-CSharp.dll!::GridShiftOperationsUI.Update() [Invoke] | avg_ms=0,0669 | calls=60
+Physics.SyncTransforms | avg_ms=0,0334 | calls=110
+Assembly-CSharp.dll!::GridShiftUwbInputRouter.LateUpdate() [Invoke] | avg_ms=0,0327 | calls=60
+Physics.Raycast | avg_ms=0,0294 | calls=668
+Physics.PrepareSimulationStage | avg_ms=0,0279 | calls=50
+Assembly-CSharp.dll!::GridShiftMapMarkers.LateUpdate() [Invoke] | avg_ms=0,0279 | calls=60
+Physics.CalculateChangedColliderTransforms | avg_ms=0,0246 | calls=110
+Physics.OverlapBoxNonAlloc | avg_ms=0,0227 | calls=599
+Physics.BoxCastNonAlloc | avg_ms=0,0186 | calls=336
+Physics.Interpolation | avg_ms=0,0184 | calls=110
+Assembly-CSharp.dll!::RealTimeClock.Update() [Invoke] | avg_ms=0,0180 | calls=120
+Physics.PublishResultsStage | avg_ms=0,0159 | calls=50
+Assembly-CSharp-Editor.dll!::GridShiftPerformancePlayChecks.Start() [Coroutine: MoveNext] [Invoke] | avg_ms=0,0150 | calls=17
+Physics.FetchPhysXResults | avg_ms=0,0137 | calls=50
+Physics.SwapPhysXBuffersJob | avg_ms=0,0110 | calls=50
+Physics.SendEvents | avg_ms=0,0095 | calls=50
+Assembly-CSharp.dll!::TrafficLight.Update() [Invoke] | avg_ms=0,0076 | calls=3420
+Physics.ReadTransforms | avg_ms=0,0060 | calls=50
+Physics.UpdateRigidbodies | avg_ms=0,0053 | calls=50
+Physics.SendContactEvents | avg_ms=0,0050 | calls=50
+Physics.CalculateChangedBodyTransforms | avg_ms=0,0050 | calls=110
+Assembly-CSharp.dll!::TrafficCar.LateUpdate() [Invoke] | avg_ms=0,0050 | calls=240
+Physics.OverlapCapsuleNonAlloc | avg_ms=0,0036 | calls=150
+Physics.SendTriggerEvents | avg_ms=0,0034 | calls=50
+UnityEngine.PhysicsModule.dll!UnityEngine::Physics.OnSceneContact() [Invoke] | avg_ms=0,0022 | calls=50
+Assembly-CSharp.dll!::GridShiftDeliveryBridge.Update() [Invoke] | avg_ms=0,0021 | calls=60
+Assembly-CSharp.dll!::GridShiftBrowserNavigation.Update() [Invoke] | avg_ms=0,0020 | calls=60
+Assembly-CSharp-Editor.dll!::GridShiftPerformancePlayChecks.CustomYieldInstruction() [Coroutine: MoveNext] [Invoke] | avg_ms=0,0016 | calls=48
+Assembly-CSharp.dll!::GridShiftPerformanceDiagnostics.Update() [Invoke] | avg_ms=0,0012 | calls=60
+Physics.InterpolationSorting | avg_ms=0,0012 | calls=60
+Assembly-CSharp.dll!::TrafficIntersection.Update() [Invoke] | avg_ms=0,0008 | calls=60
+Physics.UpdateArticulations | avg_ms=0,0005 | calls=50
+Assembly-CSharp.dll!::GridShiftPerformanceSettings.LateUpdate() [Invoke] | avg_ms=0,0004 | calls=60
+Assembly-CSharp-Editor.dll!::GridShiftPerformancePlayChecks.CustomYieldInstruction() [Coroutine: get_Current] [Invoke] | avg_ms=0,0004 | calls=46
+Assembly-CSharp.dll!::PedestrianManager.Start() [Coroutine: MoveNext] [Invoke] | avg_ms=0,0004 | calls=1
+Physics.UpdateVehicles | avg_ms=0,0002 | calls=50
+Assembly-CSharp-Editor.dll!::GridShiftPerformancePlayChecks.Start() [Coroutine: System.Collections.IEnumerator.get_Current] [Invoke] | avg_ms=0,0002 | calls=17
+Physics.SendJointBreakEvents | avg_ms=0,0001 | calls=50
+Physics.WriteRigidbodyPoses | avg_ms=0,0001 | calls=110
+Physics.WriteColliderPoses | avg_ms=0,0001 | calls=110
+Assembly-CSharp.dll!::PedestrianManager.Start() [Coroutine: System.Collections.IEnumerator.get_Current] [Invoke] | avg_ms=0,0000 | calls=1

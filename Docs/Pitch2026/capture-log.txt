@@ -1,0 +1,7 @@
+REAL CITY traffic=14 car=Transito_Vehicle_Police Car_separate at=(292.55, -4.60, 304.60) truck=Vehicle_Truck_separate at=(367.30, -4.60, 183.69) pedestrian=(319.10, -4.38, 291.90)
+OFFICE clean camera framing, own avatar renderers excluded only during capture
+START 10_office frames=102 scene=Office
+DONE 10_office
+START 15_office_detalhe frames=132 scene=Office
+DONE 15_office_detalhe
+RESULT SUCCESS

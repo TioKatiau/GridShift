@@ -1,0 +1,2 @@
+Piso: Center: (0.32, -0.02, -2.55), Extents: (8.92, 0.02, 7.64)
+Cobertura inferior: 3,847574 m; luminárias: 20; spots locais com sombras duras de baixa resolução; ambiente global inalterado.

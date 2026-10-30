@@ -1,0 +1,8 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+public static class GridShiftCampaignValidation {
+ static bool Finite(float v)=>!float.IsNaN(v)&&!float.IsInfinity(v);
+ static bool Day(double d)=>!double.IsNaN(d)&&!double.IsInfinity(d)&&d>=0;
+ public static bool Valid(CompanyCampaignState s){if(s==null)return true;if((s.version<1||s.version>2)||s.reputation<0||s.reputation>100||s.act<1||s.act>4||s.closedWeeks<0||!Day(s.lastFinanceDay)||!Day(s.nextRecoveryDay)||!Day(s.nextEventDay))return false;if(s.ledger==null||s.bills==null||s.weeks==null||s.employees==null||s.vehicles==null||s.missions==null||s.ledger.Count>20000||s.bills.Count>5000||s.employees.Count>32||s.vehicles.Count>64||s.missions.Count>100)return false;var ids=new HashSet<string>();foreach(var t in s.ledger)if(t==null||string.IsNullOrEmpty(t.id)||!ids.Add(t.id)||!Finite(t.amount)||!Day(t.day))return false;ids.Clear();foreach(var b in s.bills)if(b==null||string.IsNullOrEmpty(b.id)||!ids.Add(b.id)||!Finite(b.amount)||b.amount<0||!Finite(b.lateFee)||b.lateFee<0||!Day(b.dueDay))return false;ids.Clear();foreach(var e in s.employees)if(e==null||string.IsNullOrEmpty(e.id)||!ids.Add(e.id)||!Finite(e.salary)||e.salary<0||!Finite(e.payrollAccrued)||e.payrollAccrued<0)return false;ids.Clear();foreach(var v in s.vehicles)if(v==null||string.IsNullOrEmpty(v.id)||!ids.Add(v.id)||!Finite(v.fuel)||v.fuel<0||v.fuel>100||!Finite(v.condition)||v.condition<0||v.condition>100||!Day(v.maintenanceUntil))return false;ids.Clear();foreach(var m in s.missions)if(m==null||string.IsNullOrEmpty(m.id)||!ids.Add(m.id)||!Enum.IsDefined(typeof(CompanyMissionStatus),m.status)||m.objectives==null||m.step<0||m.step>m.objectives.Length||!Finite(m.reward)||m.reward<0)return false;return true;}
+}

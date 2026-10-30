@@ -1,0 +1,97 @@
+PASS G abre tablet em cidade
+PASS tablet 3D sobe suavemente em cidade
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS tablet bloqueia movimento e rotação
+PASS textura renderizada não está preta: tablet-cidade
+INFO tablet-cidade image enabled=True cull=False alpha=1
+INFO back href=https://urbanlink-flow.onrender.com/#gridshift-a
+PASS Voltar usa histórico Chromium
+PASS Avançar usa histórico Chromium
+PASS Recarregar conclui navegação nativa
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS Home retorna ao UrbanLink preservando instância
+PASS mouse e digitação real a 150% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+PASS textura renderizada não está preta: tablet-final-cidade
+INFO tablet-final-cidade image enabled=True cull=False alpha=1
+PASS teclas da página não movimentam avatar cidade
+PASS tablet restaura controles e não abre pausa cidade
+PASS tablet preserva posição, rotação e FOV cidade
+PASS relógio e cidade continuam durante tablet
+PASS avatar cidade suspenso na Office
+PASS navegador portátil descarregado ao trocar de cena
+PASS luzes Office permanentes às 12h
+PASS luzes Office permanentes às 23h
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS mouse e digitação real a 150% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+PASS textura renderizada não está preta: computador-150
+INFO computador-150 image enabled=True cull=False alpha=1
+PASS PC bloqueia tablet simultâneo
+INFO back href=https://urbanlink-flow.onrender.com/#gridshift-a
+PASS Voltar usa histórico Chromium
+PASS Avançar usa histórico Chromium
+PASS Recarregar conclui navegação nativa
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS Home retorna ao UrbanLink preservando instância
+PASS ESC retorna do PC sem pausa
+PASS G abre tablet em office
+PASS tablet 3D sobe suavemente em office
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS tablet bloqueia movimento e rotação
+PASS textura renderizada não está preta: tablet-office
+INFO tablet-office image enabled=True cull=False alpha=1
+INFO back href=https://urbanlink-flow.onrender.com/#gridshift-a
+PASS Voltar usa histórico Chromium
+PASS Avançar usa histórico Chromium
+PASS Recarregar conclui navegação nativa
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS Home retorna ao UrbanLink preservando instância
+PASS mouse e digitação real a 150% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+PASS textura renderizada não está preta: tablet-final-office
+INFO tablet-final-office image enabled=True cull=False alpha=1
+PASS teclas da página não movimentam avatar office
+PASS tablet restaura controles e não abre pausa office
+PASS tablet preserva posição, rotação e FOV office
+PASS PC e tablet Office compartilham um único Chromium
+PASS navegador retorna ao monitor físico após tablet
+PASS simulação de trânsito preservada na viagem Office
+PASS G abre tablet em cidade-retorno
+PASS tablet 3D sobe suavemente em cidade-retorno
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS tablet bloqueia movimento e rotação
+PASS textura renderizada não está preta: tablet-cidade-retorno
+INFO tablet-cidade-retorno image enabled=True cull=False alpha=1
+INFO back href=https://urbanlink-flow.onrender.com/#gridshift-a
+PASS Voltar usa histórico Chromium
+PASS Avançar usa histórico Chromium
+PASS Recarregar conclui navegação nativa
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 150% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 1067x993; DPR 1,5
+PASS Home retorna ao UrbanLink preservando instância
+PASS mouse e digitação real a 150% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+PASS textura renderizada não está preta: tablet-final-cidade-retorno
+INFO tablet-final-cidade-retorno image enabled=True cull=False alpha=1
+PASS teclas da página não movimentam avatar cidade-retorno
+PASS tablet restaura controles e não abre pausa cidade-retorno
+PASS tablet preserva posição, rotação e FOV cidade-retorno
+PASS sem tablets duplicados após transição
+Erros: 
+RESULT SUCCESS

@@ -1,0 +1,12 @@
+Pontos anteriores: 31; pontos atuais: 59
+Nível de parceiros 0: 41 locais
+Nível de parceiros 1: 10 locais
+Nível de parceiros 2: 8 locais
+Oficina: 2
+Padaria: 4
+Prédio: 25
+Comércio: 9
+Cafeteria: 3
+Residência: 13
+Mercado: 2
+Posto: 1

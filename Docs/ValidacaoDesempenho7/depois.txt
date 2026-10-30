@@ -1,0 +1,43 @@
+MEASURE city-day frames=720 avg_ms=16,68 p95_ms=17,02 cpu_ms=16,63 gc_bytes_frame=28446 memory=507880108 cars=15
+MEASURE city-night frames=721 avg_ms=16,67 p95_ms=17,08 cpu_ms=16,62 gc_bytes_frame=28335 memory=532519055 cars=8
+MEASURE office-hidden frames=721 avg_ms=17,05 p95_ms=17,06 cpu_ms=16,62 gc_bytes_frame=24466 memory=579691909 cars=4
+MEASURE office-browser frames=721 avg_ms=16,67 p95_ms=17,32 cpu_ms=16,61 gc_bytes_frame=21812 memory=592721315 cars=4
+SCROLL PC down=45,5
+SCROLL PC up=0
+SCROLL PC inner=45,5 outer=0
+PASS PC normalized scroll down/up/nested
+PASS PC outside cursor ignored
+PASS PC overlaid UI blocks browser wheel
+PASS PC native Windows delta supported
+PASS PC wheel/browser focus never opens minimap
+PASS mouse e digitação real a 200% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+MEASURE tablet frames=720 avg_ms=16,67 p95_ms=17,26 cpu_ms=16,62 gc_bytes_frame=21769 memory=603454371 cars=4
+SCROLL Tablet down=45,5
+SCROLL Tablet up=0
+SCROLL Tablet inner=45,5 outer=0
+PASS Tablet normalized scroll down/up/nested
+PASS Tablet outside cursor ignored
+PASS Tablet overlaid UI blocks browser wheel
+PASS Tablet native Windows delta supported
+PASS Tablet wheel/browser focus never opens minimap
+PASS controls restored
+PASS Office has display camera 0
+PASS persistent manager identity 0
+PASS Office has display camera 1
+PASS persistent manager identity 1
+PASS world clock continues across transitions
+PASS diagnostic hidden by default
+PASS F3 diagnostic opens
+PASS F3 diagnostic closes
+PASS URP preset 0 applies shadows
+PASS URP preset 1 applies shadows
+PASS URP preset 2 applies shadows
+PASS density preferences roundtrip
+MEASURE city-stress frames=686 avg_ms=17,50 p95_ms=16,84 cpu_ms=17,46 gc_bytes_frame=31577 memory=596152824 cars=30
+STRESS pedestrians=50 cars=30
+PASS no duplicate traffic registrations
+PASS populated city stress
+PASS company fleet remains simulated
+Erros: 
+RESULT SUCCESS

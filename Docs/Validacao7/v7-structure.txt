@@ -1,0 +1,7 @@
+PASS MainMenu sem scripts ausentes
+PASS SampleScene sem scripts ausentes
+PASS Office sem scripts ausentes
+PASS 59 paradas acessíveis alinhadas às rotas e antes dos cruzamentos
+PASS save 6.0 lido com campos novos opcionais
+PASS save 7.0 lido com níveis da empresa
+RESULT SUCCESS

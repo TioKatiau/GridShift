@@ -1,0 +1,6 @@
+Condição: editor batch DX11, cidade+Office, tablet Unity UI nativo; amostra 8s após aquecimento 10s.
+Unity allocated bytes=405834190
+Unity reserved bytes=881758208
+Editor CPU ms/second=3371,09
+Mean frame ms=4,33
+Working set do sistema operacional indisponível nesta API do editor. Replay não idêntico; sem conclusão de ganho global de FPS.

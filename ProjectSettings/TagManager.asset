@@ -15,8 +15,8 @@ TagManager:
   - PlayerFullBody
   - PlayerLocalBody
   - Pedestrian
-  - 
-  - 
+  - DeliveryMap
+  - DeliveryWorld
   - 
   - 
   - 
@@ -50,4 +50,4 @@ TagManager:
   - Light Layer 5
   - Light Layer 6
   - Light Layer 7
-
+  - 

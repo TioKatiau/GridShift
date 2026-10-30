@@ -1,0 +1,5 @@
+Origem: P-073ca044b28c · Comércio · Shoes Shop
+Destino: P7-af69ac44ac2a · Prédio · Parceiro 09
+Carlos: (234.60, -4.40, 216.40)
+Posição suportada e livre de colisões estáticas; rota dirigida existente.
+Cenas preservadas; instalação pelos componentes existentes.

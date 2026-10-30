@@ -1,0 +1,2 @@
+Agents=8 unique_crossers=5 crossings=5 max_hold_seconds=15,2634 horizontal_vehicles=4 vertical_vehicles=7 ambient_vehicles=24 target=24
+RESULT FAILURE

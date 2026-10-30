@@ -1,0 +1,694 @@
+ORDER ToPickup / 55,76213
+Vehicle_Truck_separate (367.30, -4.60, 226.61) MOVING Rota_15_16_17_Reta / ponto 1 next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (270.56, -4.60, 144.60) WAITING_VEHICLE Rota_11_07_04_Reta / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(224.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Ambulance_separate (307.30, -4.60, 245.25) BLOCKED_INTERSECTION Rota_12_13_16_Direita / ponto 1 next=1 target=(307.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (240.90, -4.60, 182.22) MOVING Rota_09_08_07_Reta / ponto 1 next=1 target=(240.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (127.30, -4.60, 174.24) WAITING_VEHICLE Rota_00_01_05_Direita / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Ambulance_separate (287.95, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (182.42, -4.60, 145.65) MOVING Rota_05_04_07_Esquerda / ponto 18 next=18 target=(182.54, -4.60, 145.40) forward=(0.45, 0.00, -0.89) blocker=none
+Transito_Vehicle_Container_color03_separate (226.40, -4.60, 298.20) WAITING_TRAFFIC_LIGHT Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (180.90, -4.60, 186.47) MOVING Rota_06_05_04_Reta / ponto 1 next=1 target=(180.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (297.38, -4.60, 264.06) MOVING Rota_12_13_09_Esquerda / ponto 46 next=46 target=(297.15, -4.60, 264.13) forward=(-0.96, 0.00, 0.29) blocker=none
+Transito_Vehicle_Truck_color02_separate (350.24, -4.60, 144.60) MOVING Rota_15_14_11_Direita / ponto 31 next=31 target=(344.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.03, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_11_07_08_Direita / ponto 1 next=1 target=(254.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Taxi_separate (240.90, -4.60, 252.36) MOVING Rota_10_09_08_Reta / ponto 1 next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Police Car_separate (130.39, -4.60, 198.87) MOVING Rota_02_01_05_Esquerda / ponto 45 next=45 target=(130.67, -4.60, 198.78) forward=(0.95, 0.00, -0.31) blocker=none
+Transito_Vehicle_Container_color01_separate (127.30, -4.60, 183.70) BLOCKED_INTERSECTION Rota_00_01_02_Reta / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(127.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_SUV_color01_separate (348.19, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_13_16_17_Esquerda / ponto 1 next=1 target=(353.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (140.30, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_05_01_00_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color01_separate (260.30, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_12_08_09_Direita / ponto 1 next=1 target=(254.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (268.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_13_09_10_Direita / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 106,2
+Vehicle_Truck_separate (352.95, -4.60, 304.60) MOVING Rota_16_17_10_Esquerda / ponto 56 next=56 target=(344.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (176.78, -4.60, 144.60) MOVING Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (347.95, -4.60, 258.20) BLOCKED_INTERSECTION Rota_13_16_15_Direita / ponto 1 next=1 target=(353.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (273.08, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_14_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_SUV_color02_separate (156.92, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (287.95, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (231.70, -4.60, 138.20) MOVING Rota_04_07_08_Esquerda / ponto 1 next=1 target=(233.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (180.90, -4.60, 157.40) WAITING_TRAFFIC_LIGHT Rota_05_04_07_Esquerda / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (321.81, -4.60, 144.60) WAITING_PEDESTRIAN Rota_14_11_07_Reta / ponto 1 next=1 target=(284.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (247.30, -4.60, 245.20) WAITING_TRAFFIC_LIGHT Rota_08_09_10_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_Taxi_separate (240.90, -4.60, 217.60) WAITING_TRAFFIC_LIGHT Rota_09_08_07_Reta / ponto 1 next=1 target=(240.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (127.30, -4.60, 243.70) WAITING_PEDESTRIAN Rota_01_02_06_Direita / ponto 1 next=1 target=(127.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (363.90, -4.60, 262.88) MOVING Rota_13_16_17_Esquerda / ponto 31 next=31 target=(364.09, -4.60, 263.09) forward=(0.66, 0.00, 0.75) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 138.20) BLOCKED_INTERSECTION Rota_00_04_07_Reta / ponto 1 next=1 target=(204.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color01_separate (200.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_09_06_05_Esquerda / ponto 1 / Character 06(Clone) next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Character 06(Clone)
+Transito_Vehicle_Ambulance_separate (247.31, -4.60, 272.14) MOVING Rota_13_09_10_Direita / ponto 31 next=31 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (240.90, -4.60, 157.31) WAITING_TRAFFIC_LIGHT Rota_08_07_11_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER ToPickup / 108,9939
+Vehicle_Truck_separate (261.81, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Truck_color01_separate (141.81, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_04_00_01_Direita / ponto 1 next=1 target=(134.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (360.90, -4.60, 199.17) MOVING Rota_16_15_14_Reta / ponto 1 next=1 target=(360.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (276.94, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_14_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_SUV_color02_separate (159.71, -4.60, 198.20) WAITING_VEHICLE Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (287.95, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (180.90, -4.60, 157.40) WAITING_PEDESTRIAN Rota_05_04_07_Esquerda / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_06_Reta / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (321.81, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_14_11_07_Reta / ponto 1 next=1 target=(284.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (247.30, -4.60, 260.75) MOVING Rota_08_09_10_Reta / ponto 1 next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (240.90, -4.60, 157.60) WAITING_PEDESTRIAN Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (166.40, -4.60, 258.20) WAITING_PEDESTRIAN Rota_02_06_05_Direita / ponto 1 next=1 target=(173.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (271.33, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Vehicle_Truck_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Police Car_separate (227.90, -4.60, 138.20) WAITING_PEDESTRIAN Rota_04_07_11_Reta / ponto 1 / Character 06(Clone) next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Character 06(Clone)
+Transito_Vehicle_Car_color01_separate (200.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_09_06_05_Esquerda / ponto 1 / Character 02(Clone) next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Character 02(Clone)
+Transito_Vehicle_Ambulance_separate (140.25, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (267.48, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+ORDER ToPickup / 108,9939
+Vehicle_Truck_separate (261.81, -4.60, 304.60) BLOCKED_INTERSECTION Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Truck_color01_separate (127.30, -4.60, 183.69) WAITING_PEDESTRIAN Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (344.67, -4.60, 144.60) MOVING Rota_15_14_11_Direita / ponto 31 next=31 target=(344.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (159.71, -4.60, 198.20) WAITING_VEHICLE Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (367.30, -4.60, 185.25) WAITING_TRAFFIC_LIGHT Rota_14_15_12_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (226.47, -4.60, 138.20) BLOCKED_INTERSECTION Rota_04_07_11_Reta / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (258.09, -4.60, 144.60) MOVING Rota_11_07_08_Direita / ponto 1 next=1 target=(254.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (149.27, -4.60, 304.60) WAITING_VEHICLE Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_Taxi_separate (192.63, -4.60, 144.60) MOVING Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (166.40, -4.60, 258.20) STUCK Rota_02_06_05_Direita / ponto 1 next=1 target=(173.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (271.27, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Vehicle_Truck_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Police Car_separate (268.77, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Car_color01_separate (200.30, -4.60, 264.60) BLOCKED_INTERSECTION Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (140.25, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (276.95, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+ORDER ToPickup / 108,9939
+Vehicle_Truck_separate (261.81, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Truck_color01_separate (127.30, -4.60, 183.69) WAITING_PEDESTRIAN Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (320.25, -4.60, 144.60) WAITING_PEDESTRIAN Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (159.71, -4.60, 198.20) WAITING_VEHICLE Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (320.25, -4.60, 204.60) WAITING_PEDESTRIAN Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (228.10, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_04_07_11_Reta / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 204.60) WAITING_PEDESTRIAN Rota_08_05_01_Reta / ponto 1 next=1 target=(164.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (140.30, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_Taxi_separate (127.30, -4.60, 173.94) WAITING_VEHICLE Rota_00_01_05_Direita / ponto 1 / Transito_Vehicle_Truck_color01_separate next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Truck_color01_separate
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (180.90, -4.60, 219.10) WAITING_PEDESTRIAN Rota_06_05_04_Reta / ponto 1 next=1 target=(180.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (271.27, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Vehicle_Truck_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Police Car_separate (268.77, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Car_color01_separate (180.90, -4.60, 233.19) WAITING_PEDESTRIAN Rota_06_05_01_Direita / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(180.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Ambulance_separate (120.90, -4.60, 277.74) WAITING_PEDESTRIAN Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (276.95, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+ORDER ToPickup / 108,9939
+Vehicle_Truck_separate (261.81, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Truck_color01_separate (146.91, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_SUV_color02_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color02_separate
+Transito_Vehicle_Ambulance_separate (307.30, -4.60, 185.25) WAITING_PEDESTRIAN Rota_11_12_13_Reta / ponto 1 next=1 target=(307.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (346.40, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_11_14_15_Esquerda / ponto 1 next=1 target=(353.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (159.71, -4.60, 198.20) WAITING_VEHICLE Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (320.25, -4.60, 204.60) WAITING_PEDESTRIAN Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (228.10, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_04_07_11_Reta / ponto 1 next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 204.60) WAITING_PEDESTRIAN Rota_08_05_01_Reta / ponto 1 next=1 target=(164.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (140.30, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_Taxi_separate (127.30, -4.60, 185.20) WAITING_TRAFFIC_LIGHT Rota_00_01_05_Direita / ponto 1 / Transito_Vehicle_Truck_color01_separate next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Truck_color01_separate
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (180.90, -4.60, 219.10) WAITING_PEDESTRIAN Rota_06_05_04_Reta / ponto 1 next=1 target=(180.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (271.27, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Vehicle_Truck_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Police Car_separate (280.01, -4.60, 138.20) WAITING_VEHICLE Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Car_color01_separate (180.90, -4.60, 228.85) WAITING_VEHICLE Rota_06_05_01_Direita / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(180.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Ambulance_separate (120.90, -4.60, 277.55) WAITING_PEDESTRIAN Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (288.19, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 117,4682
+Vehicle_Truck_separate (261.81, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Truck_color01_separate (157.13, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_SUV_color02_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color02_separate
+Transito_Vehicle_Ambulance_separate (307.30, -4.60, 185.25) WAITING_PEDESTRIAN Rota_11_12_13_Reta / ponto 1 next=1 target=(307.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (332.37, -4.60, 204.60) WAITING_PEDESTRIAN Rota_15_12_08_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_SUV_color02_separate (168.19, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (320.25, -4.60, 204.60) WAITING_PEDESTRIAN Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (240.90, -4.60, 279.10) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (288.93, -4.60, 138.20) MOVING Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (256.19, -4.60, 264.60) MOVING Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 204.60) WAITING_PEDESTRIAN Rota_08_05_01_Reta / ponto 1 next=1 target=(164.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 117,4682
+Vehicle_Truck_separate (240.90, -4.60, 279.11) WAITING_PEDESTRIAN Rota_10_09_08_Reta / ponto 1 next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (158.00, -4.60, 198.20) WAITING_VEHICLE Rota_01_05_04_Direita / ponto 1 / Transito_Vehicle_SUV_color02_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color02_separate
+Transito_Vehicle_Ambulance_separate (306.96, -4.60, 253.90) MOVING Rota_12_13_09_Esquerda / ponto 9 next=10 target=(306.83, -4.60, 254.45) forward=(-0.22, 0.00, 0.98) blocker=none
+Transito_Vehicle_Container_color01_separate (331.26, -4.60, 204.60) WAITING_VEHICLE Rota_15_12_08_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_SUV_color02_separate (168.19, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (320.25, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (300.90, -4.60, 220.20) MOVING Rota_13_12_15_Esquerda / ponto 1 next=1 target=(300.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color01_separate (364.71, -4.60, 198.90) MOVING Rota_14_15_12_Esquerda / ponto 23 next=24 target=(364.35, -4.60, 199.40) forward=(-0.58, 0.00, 0.82) blocker=none
+Transito_Vehicle_Car_color02_separate (140.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 230,4175
+Vehicle_Truck_separate (240.90, -4.60, 279.11) WAITING_TRAFFIC_LIGHT Rota_10_09_08_Reta / ponto 1 next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (177.33, -4.60, 197.17) MOVING Rota_01_05_04_Direita / ponto 12 next=12 target=(177.70, -4.60, 196.94) forward=(0.86, 0.00, -0.51) blocker=none
+Transito_Vehicle_Ambulance_separate (253.78, -4.60, 264.60) MOVING Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (321.80, -4.60, 204.60) WAITING_PEDESTRIAN Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (128.85, -4.60, 147.41) MOVING Rota_04_00_01_Direita / ponto 18 next=19 target=(128.56, -4.60, 147.80) forward=(-0.62, 0.00, 0.78) blocker=none
+Transito_Vehicle_Ambulance_separate (248.15, -4.60, 208.50) MOVING Rota_12_08_09_Direita / ponto 22 next=22 target=(247.97, -4.60, 208.83) forward=(-0.46, 0.00, 0.89) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (371.15, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+Transito_Vehicle_Pick up Truck_color01_separate (331.34, -4.60, 204.60) WAITING_VEHICLE Rota_15_12_08_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Car_color02_separate (161.71, -4.60, 198.20) BLOCKED_INTERSECTION Rota_01_05_06_Esquerda / ponto 1 / Transito_Vehicle_Truck_color01_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Truck_color01_separate
+ORDER Transporting / 319,294
+Vehicle_Truck_separate (240.90, -4.60, 273.66) MOVING Rota_10_09_08_Reta / ponto 1 next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (127.30, -4.60, 188.48) MOVING Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (200.25, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (261.80, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_12_08_05_Reta / ponto 1 next=1 target=(224.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (168.19, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.69) MOVING Rota_08_09_10_Reta / ponto 1 next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (287.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (371.15, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+Transito_Vehicle_Pick up Truck_color01_separate (320.10, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (187.30, -4.60, 241.69) MOVING Rota_05_06_02_Esquerda / ponto 1 next=1 target=(187.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+ORDER Transporting / 379,6002
+Vehicle_Truck_separate (240.90, -4.60, 159.11) WAITING_TRAFFIC_LIGHT Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (218.08, -4.60, 198.20) WAITING_VEHICLE Rota_05_08_07_Direita / ponto 1 / Transito_Vehicle_SUV_color02_separate next=1 target=(233.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color02_separate
+Transito_Vehicle_Ambulance_separate (153.77, -4.60, 204.60) BLOCKED_INTERSECTION Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (201.52, -4.60, 204.60) MOVING Rota_08_05_06_Direita / ponto 1 next=1 target=(194.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (228.49, -4.60, 198.20) MOVING Rota_05_08_12_Reta / ponto 1 next=1 target=(264.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (140.25, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (347.90, -4.60, 198.20) BLOCKED_INTERSECTION Route8_6 / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Container_color03_separate (371.15, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+Transito_Vehicle_Pick up Truck_color01_separate (260.10, -4.60, 204.60) BLOCKED_INTERSECTION Rota_12_08_09_Direita / ponto 1 next=1 target=(254.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (125.09, -4.60, 202.04) MOVING Rota_02_01_05_Esquerda / ponto 29 next=30 target=(125.49, -4.60, 201.67) forward=(0.72, 0.00, -0.70) blocker=none
+ORDER Transporting / 489,0751
+Vehicle_Truck_separate (240.90, -4.60, 159.11) WAITING_TRAFFIC_LIGHT Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (240.90, -4.60, 174.72) WAITING_TRAFFIC_LIGHT Rota_08_07_04_Direita / ponto 1 / Vehicle_Truck_separate next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Ambulance_separate (173.79, -4.60, 298.20) WAITING_TRAFFIC_LIGHT Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (141.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (337.97, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_6 / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Ambulance_separate (120.90, -4.60, 280.08) WAITING_TRAFFIC_LIGHT Rota_03_02_01_Reta / ponto 1 next=1 target=(120.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Police Car_separate (347.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_6 / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Container_color03_separate (371.15, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+Transito_Vehicle_Pick up Truck_color01_separate (175.15, -4.60, 264.60) MOVING Rota_09_06_02_Reta / ponto 1 next=1 target=(164.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (131.25, -4.60, 145.42) MOVING Rota_04_00_01_Direita / ponto 10 next=11 target=(130.84, -4.60, 145.64) forward=(-0.89, 0.00, 0.46) blocker=none
+ORDER Transporting / 499,2941
+Vehicle_Truck_separate (127.30, -4.60, 183.75) MOVING Rota_00_01_02_Reta / ponto 1 next=1 target=(127.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (239.08, -4.60, 147.08) MOVING Rota_08_07_04_Direita / ponto 15 next=15 target=(238.90, -4.60, 146.88) forward=(-0.66, 0.00, -0.75) blocker=none
+Transito_Vehicle_Ambulance_separate (222.97, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (348.19, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_6 / ponto 1 next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 525,762
+Vehicle_Truck_separate (150.80, -4.60, 298.20) MOVING Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (127.38, -4.60, 150.86) MOVING Rota_04_00_01_Direita / ponto 28 next=28 target=(127.34, -4.60, 151.11) forward=(-0.15, 0.00, 0.99) blocker=none
+Transito_Vehicle_Ambulance_separate (180.90, -4.60, 157.55) WAITING_TRAFFIC_LIGHT Rota_05_04_07_Esquerda / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (374.65, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+ORDER Transporting / 525,762
+Vehicle_Truck_separate (241.65, -4.60, 267.43) MOVING Rota_10_09_13_Esquerda / ponto 13 next=13 target=(241.73, -4.60, 267.21) forward=(0.32, 0.00, -0.95) blocker=none
+Transito_Vehicle_Truck_color01_separate (181.57, -4.60, 147.68) MOVING Rota_05_04_07_Esquerda / ponto 12 next=13 target=(181.73, -4.60, 147.21) forward=(0.31, 0.00, -0.95) blocker=none
+Transito_Vehicle_Ambulance_separate (307.22, -4.60, 150.48) MOVING Rota_07_11_12_Esquerda / ponto 52 next=52 target=(307.25, -4.60, 150.71) forward=(0.11, 0.00, 0.99) blocker=none
+Transito_Vehicle_SUV_color02_separate (374.65, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+ORDER Transporting / 525,762
+Vehicle_Truck_separate (308.13, -4.60, 199.83) MOVING Rota_13_12_15_Esquerda / ponto 39 next=39 target=(308.45, -4.60, 199.66) forward=(0.88, 0.00, -0.47) blocker=none
+Transito_Vehicle_Truck_color01_separate (294.46, -4.60, 138.20) MOVING Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (307.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_12_13_09_Esquerda / ponto 1 next=1 target=(307.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (374.65, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+ORDER Transporting / 525,762
+Vehicle_Truck_separate (346.39, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_12_15_14_Direita / ponto 1 next=1 target=(353.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (367.30, -4.60, 164.76) BLOCKED_INTERSECTION Route8_7 / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 222.02) MOVING Rota_09_08_05_Direita / ponto 1 next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (374.65, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+ORDER Transporting / 525,762
+Vehicle_Truck_separate (346.39, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_12_15_14_Direita / ponto 1 next=1 target=(353.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (367.30, -4.60, 183.69) WAITING_TRAFFIC_LIGHT Route8_7 / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (155.09, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_03_Direita / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (374.65, -4.60, 198.20) WAITING_OBSTACLE Route8_6 / ponto 1 / Props_BillBoard_large (1) next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Props_BillBoard_large (1)
+ORDER ToPickup / 45,98617
+GS-T01 (367.30, -4.60, 226.97) MOVING Route8_8 / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color02_separate (261.80, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_11_07_04_Reta / ponto 1 / Transito_Vehicle_Truck_color01_separate next=1 target=(224.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Truck_color01_separate
+GS-C01 (260.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (159.79, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (247.97, -4.60, 139.91) MOVING Rota_08_07_11_Esquerda / ponto 39 next=39 target=(248.45, -4.60, 139.66) forward=(0.87, 0.00, -0.49) blocker=none
+Transito_Vehicle_Car_color02_separate (367.30, -4.60, 285.18) MOVING Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (253.82, -4.60, 198.15) MOVING Rota_07_08_12_Direita / ponto 29 next=29 target=(254.20, -4.60, 198.19) forward=(0.99, 0.00, 0.11) blocker=none
+Transito_Vehicle_SUV_color03_separate (269.02, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_09_13_16_Reta / ponto 1 next=1 target=(324.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (187.30, -4.60, 185.40) BLOCKED_INTERSECTION Rota_04_05_01_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(187.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Pick up Truck_color02_separate (127.30, -4.60, 234.33) BLOCKED_INTERSECTION Rota_01_02_03_Reta / ponto 1 next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color03_separate (200.30, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (120.90, -4.60, 251.47) MOVING Rota_03_02_01_Reta / ponto 1 next=1 target=(120.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (296.33, -4.60, 264.32) MOVING Rota_12_13_09_Esquerda / ponto 49 next=49 target=(295.98, -4.60, 264.39) forward=(-0.98, 0.00, 0.20) blocker=none
+Transito_Vehicle_Police Car_separate (329.36, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_12_15_16_Esquerda / ponto 1 / Vehicle_Truck_separate next=1 target=(353.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Taxi_separate (367.30, -4.60, 185.54) MOVING Route8_2 / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (408.19, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_11_Direita / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (140.10, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (220.31, -4.60, 298.20) WAITING_TRAFFIC_LIGHT Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 180,276
+GS-T01 (417.41, -4.60, 257.12) MOVING Route8_14 / ponto 10 next=10 target=(417.83, -4.60, 256.85) forward=(0.85, 0.00, -0.53) blocker=none
+Transito_Vehicle_Container_color02_separate (188.02, -4.60, 148.75) MOVING Rota_07_04_05_Direita / ponto 22 next=23 target=(187.82, -4.60, 149.20) forward=(-0.44, 0.00, 0.90) blocker=none
+GS-C01 (255.00, -4.60, 264.60) MOVING Rota_13_09_06_Reta / ponto 1 next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (141.81, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Pick up Truck_color02_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color02_separate
+GS-C02 (180.89, -4.60, 250.81) MOVING Rota_02_06_05_Direita / ponto 31 next=31 target=(180.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (286.39, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (304.46, -4.60, 203.55) MOVING Rota_08_12_13_Esquerda / ponto 33 next=34 target=(304.82, -4.60, 204.04) forward=(0.62, 0.00, 0.79) blocker=none
+Transito_Vehicle_SUV_color03_separate (320.55, -4.60, 258.20) MOVING Rota_09_13_16_Reta / ponto 1 next=1 target=(324.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (133.17, -4.60, 204.75) MOVING Rota_05_01_02_Direita / ponto 5 next=6 target=(132.65, -4.60, 204.87) forward=(-0.98, 0.00, 0.18) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (213.19, -4.60, 298.20) WAITING_PEDESTRIAN Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (127.31, -4.60, 151.92) MOVING Rota_04_00_01_Direita / ponto 31 next=31 target=(127.30, -4.60, 161.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (120.90, -4.60, 217.40) WAITING_TRAFFIC_LIGHT Rota_02_01_05_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (264.98, -4.60, 264.60) WAITING_VEHICLE Rota_13_09_08_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Police Car_separate (367.30, -4.60, 245.20) WAITING_PEDESTRIAN Rota_15_16_17_Reta / ponto 1 next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (424.32, -4.60, 203.38) MOVING Route8_12 / ponto 27 next=27 target=(424.54, -4.60, 203.66) forward=(0.63, 0.00, 0.78) blocker=none
+Transito_Vehicle_SUV_color03_separate (380.01, -4.60, 264.60) WAITING_PEDESTRIAN Route8_9 / ponto 1 / Character 07(Clone) next=1 target=(344.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Character 07(Clone)
+Transito_Vehicle_Container_color01_separate (247.68, -4.60, 149.58) MOVING Rota_11_07_08_Direita / ponto 25 next=25 target=(247.57, -4.60, 149.95) forward=(-0.32, 0.00, 0.95) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (120.90, -4.60, 277.40) WAITING_PEDESTRIAN Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (240.90, -4.60, 229.72) WAITING_TRAFFIC_LIGHT Rota_09_08_12_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER Transporting / 273,4769
+GS-T01 (420.37, -4.60, 209.14) MOVING Route8_13 / ponto 7 next=8 target=(420.06, -4.60, 208.50) forward=(-0.38, 0.00, -0.93) blocker=none
+Transito_Vehicle_Container_color02_separate (247.30, -4.60, 211.96) MOVING Rota_05_08_09_Esquerda / ponto 56 next=56 target=(247.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (200.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (141.81, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (180.90, -4.60, 157.60) WAITING_PEDESTRIAN Rota_05_04_00_Direita / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (286.39, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (307.30, -4.60, 246.46) MOVING Rota_12_13_16_Direita / ponto 1 next=1 target=(307.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (420.90, -4.60, 221.32) WAITING_VEHICLE Route8_13 / ponto 1 / Vehicle_Truck_separate next=1 target=(420.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Pick up Truck_color02_separate (127.30, -4.60, 265.35) MOVING Rota_01_02_03_Reta / ponto 1 next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (228.10, -4.60, 298.20) WAITING_TRAFFIC_LIGHT Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (180.90, -4.60, 166.61) WAITING_PEDESTRIAN Rota_05_04_07_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Pick up Truck_color03_separate (168.10, -4.60, 198.20) WAITING_PEDESTRIAN Rota_01_05_04_Direita / ponto 1 next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (240.90, -4.60, 229.11) BLOCKED_INTERSECTION Rota_09_08_12_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Police Car_separate (365.64, -4.60, 297.42) MOVING Rota_16_17_10_Esquerda / ponto 19 next=19 target=(365.46, -4.60, 297.75) forward=(-0.48, 0.00, 0.88) blocker=none
+Transito_Vehicle_Taxi_separate (360.93, -4.60, 251.71) MOVING Route8_11 / ponto 44 next=44 target=(360.91, -4.60, 251.41) forward=(-0.07, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (276.50, -4.60, 264.60) WAITING_PEDESTRIAN Rota_13_09_08_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (168.10, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_02_06_05_Direita / ponto 1 next=1 target=(173.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (240.90, -4.60, 219.10) BLOCKED_INTERSECTION Rota_09_08_12_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER Transporting / 273,4769
+GS-T01 (354.19, -4.60, 264.58) MOVING Rota_15_16_13_Esquerda / ponto 54 next=55 target=(353.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.05) blocker=none
+Transito_Vehicle_Container_color02_separate (286.40, -4.60, 258.20) WAITING_PEDESTRIAN Rota_09_13_12_Direita / ponto 1 next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (210.53, -4.60, 198.20) MOVING Rota_05_08_09_Esquerda / ponto 1 next=1 target=(233.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (141.81, -4.60, 304.60) WAITING_PEDESTRIAN Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (180.90, -4.60, 157.60) WAITING_PEDESTRIAN Rota_05_04_00_Direita / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (286.39, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (412.32, -4.60, 258.20) MOVING Route8_14 / ponto 1 next=1 target=(413.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (420.90, -4.60, 217.31) WAITING_TRAFFIC_LIGHT Route8_13 / ponto 1 next=1 target=(420.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (219.98, -4.60, 298.20) WAITING_VEHICLE Rota_03_10_09_Direita / ponto 1 / Transito_Vehicle_Pick up Truck_color02_separate next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color02_separate
+Transito_Vehicle_Pick up Truck_color02_separate (228.10, -4.60, 298.20) WAITING_PEDESTRIAN Rota_03_10_09_Direita / ponto 1 next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (180.90, -4.60, 166.08) WAITING_VEHICLE Rota_05_04_07_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Pick up Truck_color03_separate (180.90, -4.60, 174.35) WAITING_VEHICLE Rota_05_04_07_Esquerda / ponto 1 / Transito_Vehicle_Car_color03_separate next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Car_color03_separate
+Transito_Vehicle_SUV_color01_separate (264.66, -4.60, 198.20) BLOCKED_INTERSECTION Rota_08_12_13_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Police Car_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_03_Reta / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Taxi_separate (315.85, -4.60, 204.60) MOVING Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (240.90, -4.60, 217.31) WAITING_TRAFFIC_LIGHT Rota_09_08_07_Reta / ponto 1 next=1 target=(240.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 198.20) BLOCKED_INTERSECTION Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (168.10, -4.60, 258.20) STUCK Rota_02_06_05_Direita / ponto 1 next=1 target=(173.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (274.66, -4.60, 198.20) WAITING_VEHICLE Rota_08_12_13_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+ORDER Transporting / 273,7496
+GS-T01 (321.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_16_13_09_Reta / ponto 1 next=1 target=(284.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (286.40, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_09_13_12_Direita / ponto 1 next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (247.30, -4.60, 285.20) BLOCKED_INTERSECTION Rota_09_10_03_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (120.90, -4.60, 282.06) MOVING Rota_10_03_02_Esquerda / ponto 56 next=56 target=(120.90, -4.60, 281.40) forward=(0.00, 0.00, -1.00) blocker=none
+GS-C02 (180.90, -4.60, 157.33) MOVING Rota_05_04_00_Direita / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (286.39, -4.60, 138.20) WAITING_PEDESTRIAN Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (189.24, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Truck_color03_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Truck_color03_separate
+Transito_Vehicle_Ambulance_separate (420.90, -4.60, 217.49) MOVING Route8_13 / ponto 1 next=1 target=(420.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (360.90, -4.60, 168.42) MOVING Rota_15_14_11_Direita / ponto 1 next=1 target=(360.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (228.10, -4.60, 298.20) WAITING_TRAFFIC_LIGHT Rota_03_10_09_Direita / ponto 1 / Transito_Vehicle_Pick up Truck_color02_separate next=1 target=(233.60, -4.60, 298.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color02_separate
+Transito_Vehicle_Pick up Truck_color02_separate (240.89, -4.60, 290.35) MOVING Rota_03_10_09_Direita / ponto 31 next=31 target=(240.90, -4.60, 281.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color03_separate (180.90, -4.60, 166.08) BLOCKED_INTERSECTION Rota_05_04_07_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Pick up Truck_color03_separate (180.90, -4.60, 174.35) WAITING_VEHICLE Rota_05_04_07_Esquerda / ponto 1 / Transito_Vehicle_Car_color03_separate next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Car_color03_separate
+Transito_Vehicle_SUV_color01_separate (276.95, -4.60, 198.20) WAITING_VEHICLE Rota_08_12_13_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Police Car_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Taxi_separate (247.30, -4.60, 245.20) BLOCKED_INTERSECTION Rota_08_09_10_Reta / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_SUV_color03_separate (240.90, -4.60, 157.25) MOVING Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (346.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_0 / ponto 1 next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (180.90, -4.60, 217.40) WAITING_PEDESTRIAN Rota_06_05_01_Direita / ponto 1 next=1 target=(180.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 374,3894
+GS-T01 (321.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_16_13_09_Reta / ponto 1 next=1 target=(284.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (286.40, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_09_13_12_Direita / ponto 1 next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (140.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (134.60, -4.60, 198.20) MOVING Rota_02_01_05_Esquerda / ponto 56 next=56 target=(144.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C02 (127.30, -4.60, 185.20) WAITING_TRAFFIC_LIGHT Rota_00_01_05_Direita / ponto 1 / Transito_Vehicle_Truck_color03_separate next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Truck_color03_separate
+Transito_Vehicle_Truck_color01_separate (314.97, -4.60, 198.20) MOVING Rota_11_12_15_Direita / ponto 31 next=31 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (143.58, -4.60, 258.20) MOVING Rota_03_02_06_Esquerda / ponto 56 next=56 target=(144.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (367.28, -4.60, 291.54) MOVING Rota_16_17_10_Esquerda / ponto 3 next=4 target=(367.25, -4.60, 292.09) forward=(-0.04, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (320.01, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_14_11_07_Reta / ponto 1 next=1 target=(284.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (240.90, -4.60, 277.40) WAITING_PEDESTRIAN Rota_10_09_06_Direita / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (276.86, -4.60, 258.20) WAITING_VEHICLE Rota_09_13_12_Direita / ponto 1 / Transito_Vehicle_Container_color02_separate next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color02_separate
+Transito_Vehicle_Car_color03_separate (227.90, -4.60, 138.20) WAITING_PEDESTRIAN Rota_04_07_08_Esquerda / ponto 1 next=1 target=(233.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (192.96, -4.60, 138.30) MOVING Rota_05_04_07_Esquerda / ponto 51 next=52 target=(193.41, -4.60, 138.25) forward=(0.99, 0.00, -0.11) blocker=none
+Transito_Vehicle_SUV_color01_separate (276.95, -4.60, 198.20) WAITING_VEHICLE Rota_08_12_13_Esquerda / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Police Car_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Taxi_separate (247.30, -4.60, 245.20) WAITING_TRAFFIC_LIGHT Rota_08_09_10_Reta / ponto 1 next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (187.30, -4.60, 185.49) WAITING_PEDESTRIAN Rota_04_05_01_Esquerda / ponto 1 next=1 target=(187.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (406.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (180.90, -4.60, 217.40) WAITING_PEDESTRIAN Rota_06_05_01_Direita / ponto 1 next=1 target=(180.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (286.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 429,2664
+GS-T01 (319.24, -4.60, 264.60) MOVING Rota_16_13_09_Reta / ponto 1 next=1 target=(284.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (286.40, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_09_13_12_Direita / ponto 1 next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (120.90, -4.60, 217.60) WAITING_TRAFFIC_LIGHT Rota_02_01_05_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (246.13, -4.60, 206.37) MOVING Rota_05_08_09_Esquerda / ponto 41 next=42 target=(246.33, -4.60, 206.84) forward=(0.41, 0.00, 0.91) blocker=none
+GS-C02 (172.32, -4.60, 198.20) MOVING Rota_01_05_08_Reta / ponto 1 next=1 target=(204.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (425.99, -4.60, 206.06) MOVING Route8_12 / ponto 33 next=34 target=(426.22, -4.60, 206.57) forward=(0.43, 0.00, 0.90) blocker=none
+Transito_Vehicle_Car_color02_separate (222.58, -4.60, 198.20) BLOCKED_INTERSECTION Rota_05_08_07_Direita / ponto 1 next=1 target=(233.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (260.25, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (247.30, -4.60, 168.46) WAITING_TRAFFIC_LIGHT Rota_07_08_12_Direita / ponto 1 next=1 target=(247.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (240.90, -4.60, 277.40) WAITING_TRAFFIC_LIGHT Rota_10_09_06_Direita / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER Transporting / 544,8462
+GS-T01 (240.90, -4.60, 229.35) MOVING Rota_09_08_05_Direita / ponto 1 next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color02_separate (295.80, -4.60, 204.94) MOVING Rota_13_12_08_Direita / ponto 25 next=25 target=(295.55, -4.60, 204.87) forward=(-0.95, 0.00, -0.30) blocker=none
+GS-C01 (187.30, -4.60, 250.60) MOVING Rota_05_06_02_Esquerda / ponto 1 next=1 target=(187.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (247.30, -4.60, 246.70) MOVING Rota_08_09_13_Direita / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C02 (287.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (321.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_16_13_12_Esquerda / ponto 1 next=1 target=(314.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (247.74, -4.60, 140.05) MOVING Rota_08_07_11_Esquerda / ponto 38 next=38 target=(248.10, -4.60, 139.84) forward=(0.87, 0.00, -0.50) blocker=none
+Transito_Vehicle_Ambulance_separate (172.04, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (315.59, -4.60, 258.19) MOVING Rota_12_13_16_Direita / ponto 31 next=31 target=(324.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (240.90, -4.60, 277.40) BLOCKED_INTERSECTION Rota_10_09_06_Direita / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER Transporting / 682,5519
+GS-T01 (184.33, -4.60, 204.60) MOVING Rota_08_05_01_Reta / ponto 1 next=1 target=(164.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (228.12, -4.60, 144.60) MOVING Rota_08_07_04_Direita / ponto 31 next=31 target=(224.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (129.18, -4.60, 267.03) MOVING Rota_06_02_03_Direita / ponto 17 next=18 target=(128.79, -4.60, 267.48) forward=(-0.68, 0.00, 0.73) blocker=none
+Transito_Vehicle_Truck_color03_separate (297.55, -4.60, 257.04) MOVING Rota_09_13_12_Direita / ponto 12 next=13 target=(298.02, -4.60, 256.71) forward=(0.84, 0.00, -0.54) blocker=none
+GS-C02 (374.63, -4.60, 258.20) MOVING Route8_6 / ponto 1 next=1 target=(384.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (308.50, -4.60, 199.64) MOVING Rota_13_12_15_Esquerda / ponto 40 next=40 target=(308.81, -4.60, 199.48) forward=(0.90, 0.00, -0.44) blocker=none
+Transito_Vehicle_Car_color02_separate (307.30, -4.60, 245.20) WAITING_TRAFFIC_LIGHT Rota_12_13_09_Esquerda / ponto 1 next=1 target=(307.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (171.83, -4.60, 258.20) MOVING Rota_02_06_05_Direita / ponto 1 next=1 target=(173.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (380.68, -4.60, 204.60) MOVING Route8_5 / ponto 1 next=1 target=(374.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (200.10, -4.60, 264.60) BLOCKED_INTERSECTION Rota_09_06_02_Reta / ponto 1 next=1 target=(164.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 25,56348
+GS-T01 (367.30, -4.60, 209.95) MOVING Rota_14_15_16_Reta / ponto 1 next=1 target=(367.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (359.68, -4.60, 147.86) MOVING Rota_15_14_11_Direita / ponto 13 next=13 target=(359.41, -4.60, 147.48) forward=(-0.55, 0.00, -0.83) blocker=none
+GS-C02 (318.28, -4.60, 198.20) MOVING Rota_11_12_15_Direita / ponto 31 next=31 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (304.95, -4.60, 142.18) MOVING Rota_12_11_14_Esquerda / ponto 29 next=29 target=(305.20, -4.60, 141.94) forward=(0.71, 0.00, -0.71) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (240.90, -4.60, 152.18) MOVING Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) BLOCKED_INTERSECTION Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (180.53, -4.60, 202.71) MOVING Rota_04_05_01_Esquerda / ponto 38 next=38 target=(180.10, -4.60, 202.96) forward=(-0.86, 0.00, 0.51) blocker=none
+Transito_Vehicle_SUV_color01_separate (300.90, -4.60, 217.31) BLOCKED_INTERSECTION Rota_13_12_11_Reta / ponto 1 next=1 target=(300.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (367.30, -4.60, 185.25) BLOCKED_INTERSECTION Rota_14_15_12_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (120.90, -4.60, 183.93) MOVING Rota_02_01_00_Reta / ponto 1 next=1 target=(120.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (240.90, -4.60, 180.41) BLOCKED_INTERSECTION Rota_08_07_04_Direita / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Car_color01_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (247.30, -4.60, 183.55) BLOCKED_INTERSECTION Rota_07_08_09_Reta / ponto 1 next=1 target=(247.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) BLOCKED_INTERSECTION Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 275.64) MOVING Rota_01_02_03_Reta / ponto 1 next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 288.07) MOVING Rota_10_03_02_Esquerda / ponto 56 next=56 target=(120.90, -4.60, 281.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (206.17, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_06_09_10_Esquerda / ponto 1 next=1 target=(233.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+ORDER ToPickup / 156,1437
+GS-T01 (367.30, -4.60, 243.69) WAITING_TRAFFIC_LIGHT Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (235.55, -4.60, 144.60) MOVING Rota_11_07_04_Reta / ponto 1 next=1 target=(224.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (320.25, -4.60, 144.60) WAITING_PEDESTRIAN Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 185.49) WAITING_TRAFFIC_LIGHT Rota_14_15_12_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (127.31, -4.60, 153.38) MOVING Rota_04_00_01_Direita / ponto 31 next=31 target=(127.30, -4.60, 161.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (141.80, -4.60, 204.60) WAITING_PEDESTRIAN Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (300.90, -4.60, 157.31) WAITING_PEDESTRIAN Rota_12_11_14_Esquerda / ponto 1 next=1 target=(300.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (292.25, -4.60, 204.60) MOVING Rota_15_12_08_Reta / ponto 1 next=1 target=(284.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) BLOCKED_INTERSECTION Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (199.37, -4.60, 138.20) MOVING Rota_00_04_07_Reta / ponto 1 next=1 target=(204.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) BLOCKED_INTERSECTION Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (240.90, -4.60, 159.10) WAITING_TRAFFIC_LIGHT Rota_08_07_04_Direita / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (247.30, -4.60, 243.69) WAITING_PEDESTRIAN Rota_08_09_06_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 279.11) WAITING_TRAFFIC_LIGHT Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (228.10, -4.60, 258.20) WAITING_PEDESTRIAN Rota_06_09_10_Esquerda / ponto 1 next=1 target=(233.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) BLOCKED_INTERSECTION Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+ORDER ToPickup / 156,1437
+GS-T01 (367.30, -4.60, 243.69) BLOCKED_INTERSECTION Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (200.01, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (320.25, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (365.86, -4.60, 197.01) MOVING Rota_14_15_12_Esquerda / ponto 17 next=18 target=(365.66, -4.60, 197.40) forward=(-0.45, 0.00, 0.89) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (180.90, -4.60, 156.85) MOVING Rota_05_04_07_Esquerda / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) BLOCKED_INTERSECTION Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (141.80, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 184.90) BLOCKED_INTERSECTION Rota_14_15_16_Reta / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(367.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) BLOCKED_INTERSECTION Rota_08_09_06_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (247.30, -4.60, 158.70) MOVING Rota_04_07_08_Esquerda / ponto 56 next=56 target=(247.30, -4.60, 161.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (210.18, -4.60, 144.60) WAITING_VEHICLE Rota_07_04_00_Reta / ponto 1 / Transito_Vehicle_SUV_color03_separate next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color03_separate
+Transito_Vehicle_Car_color01_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) BLOCKED_INTERSECTION Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 285.20) BLOCKED_INTERSECTION Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 279.11) BLOCKED_INTERSECTION Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (247.30, -4.60, 285.40) BLOCKED_INTERSECTION Rota_09_10_03_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+ORDER ToPickup / 156,1437
+GS-T01 (367.30, -4.60, 243.69) WAITING_TRAFFIC_LIGHT Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (134.67, -4.60, 144.60) MOVING Rota_04_00_01_Direita / ponto 1 next=2 target=(134.20, -4.60, 144.61) forward=(-1.00, 0.00, 0.02) blocker=none
+GS-C02 (320.25, -4.60, 144.60) WAITING_PEDESTRIAN Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (260.01, -4.60, 264.60) BLOCKED_INTERSECTION Rota_13_09_08_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (228.10, -4.60, 138.20) WAITING_PEDESTRIAN Rota_04_07_11_Reta / ponto 1 next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (141.80, -4.60, 204.60) WAITING_PEDESTRIAN Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 233.98) WAITING_TRAFFIC_LIGHT Rota_15_16_17_Reta / ponto 1 / Vehicle_Truck_separate next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_08_09_06_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) BLOCKED_INTERSECTION Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (291.51, -4.60, 198.20) MOVING Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) BLOCKED_INTERSECTION Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (198.33, -4.60, 144.60) MOVING Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color01_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 264.60) WAITING_PEDESTRIAN Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 279.11) WAITING_TRAFFIC_LIGHT Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (247.30, -4.60, 285.40) WAITING_TRAFFIC_LIGHT Rota_09_10_03_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) BLOCKED_INTERSECTION Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+ORDER ToPickup / 156,1437
+GS-T01 (367.30, -4.60, 243.69) BLOCKED_INTERSECTION Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (127.30, -4.60, 245.49) BLOCKED_INTERSECTION Rota_01_02_06_Direita / ponto 1 next=1 target=(127.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C02 (320.25, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (260.01, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_13_09_08_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (228.10, -4.60, 138.20) WAITING_PEDESTRIAN Rota_04_07_11_Reta / ponto 1 next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) BLOCKED_INTERSECTION Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 231.81) BLOCKED_INTERSECTION Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_SUV_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_SUV_color03_separate
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 234.23) WAITING_VEHICLE Rota_15_16_17_Reta / ponto 1 / Vehicle_Truck_separate next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) BLOCKED_INTERSECTION Rota_08_09_06_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (267.90, -4.60, 264.60) WAITING_VEHICLE Rota_13_09_06_Reta / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (127.30, -4.60, 180.39) MOVING Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (268.78, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 264.60) WAITING_PEDESTRIAN Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) BLOCKED_INTERSECTION Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 285.20) BLOCKED_INTERSECTION Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 279.11) BLOCKED_INTERSECTION Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (247.30, -4.60, 285.40) BLOCKED_INTERSECTION Rota_09_10_03_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color02_separate (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+ORDER ToPickup / 156,1437
+GS-T01 (367.30, -4.60, 243.69) WAITING_TRAFFIC_LIGHT Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (127.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT Rota_01_02_06_Direita / ponto 1 next=1 target=(127.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C02 (320.25, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_14_11_12_Direita / ponto 1 next=1 target=(314.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (260.01, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_13_09_08_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (228.10, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_04_07_11_Reta / ponto 1 next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 235.31) WAITING_VEHICLE Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_SUV_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_SUV_color03_separate
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 234.23) WAITING_VEHICLE Rota_15_16_17_Reta / ponto 1 / Vehicle_Truck_separate next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_08_09_06_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color03_separate (267.90, -4.60, 264.60) WAITING_VEHICLE Rota_13_09_06_Reta / ponto 1 / Transito_Vehicle_SUV_color01_separate next=1 target=(224.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color01_separate
+Transito_Vehicle_Truck_color02_separate (141.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_06_02_01_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color02_separate (180.90, -4.60, 159.10) WAITING_PEDESTRIAN Rota_05_04_00_Direita / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (266.23, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Ambulance_separate
+Transito_Vehicle_Truck_color02_separate (201.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (367.30, -4.60, 285.40) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Car_color01_separate (127.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color01_separate (120.90, -4.60, 279.11) WAITING_TRAFFIC_LIGHT Rota_03_02_06_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color02_separate (247.30, -4.60, 285.40) WAITING_TRAFFIC_LIGHT Rota_09_10_03_Esquerda / ponto 1 next=1 target=(247.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+ORDER ToPickup / 184,7537
+GS-T01 (335.83, -4.60, 264.60) MOVING Rota_16_13_12_Esquerda / ponto 1 next=1 target=(314.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (180.84, -4.60, 251.81) MOVING Rota_02_06_05_Direita / ponto 28 next=29 target=(180.89, -4.60, 251.30) forward=(0.13, 0.00, -0.99) blocker=none
+GS-C02 (307.30, -4.60, 163.41) WAITING_TRAFFIC_LIGHT Rota_11_12_08_Esquerda / ponto 1 next=1 target=(307.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (151.49, -4.60, 204.60) MOVING Rota_05_01_00_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (275.72, -4.60, 138.20) BLOCKED_INTERSECTION Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 243.70) WAITING_PEDESTRIAN Rota_01_02_03_Reta / ponto 1 next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT Rota_15_16_17_Reta / ponto 1 next=1 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (200.25, -4.60, 264.60) BLOCKED_INTERSECTION Rota_09_06_05_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Taxi_separate (397.89, -4.60, 198.20) MOVING Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 327,1124
+GS-T01 (321.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Rota_16_13_12_Esquerda / ponto 1 next=1 target=(314.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (180.90, -4.60, 182.81) MOVING Rota_06_05_04_Reta / ponto 1 next=1 target=(180.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+GS-C02 (200.25, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_08_05_04_Esquerda / ponto 1 / Transito_Vehicle_SUV_color03_separate next=1 target=(194.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color03_separate
+Transito_Vehicle_SUV_color01_separate (127.24, -4.60, 140.35) MOVING Rota_01_00_04_Esquerda / ponto 36 next=36 target=(127.41, -4.60, 140.24) forward=(0.84, 0.00, -0.55) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (348.10, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_11_14_15_Esquerda / ponto 1 next=1 target=(353.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 283.70) BLOCKED_INTERSECTION Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 285.49) BLOCKED_INTERSECTION Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (180.90, -4.60, 217.77) BLOCKED_INTERSECTION Rota_06_05_01_Direita / ponto 1 next=1 target=(180.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Taxi_separate (421.50, -4.60, 262.09) MOVING Route8_15 / ponto 28 next=29 target=(421.06, -4.60, 262.39) forward=(-0.82, 0.00, 0.57) blocker=none
+ORDER Transporting / 387,625
+GS-T01 (300.90, -4.60, 219.11) WAITING_TRAFFIC_LIGHT Rota_13_12_08_Direita / ponto 1 next=1 target=(300.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+GS-C01 (239.79, -4.60, 139.68) MOVING Rota_04_07_08_Esquerda / ponto 18 next=18 target=(240.10, -4.60, 139.84) forward=(0.89, 0.00, 0.45) blocker=none
+GS-C02 (180.90, -4.60, 157.55) WAITING_TRAFFIC_LIGHT Rota_05_04_00_Direita / ponto 1 next=1 target=(180.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (179.85, -4.60, 139.72) MOVING Rota_00_04_05_Esquerda / ponto 18 next=18 target=(180.10, -4.60, 139.84) forward=(0.89, 0.00, 0.45) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (420.90, -4.60, 200.31) MOVING Route8_12 / ponto 17 next=18 target=(421.46, -4.60, 200.68) forward=(0.85, 0.00, 0.52) blocker=none
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (127.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) BLOCKED_INTERSECTION Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 492,3914
+GS-T01 (261.81, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_12_08_05_Reta / ponto 1 next=1 target=(224.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (140.01, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_05_01_02_Direita / ponto 1 next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (127.30, -4.60, 189.11) MOVING Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (288.19, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_15_Reta / ponto 1 next=1 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (388.57, -4.60, 264.60) WAITING_VEHICLE Route8_3 / ponto 1 / Transito_Vehicle_Taxi_separate next=1 target=(344.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Taxi_separate
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) BLOCKED_INTERSECTION Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 283.70) BLOCKED_INTERSECTION Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 285.49) BLOCKED_INTERSECTION Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (127.30, -4.60, 245.25) BLOCKED_INTERSECTION Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 658,9943
+GS-T01 (201.81, -4.60, 204.60) WAITING_PEDESTRIAN Rota_08_05_01_Reta / ponto 1 next=1 target=(164.10, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (127.30, -4.60, 236.52) WAITING_VEHICLE Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Ambulance_separate
+GS-C02 (287.95, -4.60, 198.20) WAITING_PEDESTRIAN Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (408.30, -4.60, 198.20) MOVING Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (388.57, -4.60, 264.60) WAITING_VEHICLE Route8_3 / ponto 1 / Transito_Vehicle_Taxi_separate next=1 target=(344.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Taxi_separate
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (127.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) BLOCKED_INTERSECTION Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 691,0961
+GS-T01 (141.81, -4.60, 204.60) WAITING_TRAFFIC_LIGHT Rota_05_01_02_Direita / ponto 1 / Transito_Vehicle_SUV_color03_separate next=1 target=(134.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_SUV_color03_separate
+GS-C01 (127.30, -4.60, 236.52) WAITING_VEHICLE Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Ambulance_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Ambulance_separate
+GS-C02 (307.30, -4.60, 216.84) MOVING Rota_08_12_13_Esquerda / ponto 56 next=56 target=(307.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (396.61, -4.60, 264.60) WAITING_VEHICLE Route8_4 / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Pick up Truck_color03_separate (388.57, -4.60, 264.60) WAITING_VEHICLE Route8_3 / ponto 1 / Transito_Vehicle_Taxi_separate next=1 target=(344.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Taxi_separate
+Transito_Vehicle_Ambulance_separate (240.90, -4.60, 277.55) WAITING_TRAFFIC_LIGHT Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (127.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (367.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Ambulance_separate (127.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT Rota_01_02_03_Reta / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(127.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_Taxi_separate (380.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 879,9587
+GS-T01 (127.30, -4.60, 243.69) BLOCKED_INTERSECTION Rota_01_02_06_Direita / ponto 1 next=1 target=(127.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (127.30, -4.60, 285.49) BLOCKED_INTERSECTION Rota_02_03_10_Direita / ponto 1 next=1 target=(127.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C02 (420.90, -4.60, 218.01) MOVING Route8_13 / ponto 1 next=1 target=(420.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (360.90, -4.60, 222.21) MOVING Rota_16_15_12_Direita / ponto 1 next=1 target=(360.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER ToPickup / 77,58086
+GS-T01 (367.30, -4.60, 226.51) BLOCKED_INTERSECTION Rota_15_16_13_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Police Car_separate
+GS-C01 (367.30, -4.60, 185.65) MOVING Route8_8 / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (246.12, -4.60, 296.46) MOVING Rota_09_10_03_Esquerda / ponto 16 next=16 target=(246.02, -4.60, 296.69) forward=(-0.40, 0.00, 0.92) blocker=none
+GS-C02 (307.30, -4.60, 245.40) BLOCKED_INTERSECTION Rota_12_13_09_Esquerda / ponto 1 next=1 target=(307.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (367.30, -4.60, 245.30) MOVING Rota_15_16_13_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (271.34, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_03_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Car_color03_separate (416.53, -4.60, 264.28) MOVING Route8_15 / ponto 40 next=40 target=(416.12, -4.60, 264.37) forward=(-0.98, 0.00, 0.21) blocker=none
+Transito_Vehicle_Container_color01_separate (261.80, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_SUV_color02_separate (294.07, -4.60, 264.59) MOVING Rota_12_13_09_Esquerda / ponto 55 next=55 target=(293.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.03) blocker=none
+Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 210.76) MOVING Rota_07_08_09_Reta / ponto 1 next=1 target=(247.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (140.30, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_04_00_01_Direita / ponto 1 next=1 target=(134.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (310.51, -4.60, 196.94) MOVING Rota_11_12_15_Direita / ponto 20 next=20 target=(310.84, -4.60, 197.16) forward=(0.83, 0.00, 0.56) blocker=none
+Transito_Vehicle_SUV_color02_separate (120.90, -4.60, 219.48) MOVING Rota_02_01_05_Esquerda / ponto 1 next=1 target=(120.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (367.30, -4.60, 282.41) MOVING Rota_16_17_10_Esquerda / ponto 1 next=1 target=(367.30, -4.60, 290.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Taxi_separate (181.02, -4.60, 210.16) MOVING Rota_06_05_08_Esquerda / ponto 6 next=6 target=(181.04, -4.60, 209.91) forward=(0.12, 0.00, -0.99) blocker=none
+Transito_Vehicle_Truck_color02_separate (240.90, -4.60, 154.53) MOVING Rota_08_07_11_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (187.73, -4.60, 140.05) MOVING Rota_05_04_07_Esquerda / ponto 38 next=38 target=(188.10, -4.60, 139.84) forward=(0.87, 0.00, -0.50) blocker=none
+Transito_Vehicle_Police Car_separate (244.90, -4.60, 258.63) MOVING Rota_08_09_06_Esquerda / ponto 23 next=23 target=(244.59, -4.60, 259.08) forward=(-0.57, 0.00, 0.82) blocker=none
+Transito_Vehicle_Police Car_separate (240.90, -4.60, 277.60) BLOCKED_INTERSECTION Rota_10_09_08_Reta / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Container_color03_separate (261.80, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_11_07_04_Reta / ponto 1 next=1 target=(224.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 124,5479
+GS-T01 (318.06, -4.60, 264.60) MOVING Rota_16_13_12_Esquerda / ponto 1 next=1 target=(314.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (425.06, -4.60, 204.40) MOVING Route8_12 / ponto 29 next=30 target=(425.35, -4.60, 204.85) forward=(0.54, 0.00, 0.84) blocker=none
+Transito_Vehicle_Container_color03_separate (126.30, -4.60, 301.80) MOVING Rota_10_03_02_Esquerda / ponto 24 next=24 target=(126.10, -4.60, 301.65) forward=(-0.80, 0.00, -0.60) blocker=none
+GS-C02 (273.64, -4.60, 264.60) MOVING Rota_13_09_08_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (322.04, -4.60, 198.20) MOVING Rota_13_12_15_Esquerda / ponto 56 next=56 target=(324.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (271.34, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_03_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Car_color03_separate (314.06, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_Container_color01_separate (261.80, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_09_Esquerda / ponto 1 / Character 03(Clone) next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Character 03(Clone)
+Transito_Vehicle_SUV_color02_separate (182.41, -4.60, 304.60) BLOCKED_INTERSECTION Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT Rota_08_09_13_Direita / ponto 1 next=1 target=(247.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (127.30, -4.60, 185.20) WAITING_TRAFFIC_LIGHT Rota_00_01_05_Direita / ponto 1 next=1 target=(127.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (407.90, -4.60, 198.20) BLOCKED_INTERSECTION Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (262.13, -4.60, 198.20) MOVING Rota_05_08_12_Reta / ponto 1 next=1 target=(264.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (281.68, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Taxi_separate (287.90, -4.60, 138.20) BLOCKED_INTERSECTION Rota_07_11_12_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (313.59, -4.60, 138.20) MOVING Rota_07_11_14_Reta / ponto 1 next=1 target=(324.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (229.47, -4.60, 138.20) MOVING Rota_04_07_11_Reta / ponto 1 next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (124.00, -4.60, 259.58) MOVING Rota_06_02_01_Esquerda / ponto 32 next=32 target=(123.85, -4.60, 259.40) forward=(-0.64, 0.00, -0.77) blocker=none
+Transito_Vehicle_Police Car_separate (240.90, -4.60, 277.60) WAITING_TRAFFIC_LIGHT Rota_10_09_08_Reta / ponto 1 next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (176.07, -4.60, 144.60) MOVING Rota_07_04_00_Reta / ponto 1 next=1 target=(164.10, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER ToPickup / 274,0491
+GS-T01 (346.39, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_7 / ponto 1 next=1 target=(384.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (360.90, -4.60, 214.04) MOVING Route8_6 / ponto 1 next=1 target=(360.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (121.28, -4.60, 268.70) MOVING Rota_03_02_06_Esquerda / ponto 10 next=10 target=(121.37, -4.60, 268.35) forward=(0.24, 0.00, -0.97) blocker=none
+GS-C02 (181.05, -4.60, 192.92) MOVING Rota_08_05_04_Esquerda / ponto 50 next=51 target=(180.99, -4.60, 192.49) forward=(-0.14, 0.00, -0.99) blocker=none
+Transito_Vehicle_Police Car_separate (407.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (271.34, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_03_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Car_color03_separate (291.42, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Truck_color03_separate
+Transito_Vehicle_Container_color01_separate (261.80, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_SUV_color02_separate (140.01, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 / Transito_Vehicle_Container_color03_separate next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color03_separate
+Transito_Vehicle_SUV_color01_separate (288.19, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_09_13_12_Direita / ponto 1 next=1 target=(293.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_01_05_06_Esquerda / ponto 1 next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (427.28, -4.60, 251.52) MOVING Route8_15 / ponto 3 next=3 target=(427.26, -4.60, 251.92) forward=(-0.04, 0.00, 1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (307.28, -4.60, 211.17) MOVING Rota_08_12_13_Esquerda / ponto 54 next=54 target=(307.29, -4.60, 211.50) forward=(0.06, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (281.68, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Taxi_separate (307.30, -4.60, 185.20) BLOCKED_INTERSECTION Rota_11_12_08_Esquerda / ponto 1 next=1 target=(307.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (367.30, -4.60, 182.63) BLOCKED_INTERSECTION Route8_8 / ponto 1 next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (307.30, -4.60, 173.21) BLOCKED_INTERSECTION Rota_11_12_13_Reta / ponto 1 / Transito_Vehicle_Taxi_separate next=1 target=(307.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=Transito_Vehicle_Taxi_separate
+Transito_Vehicle_Police Car_separate (122.08, -4.60, 206.34) MOVING Rota_02_01_05_Esquerda / ponto 16 next=16 target=(122.18, -4.60, 206.11) forward=(0.40, 0.00, -0.92) blocker=none
+Transito_Vehicle_Police Car_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN Rota_10_09_08_Reta / ponto 1 / Character 10(Clone) next=1 target=(240.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=Character 10(Clone)
+Transito_Vehicle_Container_color03_separate (141.80, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_04_00_01_Direita / ponto 1 next=1 target=(134.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+ORDER Transporting / 368,0321
+GS-T01 (401.56, -4.60, 198.20) WAITING_VEHICLE Route8_12 / ponto 1 / Transito_Vehicle_Car_color02_separate next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color02_separate
+GS-C01 (413.53, -4.60, 198.20) MOVING Route8_12 / ponto 1 next=2 target=(414.11, -4.60, 198.21) forward=(1.00, 0.00, 0.01) blocker=none
+Transito_Vehicle_Container_color03_separate (185.73, -4.60, 201.46) MOVING Rota_06_05_08_Esquerda / ponto 31 next=32 target=(186.10, -4.60, 201.15) forward=(0.76, 0.00, -0.65) blocker=none
+GS-C02 (132.15, -4.60, 145.03) MOVING Rota_04_00_01_Direita / ponto 8 next=8 target=(131.90, -4.60, 145.12) forward=(-0.94, 0.00, 0.33) blocker=none
+Transito_Vehicle_Police Car_separate (380.30, -4.60, 264.60) WAITING_PEDESTRIAN Route8_3 / ponto 1 next=1 target=(344.10, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (268.60, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_03_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_Car_color03_separate (290.26, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Truck_color03_separate
+Transito_Vehicle_Container_color01_separate (257.54, -4.60, 304.60) MOVING Rota_17_10_09_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (120.90, -4.60, 277.31) WAITING_TRAFFIC_LIGHT Rota_03_02_01_Reta / ponto 1 next=1 target=(120.90, -4.60, 241.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (300.90, -4.60, 217.31) WAITING_TRAFFIC_LIGHT Rota_13_12_11_Reta / ponto 1 next=1 target=(300.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Police Car_separate (187.30, -4.60, 245.20) WAITING_TRAFFIC_LIGHT Rota_05_06_09_Direita / ponto 1 next=1 target=(187.30, -4.60, 250.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (322.53, -4.60, 304.60) BLOCKED_INTERSECTION Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (348.28, -4.60, 258.20) WAITING_PEDESTRIAN Rota_13_16_15_Direita / ponto 1 next=1 target=(353.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color03_separate (279.93, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Taxi_separate (200.30, -4.60, 204.60) BLOCKED_INTERSECTION Rota_08_05_04_Esquerda / ponto 1 next=1 target=(194.60, -4.60, 204.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Truck_color02_separate (367.30, -4.60, 183.69) WAITING_TRAFFIC_LIGHT Route8_8 / ponto 1 / Vehicle_Truck_separate next=1 target=(367.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=Vehicle_Truck_separate
+Transito_Vehicle_Truck_color03_separate (307.30, -4.60, 183.69) WAITING_TRAFFIC_LIGHT Rota_11_12_13_Reta / ponto 1 next=1 target=(307.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Police Car_separate (167.90, -4.60, 198.20) BLOCKED_INTERSECTION Rota_01_05_06_Esquerda / ponto 1 next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (240.90, -4.60, 229.84) WAITING_TRAFFIC_LIGHT Rota_09_08_07_Reta / ponto 1 next=1 target=(240.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (154.63, -4.60, 198.20) BLOCKED_INTERSECTION Rota_01_05_06_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(173.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+ORDER Transporting / 521,1505
+GS-T01 (427.30, -4.60, 220.89) MOVING Route8_12 / ponto 46 next=46 target=(427.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C01 (367.31, -4.60, 273.67) MOVING Route8_5 / ponto 25 next=25 target=(367.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Container_color03_separate (286.40, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_11_Direita / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C02 (228.31, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_05_08_12_Reta / ponto 1 next=1 target=(264.10, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (310.84, -4.60, 264.07) MOVING Rota_16_13_12_Esquerda / ponto 11 next=12 target=(310.29, -4.60, 263.90) forward=(-0.96, 0.00, -0.26) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (260.10, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_03_Reta / ponto 1 next=1 target=(224.10, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (268.42, -4.60, 304.60) WAITING_VEHICLE Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Pick up Truck_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Pick up Truck_color03_separate
+Transito_Vehicle_Container_color01_separate (240.90, -4.60, 218.92) MOVING Rota_09_08_05_Direita / ponto 1 next=1 target=(240.90, -4.60, 211.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color02_separate (120.90, -4.60, 217.07) MOVING Rota_02_01_00_Reta / ponto 1 next=1 target=(120.90, -4.60, 181.40) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (300.90, -4.60, 157.01) MOVING Rota_12_11_07_Direita / ponto 1 next=1 target=(300.90, -4.60, 151.90) forward=(0.00, 0.00, -1.00) blocker=none
+ORDER Transporting / 580,9442
+GS-T01 (381.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT Route8_4 / ponto 1 next=1 target=(374.60, -4.60, 264.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C01 (260.30, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_17_10_09_Esquerda / ponto 1 / Transito_Vehicle_Car_color03_separate next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=Transito_Vehicle_Car_color03_separate
+Transito_Vehicle_Container_color03_separate (274.82, -4.60, 144.60) WAITING_TRAFFIC_LIGHT Rota_11_07_08_Direita / ponto 1 next=1 target=(254.60, -4.60, 144.60) forward=(-1.00, 0.00, 0.00) blocker=none
+GS-C02 (288.10, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_08_12_13_Esquerda / ponto 1 next=1 target=(293.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (328.97, -4.60, 198.20) WAITING_TRAFFIC_LIGHT Rota_12_15_14_Direita / ponto 1 next=1 target=(353.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (140.10, -4.60, 304.60) WAITING_TRAFFIC_LIGHT Rota_10_03_02_Esquerda / ponto 1 next=1 target=(134.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN Rota_10_09_13_Esquerda / ponto 1 next=1 target=(240.90, -4.60, 271.90) forward=(0.00, 0.00, -1.00) blocker=none
+Transito_Vehicle_Container_color01_separate (185.70, -4.60, 141.49) MOVING Rota_05_04_07_Esquerda / ponto 31 next=32 target=(186.10, -4.60, 141.15) forward=(0.76, 0.00, -0.65) blocker=none
+Transito_Vehicle_SUV_color02_separate (148.22, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_00_04_07_Reta / ponto 1 next=1 target=(204.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_SUV_color01_separate (187.30, -4.60, 205.07) MOVING Rota_04_05_06_Reta / ponto 1 next=1 target=(187.30, -4.60, 221.40) forward=(0.00, 0.00, 1.00) blocker=none
+ORDER Transporting / 744,4091
+GS-T01 (410.88, -4.60, 198.20) MOVING Route8_12 / ponto 1 next=1 target=(413.60, -4.60, 198.20) forward=(1.00, 0.00, 0.00) blocker=none
+GS-C01 (260.30, -4.60, 304.60) WAITING_PEDESTRIAN Rota_17_10_09_Esquerda / ponto 1 next=1 target=(254.60, -4.60, 304.60) forward=(-1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color03_separate (247.30, -4.60, 243.70) WAITING_TRAFFIC_LIGHT Rota_08_09_10_Reta / ponto 1 next=1 target=(247.30, -4.60, 281.40) forward=(0.00, 0.00, 1.00) blocker=none
+GS-C02 (400.60, -4.60, 258.20) MOVING Route8_14 / ponto 1 next=1 target=(413.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Police Car_separate (307.30, -4.60, 172.15) WAITING_TRAFFIC_LIGHT Rota_11_12_15_Direita / ponto 1 next=1 target=(307.30, -4.60, 190.90) forward=(0.00, 0.00, 1.00) blocker=none
+Transito_Vehicle_Pick up Truck_color03_separate (209.72, -4.60, 258.20) WAITING_TRAFFIC_LIGHT Rota_06_09_08_Direita / ponto 1 next=1 target=(233.60, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Car_color03_separate (322.65, -4.60, 258.20) MOVING Rota_09_13_16_Reta / ponto 1 next=1 target=(324.10, -4.60, 258.20) forward=(1.00, 0.00, 0.00) blocker=none
+Transito_Vehicle_Container_color01_separate (271.34, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_07_11_12_Esquerda / ponto 1 / Transito_Vehicle_Police Car_separate next=1 target=(293.60, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Police Car_separate
+Transito_Vehicle_SUV_color02_separate (228.19, -4.60, 138.20) WAITING_TRAFFIC_LIGHT Rota_04_07_11_Reta / ponto 1 / Transito_Vehicle_Container_color01_separate next=1 target=(264.10, -4.60, 138.20) forward=(1.00, 0.00, 0.00) blocker=Transito_Vehicle_Container_color01_separate
+Transito_Vehicle_SUV_color01_separate (122.04, -4.60, 256.35) MOVING Rota_06_02_01_Esquerda / ponto 42 next=42 target=(121.87, -4.60, 255.96) forward=(-0.40, 0.00, -0.92) blocker=none

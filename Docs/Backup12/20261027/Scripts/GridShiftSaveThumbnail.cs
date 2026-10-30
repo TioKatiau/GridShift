@@ -1,0 +1,5 @@
+using System.IO;
+using UnityEngine;
+public static class GridShiftSaveThumbnail {
+ public static void Capture(string path){var source=Camera.main;if(source==null||SystemInfo.graphicsDeviceType==UnityEngine.Rendering.GraphicsDeviceType.Null)return;var go=new GameObject("SaveThumbnailCamera");var camera=go.AddComponent<Camera>();camera.CopyFrom(source);camera.enabled=false;camera.transform.SetPositionAndRotation(source.transform.position,source.transform.rotation);var render=new RenderTexture(320,180,16);camera.targetTexture=render;var previous=RenderTexture.active;try{camera.Render();RenderTexture.active=render;var texture=new Texture2D(320,180,TextureFormat.RGB24,false);texture.ReadPixels(new Rect(0,0,320,180),0,0);texture.Apply();File.WriteAllBytes(path+".png",texture.EncodeToPNG());Object.Destroy(texture);}catch(System.Exception e){Debug.LogWarning("Miniatura indisponível: "+e.Message);}finally{RenderTexture.active=previous;camera.targetTexture=null;render.Release();Object.Destroy(render);Object.Destroy(go);}}
+}

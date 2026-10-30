@@ -34,16 +34,104 @@ public class TrafficCar : MonoBehaviour
     public enum StopReason { Nenhum, Semaforo, Veiculo, Pedestre, CruzamentoBloqueado, Obstaculo, SemRota }
     [SerializeField] private StopReason motivoParada;
     [SerializeField] private Collider bloqueador;
-    public enum DiagnosticState { MOVING,WAITING_TRAFFIC_LIGHT,WAITING_PEDESTRIAN,WAITING_VEHICLE,BLOCKED_INTERSECTION,WAITING_OBSTACLE,INVALID_ROUTE,STUCK }
+    public enum DiagnosticState { MOVING,WAITING_TRAFFIC_LIGHT,WAITING_PEDESTRIAN,WAITING_VEHICLE,BLOCKED_INTERSECTION,WAITING_OBSTACLE,INVALID_ROUTE,STUCK,MANEUVERING,REVERSING,RECOVERING_ROUTE,PARKED }
     [SerializeField] private DiagnosticState diagnostic;
     [SerializeField] private string diagnosticDetail;
+    TrafficRoute detailRoute; Collider detailBlocker; int detailPoint=-1;StopReason detailReason;string detailGate;
+    [SerializeField] bool logStopChanges;
     [SerializeField] private float stationaryTime;
     private float retryAt;
+    [Header("Recuperação limitada pela trajetória já percorrida")]
+    [SerializeField] bool safeManeuvers=true;
+    [SerializeField, Min(.2f)] float reverseSpeed=.65f;
+    [SerializeField, Min(.5f)] float maximumReverseDistance=2;
+    struct Pose { public Vector3 position; public Quaternion rotation; public int point; }
+    readonly System.Collections.Generic.List<Pose> trail=new System.Collections.Generic.List<Pose>();
+    bool reversing,correctionNeeded,cooperativeReverse;float reverseDistance,maneuverUntil,maneuverCooldown;int maneuverAttempts;
+    public float StationarySeconds=>stationaryTime;
+    public Collider Obstacle=>bloqueador;
+    public string DiagnosticDetail=>diagnosticDetail+" / "+motivoParada+" / "+gateDetail;
+    string gateDetail="";
+    public Vector3 BodySize=>metade*2;
+    public bool HasParkingGoal=>parkingBay!=null;
+    bool NeedsReverseClearance=>reversing||(parkingBay!=null&&!parked&&!leavingParking&&parkingStep<parkingBay.entry.Length&&parkingBay.entry[parkingStep].reverse);
+    public bool IsManeuvering=>reversing||correctionNeeded||parkingBay!=null&&!parked;
+    TrafficParkingBay parkingBay;TrafficParkingBay.Step[] parkingAbort;float parkingWait;int parkingStep;bool parked,leavingParking;float parkingDeadline;
+    public bool RequestParking(TrafficParkingBay bay){
+        if(bay==null||corpo==null||Guidance!=null||reserva!=null||parkingBay!=null||velocidadeAtual>.2f||bay.approach==null||Vector3.Distance(corpo.position,bay.approach.position)>.6f||Quaternion.Angle(corpo.rotation,bay.approach.rotation)>8)return false;
+        if(!bay.Reserve(this,metade*2))return false;parkingBay=bay;parkingAbort=null;parkingWait=0;parkingStep=0;parked=leavingParking=false;parkingDeadline=Time.time+bay.timeout;return true;
+    }
+    public bool RetryParking(){if(parkingBay==null||parked)return false;parkingDeadline=Time.time+parkingBay.timeout;return true;}
+    public bool LeaveParking(){if(parkingBay==null||!parked)return false;parked=false;leavingParking=true;parkingStep=0;parkingDeadline=Time.time+parkingBay.timeout;return true;}
+    bool ParkingStep(float dt){
+        if(parkingBay==null)return false;velocidadeAtual=0;
+        if(parked){diagnostic=DiagnosticState.PARKED;return true;}if(Time.time>parkingDeadline){diagnostic=DiagnosticState.WAITING_OBSTACLE;diagnosticDetail="Manobra de estacionamento suspensa: tempo limite; conferir trajetória e obstáculo";return true;}
+        var steps=parkingAbort??(leavingParking?parkingBay.exit:parkingBay.entry);
+        if(parkingStep>=steps.Length){if(leavingParking){parkingBay.Release(this);parkingBay=null;parkingAbort=null;trail.Clear();}else parked=true;return true;}
+        var target=steps[parkingStep];if(target.point==null)return true;
+        Vector3 delta=Vector3.ProjectOnPlane(target.point.position-corpo.position,Vector3.up);
+        if(delta.magnitude<.02f&&Quaternion.Angle(corpo.rotation,target.point.rotation)<4){parkingStep++;return true;}
+        float distance=Mathf.Min(.65f*dt,delta.magnitude);
+        Vector3 direction=delta.sqrMagnitude>.0001f?delta.normalized:target.point.forward*(target.reverse?-1:1);
+        var wanted=target.point.rotation;
+        var rotation=Quaternion.RotateTowards(corpo.rotation,wanted,distance/raioGiro*Mathf.Rad2Deg);
+        var position=corpo.position+direction*distance;
+        if(Vector3.Angle(direction,rotation*Vector3.forward*(target.reverse?-1:1))>12){diagnostic=DiagnosticState.WAITING_OBSTACLE;diagnosticDetail="Trajetória de baliza incompatível com raio de giro";return true;}
+        if(!RoadFootprint(position,rotation)||!SweepSafe(position,rotation,distance)){
+            diagnostic=DiagnosticState.WAITING_OBSTACLE;parkingWait+=dt;
+            if(parkingWait>5&&!leavingParking){
+                if(parkingStep==0){parkingBay.Release(this);parkingBay=null;trail.Clear();}
+                else {var recover=new System.Collections.Generic.List<TrafficParkingBay.Step>();for(int i=parkingStep-1;i>=0;i--)recover.Add(new TrafficParkingBay.Step{point=parkingBay.entry[i].point});parkingAbort=recover.ToArray();leavingParking=true;parkingStep=0;parkingDeadline=Time.time+parkingBay.timeout;}
+                parkingWait=0;
+            }return true;
+        }
+        parkingWait=0;
+        diagnostic=target.reverse?DiagnosticState.REVERSING:DiagnosticState.MANEUVERING;corpo.MovePosition(position);corpo.MoveRotation(rotation);return true;
+    }
+    bool RoadFootprint(Vector3 position,Quaternion rotation){
+        for(int i=0;i<4;i++){var at=position+rotation*new Vector3((i%2==0?-1:1)*metade.x,0,(i<2?-1:1)*metade.z);
+            if(!Physics.Raycast(at+Vector3.up*.6f,Vector3.down,out var hit,1.2f,obstaculos,QueryTriggerInteraction.Ignore)||Proprio(hit.collider)||!hit.collider.name.StartsWith("Road ")||hit.normal.y<.9f||Mathf.Abs(hit.point.y-position.y)>.12f)return false;
+        }return true;
+    }
+    bool SweepSafe(Vector3 position,Quaternion rotation,float distance){
+        float margin=(metade.magnitude+centroLocal.magnitude)*Quaternion.Angle(corpo.rotation,rotation)*Mathf.Deg2Rad;
+        var volume=new Vector3(metade.x+.05f+margin,Mathf.Max(.05f,metade.y-.3f),metade.z+.05f+margin);
+        if(Ocupado(position+rotation*centroLocal,rotation,volume))return false;
+        int n=Physics.BoxCastNonAlloc(corpo.position+corpo.rotation*centroLocal,volume,(position-corpo.position).normalized,impactos,corpo.rotation,distance+.05f,obstaculos,QueryTriggerInteraction.Ignore);
+        if(n==impactos.Length)return false;for(int i=0;i<n;i++)if(!Proprio(impactos[i].collider)){bloqueador=impactos[i].collider;return false;}return true;
+    }
+    void Remember(){if(trail.Count==0||Vector3.Distance(trail[trail.Count-1].position,corpo.position)>.2f){trail.Add(new Pose{position=corpo.position,rotation=corpo.rotation,point=pontoAtual});if(trail.Count>24)trail.RemoveAt(0);}}
+    bool ReverseStep(float dt){
+        if(!reversing){if(!safeManeuvers||!correctionNeeded||Time.time<maneuverCooldown||maneuverAttempts>=2||trail.Count<2||(reserva!=null&&reserva.PedestrianOccupied)||(autorizado&&reserva==null))return false;
+            reversing=true;reverseDistance=0;maneuverUntil=Time.time+4;maneuverAttempts++;}
+        if(Time.time>maneuverUntil||reverseDistance>=maximumReverseDistance||trail.Count==0){EndReverse();return true;}
+        var target=trail[trail.Count-1];float step=Mathf.Min(reverseSpeed*dt,Vector3.Distance(corpo.position,target.position));
+        if(step<.005f){pontoAtual=target.point;trail.RemoveAt(trail.Count-1);return true;}
+        var next=Vector3.MoveTowards(corpo.position,target.position,step);var rotation=Quaternion.RotateTowards(corpo.rotation,target.rotation,45*dt);
+        var volume=new Vector3(metade.x+.08f,Mathf.Max(.05f,metade.y-.3f),metade.z+.08f);
+        float margin=(metade.magnitude+centroLocal.magnitude)*Quaternion.Angle(corpo.rotation,rotation)*Mathf.Deg2Rad;
+        volume.x+=margin;volume.z+=margin;
+        bool blocked=Ocupado(next+rotation*centroLocal,rotation,volume);
+        int count=Physics.BoxCastNonAlloc(corpo.position+corpo.rotation*centroLocal,volume,(next-corpo.position).normalized,impactos,corpo.rotation,step+.1f,obstaculos,QueryTriggerInteraction.Ignore);
+        if(count==impactos.Length)blocked=true;
+        for(int i=0;i<count;i++)if(!Proprio(impactos[i].collider)){blocked=true;bloqueador=impactos[i].collider;}
+        if(!RoadFootprint(next,rotation))blocked=true;
+        if(blocked){EndReverse();motivoParada=MotivoObstaculo();return true;}
+        corpo.MoveRotation(rotation);corpo.MovePosition(next);reverseDistance+=step;velocidadeAtual=0;return true;
+    }
+    void EndReverse(){reversing=false;correctionNeeded=false;maneuverCooldown=Time.time+12;velocidadeAtual=0;progressPosition=corpo.position;}
+    Vector3 progressPosition;
+
     public DiagnosticState Diagnostic => diagnostic;
     private void LateUpdate(){
         stationaryTime=velocidadeAtual<.05f?stationaryTime+Time.deltaTime:0;
-        diagnostic=motivoParada==StopReason.Semaforo?DiagnosticState.WAITING_TRAFFIC_LIGHT:motivoParada==StopReason.Pedestre?DiagnosticState.WAITING_PEDESTRIAN:motivoParada==StopReason.Veiculo?DiagnosticState.WAITING_VEHICLE:motivoParada==StopReason.CruzamentoBloqueado?DiagnosticState.BLOCKED_INTERSECTION:motivoParada==StopReason.Obstaculo?DiagnosticState.WAITING_OBSTACLE:motivoParada==StopReason.SemRota?DiagnosticState.INVALID_ROUTE:stationaryTime>5?DiagnosticState.STUCK:DiagnosticState.MOVING;
-        diagnosticDetail=(rota!=null?rota.name:"Sem rota")+" / ponto "+pontoAtual+(bloqueador!=null?" / "+bloqueador.name:"");
+        if(parkingBay!=null)return;
+        diagnostic=reversing?DiagnosticState.REVERSING:correctionNeeded?DiagnosticState.MANEUVERING:motivoParada==StopReason.Semaforo?DiagnosticState.WAITING_TRAFFIC_LIGHT:motivoParada==StopReason.Pedestre?DiagnosticState.WAITING_PEDESTRIAN:motivoParada==StopReason.Veiculo?DiagnosticState.WAITING_VEHICLE:motivoParada==StopReason.CruzamentoBloqueado?DiagnosticState.BLOCKED_INTERSECTION:motivoParada==StopReason.Obstaculo?DiagnosticState.WAITING_OBSTACLE:motivoParada==StopReason.SemRota?DiagnosticState.INVALID_ROUTE:stationaryTime>5?DiagnosticState.STUCK:DiagnosticState.MOVING;
+        if(detailRoute!=rota||detailPoint!=pontoAtual||detailBlocker!=bloqueador||detailReason!=motivoParada||detailGate!=gateDetail){
+            detailReason=motivoParada;detailGate=gateDetail;
+            detailRoute=rota;detailPoint=pontoAtual;detailBlocker=bloqueador;
+            diagnosticDetail=(rota!=null?rota.name:"Sem rota")+" / ponto "+pontoAtual+" / "+motivoParada+" / "+gateDetail+(bloqueador!=null?" / "+bloqueador.name:"");if(logStopChanges&&velocidadeAtual<.05f)Debug.Log(name+": "+diagnosticDetail,this);
+        }
     }
     public StopReason MotivoParada => motivoParada;
     private Vector3 saidaReservada, direcaoSaida;
@@ -58,6 +146,12 @@ public class TrafficCar : MonoBehaviour
     private Vector3 centroLocal, metade;
     public float VelocidadeAtual => velocidadeAtual;
     public TrafficRoute RotaAtual => rota;
+    public ITrafficGuidance Guidance {get;private set;}
+    public int NextPoint=>pontoAtual;bool restoringLogical;
+    public bool RestoreLogicalRoute(TrafficRoute route,int next,Vector3 at,Quaternion rotation){if(route==null||!route.Valida||next<1||next>=route.pontos.Length||DistanciaSegmento(at,route.pontos[next-1].position,route.pontos[next].position)>2)return false;LiberarReserva();trail.Clear();restoringLogical=true;rota=route;pontoAtual=next;velocidadeAtual=0;autorizado=amareloDecidido=passarAmarelo=escolheu=false;proxima=null;transform.SetPositionAndRotation(at,rotation);if(corpo!=null){corpo.position=at;corpo.rotation=rotation;}enabled=true;Start();restoringLogical=false;return enabled;}
+    public float MaximumSpeed=>velocidade;
+    public void SetGuidance(ITrafficGuidance guidance){Guidance=guidance;escolheu=false;proxima=null;}
+    public void RefreshGuidance(){escolheu=false;proxima=null;}
     public void ConfigureProfile(BoxCollider box, bool heavy, float maximum, float acceleration, float braking)
     {
         carroceria = box; velocidade = Mathf.Clamp(maximum, 3f, 8f);
@@ -69,15 +163,16 @@ public class TrafficCar : MonoBehaviour
     }
     public void ResetRoute(TrafficRoute route)
     {
-        LiberarReserva(); rota = route; pontoAtual = 1; velocidadeAtual = 0f;
+        LiberarReserva();trail.Clear();reversing=correctionNeeded=false;maneuverAttempts=0;cooperativeReverse=false; rota = route; pontoAtual = 1; velocidadeAtual = 0f;
         autorizado = amareloDecidido = passarAmarelo = escolheu = false; proxima = null;
         aguardava = true; contadorRetomada = 0f; enabled = true;
         var rigidbody = GetComponent<Rigidbody>();
         if (rigidbody != null) { rigidbody.position = transform.position; rigidbody.rotation = transform.rotation; }
-        Start();
+        if(gameObject.activeInHierarchy)Start();
     }
+    public void SynchronizeSpawnPose(Vector3 position,Quaternion rotation){transform.SetPositionAndRotation(position,rotation);var body=GetComponent<Rigidbody>();if(body!=null){body.position=position;body.rotation=rotation;}Physics.SyncTransforms();}
     private void LiberarReserva() { if (reserva != null) reserva.Release(this); reserva = null; reservaAtravessada = false; }
-    private void OnDisable() { Active.Remove(this); LiberarReserva(); }
+    private void OnDisable() { Active.Remove(this); LiberarReserva();if(parkingBay!=null){parkingBay.Release(this);parkingBay=null;} }
 
     private void Start()
     {
@@ -98,7 +193,7 @@ public class TrafficCar : MonoBehaviour
         corpo.interpolation = RigidbodyInterpolation.Interpolate;
         corpo.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         // Preserva a posição de spawn; nunca teletransporta para outra rua.
-        if (DistanciaSegmento(corpo.position, rota.pontos[0].position, rota.pontos[1].position) > toleranciaFaixa)
+        if (!restoringLogical && DistanciaSegmento(transform.position, rota.pontos[0].position, rota.pontos[1].position) > toleranciaFaixa)
         { Falhar("Spawn fora do primeiro segmento da rota. Reposicione o veículo e alinhe seu +Z com a faixa."); return; }
         if (rota.GetSemaforo() != null && (!rota.GetParada(out _, out _) || !rota.TemSaidaCruzamento))
         { Falhar("Rota sem linha de parada ou saída de cruzamento configurada."); }
@@ -108,7 +203,7 @@ public class TrafficCar : MonoBehaviour
     private void EscolherSaida()
     {
         if (escolheu && (proxima != null || Time.time < retryAt)) return;
-        proxima = rota.EncontrarProximaRota(); escolheu = true;
+        proxima = Guidance!=null?Guidance.NextRoute(rota):rota.EncontrarProximaRota(); escolheu = true;
         retryAt=Time.time+2;
     }
     private static float DistanciaSegmento(Vector3 p, Vector3 a, Vector3 b)
@@ -122,11 +217,11 @@ public class TrafficCar : MonoBehaviour
     private bool Proprio(Collider c) => c.attachedRigidbody == corpo || c.transform.IsChildOf(transform);
     private StopReason MotivoObstaculo() => bloqueador != null && (bloqueador.GetComponentInParent<PedestrianAgent>() != null || bloqueador.GetComponentInParent<PlayerMovement>() != null) ? StopReason.Pedestre :
         bloqueador != null && bloqueador.GetComponentInParent<TrafficCar>() != null ? StopReason.Veiculo : StopReason.Obstaculo;
-    private bool Ocupado(Vector3 centro, Quaternion rotacao, Vector3 tamanho)
+    private bool Ocupado(Vector3 centro, Quaternion rotacao, Vector3 tamanho,bool flowingExit=false)
     {
         int n = Physics.OverlapBoxNonAlloc(centro, tamanho, sobrepostos, rotacao, obstaculos, QueryTriggerInteraction.Ignore);
         if (n == sobrepostos.Length) return true; // Buffer cheio: segurança conservadora.
-        for (int i = 0; i < n; i++) if (!Proprio(sobrepostos[i])) { bloqueador = sobrepostos[i]; return true; }
+        for (int i = 0; i < n; i++) if (!Proprio(sobrepostos[i])) {var leader=sobrepostos[i].GetComponentInParent<TrafficCar>();if(flowingExit&&rota.Cruzamento!=null&&rota.Cruzamento.MovingLeader(leader,this))continue;bloqueador = sobrepostos[i]; return true; }
         return false;
     }
     private float EspacoFrente(Vector3 direcao, Quaternion rotacao, float alcance)
@@ -156,8 +251,16 @@ public class TrafficCar : MonoBehaviour
                 if(TrafficRoute.Continuation(rota,corpo.position,corpo.rotation*Vector3.forward,out var recovered,out var index)){rota=recovered;pontoAtual=index;escolheu=autorizado=amareloDecidido=passarAmarelo=false;proxima=null;}}
             return;
         }
+        if(Guidance is CompanyVehicle companyVehicle&&!companyVehicle.CanDrive){velocidadeAtual=0;diagnostic=DiagnosticState.PARKED;diagnosticDetail="Frota: combustível, manutenção ou motorista indisponível";return;}
         float dt = Time.fixedDeltaTime;
-        motivoParada = StopReason.Nenhum; bloqueador = null;
+        if(Vector3.Distance(progressPosition,corpo.position)>8){maneuverAttempts=0;cooperativeReverse=false;progressPosition=corpo.position;}
+        if(ParkingStep(dt))return;
+        if(ReverseStep(dt))return;
+        if(correctionNeeded&&maneuverAttempts>=2&&Time.time>=maneuverCooldown&&TrafficRoute.Continuation(rota,corpo.position,corpo.rotation*Vector3.forward,out var alternative,out var alternativePoint)){
+            rota=alternative;pontoAtual=alternativePoint;proxima=null;escolheu=false;correctionNeeded=false;trail.Clear();diagnostic=DiagnosticState.RECOVERING_ROUTE;
+        }
+        Remember();
+        motivoParada = StopReason.Nenhum; bloqueador = null;gateDetail="";
         Vector3 pos = corpo.position;
         // A traseira pode sair somente na rota seguinte. O compromisso da reserva
         // não pode ser apagado junto ao estado do semáforo ao trocar de rota.
@@ -166,17 +269,21 @@ public class TrafficCar : MonoBehaviour
             Vector3 centro = pos + corpo.rotation * centroLocal;
             float projecao = Mathf.Abs(Vector3.Dot(direcaoSaida, corpo.rotation * Vector3.right)) * metade.x +
                 Mathf.Abs(Vector3.Dot(direcaoSaida, corpo.rotation * Vector3.forward)) * metade.z;
-            if (Vector3.Dot(centro - saidaReservada, direcaoSaida) - projecao > distanciaSeguranca) LiberarReserva();
+            // The clearance point already includes the crossing's physical safety margin.
+            // Adding the following-distance margin again traps long vehicles on short blocks.
+            if (Vector3.Dot(centro - saidaReservada, direcaoSaida) - projecao > .1f) LiberarReserva();
         }
         // Só avança pontos que foram efetivamente alcançados; não corta a esquina com lookahead longo.
-        if (Vector3.ProjectOnPlane(rota.pontos[pontoAtual].position - pos, Vector3.up).magnitude <= distanciaDoPonto)
+        Vector3 segmentDirection=Vector3.ProjectOnPlane(rota.pontos[pontoAtual].position-rota.pontos[pontoAtual-1].position,Vector3.up).normalized;
+        bool passed=Vector3.Dot(pos-rota.pontos[pontoAtual].position,segmentDirection)>=0&&DistanciaSegmento(pos,rota.pontos[pontoAtual-1].position,rota.pontos[pontoAtual].position)<=toleranciaFaixa;
+        if (passed||Vector3.ProjectOnPlane(rota.pontos[pontoAtual].position - pos, Vector3.up).magnitude <= distanciaDoPonto)
         {
             if (pontoAtual < rota.pontos.Length - 1) pontoAtual++;
             else
             {
                 EscolherSaida();
                 if (proxima == null) { velocidadeAtual = 0f; motivoParada = StopReason.SemRota; return; }
-                rota = proxima; pontoAtual = 1; escolheu = false;
+                rota = proxima; pontoAtual = 1; escolheu = false;trail.Clear();
                 autorizado = amareloDecidido = passarAmarelo = false;
                 if (rota.GetSemaforo() != null && (!rota.GetParada(out _, out _) || !rota.TemSaidaCruzamento))
                 { Falhar("Configure retenção e saída na rota " + rota.name); return; }
@@ -222,9 +329,10 @@ public class TrafficCar : MonoBehaviour
                 Quaternion orientacaoSaida = Quaternion.LookRotation((rota.pontos[rota.pontos.Length - 1].position - rota.pontos[rota.pontos.Length - 2].position).normalized);
                 // A base das rodas pode tocar o asfalto; o piso não bloqueia a saída.
                 Vector3 sensorSaida = new Vector3(metade.x + 0.05f, Mathf.Max(0.05f, metade.y - 0.3f), metade.z + distanciaSeguranca);
-                bool saidaLivre = rota.TemSaidaCruzamento && !Ocupado(rota.Saida + orientacaoSaida * new Vector3(0f, centroLocal.y, metade.z + distanciaSeguranca), orientacaoSaida, sensorSaida);
+                bool saidaLivre = rota.TemSaidaCruzamento && !Ocupado(rota.Saida + orientacaoSaida * new Vector3(0f, centroLocal.y, metade.z + distanciaSeguranca), orientacaoSaida, sensorSaida,true);
                 bool sinalPermite = sinal == null || sinal.PodePassar() || (amarelo && passarAmarelo);
                 if (!sinalPermite && reserva != null && !reservaAtravessada) LiberarReserva();
+                gateDetail="sinal="+sinalPermite+" saída="+saidaLivre+" bloqueioSaída="+(bloqueador!=null?bloqueador.name:"nenhum")+" faixa="+(rota.Cruzamento!=null&&rota.Cruzamento.PedestrianOccupied)+" reservas="+(rota.Cruzamento!=null?rota.Cruzamento.VehicleCount:0);
                 bool pode = sinalPermite && saidaLivre;
                 if (pode && rota.Cruzamento != null)
                 {
@@ -232,7 +340,7 @@ public class TrafficCar : MonoBehaviour
                     if (pode && ateLinha < Mathf.Max(distanciaParada + 2f, velocidadeAtual * velocidadeAtual / (2f * frenagem) + distanciaParada))
                     {
                         pode = (reserva == null || reserva == rota.Cruzamento) && rota.Cruzamento.TryEnter(this);
-                        if (pode) { reserva = rota.Cruzamento; saidaReservada = rota.Saida; direcaoSaida = orientacaoSaida * Vector3.forward; }
+                        if (pode) { reserva = rota.Cruzamento; saidaReservada = rota.Cruzamento.ClearancePoint(orientacaoSaida * Vector3.forward); direcaoSaida = orientacaoSaida * Vector3.forward; }
                     }
                 }
                 if (!pode)
@@ -255,6 +363,8 @@ public class TrafficCar : MonoBehaviour
         if(espaco>=sensorReach-.001f){espaco=alcance;veiculoFrente=null;}
         if (veiculoFrente != null)
         {
+            if(veiculoFrente.NeedsReverseClearance&&!veiculoFrente.cooperativeReverse&&velocidadeAtual<.05f&&stationaryTime>1&&espaco<distanciaSeguranca+1&&maneuverAttempts<1){correctionNeeded=true;cooperativeReverse=true;}
+
             float folga = espaco - distanciaSeguranca - velocidadeAtual * tempoReacao;
             desejada = Mathf.Min(desejada, Mathf.Max(0f, veiculoFrente.VelocidadeAtual + folga / tempoReacao));
             // Zona morta impede que uma fila parada continue rastejando por erro numérico.
@@ -274,6 +384,7 @@ public class TrafficCar : MonoBehaviour
             if (proxima == null) desejada = Mathf.Min(desejada, LimiteParada(Mathf.Max(0f, restante - distanciaDoPonto * 0.5f)));
             else desejada = Mathf.Min(desejada, Mathf.Sqrt(proxima.VelocidadeMaxima * proxima.VelocidadeMaxima + 2f * frenagem * restante));
         }
+        if(Guidance!=null){float stop=Guidance.DistanceToStop(rota,pontoAtual,pos);if(!float.IsPositiveInfinity(stop)){float remaining=Mathf.Max(0,stop);desejada=Mathf.Min(desejada,LimiteParada(Mathf.Max(0,remaining-.03f)));limitePasso=Mathf.Min(limitePasso,remaining);}}
         if (desejada <= .01f) aguardava = true;
         else if (aguardava) { contadorRetomada = atrasoRetomada; aguardava = false; }
         if (contadorRetomada > 0f) { contadorRetomada -= dt; desejada = 0f; }
@@ -284,7 +395,8 @@ public class TrafficCar : MonoBehaviour
         Quaternion rotacao = Quaternion.RotateTowards(corpo.rotation, Quaternion.LookRotation(direcao), graus);
         Vector3 destino = pos + rotacao * Vector3.forward * passo;
         if (DistanciaSegmento(destino, rota.pontos[pontoAtual - 1].position, alvo) > toleranciaFaixa)
-        { Falhar("Curva incompatível com raio de giro/faixa em " + rota.name + ", ponto " + pontoAtual + ". Ajuste os waypoints."); return; }
+        { velocidadeAtual=0;motivoParada=StopReason.Obstaculo;correctionNeeded=true;
+          diagnosticDetail="Curva sem espaço: "+rota.name+" / "+pontoAtual+"; tentativa "+maneuverAttempts;return; }
         // Varredura da translação e volume conservador cobrindo a rotação inteira neste passo.
         float margemRotacao = (metade.magnitude + centroLocal.magnitude) * Quaternion.Angle(corpo.rotation, rotacao) * Mathf.Deg2Rad;
         Vector3 volume = metade + Vector3.one * margemRotacao;
@@ -311,3 +423,7 @@ public class TrafficCar : MonoBehaviour
         if (bloqueador != null) Gizmos.DrawWireCube(bloqueador.bounds.center, bloqueador.bounds.size);
     }
 }
+
+
+
+

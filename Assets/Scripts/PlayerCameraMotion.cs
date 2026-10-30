@@ -2,7 +2,7 @@ using UnityEngine;
 public class PlayerCameraMotion:MonoBehaviour {
  public PlayerMovement player;
  public Camera view;
- public float amplitude=.035f,frequency=11,runFov=3;
+ public float amplitude=.042f,frequency=12,runFov=4;
  Vector3 home;float normalFov,phase;bool initialized;
  void Start(){if(player==null)player=GetComponent<PlayerMovement>();if(view==null&&player!=null)view=player.CameraTransform.GetComponent<Camera>();if(view!=null){home=view.transform.localPosition;normalFov=view.fieldOfView;initialized=true;}}
  void LateUpdate(){

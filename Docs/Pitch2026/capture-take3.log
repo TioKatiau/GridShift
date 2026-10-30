@@ -1,0 +1,34 @@
+REAL CITY traffic=14 car=Transito_Vehicle_Car_color03_separate at=(127.30, -4.60, 228.16) truck=Vehicle_Truck_separate at=(367.30, -4.60, 183.69) pedestrian=(172.60, -4.37, 193.40)
+REUSE previous real capture 01_cidade_abertura
+REUSE previous real capture 02_transito
+REUSE previous real capture 03_caminhao
+REUSE previous real capture 04_pedestres
+REAL CONTRACT OF-0-1-P-0c00ee1948d5-P7-1ed6b94b3ceb Materiais de construção
+REAL ASSIGNMENT GS-T01 state=ToPickup order=907eec5d5eeb4a5e8d1d4b6a8c77c1fe
+START 05_tablet_abre frames=132 scene=SampleScene
+DONE 05_tablet_abre
+START 06_contratos frames=132 scene=SampleScene
+DONE 06_contratos
+START 07_frota frames=132 scene=SampleScene
+DONE 07_frota
+START 08_mapa_rotas frames=132 scene=SampleScene
+DONE 08_mapa_rotas
+REUSE previous real capture 09_caminhao_operacao
+REUSE previous real capture 10_office
+START 11_financeiro frames=162 scene=Office
+DONE 11_financeiro
+START 12_funcionarios frames=132 scene=Office
+DONE 12_funcionarios
+REAL HIRE True 
+START 13_upgrades frames=132 scene=Office
+DONE 13_upgrades
+REAL UPGRADE True 
+START 14_missoes frames=162 scene=Office
+DONE 14_missoes
+REUSE previous real capture 15_office_detalhe
+START 16_primeira_pessoa frames=162 scene=SampleScene
+DONE 16_primeira_pessoa
+REUSE previous real capture 17_cidade_noite
+REUSE previous real capture 18_transito_noite
+REUSE previous real capture 19_cidade_final
+RESULT SUCCESS

@@ -1,0 +1,53 @@
+PASS menu principal instalado
+PASS botão principal usa sprite real
+PASS eventos runtime preservados
+PASS controles acessíveis no menu principal
+PASS créditos incluem equipe SENAI
+PASS configurações animam com tempo pausado
+PASS Limite de FPS¹ preenchimento mínimo real
+PASS Limite de FPS¹ preenchimento máximo real
+PASS Limite de FPS¹ puxador personalizado
+PASS Volume geral preenchimento mínimo real
+PASS Volume geral preenchimento máximo real
+PASS Volume geral puxador personalizado
+PASS Sensibilidade preenchimento mínimo real
+PASS Sensibilidade preenchimento máximo real
+PASS Sensibilidade puxador personalizado
+PASS Efeitos de câmera preenchimento mínimo real
+PASS Efeitos de câmera preenchimento máximo real
+PASS Efeitos de câmera puxador personalizado
+PASS Head bob preenchimento mínimo real
+PASS Head bob preenchimento máximo real
+PASS Head bob puxador personalizado
+PASS Distância de visão (m) preenchimento mínimo real
+PASS Distância de visão (m) preenchimento máximo real
+PASS Distância de visão (m) puxador personalizado
+PASS Densidade de pedestres preenchimento mínimo real
+PASS Densidade de pedestres preenchimento máximo real
+PASS Densidade de pedestres puxador personalizado
+PASS Densidade de trânsito comum preenchimento mínimo real
+PASS Densidade de trânsito comum preenchimento máximo real
+PASS Densidade de trânsito comum puxador personalizado
+PASS Intensidade dos efeitos preenchimento mínimo real
+PASS Intensidade dos efeitos preenchimento máximo real
+PASS Intensidade dos efeitos puxador personalizado
+PASS Movimento do HUD preenchimento mínimo real
+PASS Movimento do HUD preenchimento máximo real
+PASS Movimento do HUD puxador personalizado
+PASS toggles funcionais
+PASS fechar configurações restaura tempo
+PASS conflito real de remapeamento recusado
+PASS remapeamento real aceita tecla livre
+PASS restaurar padrão real
+PASS novo jogo carrega cidade real
+PASS jogador e entregas ativos após loading
+PASS mapa bloqueia controle do jogador
+PASS fechar mapa restaura controles
+PASS HUD de entregas preserva canvas 3D
+PASS aceitar contrato real: 
+PASS salvar entrega em arquivo isolado
+PASS reler salvamento real
+PASS transição real Office conclui
+PASS Office preserva simulação e pedidos
+PASS retorno real à cidade conclui
+RESULT SUCCESS

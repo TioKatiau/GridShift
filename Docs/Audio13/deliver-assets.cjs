@@ -1,0 +1,10 @@
+// Copy only validated audio assets, their stable Unity metadata, and the
+// explicitly listed prefab edits back from the isolated validation checkout.
+const fs=require('fs'),path=require('path');const from=process.argv[2],root=path.resolve(__dirname,'../..');if(!from)throw Error('Supply validated project path');
+function safe(relative){const target=path.resolve(root,relative);if(!target.startsWith(root+path.sep))throw Error('Outside project');return target;}
+function copy(relative,backup=false){const input=path.join(from,relative),output=safe(relative);if(!fs.existsSync(input))throw Error('Missing '+input);if(backup&&fs.existsSync(output)){const old=path.join(__dirname,'BackupPrefabs',relative);fs.mkdirSync(path.dirname(old),{recursive:true});if(!fs.existsSync(old))fs.copyFileSync(output,old);}fs.mkdirSync(path.dirname(output),{recursive:true});fs.copyFileSync(input,output);}
+function tree(relative){for(const e of fs.readdirSync(path.join(from,relative),{withFileTypes:true})){let r=path.join(relative,e.name);if(e.isDirectory())tree(r);else copy(r);}}
+tree('Assets/Audio');copy('Assets/Audio.meta');copy('Assets/Resources/GridShiftAudioLibrary.asset');copy('Assets/Resources/GridShiftAudioLibrary.asset.meta');
+for(const name of ['GridShiftAudio','GridShiftAudioLibrary','GridShiftAudioButton','GridShiftAudioZone','GridShiftFootstepSurface','GridShiftVehicleAudio','Editor/GridShiftAudioSetup','Editor/GridShiftAudioChecks']){let r='Assets/Scripts/'+name+'.cs.meta',p=safe(r);if(fs.existsSync(p)&&fs.readFileSync(p,'utf8')!==fs.readFileSync(path.join(from,r),'utf8'))throw Error('Metadata changed in source: '+r);copy(r);}
+const list=fs.readFileSync(path.join(from,'Docs/Audio13/prefabs.txt'),'utf8');for(const row of list.trim().split(/\r?\n/)){if(!row)continue;copy(row.split(' | ')[0],true);}fs.writeFileSync(path.join(__dirname,'prefabs.txt'),list);
+copy('Docs/Audio13/runtime-validation.txt');console.log('Validated mixer, library, import settings, prefab audio components and reports delivered.');

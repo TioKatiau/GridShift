@@ -1,0 +1,15 @@
+PASS mapa aberto com jogador bloqueado
+PASS mapa aproveita mais de 72% da altura do painel
+PASS arraste move câmera na escala do mapa
+PASS arraste limitado à cidade
+PASS enquadramento completo restaura zoom
+PASS fechar mapa restaura controles e minimapa
+PASS novos estabelecimentos disponíveis para entregas
+PASS criar entrega para expansão: 
+MEASUREMENT cidade expandida, editor, média=59,5 FPS; não comparável a build final
+PASS população criada por gerenciador existente
+PASS pedestres progridem com animação
+PASS veículos permanecem habilitados
+PASS vários veículos progridem na simulação
+PASS entrega ao bairro novo concluída e paga uma vez
+RESULT SUCCESS

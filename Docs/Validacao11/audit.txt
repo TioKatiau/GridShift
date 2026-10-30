@@ -1,0 +1,14 @@
+PASS manifest sem dependências UWB/CEF
+PASS Assets/Scenes/MainMenu.unity: sem scripts ausentes ou componentes antigos
+PASS Assets/Scenes/MainMenu.unity: IDs de rotas únicos
+PASS Assets/Scenes/MainMenu.unity: sem rótulos DEMO
+PASS Assets/Scenes/SampleScene.unity: sem scripts ausentes ou componentes antigos
+PASS Assets/Scenes/SampleScene.unity: IDs de rotas únicos
+PASS Assets/Scenes/SampleScene.unity: sem rótulos DEMO
+PASS Assets/Scenes/Office.unity: sem scripts ausentes ou componentes antigos
+PASS Assets/Scenes/Office.unity: IDs de rotas únicos
+PASS Assets/Scenes/Office.unity: sem rótulos DEMO
+PASS cenas e tablet sem dependências de navegador
+PASS JSON v1 real, sem campos novos, continua legível
+PASS conversão do formato antigo para slot v3 válido
+RESULT SUCCESS

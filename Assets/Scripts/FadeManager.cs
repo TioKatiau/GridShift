@@ -13,14 +13,14 @@ public class FadeManager : MonoBehaviour
     private bool fading;
     private Camera transitionCamera;
     private TMPro.TMP_Text loadingText;
-    private bool loading;
+    private bool loading; private GameObject loadingVisual;private GridShiftUILoading loadingView;
     public bool HasTransitionCamera => transitionCamera != null && transitionCamera.isActiveAndEnabled;
     public void BeginLoading(){
         if(transitionCamera==null){var go=new GameObject("TransitionCamera");go.transform.SetParent(transform,false);transitionCamera=go.AddComponent<Camera>();transitionCamera.clearFlags=CameraClearFlags.SolidColor;transitionCamera.backgroundColor=new Color(.025f,.03f,.045f);transitionCamera.cullingMask=0;transitionCamera.depth=100;transitionCamera.targetDisplay=0;}
-        transitionCamera.enabled=SystemInfo.graphicsDeviceType!=UnityEngine.Rendering.GraphicsDeviceType.Null;loading=true;loadingText.gameObject.SetActive(true);SetLoadingProgress(-1);
+        transitionCamera.enabled=SystemInfo.graphicsDeviceType!=UnityEngine.Rendering.GraphicsDeviceType.Null;loading=true;loadingVisual.SetActive(true);loadingText.gameObject.SetActive(true);SetLoadingProgress(-1);
     }
-    public void SetLoadingProgress(float progress){if(loadingText!=null)loadingText.text="<color=#F0CE38><size=48>GRIDSHIFT</size></color>\n\nPreparando seu destino"+(progress<0?"…":" · "+Mathf.RoundToInt(Mathf.Clamp01(progress)*100)+"%");}
-    public void EndLoading(){loading=false;if(transitionCamera!=null)transitionCamera.enabled=false;if(loadingText!=null)loadingText.gameObject.SetActive(false);}
+    public void SetLoadingProgress(float progress){if(loadingView!=null)loadingView.Progress(progress);if(loadingText!=null)loadingText.text="<color=#F0CE38><size=48>GRIDSHIFT</size></color>\n\nPreparando seu destino"+(progress<0?"…":" · "+Mathf.RoundToInt(Mathf.Clamp01(progress)*100)+"%");}
+    public void EndLoading(){loading=false;if(loadingVisual!=null)loadingVisual.SetActive(false);if(transitionCamera!=null)transitionCamera.enabled=false;if(loadingText!=null)loadingText.gameObject.SetActive(false);}
     private void Update(){if(loading&&loadingText!=null)loadingText.alpha=.8f+.2f*Mathf.Sin(Time.unscaledTime*3);}
 
     private void Awake()
@@ -37,7 +37,7 @@ public class FadeManager : MonoBehaviour
 
         CriarFade();
         var label=new GameObject("LoadingLabel",typeof(RectTransform));label.transform.SetParent(transform,false);loadingText=label.AddComponent<TMPro.TextMeshProUGUI>();loadingText.alignment=TMPro.TextAlignmentOptions.Center;loadingText.fontSize=24;loadingText.raycastTarget=false;
-        var lr=loadingText.rectTransform;lr.anchorMin=Vector2.zero;lr.anchorMax=Vector2.one;lr.offsetMin=lr.offsetMax=Vector2.zero;label.SetActive(false);
+        var lr=loadingText.rectTransform;lr.anchorMin=Vector2.zero;lr.anchorMax=Vector2.one;lr.offsetMin=lr.offsetMax=Vector2.zero;label.SetActive(false);loadingVisual=new GameObject("LoadingArt",typeof(RectTransform));loadingVisual.transform.SetParent(transform,false);loadingView=loadingVisual.AddComponent<GridShiftUILoading>();loadingView.Initialize();loadingVisual.SetActive(false);
 
         // Quando uma nova cena terminar de carregar,
         // faz o fade IN automaticamente.
@@ -181,3 +181,4 @@ public class FadeManager : MonoBehaviour
         );
     }
 }
+

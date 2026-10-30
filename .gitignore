@@ -75,3 +75,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # End of https://www.toptal.com/developers/gitignore/api/unity
+# Local duplicate delivery archive and Windows metadata
+/Docs/GridShift_Pitch_Entrega.zip
+desktop.ini
+

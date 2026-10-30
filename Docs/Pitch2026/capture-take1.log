@@ -1,0 +1,28 @@
+REAL CITY traffic=16 car=Transito_Vehicle_Ambulance_separate at=(275.35, -4.60, 264.60) truck=Vehicle_Truck_separate at=(367.30, -4.60, 183.69) pedestrian=(292.60, -4.37, 293.40)
+START 01_cidade_abertura frames=192 scene=SampleScene
+DONE 01_cidade_abertura
+START 02_transito frames=162 scene=SampleScene
+DONE 02_transito
+START 03_caminhao frames=162 scene=SampleScene
+DONE 03_caminhao
+START 04_pedestres frames=162 scene=SampleScene
+DONE 04_pedestres
+REAL CONTRACT OF-0-1-P-0c00ee1948d5-P7-1ed6b94b3ceb Materiais de construção
+REAL ASSIGNMENT GS-T01 state=ToPickup order=54259fc88bc740fd98ed668be16531f4
+START 05_tablet_abre frames=132 scene=SampleScene
+DONE 05_tablet_abre
+START 06_contratos frames=132 scene=SampleScene
+DONE 06_contratos
+START 07_frota frames=132 scene=SampleScene
+DONE 07_frota
+START 08_mapa_rotas frames=132 scene=SampleScene
+DONE 08_mapa_rotas
+START 09_caminhao_operacao frames=132 scene=SampleScene
+DONE 09_caminhao_operacao
+START 10_office frames=102 scene=Office
+DONE 10_office
+ERROR Exception: Office terminal unavailable
+GridShiftPitchRunner+<Start>d__27.MoveNext () (at Assets/Scripts/Editor/GridShiftPitchCapture.cs:86)
+UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) (at <cacc1b48a79f4e06850e7b9af174af54>:0)
+
+RESULT FAILURE

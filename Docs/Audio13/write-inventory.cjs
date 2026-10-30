@@ -1,0 +1,5 @@
+const fs=require('fs'),path=require('path');const m=require('./audio-manifest.json');let text='# Biblioteca de áudio GridShift 13.0\n\n';
+text+='Todos os '+m.length+' WAVs são síntese procedural original: sem amostras externas, música comercial ou gravações de terceiros. Licença dos WAVs: CC0-1.0; ver Assets/Audio/LICENSE.txt. Motores, ruído urbano e murmúrios são sintetizados, não gravações de campo.\n\n';
+for(const category of [...new Set(m.map(e=>e.path.split('/')[2]))]){text+='## '+category+'\n\n';for(const e of m.filter(e=>e.path.split('/')[2]===category))text+='- `'+e.path+'` — '+e.seconds.toFixed(3)+' s; '+(e.channels===2?'estéreo':'mono')+(e.loop?'; loop':'')+'.\n';text+='\n';}
+text+='## Reproduzir a geração e a auditoria\n\nNa raiz do projeto: `node Docs/Audio13/generate-audio.cjs`, seguido de `node Docs/Audio13/audit-audio.cjs`. O manifesto JSON registra duração, canais, origem, licença e hash SHA-256 de cada arquivo. Não execute integrate.cjs novamente: ele é o registro da aplicação inicial dos hooks.\n';
+fs.writeFileSync(path.join(__dirname,'BIBLIOTECA.md'),text);console.log('Inventory written.');

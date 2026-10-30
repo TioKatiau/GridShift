@@ -1,0 +1,26 @@
+{
+  "width":1920,"height":1080,"fps":30,"duration":100,"transition":0.4,
+  "segments":[
+    {"id":"00_abertura","duration":6,"graphic":"intro","title":"GRIDSHIFT"},
+    {"id":"01_cidade_abertura","duration":6,"title":"Simulação e gerenciamento de logística urbana","kicker":"BEM-VINDO À CIDADE","chapter":1},
+    {"id":"02_transito","duration":5,"title":"Trânsito.","kicker":"O DESAFIO","chapter":2},
+    {"id":"03_caminhao","duration":5,"title":"Planejamento.","kicker":"O DESAFIO","chapter":2},
+    {"id":"04_pedestres","duration":5,"title":"Logística. Cada entrega importa.","kicker":"O DESAFIO","chapter":2},
+    {"id":"05_tablet_abre","duration":4,"title":"Gerencie sua transportadora.","kicker":"A SOLUÇÃO","ui":true,"chapter":3},
+    {"id":"06_contratos","duration":4,"title":"Planeje entregas.","kicker":"CONTRATOS REAIS","ui":true,"chapter":3},
+    {"id":"07_frota","duration":4,"title":"Acompanhe sua frota.","kicker":"VEÍCULOS E OPERAÇÕES","ui":true,"chapter":3},
+    {"id":"09_caminhao_operacao","duration":4,"title":"Da operação à cidade.","kicker":"LOGÍSTICA EM MOVIMENTO","chapter":3},
+    {"id":"08_mapa_rotas","duration":4,"title":"Rotas. Veículos. Destinos.","kicker":"VISÃO DA OPERAÇÃO","ui":true,"chapter":3},
+    {"id":"10_office","duration":3,"title":"Não basta entregar.","kicker":"URBAN FLOW","chapter":4},
+    {"id":"11_financeiro","duration":5,"title":"É preciso administrar.","kicker":"FINANCEIRO E DESPESAS","ui":true,"chapter":4},
+    {"id":"12_funcionarios","duration":4,"title":"Pessoas movem a empresa.","kicker":"FUNCIONÁRIOS","ui":true,"chapter":4},
+    {"id":"13_upgrades","duration":4,"title":"Invista no próximo passo.","kicker":"UPGRADES","ui":true,"chapter":4},
+    {"id":"14_missoes","duration":5,"title":"Cada decisão constrói sua história.","kicker":"MISSÕES E REPUTAÇÃO","ui":true,"chapter":4},
+    {"id":"16_primeira_pessoa","duration":5,"title":"Uma cidade dinâmica.","kicker":"EXPLORE EM PRIMEIRA PESSOA","chapter":5},
+    {"id":"17_cidade_noite","duration":5,"title":"Do dia à noite.","kicker":"UMA CIDADE VIVA","chapter":5},
+    {"id":"18_transito_noite","duration":5,"title":"Decisões que fazem a diferença.","kicker":"UMA CIDADE VIVA","chapter":5},
+    {"id":"15_office_detalhe","duration":4,"title":"Sua empresa faz parte da cidade.","kicker":"GRIDSHIFT","chapter":5},
+    {"id":"19_cidade_final","duration":3,"title":"A próxima entrega é só o começo.","kicker":"GRIDSHIFT","chapter":6},
+    {"id":"20_encerramento","duration":10,"graphic":"outro","title":"A cidade não para. Sua empresa também não.","chapter":6}
+  ]
+}

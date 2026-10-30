@@ -1,0 +1,8 @@
+PASS MainMenu sem scripts ausentes
+PASS Office sem scripts ausentes
+PASS SampleScene sem scripts ausentes
+PASS 15 rotas novas com asfalto, saída e conexão de ida e volta
+PASS 64 destinos com IDs únicos e rotas acessíveis
+PASS 350 nós de pedestres no bairro novo com ligação à cidade antiga
+PASS terreno de continuidade e limites físicos
+RESULT SUCCESS

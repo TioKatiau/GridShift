@@ -1,0 +1,5 @@
+PASS 276 consultas de alcance equivalentes ao Dijkstra existente
+build_mean_ms=11,4484
+cached_mean_ms=0,2637
+PASS aceitação idempotente e renovação de seis contratos preservadas
+RESULT SUCCESS

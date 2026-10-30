@@ -1,0 +1,5 @@
+Office: Old Monitor 2
+Canvas: (459.25, 459.25); escala mundial=(0.00, 0.00, 0.00)
+Chromium: 1600x1600; 30 FPS; proporção física preservada
+Input System: GridShiftUwbInput + GridShiftUwbInputRouter
+Zoom e TerminalView preservados. EventSystem ativo: OfficeEventSystem

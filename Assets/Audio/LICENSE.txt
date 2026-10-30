@@ -1,0 +1,20 @@
+GRIDSHIFT AUDIO 13 — ORIGINAL PROCEDURAL AUDIO ASSETS
+
+All WAV files in this directory were synthesized specifically for GridShift by
+Docs/Audio13/generate-audio.cjs. They contain no external recordings, commercial
+music, library samples, or extracted game sounds. Engines, ambience and murmurs
+are synthesized sound design, not field recordings or recorded human speech.
+
+The generated audio assets are dedicated under CC0 1.0 Universal, to the extent
+copyright or related rights apply. No attribution is required for these assets.
+CC0 text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+This dedication applies to the generated WAV audio files only. It does not
+relicense GridShift source code, visual assets, Unity, or third-party packages.
+
+Composition: electronic pads, original note sequences, synthesized percussion.
+Effects: additive/subtractive synthesis and deterministic seeded noise.
+Source and reproducible manifest: Docs/Audio13/generate-audio.cjs and
+Docs/Audio13/audio-manifest.json (file names, durations and SHA-256 hashes).
+
+Optional credit: "GridShift — original procedural soundtrack and sound design."

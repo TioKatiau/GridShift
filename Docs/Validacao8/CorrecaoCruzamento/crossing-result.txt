@@ -1,0 +1,2 @@
+Agents=8 unique_crossers=8 crossings=17 max_hold_seconds=19,39989 horizontal_vehicles=2 vertical_vehicles=6
+RESULT SUCCESS

@@ -17,6 +17,7 @@ public class RealTimeClock : MonoBehaviour
     [SerializeField] private float intensidadeNoite = 0.05f;
 
     private float tempoDoCiclo;
+    private int displayedMinute=-1;
 
     private const string SAVE_KEY = "HorarioDoJogo";
 
@@ -92,6 +93,9 @@ public class RealTimeClock : MonoBehaviour
         horas %= 24;
 
         if (clockText == null) return;
+        int minute=horas*60+minutos;
+        if(minute==displayedMinute)return;
+        displayedMinute=minute;
         clockText.text =
             horas.ToString("00") + ":" +
             minutos.ToString("00");

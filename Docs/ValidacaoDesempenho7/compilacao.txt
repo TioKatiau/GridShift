@@ -1,0 +1,4 @@
+Unity 6000.0.83f1
+Compilação final dos scripts: SUCCESS
+Nenhum erro C# encontrado.
+Saída do Editor: 0

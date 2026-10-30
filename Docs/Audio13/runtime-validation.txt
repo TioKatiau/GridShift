@@ -1,0 +1,305 @@
+PASS runtime bootstrap and persisted library
+PASS 63 real audio clips and seven mixer groups
+DIAGNOSTIC LastAttempt=Logo_GS instance=True, rejected=, enabled=True, logoClip=True
+PASS logo effect fires once during real menu intro; count=1, events=1, menus=1
+PASS real menu starts instrumental loop with fade
+PASS clip imported: Bird_Chirp
+PASS clip imported: City_Ambience_Day
+PASS clip imported: City_Ambience_Night
+PASS clip imported: Green_Wind
+PASS clip imported: Night_Insects
+PASS clip imported: Pedestrian_Murmur
+PASS clip imported: Cargo_Collected
+PASS clip imported: Delivery_Accepted
+PASS clip imported: Delivery_Cancelled
+PASS clip imported: Delivery_Completed
+PASS clip imported: Delivery_Late
+PASS clip imported: Vehicle_Assigned
+PASS clip imported: Bill_Paid
+PASS clip imported: Employee_Hired
+PASS clip imported: Money_Received
+PASS clip imported: Reputation_Up
+PASS clip imported: Service_Completed
+PASS clip imported: Upgrade_Purchased
+PASS clip imported: Footstep_Asphalt_1
+PASS clip imported: Footstep_Asphalt_2
+PASS clip imported: Footstep_Asphalt_3
+PASS clip imported: Footstep_Concrete_1
+PASS clip imported: Footstep_Concrete_2
+PASS clip imported: Footstep_Concrete_3
+PASS clip imported: Footstep_Grass_1
+PASS clip imported: Footstep_Grass_2
+PASS clip imported: Footstep_Grass_3
+PASS clip imported: Footstep_Office_1
+PASS clip imported: Footstep_Office_2
+PASS clip imported: Footstep_Office_3
+PASS clip imported: Jump
+PASS clip imported: Land
+PASS clip imported: Act_Unlocked
+PASS clip imported: Mission_Completed
+PASS clip imported: Menu_CityInMotion
+PASS clip imported: Mission_ForwardMotion
+PASS clip imported: Office_AfterHours
+PASS clip imported: Computer_Close
+PASS clip imported: Computer_Open
+PASS clip imported: Office_Ventilation
+PASS clip imported: Save_Completed
+PASS clip imported: Save_Deleted
+PASS clip imported: Save_Loaded
+PASS clip imported: Save_Selected
+PASS clip imported: Tablet_Close
+PASS clip imported: Tablet_Open
+PASS clip imported: Logo_GS
+PASS clip imported: Notification
+PASS clip imported: UI_Cancel
+PASS clip imported: UI_Click
+PASS clip imported: UI_Confirm
+PASS clip imported: UI_Error
+PASS clip imported: UI_Hover
+PASS clip imported: UI_Tab
+PASS clip imported: Car_Brake
+PASS clip imported: Car_Engine_Loop
+PASS engine contains nonzero PCM: Car_Engine_Loop
+PASS clip imported: Car_Horn
+PASS clip imported: Car_Road_Loop
+PASS clip imported: Truck_Brake
+PASS clip imported: Truck_Engine_Loop
+PASS engine contains nonzero PCM: Truck_Engine_Loop
+PASS clip imported: Truck_Horn
+PASS clip imported: Truck_Reverse
+PASS clip imported: Truck_Road_Loop
+PASS cars and trucks reference different audio assets
+PASS actual mixer linear-to-decibel mapping: Master
+PASS actual mixer linear-to-decibel mapping: Music
+PASS actual mixer linear-to-decibel mapping: Ambience
+PASS actual mixer linear-to-decibel mapping: Vehicles
+PASS actual mixer linear-to-decibel mapping: Footsteps
+PASS actual mixer linear-to-decibel mapping: UI
+PASS actual mixer linear-to-decibel mapping: SFX
+PASS music independently muted
+PASS UI remains available with music muted
+PASS audio preferences saved to PlayerPrefs
+PASS real button callback plays click
+PASS real city session initializes using isolated save path
+PASS exactly one active listener in city
+PASS all live traffic vehicles receive one audio component
+PASS real fleet includes separate truck and car sound profiles
+PASS nearby real vehicle plays spatial engine with bounded attenuation
+PASS vehicles beyond cutoff stop playback
+PASS movement fixture reaches actual physical floor
+PASS standing player produces no footsteps
+PASS walking footsteps follow real displacement on tagged grass
+PASS running produces faster footstep cadence than walking
+PASS real accepted jump triggers sound exactly once
+PASS airborne player produces no footsteps
+PASS real ground contact triggers landing sound
+PASS real tablet opens
+PASS tablet open event plays once
+PASS tablet close event preserves animation
+PASS real finance transaction accepted
+PASS finance transaction emits reward sound
+PASS real delivery offer accepted
+PASS accepted delivery emits one sound
+PASS idempotent acceptance does not replay notification
+PASS real upgrade purchase
+PASS upgrade completion emits sound
+PASS completion API emits delivery sound (isolated event fixture, not a driven route)
+PASS duplicate completion cannot replay reward sound
+PASS mission confirmation API accepts fulfilled isolated fixture
+PASS real mission claim event emits completion sound
+PASS actual campaign advancement emits act unlock sound
+PASS deadline crossing emits one warning
+PASS overdue order does not repeat warning continuously
+PASS active special mission selects dynamic music
+PASS vehicle voice budget frame 0
+PASS vehicle voice budget frame 1
+PASS vehicle voice budget frame 2
+PASS vehicle voice budget frame 3
+PASS vehicle voice budget frame 4
+PASS vehicle voice budget frame 5
+PASS vehicle voice budget frame 6
+PASS vehicle voice budget frame 7
+PASS vehicle voice budget frame 8
+PASS vehicle voice budget frame 9
+PASS vehicle voice budget frame 10
+PASS vehicle voice budget frame 11
+PASS vehicle voice budget frame 12
+PASS vehicle voice budget frame 13
+PASS vehicle voice budget frame 14
+PASS vehicle voice budget frame 15
+PASS vehicle voice budget frame 16
+PASS vehicle voice budget frame 17
+PASS vehicle voice budget frame 18
+PASS vehicle voice budget frame 19
+PASS vehicle voice budget frame 20
+PASS vehicle voice budget frame 21
+PASS vehicle voice budget frame 22
+PASS vehicle voice budget frame 23
+PASS vehicle voice budget frame 24
+PASS vehicle voice budget frame 25
+PASS vehicle voice budget frame 26
+PASS vehicle voice budget frame 27
+PASS vehicle voice budget frame 28
+PASS vehicle voice budget frame 29
+PASS vehicle voice budget frame 30
+PASS vehicle voice budget frame 31
+PASS vehicle voice budget frame 32
+PASS vehicle voice budget frame 33
+PASS vehicle voice budget frame 34
+PASS vehicle voice budget frame 35
+PASS vehicle voice budget frame 36
+PASS vehicle voice budget frame 37
+PASS vehicle voice budget frame 38
+PASS vehicle voice budget frame 39
+PASS vehicle voice budget frame 40
+PASS vehicle voice budget frame 41
+PASS vehicle voice budget frame 42
+PASS vehicle voice budget frame 43
+PASS vehicle voice budget frame 44
+PASS vehicle voice budget frame 45
+PASS vehicle voice budget frame 46
+PASS vehicle voice budget frame 47
+PASS vehicle voice budget frame 48
+PASS vehicle voice budget frame 49
+PASS vehicle voice budget frame 50
+PASS vehicle voice budget frame 51
+PASS vehicle voice budget frame 52
+PASS vehicle voice budget frame 53
+PASS vehicle voice budget frame 54
+PASS vehicle voice budget frame 55
+PASS vehicle voice budget frame 56
+PASS vehicle voice budget frame 57
+PASS vehicle voice budget frame 58
+PASS vehicle voice budget frame 59
+PASS vehicle voice budget frame 60
+PASS vehicle voice budget frame 61
+PASS vehicle voice budget frame 62
+PASS vehicle voice budget frame 63
+PASS vehicle voice budget frame 64
+PASS vehicle voice budget frame 65
+PASS vehicle voice budget frame 66
+PASS vehicle voice budget frame 67
+PASS vehicle voice budget frame 68
+PASS vehicle voice budget frame 69
+PASS vehicle voice budget frame 70
+PASS vehicle voice budget frame 71
+PASS vehicle voice budget frame 72
+PASS vehicle voice budget frame 73
+PASS vehicle voice budget frame 74
+PASS vehicle voice budget frame 75
+PASS vehicle voice budget frame 76
+PASS vehicle voice budget frame 77
+PASS vehicle voice budget frame 78
+PASS vehicle voice budget frame 79
+PASS vehicle voice budget frame 80
+PASS vehicle voice budget frame 81
+PASS vehicle voice budget frame 82
+PASS vehicle voice budget frame 83
+PASS vehicle voice budget frame 84
+PASS vehicle voice budget frame 85
+PASS vehicle voice budget frame 86
+PASS vehicle voice budget frame 87
+PASS vehicle voice budget frame 88
+PASS vehicle voice budget frame 89
+PASS vehicle voice budget frame 90
+PASS vehicle voice budget frame 91
+PASS vehicle voice budget frame 92
+PASS vehicle voice budget frame 93
+PASS vehicle voice budget frame 94
+PASS vehicle voice budget frame 95
+PASS vehicle voice budget frame 96
+PASS vehicle voice budget frame 97
+PASS vehicle voice budget frame 98
+PASS vehicle voice budget frame 99
+PASS vehicle voice budget frame 100
+PASS vehicle voice budget frame 101
+PASS vehicle voice budget frame 102
+PASS vehicle voice budget frame 103
+PASS vehicle voice budget frame 104
+PASS vehicle voice budget frame 105
+PASS vehicle voice budget frame 106
+PASS vehicle voice budget frame 107
+PASS vehicle voice budget frame 108
+PASS vehicle voice budget frame 109
+PASS vehicle voice budget frame 110
+PASS vehicle voice budget frame 111
+PASS vehicle voice budget frame 112
+PASS vehicle voice budget frame 113
+PASS vehicle voice budget frame 114
+PASS vehicle voice budget frame 115
+PASS vehicle voice budget frame 116
+PASS vehicle voice budget frame 117
+PASS vehicle voice budget frame 118
+PASS vehicle voice budget frame 119
+PASS vehicle voice budget frame 120
+PASS vehicle voice budget frame 121
+PASS vehicle voice budget frame 122
+PASS vehicle voice budget frame 123
+PASS vehicle voice budget frame 124
+PASS vehicle voice budget frame 125
+PASS vehicle voice budget frame 126
+PASS vehicle voice budget frame 127
+PASS vehicle voice budget frame 128
+PASS vehicle voice budget frame 129
+PASS vehicle voice budget frame 130
+PASS vehicle voice budget frame 131
+PASS vehicle voice budget frame 132
+PASS vehicle voice budget frame 133
+PASS vehicle voice budget frame 134
+PASS vehicle voice budget frame 135
+PASS vehicle voice budget frame 136
+PASS vehicle voice budget frame 137
+PASS vehicle voice budget frame 138
+PASS vehicle voice budget frame 139
+PASS vehicle voice budget frame 140
+PASS vehicle voice budget frame 141
+PASS vehicle voice budget frame 142
+PASS vehicle voice budget frame 143
+PASS vehicle voice budget frame 144
+PASS vehicle voice budget frame 145
+PASS vehicle voice budget frame 146
+PASS vehicle voice budget frame 147
+PASS vehicle voice budget frame 148
+PASS vehicle voice budget frame 149
+PASS vehicle voice budget frame 150
+PASS vehicle voice budget frame 151
+PASS vehicle voice budget frame 152
+PASS vehicle voice budget frame 153
+PASS vehicle voice budget frame 154
+PASS vehicle voice budget frame 155
+PASS vehicle voice budget frame 156
+PASS vehicle voice budget frame 157
+PASS vehicle voice budget frame 158
+PASS vehicle voice budget frame 159
+PASS vehicle voice budget frame 160
+PASS vehicle voice budget frame 161
+PASS vehicle voice budget frame 162
+PASS vehicle voice budget frame 163
+PASS vehicle voice budget frame 164
+PASS vehicle voice budget frame 165
+PASS vehicle voice budget frame 166
+PASS vehicle voice budget frame 167
+PASS vehicle voice budget frame 168
+PASS vehicle voice budget frame 169
+PASS vehicle voice budget frame 170
+PASS vehicle voice budget frame 171
+PASS vehicle voice budget frame 172
+PASS vehicle voice budget frame 173
+PASS vehicle voice budget frame 174
+PASS vehicle voice budget frame 175
+PASS vehicle voice budget frame 176
+PASS vehicle voice budget frame 177
+PASS vehicle voice budget frame 178
+PASS vehicle voice budget frame 179
+MEASURE Audio manager main-thread marker, city: 0,2541 ms mean; 180 samples. Excludes DSP, GPU and global FPS.
+PASS day ambience follows actual clock
+PASS night ambience crossfades without restarting loops
+PASS real Office transition
+PASS single listener after additive Office transition
+PASS Office ambience replaces outdoors
+PASS real Office computer opens with sound
+PASS real computer exit emits sound
+MEASURE Audio manager main-thread marker, Office: 0,1734 ms mean; 180 samples. Excludes DSP, GPU and global FPS.
+PASS one-shot pool remains bounded
+PASS save still writes successfully to isolated path
+RESULT SUCCESS

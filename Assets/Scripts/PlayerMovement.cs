@@ -49,11 +49,11 @@ public class PlayerMovement : MonoBehaviour
         var keyboard = Keyboard.current; Vector2 input = Vector2.zero;
         if (keyboard != null)
         {
-            input.x = (keyboard.dKey.isPressed ? 1 : 0) - (keyboard.aKey.isPressed ? 1 : 0);
-            input.y = (keyboard.wKey.isPressed ? 1 : 0) - (keyboard.sKey.isPressed ? 1 : 0);
+            input.x = (GridShiftControls.Held(GSAction.Right) ? 1 : 0) - (GridShiftControls.Held(GSAction.Left) ? 1 : 0);
+            input.y = (GridShiftControls.Held(GSAction.Forward) ? 1 : 0) - (GridShiftControls.Held(GSAction.Back) ? 1 : 0);
         }
-        SimulateMovement(input, keyboard != null && keyboard.leftShiftKey.isPressed,
-            keyboard != null && keyboard.spaceKey.wasPressedThisFrame, Time.deltaTime);
+        SimulateMovement(input, keyboard != null && GridShiftControls.Held(GSAction.Run),
+            keyboard != null && GridShiftControls.Down(GSAction.Jump), Time.deltaTime);
         HandleCamera();
     }
     private bool Grounded()

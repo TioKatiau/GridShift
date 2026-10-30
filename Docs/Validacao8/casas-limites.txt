@@ -1,0 +1,10 @@
+PASS rota real até a entrada residencial nova
+PASS pedestre chegou à porta caminhando
+PASS transição não remove personagem diante do observador
+PASS chegada fora de vista devolve personagem ao pool
+PASS limite físico bloqueia saída 0
+PASS limite físico bloqueia saída 1
+PASS limite físico bloqueia saída 2
+PASS limite físico bloqueia saída 3
+PASS queda anormal aciona recuperação de segurança do jogador
+RESULT SUCCESS

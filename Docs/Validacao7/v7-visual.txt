@@ -1,0 +1,3 @@
+PASS mapa ampliado ao norte, ações visíveis e HUD oculto
+PASS capturas finais de HUD, mapa, controles, tutorial e upgrades
+RESULT SUCCESS

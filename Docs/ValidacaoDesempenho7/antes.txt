@@ -1,0 +1,16 @@
+MEASURE city-day frames=535 avg_ms=24,98 p95_ms=17,05 cpu_ms=22,68 gc_bytes_frame=44727 memory=500016502 cars=15
+MEASURE city-night frames=721 avg_ms=16,67 p95_ms=17,02 cpu_ms=16,62 gc_bytes_frame=43914 memory=525447027 cars=8
+MEASURE office-hidden frames=721 avg_ms=16,67 p95_ms=17,05 cpu_ms=16,62 gc_bytes_frame=41700 memory=575540352 cars=4
+MEASURE office-browser frames=720 avg_ms=16,68 p95_ms=17,17 cpu_ms=16,63 gc_bytes_frame=18269 memory=590429046 cars=4
+SCROLL PC down=45,5
+SCROLL PC up=0
+SCROLL PC inner=45,5 outer=0
+PASS mouse e digitação real a 200% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+MEASURE tablet frames=720 avg_ms=16,68 p95_ms=17,17 cpu_ms=16,64 gc_bytes_frame=34631 memory=600583862 cars=4
+SCROLL Tablet down=45,5
+SCROLL Tablet up=0
+SCROLL Tablet inner=45,5 outer=0
+PASS controls restored
+Erros: 
+RESULT SUCCESS

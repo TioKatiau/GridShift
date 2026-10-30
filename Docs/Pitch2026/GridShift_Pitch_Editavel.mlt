@@ -1,0 +1,96 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.24.0" producer="tractor" root="C:\Users\Gb191\OneDrive\Desktop\GridShift\Docs\Pitch2026">
+<profile description="Full HD 30 fps" width="1920" height="1080" frame_rate_num="30" frame_rate_den="1" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" colorspace="709"/>
+<producer id="black" in="0" out="2999"><property name="resource">0</property><property name="mlt_service">color</property><property name="eof">pause</property></producer>
+<chain id="clip0" in="0" out="191"><property name="resource">edicao/00_abertura.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">GRIDSHIFT</property></chain>
+<chain id="clip1" in="0" out="191"><property name="resource">edicao/01_cidade_abertura.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Simulação e gerenciamento de logística urbana</property></chain>
+<chain id="clip2" in="0" out="161"><property name="resource">edicao/02_transito.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Trânsito.</property></chain>
+<chain id="clip3" in="0" out="161"><property name="resource">edicao/03_caminhao.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Planejamento.</property></chain>
+<chain id="clip4" in="0" out="161"><property name="resource">edicao/04_pedestres.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Logística. Cada entrega importa.</property></chain>
+<chain id="clip5" in="0" out="131"><property name="resource">edicao/05_tablet_abre.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Gerencie sua transportadora.</property></chain>
+<chain id="clip6" in="0" out="131"><property name="resource">edicao/06_contratos.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Planeje entregas.</property></chain>
+<chain id="clip7" in="0" out="131"><property name="resource">edicao/07_frota.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Acompanhe sua frota.</property></chain>
+<chain id="clip8" in="0" out="131"><property name="resource">edicao/09_caminhao_operacao.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Da operação à cidade.</property></chain>
+<chain id="clip9" in="0" out="131"><property name="resource">edicao/08_mapa_rotas.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Rotas. Veículos. Destinos.</property></chain>
+<chain id="clip10" in="0" out="101"><property name="resource">edicao/10_office.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Não basta entregar.</property></chain>
+<chain id="clip11" in="0" out="161"><property name="resource">edicao/11_financeiro.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">É preciso administrar.</property></chain>
+<chain id="clip12" in="0" out="131"><property name="resource">edicao/12_funcionarios.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Pessoas movem a empresa.</property></chain>
+<chain id="clip13" in="0" out="131"><property name="resource">edicao/13_upgrades.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Invista no próximo passo.</property></chain>
+<chain id="clip14" in="0" out="161"><property name="resource">edicao/14_missoes.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Cada decisão constrói sua história.</property></chain>
+<chain id="clip15" in="0" out="161"><property name="resource">edicao/16_primeira_pessoa.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Uma cidade dinâmica.</property></chain>
+<chain id="clip16" in="0" out="161"><property name="resource">edicao/17_cidade_noite.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Do dia à noite.</property></chain>
+<chain id="clip17" in="0" out="161"><property name="resource">edicao/18_transito_noite.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Decisões que fazem a diferença.</property></chain>
+<chain id="clip18" in="0" out="131"><property name="resource">edicao/15_office_detalhe.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">Sua empresa faz parte da cidade.</property></chain>
+<chain id="clip19" in="0" out="101"><property name="resource">edicao/19_cidade_final.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">A próxima entrega é só o começo.</property></chain>
+<chain id="clip20" in="0" out="299"><property name="resource">edicao/20_encerramento.mp4</property><property name="mlt_service">avformat</property><property name="audio_index">-1</property><property name="shotcut:producer">1</property><property name="shotcut:caption">A cidade não para. Sua empresa também não.</property></chain>
+<chain id="music" in="0" out="2999"><property name="resource">audio/Trilha_Discreta_Sem_Voz.wav</property><property name="mlt_service">avformat</property><property name="video_index">-1</property></chain>
+<tractor id="dissolve0" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip0" in="180" out="191"/><track producer="clip1" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve1" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip1" in="180" out="191"/><track producer="clip2" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve2" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip2" in="150" out="161"/><track producer="clip3" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve3" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip3" in="150" out="161"/><track producer="clip4" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve4" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip4" in="150" out="161"/><track producer="clip5" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve5" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip5" in="120" out="131"/><track producer="clip6" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve6" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip6" in="120" out="131"/><track producer="clip7" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve7" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip7" in="120" out="131"/><track producer="clip8" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve8" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip8" in="120" out="131"/><track producer="clip9" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve9" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip9" in="120" out="131"/><track producer="clip10" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve10" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip10" in="90" out="101"/><track producer="clip11" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve11" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip11" in="150" out="161"/><track producer="clip12" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve12" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip12" in="120" out="131"/><track producer="clip13" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve13" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip13" in="120" out="131"/><track producer="clip14" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve14" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip14" in="150" out="161"/><track producer="clip15" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve15" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip15" in="150" out="161"/><track producer="clip16" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve16" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip16" in="150" out="161"/><track producer="clip17" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve17" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip17" in="150" out="161"/><track producer="clip18" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve18" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip18" in="120" out="131"/><track producer="clip19" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<tractor id="dissolve19" in="0" out="11"><property name="shotcut:transition">1</property><track producer="clip19" in="90" out="101"/><track producer="clip20" in="0" out="11"/><transition in="0" out="11"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">luma</property><property name="always_active">1</property><property name="alpha_over">1</property></transition></tractor>
+<playlist id="background"><entry producer="black" in="0" out="2999"/></playlist>
+<playlist id="audio"><property name="shotcut:name">A1 — Trilha e efeitos, sem voz</property><entry producer="music" in="0" out="2999"/></playlist>
+<playlist id="video"><property name="shotcut:name">V1 — GridShift, imagens reais</property>
+<entry producer="clip0" in="0" out="179"/>
+<entry producer="dissolve0" in="0" out="11"/>
+<entry producer="clip1" in="12" out="179"/>
+<entry producer="dissolve1" in="0" out="11"/>
+<entry producer="clip2" in="12" out="149"/>
+<entry producer="dissolve2" in="0" out="11"/>
+<entry producer="clip3" in="12" out="149"/>
+<entry producer="dissolve3" in="0" out="11"/>
+<entry producer="clip4" in="12" out="149"/>
+<entry producer="dissolve4" in="0" out="11"/>
+<entry producer="clip5" in="12" out="119"/>
+<entry producer="dissolve5" in="0" out="11"/>
+<entry producer="clip6" in="12" out="119"/>
+<entry producer="dissolve6" in="0" out="11"/>
+<entry producer="clip7" in="12" out="119"/>
+<entry producer="dissolve7" in="0" out="11"/>
+<entry producer="clip8" in="12" out="119"/>
+<entry producer="dissolve8" in="0" out="11"/>
+<entry producer="clip9" in="12" out="119"/>
+<entry producer="dissolve9" in="0" out="11"/>
+<entry producer="clip10" in="12" out="89"/>
+<entry producer="dissolve10" in="0" out="11"/>
+<entry producer="clip11" in="12" out="149"/>
+<entry producer="dissolve11" in="0" out="11"/>
+<entry producer="clip12" in="12" out="119"/>
+<entry producer="dissolve12" in="0" out="11"/>
+<entry producer="clip13" in="12" out="119"/>
+<entry producer="dissolve13" in="0" out="11"/>
+<entry producer="clip14" in="12" out="149"/>
+<entry producer="dissolve14" in="0" out="11"/>
+<entry producer="clip15" in="12" out="149"/>
+<entry producer="dissolve15" in="0" out="11"/>
+<entry producer="clip16" in="12" out="149"/>
+<entry producer="dissolve16" in="0" out="11"/>
+<entry producer="clip17" in="12" out="149"/>
+<entry producer="dissolve17" in="0" out="11"/>
+<entry producer="clip18" in="12" out="119"/>
+<entry producer="dissolve18" in="0" out="11"/>
+<entry producer="clip19" in="12" out="89"/>
+<entry producer="dissolve19" in="0" out="11"/>
+<entry producer="clip20" in="12" out="299"/>
+</playlist>
+<tractor id="tractor" shotcut="1" in="0" out="2999"><property name="shotcut">1</property><track producer="background"/><track producer="audio" hide="video"/><track producer="video" hide="audio"/>
+<transition in="0" out="2999"><property name="a_track">0</property><property name="b_track">1</property><property name="mlt_service">mix</property><property name="always_active">1</property><property name="sum">1</property></transition>
+<transition in="0" out="2999"><property name="a_track">0</property><property name="b_track">2</property><property name="mlt_service">frei0r.cairoblend</property><property name="disable">0</property></transition>
+</tractor>
+</mlt>

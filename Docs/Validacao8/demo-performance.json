@@ -1,0 +1,25 @@
+{
+  "before": {
+    "file": "C:/Users/Gb191/.codex/backups/GridShift-v8-before-20261025/StreamingAssets/GridShiftDemo/index.html",
+    "stable": false,
+    "mutations": 62,
+    "focusStable": false,
+    "scrollStable": true,
+    "offers": 100,
+    "upgrades": 1,
+    "telemetryToPaintMeanMs": 27.74000000009934,
+    "errors": []
+  },
+  "after": {
+    "file": "Assets/StreamingAssets/GridShiftDemo/index.html",
+    "stable": true,
+    "mutations": 0,
+    "focusStable": true,
+    "scrollStable": true,
+    "offers": 100,
+    "upgrades": 1,
+    "telemetryToPaintMeanMs": 27.030000000198683,
+    "errors": []
+  },
+  "success": true
+}

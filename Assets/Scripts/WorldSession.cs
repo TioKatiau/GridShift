@@ -17,15 +17,16 @@ public class WorldSession : MonoBehaviour
     private bool playerWasActive;
     private Scene office;
     private float clockTime, clockDuration = 1920f;
-    private bool clockInitialized;
+    private bool clockInitialized,calendarRestored; private double calendarDays;public double CalendarDays=>calendarDays;public float SecondsPerDay=>clockDuration;public void RestoreCalendar(double value){if(!double.IsNaN(value)&&!double.IsInfinity(value)&&value>=0){calendarDays=value;calendarRestored=true;}}
     public float ClockTime => clockTime;
+    public void RestoreClock(float value){if(!float.IsNaN(value)&&!float.IsInfinity(value))clockTime=Mathf.Repeat(value,clockDuration);}
     public float ClockHour => Mathf.Repeat(clockTime / clockDuration * 24f, 24f);
     public void InitializeClock(float time, float duration)
     {
         if (clockInitialized) return;
-        clockDuration = Mathf.Max(1f, duration); clockTime = time; clockInitialized = true;
+        clockDuration = Mathf.Max(1f, duration); clockTime = time;if(!calendarRestored)calendarDays=Mathf.Repeat(time,clockDuration)/clockDuration; clockInitialized = true;
     }
-    private void Update() { if (clockInitialized) clockTime = Mathf.Repeat(clockTime + Time.deltaTime, clockDuration); }
+    private void Update() { if (clockInitialized&&!(DeliveryManager.Instance!=null&&DeliveryManager.Instance.Restoring)){clockTime = Mathf.Repeat(clockTime + Time.deltaTime, clockDuration);calendarDays+=Time.deltaTime/clockDuration;} }
     private readonly Dictionary<Behaviour, bool> presentation = new Dictionary<Behaviour, bool>();
     private void Awake()
     {
@@ -116,3 +117,6 @@ public class WorldSession : MonoBehaviour
         Busy = false;
     }
 }
+
+
+

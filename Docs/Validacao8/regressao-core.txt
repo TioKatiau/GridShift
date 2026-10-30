@@ -1,0 +1,56 @@
+PASS sistemas existentes e nova interface inicializados
+PASS catálogo ampliado com IDs únicos
+PASS novos locais conectados ao grafo real
+PASS parceiros bloqueados por progressão
+PASS saldo insuficiente não permite comprar upgrade
+PASS pré-requisito de contratos melhores respeitado
+PASS criar 5 kg: 
+PASS criar 50 kg: 
+PASS criar 500 kg: 
+PASS 5 e 50 kg em carros e 500 kg no caminhão
+PASS seis modalidades disponíveis com destinos válidos
+PASS aceitar oferta é idempotente
+PASS despacho respeita simultaneidade inicial
+PASS upgrade de capacidade cobra saldo e aplica efeito real
+PASS doca reduz tempo de operação
+PASS pré-requisito libera bônus para novos pedidos
+PASS rede de parceiros libera locais reais
+PASS compra de vaga na frota
+PASS central aumenta limite simultâneo
+PASS frota ampliada reutiliza veículos existentes
+PASS M abre mapa e bloqueia movimento
+PASS interfaces modais ocultam HUD do avatar sem duplicação
+PASS G não abre tablet sobre mapa
+PASS M reduz mapa e devolve controles
+PASS F2 abre controles
+PASS conflito de tecla recusado
+PASS captura salva nova tecla sem acionar jogo
+PASS remapeamento sobrevive à releitura das preferências
+PASS ESC fecha controles antes de pausa
+PASS movimentação usa tecla remapeada
+PASS restaurar padrão funciona
+PASS ESC fecha mapa sem abrir pausa no mesmo quadro
+PASS ESC seguinte abre pausa
+PASS controles da pausa retornam à pausa
+PASS pausa retorna ao jogo
+PASS tutorial pode ser reaberto e recebe foco
+PASS etapa avançada salva
+PASS pular tutorial preserva preferência
+PASS tutorial completo registrado
+PASS minimapa exclui HUD 3D, corpos e marcadores físicos
+PASS sem setas gigantes de malha 3D no minimapa
+PASS ícones UI do mapa ligados à câmera real
+PASS upgrades e pedidos integrados ao salvamento
+PASS efeitos de upgrades restaurados sem duplicar níveis
+PASS Office preserva empresa e upgrades
+PASS conclusões legítimas creditadas após mudanças
+PASS pagamento único preservado
+PASS aceitar restante do lote de contratos
+PASS aceitar restante do lote de contratos
+PASS aceitar restante do lote de contratos
+PASS aceitar restante do lote de contratos
+PASS aceitar restante do lote de contratos
+PASS contratos renovam em novo lote sem repetir IDs aceitos
+PASS salvar operação após conclusão
+Erros: 
+RESULT SUCCESS

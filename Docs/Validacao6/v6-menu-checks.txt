@@ -1,0 +1,11 @@
+PASS intro e menu disponíveis sem arquivo anterior
+PASS Continuar desabilitado sem salvamento
+PASS Créditos abre informações reais
+PASS Voltar fecha créditos
+PASS Novo Jogo carrega SampleScene
+PASS Novo Jogo começa sem pedidos ou dinheiro anteriores
+PASS Novo Jogo inicia relógio às 9h
+PASS local removido de salvamento aguarda rota sem exceção
+PASS sessão nova pode ser salva e lida
+PASS salvamento corrompido recusado
+RESULT SUCCESS

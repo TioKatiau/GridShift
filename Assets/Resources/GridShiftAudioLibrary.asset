@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8662cd1e58613814289a9410aea1e5fd, type: 3}
+  m_Name: GridShiftAudioLibrary
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  groups:
+  - {fileID: 24300002, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: 3700132916343260305, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: 2288143495404845485, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: 7582922090663309536, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: -953461594784264497, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: 3602005563405748176, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  - {fileID: 3115850928993303523, guid: a283e26dee4c90049be2b6dfd3091feb, type: 2}
+  clips:
+  - id: Bird_Chirp
+    clip: {fileID: 8300000, guid: 3e933739bb7c59d4391ff96f7689cb78, type: 3}
+  - id: City_Ambience_Day
+    clip: {fileID: 8300000, guid: 347f611a894673f4db87c5b6fd28271e, type: 3}
+  - id: City_Ambience_Night
+    clip: {fileID: 8300000, guid: 5bd6fd4bbbc8b154e871118510ccfa5b, type: 3}
+  - id: Green_Wind
+    clip: {fileID: 8300000, guid: 50388242bb8c0554b8b429876f005ec6, type: 3}
+  - id: Night_Insects
+    clip: {fileID: 8300000, guid: b9321caf88d4f854f8d81fb6b102187c, type: 3}
+  - id: Pedestrian_Murmur
+    clip: {fileID: 8300000, guid: 690518b50c3885d4e85b399046f7c83f, type: 3}
+  - id: Cargo_Collected
+    clip: {fileID: 8300000, guid: ec1dac02f2279504bab3be5e0841164c, type: 3}
+  - id: Delivery_Accepted
+    clip: {fileID: 8300000, guid: 80bf535e8a561844db95053f90c0929b, type: 3}
+  - id: Delivery_Cancelled
+    clip: {fileID: 8300000, guid: c184a6fc59371e745842e175394f8a18, type: 3}
+  - id: Delivery_Completed
+    clip: {fileID: 8300000, guid: 902e9801271709341bbf9ff5343e9049, type: 3}
+  - id: Delivery_Late
+    clip: {fileID: 8300000, guid: 975ba37f813675d42a24aef96e727168, type: 3}
+  - id: Vehicle_Assigned
+    clip: {fileID: 8300000, guid: 13c3909603d7d26448e83cfd7b6f29c4, type: 3}
+  - id: Bill_Paid
+    clip: {fileID: 8300000, guid: ad812f73f54e42d44804464ec1652fa8, type: 3}
+  - id: Employee_Hired
+    clip: {fileID: 8300000, guid: a2eb0737466cb2a449507c749daf06fc, type: 3}
+  - id: Money_Received
+    clip: {fileID: 8300000, guid: 51d634a0f20b44a4eafa3c015cc9e15a, type: 3}
+  - id: Reputation_Up
+    clip: {fileID: 8300000, guid: c4fa861bafeab0147bd43eec42348081, type: 3}
+  - id: Service_Completed
+    clip: {fileID: 8300000, guid: 72b1f171b0705ce4db79074fcb7a658b, type: 3}
+  - id: Upgrade_Purchased
+    clip: {fileID: 8300000, guid: 01778049848254d4eaf662a3aa5a2c20, type: 3}
+  - id: Footstep_Asphalt_1
+    clip: {fileID: 8300000, guid: c560a28bbcffe2645b29b97074c62221, type: 3}
+  - id: Footstep_Asphalt_2
+    clip: {fileID: 8300000, guid: f811fd05fe1b478419cd48ac72b06c94, type: 3}
+  - id: Footstep_Asphalt_3
+    clip: {fileID: 8300000, guid: 6b065f26b080a9942b68dc46fdacfb6e, type: 3}
+  - id: Footstep_Concrete_1
+    clip: {fileID: 8300000, guid: 49aa6ac16ab02134d8880e343d42255c, type: 3}
+  - id: Footstep_Concrete_2
+    clip: {fileID: 8300000, guid: f09b3636e8ba831479589a7506eca348, type: 3}
+  - id: Footstep_Concrete_3
+    clip: {fileID: 8300000, guid: 68db4b623a2d67f4c905fd33505f873e, type: 3}
+  - id: Footstep_Grass_1
+    clip: {fileID: 8300000, guid: 733d19bad914a644c988f270fb2b68d1, type: 3}
+  - id: Footstep_Grass_2
+    clip: {fileID: 8300000, guid: 3b3f22232f8d289428bc220bf5793d8c, type: 3}
+  - id: Footstep_Grass_3
+    clip: {fileID: 8300000, guid: 1d8e74a82db39d94095b45ffcb81ccb2, type: 3}
+  - id: Footstep_Office_1
+    clip: {fileID: 8300000, guid: aef12b2f3f6504a42807d68d49685b22, type: 3}
+  - id: Footstep_Office_2
+    clip: {fileID: 8300000, guid: d8227a4ce027ff14db9f81a748ff3ca7, type: 3}
+  - id: Footstep_Office_3
+    clip: {fileID: 8300000, guid: 00af2f31f4639d54e933661081954ab0, type: 3}
+  - id: Jump
+    clip: {fileID: 8300000, guid: 164e7f3cc53371b45b3d7f0677e637dd, type: 3}
+  - id: Land
+    clip: {fileID: 8300000, guid: fb703b7584c783143b5504a655561473, type: 3}
+  - id: Act_Unlocked
+    clip: {fileID: 8300000, guid: 0f99ec749511ea74f8464ce1b06b7d79, type: 3}
+  - id: Mission_Completed
+    clip: {fileID: 8300000, guid: 43f5a1ffc2d3fe84a8ed19555fb017a2, type: 3}
+  - id: Menu_CityInMotion
+    clip: {fileID: 8300000, guid: 46e7816970462a74aa74f0a43c038470, type: 3}
+  - id: Mission_ForwardMotion
+    clip: {fileID: 8300000, guid: 4ff58769fe8afe043bf72e091aa1892d, type: 3}
+  - id: Office_AfterHours
+    clip: {fileID: 8300000, guid: bcb2c9da3a9730449a69ab4fa1fffd4e, type: 3}
+  - id: Computer_Close
+    clip: {fileID: 8300000, guid: 447c1e11400b01e41889e068b0f483b6, type: 3}
+  - id: Computer_Open
+    clip: {fileID: 8300000, guid: e7b5bd0c7d74ee143b2c6fcc0278361f, type: 3}
+  - id: Office_Ventilation
+    clip: {fileID: 8300000, guid: 65805ba771cf98740bfa170498c63799, type: 3}
+  - id: Save_Completed
+    clip: {fileID: 8300000, guid: 485eeeb94f0f49a46abd69eab0cc9a8f, type: 3}
+  - id: Save_Deleted
+    clip: {fileID: 8300000, guid: 8b4ba0354fb7ef24886cd5091e929ea2, type: 3}
+  - id: Save_Loaded
+    clip: {fileID: 8300000, guid: e5f70a5f7daf7df449e9a89017c1b7a5, type: 3}
+  - id: Save_Selected
+    clip: {fileID: 8300000, guid: ddff43a2ac7178f498dece7d35fdd96e, type: 3}
+  - id: Tablet_Close
+    clip: {fileID: 8300000, guid: eca011342ecbd464db39e6258f0a0b0b, type: 3}
+  - id: Tablet_Open
+    clip: {fileID: 8300000, guid: 563f477ab96045743ab59e5b9e3aaa86, type: 3}
+  - id: Logo_GS
+    clip: {fileID: 8300000, guid: e1963923f9d07a144b3af006ab42d33a, type: 3}
+  - id: Notification
+    clip: {fileID: 8300000, guid: 825bf7bd0df6bf4478ff790207735cf6, type: 3}
+  - id: UI_Cancel
+    clip: {fileID: 8300000, guid: 746f46f1b5fcd2f458dac2d524b796f3, type: 3}
+  - id: UI_Click
+    clip: {fileID: 8300000, guid: 7b13d01ce1596774b8b75c72ad8ec17b, type: 3}
+  - id: UI_Confirm
+    clip: {fileID: 8300000, guid: 9d2655d6d46fc94488a67054bdd0a455, type: 3}
+  - id: UI_Error
+    clip: {fileID: 8300000, guid: 9e3abeb74f32104418aac1e2809faaaf, type: 3}
+  - id: UI_Hover
+    clip: {fileID: 8300000, guid: 47c0c693faf7207459d9c59d9d63695e, type: 3}
+  - id: UI_Tab
+    clip: {fileID: 8300000, guid: d30afc567b15d2e418db0b0609dbe252, type: 3}
+  - id: Car_Brake
+    clip: {fileID: 8300000, guid: 9a6772ea7d38bef4588b7ebc38523e0b, type: 3}
+  - id: Car_Engine_Loop
+    clip: {fileID: 8300000, guid: 372062fec7120e34d92189eb082205eb, type: 3}
+  - id: Car_Horn
+    clip: {fileID: 8300000, guid: a925c8d74377d864f943a3c6c136114c, type: 3}
+  - id: Car_Road_Loop
+    clip: {fileID: 8300000, guid: aaf99a6852fe48f48891afa8ba998e5b, type: 3}
+  - id: Truck_Brake
+    clip: {fileID: 8300000, guid: 8213f19d12e85db4cafffabf97c838a3, type: 3}
+  - id: Truck_Engine_Loop
+    clip: {fileID: 8300000, guid: d09c90732a9c9184d88e2136e22ad1e9, type: 3}
+  - id: Truck_Horn
+    clip: {fileID: 8300000, guid: 9c9eedf826a07f4418b3fb5ebf02c379, type: 3}
+  - id: Truck_Reverse
+    clip: {fileID: 8300000, guid: f6d8d4303f8f7a743a1f890cf34d388b, type: 3}
+  - id: Truck_Road_Loop
+    clip: {fileID: 8300000, guid: 7091a789ad9f3ee43a5405fc496c0cdd, type: 3}

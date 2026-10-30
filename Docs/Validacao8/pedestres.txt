@@ -1,0 +1,16 @@
+PASS corredor de calçada real com espaço lateral seguro
+PASS rota de teste existente
+TRACE poste pos=(134.60, -4.38, 309.90) goal=(140.60, -4.38, 309.90) next=NONE current=2 yield=False
+TRACE poste pos=(136.82, -4.38, 309.90) goal=(140.60, -4.38, 309.90) next=(137.60, -4.38, 309.90) current=5 yield=False
+TRACE poste pos=(138.82, -4.38, 309.25) goal=(140.60, -4.38, 309.90) next=(137.60, -4.38, 309.90) current=5 yield=True
+PASS desvio de poste concluído sem teleporte, colisão ou saída da calçada; folga mínima=0,4409637
+PASS rota de teste existente
+TRACE jogador pos=(134.60, -4.38, 309.90) goal=(140.60, -4.38, 309.90) next=NONE current=2 yield=False
+TRACE jogador pos=(136.12, -4.38, 309.22) goal=(140.60, -4.38, 309.90) next=(137.60, -4.38, 309.90) current=5 yield=True
+TRACE jogador pos=(138.46, -4.38, 308.99) goal=(140.60, -4.38, 309.90) next=(137.60, -4.38, 309.90) current=5 yield=True
+TRACE jogador pos=(140.14, -4.38, 309.81) goal=(140.60, -4.38, 309.90) next=(139.10, -4.38, 309.90) current=8 yield=True
+PASS desvio de jogador concluído sem teleporte, colisão ou saída da calçada; folga mínima=0,9103761
+PASS asfalto abaixo da borda rejeitado pela margem de apoio
+PASS borda real de calçada localizada
+
+RESULT SUCCESS

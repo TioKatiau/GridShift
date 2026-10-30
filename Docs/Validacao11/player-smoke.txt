@@ -1,0 +1,4 @@
+Office ready: True
+Active cameras: 1
+Errors: 
+RESULT SUCCESS

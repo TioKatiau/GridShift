@@ -1,0 +1,48 @@
+PASS menu principal existente carregado
+PASS nova partida apresenta introdução
+PASS pular introdução termina dentro do Office
+PASS campanha inicializada e introdução persistida
+PASS capital inicial usa o único saldo existente
+PASS frota existente adotada sem duplicar veículos
+PASS G abre tablet no Office
+PASS abertura real do tablet avança missão
+PASS mensagem comercial pode ser lida
+PASS ESC guarda tablet sem abrir pausa
+PASS tablet restaura controles
+PASS saída real do Office preserva cidade
+PASS objetivo muda para encontrar Carlos
+PASS NPC Carlos usa prefab do projeto
+PASS E próximo ao NPC abre diálogo com foco
+PASS aceitar proposta avança objetivo e restaura controle
+PASS escolha de veículo inicia entrega física: 
+PASS mapa real avança acompanhamento da missão
+PASS primeiro contrato concluído pelo veículo real
+PASS conclusão física libera confirmação
+PASS circulação real consome combustível e acumula distância
+PASS recompensa de entrega não duplica
+PASS confirmar missão paga bônus: 
+PASS bônus da missão é recebido uma única vez
+PASS reputação sobe por entrega e missão, sem aumento por tempo
+PASS transição preserva o mesmo gerenciador de entregas
+PASS pagar cobrança real: 
+PASS pagamento desconta o saldo existente
+PASS pagamento duplicado recusado
+PASS contratar mecânico aplica benefício real
+PASS fechamento semanal emitido pelo calendário
+PASS repetir fechamento não duplica despesas nem relatório
+PASS salários são cobrados no fechamento correto
+PASS desligar funcionário atualiza contagem e benefício
+PASS modelo de consumo e desgaste depende de distância
+PASS abastecimento cobra e restaura tanque
+PASS manutenção cobra e torna veículo indisponível
+PASS manutenção termina e preserva rota válida
+PASS multa e reputação por atraso são aplicadas uma vez
+PASS evento de demanda cria contrato real disponível
+PASS save v2 guarda estado completo validado
+PASS recarregar preserva dinheiro, contas e funcionários
+PASS carregar não repete introdução ou recompensa
+PASS recompensa permanece única depois de carregar
+PASS save anterior v1 continua legível
+PASS teste final restaura save v2
+ERRORS 
+RESULT SUCCESS

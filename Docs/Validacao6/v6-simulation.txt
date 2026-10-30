@@ -1,0 +1,28 @@
+PASS gerenciador de entregas instalado na cidade
+PASS frota reaproveita três veículos do tráfego, sem instanciar novos
+PASS dois carros e caminhão com capacidade configurada
+PASS peso negativo recusado
+PASS NaN recusado
+PASS destino inexistente recusado
+PASS criar pedido 5 kg: 
+PASS reenvio idempotente não duplica pedido
+PASS criar pedido 50 kg: 
+PASS criar pedido 500 kg: 
+PASS atribuição acima da capacidade recusada
+PASS 5 e 50 kg usam carros; 500 kg usa caminhão
+PASS criar pedido 3000 kg: 
+PASS 3000 kg aguardam capacidade disponível
+PASS destino recebe marcador no minimapa
+PASS marcador de veículo acompanha posição real
+PASS Office preserva gerenciadores, pedidos e veículos
+PASS relógio e caminhão continuam enquanto o jogador está no Office
+PASS sem pedidos ou frota duplicados ao voltar
+PASS coleta, transporte e descarga liberam a frota
+PASS pedidos percorreram metros reais sem teletransporte
+PASS dinheiro atualizado pelas três conclusões reais
+PASS conclusão repetida não paga novamente
+PASS marcador 3D removido após animação de conclusão
+PASS salvamento real contém histórico, fila e dinheiro
+Estados de segurança observados: Semaforo, Nenhum, CruzamentoBloqueado, Veiculo, Pedestre
+Erros: 
+RESULT SUCCESS

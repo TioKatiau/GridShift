@@ -1,0 +1,10 @@
+PASS final quality preset 0
+PASS final quality preset 1
+PASS final quality preset 2
+PASS volume intensity 0
+PASS effects zero stops camera postprocessing
+PASS render distance applies requested value
+PASS effect slider present
+PASS final preferences saved
+Erros: 
+RESULT SUCCESS

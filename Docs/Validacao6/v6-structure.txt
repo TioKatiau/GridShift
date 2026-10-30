@@ -1,0 +1,6 @@
+PASS SampleScene sem scripts ausentes
+PASS Office sem scripts ausentes
+PASS MainMenu sem scripts ausentes
+PASS 31 locais válidos, IDs exclusivos e paradas projetadas na faixa antes do cruzamento
+PASS MainMenu inicial; cenas do jogo preservadas
+RESULT SUCCESS

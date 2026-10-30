@@ -1,0 +1,34 @@
+PASS menu principal e splash inicial executados
+PASS arquivo nativo legível e válido
+PASS Continuar habilitado por arquivo salvo válido
+PASS Configurações reaproveitam painel existente
+PASS Configurações retornam ao menu
+PASS Continue restaura dinheiro e histórico sem pagar novamente
+PASS pedido pendente volta à fila após reiniciar aplicativo
+PASS UrbanLink real carregado; https://urbanlink-flow.onrender.com/
+PASS zoom nativo 200% confirmado por DPR e viewport, sem CSS adicional
+INFO textura (1600, 1489); viewport CSS 800x744; DPR 2
+PASS mouse e digitação real a 200% no dispositivo ativo
+PASS Backspace no navegador ativo; valor=GridShift ação4
+PASS FOV do monitor ampliado
+PASS site público não pode criar pedidos no painel local
+PASS botão DEMO abre painel nativo com dados reais da Unity
+PASS digitação real no formulário local a 200%: Peças web 500kg
+PASS formulário cria pedido verdadeiro, peso e destino validados
+PASS pedido Unity aparece no histórico do navegador
+PASS controle manual reduz zoom nativo a 175%
+PASS controle manual restaura zoom nativo a 200%
+PASS recarregar reconecta ao mesmo pedido sem duplicação
+PASS perda de atualização local sinalizada
+PASS retomada da ponte reconecta sem duplicar pedido
+PASS textura renderizada não está preta: computador-demo-200
+INFO computador-demo-200 image enabled=True cull=False alpha=1
+PASS tablet compartilha página, pedido e zoom com PC
+PASS textura renderizada não está preta: tablet-demo-200
+INFO tablet-demo-200 image enabled=True cull=False alpha=1
+PASS conclusão física e recompensa refletidas no painel web
+PASS textura renderizada não está preta: tablet-demo-concluida
+INFO tablet-demo-concluida image enabled=True cull=False alpha=1
+PASS ESC devolve controles após acompanhar entrega
+Erros: 
+RESULT SUCCESS

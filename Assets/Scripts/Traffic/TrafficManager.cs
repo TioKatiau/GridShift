@@ -23,7 +23,7 @@ public class TrafficManager : MonoBehaviour
     public void SetRoutineDensity(float value) { routineDensity = Mathf.Clamp(value, .05f, 2f); }
     private readonly Plane[] viewPlanes = new Plane[6];
     public int ActiveCount => active.Count;
-    public int TargetCount => Mathf.Max(authoredCount, Mathf.Min(quantidadeMaxima, Mathf.RoundToInt(quantidadeInicial * densidade * routineDensity)));
+    public int TargetCount => Mathf.Max(authoredCount, Mathf.Min(quantidadeMaxima, Mathf.RoundToInt(quantidadeInicial * densidade * routineDensity * GridShiftPerformanceSettings.TrafficDensity)));
     public IReadOnlyList<TrafficCar> Vehicles => active;
     private void Awake()
     {
@@ -94,7 +94,7 @@ public class TrafficManager : MonoBehaviour
             if (count > 0) continue;
             car.gameObject.SetActive(false); car.transform.SetParent(transform, true);
             car.transform.SetPositionAndRotation(position, rotation);
-            car.ResetRoute(route); car.gameObject.SetActive(true); active.Add(car);
+            car.ResetRoute(route); car.gameObject.SetActive(true);car.SynchronizeSpawnPose(position,rotation); active.Add(car);
             return true;
         }
         car.gameObject.SetActive(false); car.transform.SetParent(poolRoot); pool.Enqueue(car); return false;
@@ -102,7 +102,7 @@ public class TrafficManager : MonoBehaviour
     public void SetDensity(float value) { densidade = Mathf.Clamp(value, 0f, 2f); }
     public bool Recycle(TrafficCar car)
     {
-        if (car == null || !origins.TryGetValue(car, out int model) || !active.Remove(car)) return false;
+        if (car == null || car.Guidance!=null || car.HasParkingGoal || !origins.TryGetValue(car, out int model) || !active.Remove(car)) return false;
         car.gameObject.SetActive(false); car.transform.SetParent(poolRoot); pools[model].Enqueue(car); return true;
     }
     private void RecycleHidden()
@@ -111,7 +111,7 @@ public class TrafficManager : MonoBehaviour
         if (viewActive) GeometryUtility.CalculateFrustumPlanes(playerView, viewPlanes);
         for (int i = active.Count - 1; i >= 0; i--)
         {
-            var car = active[i]; if (car == null || !origins.ContainsKey(car)) continue;
+            var car = active[i]; if (car == null || car.Guidance!=null || car.HasParkingGoal || !origins.ContainsKey(car)) continue;
             bool visible = false;
             foreach (Renderer renderer in car.GetComponentsInChildren<Renderer>())
                 if (viewActive && GeometryUtility.TestPlanesAABB(viewPlanes, renderer.bounds)) { visible = true; break; }
@@ -119,3 +119,4 @@ public class TrafficManager : MonoBehaviour
         }
     }
 }
+

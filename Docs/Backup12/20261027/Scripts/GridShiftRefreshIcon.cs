@@ -1,0 +1,5 @@
+using UnityEngine;
+using UnityEngine.UI;
+public sealed class GridShiftRefreshIcon:MaskableGraphic {
+ protected override void OnPopulateMesh(VertexHelper mesh){mesh.Clear();float radius=Mathf.Min(rectTransform.rect.width,rectTransform.rect.height)*.34f;const int steps=24;for(int i=0;i<steps;i++){float a=Mathf.Lerp(30,315,i/(float)steps)*Mathf.Deg2Rad,b=Mathf.Lerp(30,315,(i+1)/(float)steps)*Mathf.Deg2Rad;Vector2 p=new Vector2(Mathf.Cos(a),Mathf.Sin(a)),q=new Vector2(Mathf.Cos(b),Mathf.Sin(b));int index=mesh.currentVertCount;mesh.AddVert(p*(radius-1),color,Vector2.zero);mesh.AddVert(p*(radius+1),color,Vector2.zero);mesh.AddVert(q*(radius+1),color,Vector2.zero);mesh.AddVert(q*(radius-1),color,Vector2.zero);mesh.AddTriangle(index,index+1,index+2);mesh.AddTriangle(index,index+2,index+3);}float angle=315*Mathf.Deg2Rad;Vector2 tip=new Vector2(Mathf.Cos(angle),Mathf.Sin(angle))*radius;int at=mesh.currentVertCount;mesh.AddVert(tip+new Vector2(2.5f,2),color,Vector2.zero);mesh.AddVert(tip+new Vector2(-3,2),color,Vector2.zero);mesh.AddVert(tip+new Vector2(2.5f,-3),color,Vector2.zero);mesh.AddTriangle(at,at+1,at+2);}
+}

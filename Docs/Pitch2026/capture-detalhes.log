@@ -1,0 +1,8 @@
+REAL CITY traffic=13 car=Transito_Vehicle_SUV_color03_separate at=(152.68, -4.60, 138.20) truck=Vehicle_Truck_separate at=(367.30, -4.60, 183.69) pedestrian=(165.10, -4.38, 191.90)
+DETAIL real pedestrian activity=Crossing at=(312.64, -4.38, 193.38) cameraOffset=(6.00, 2.10, 0.00)
+START 04_pedestres frames=162 scene=SampleScene
+DONE 04_pedestres
+DETAIL real route vehicle=GS-T01 state=ToPickup destination=P7-1ed6b94b3ceb
+START 08_mapa_rotas frames=132 scene=SampleScene
+DONE 08_mapa_rotas
+RESULT SUCCESS

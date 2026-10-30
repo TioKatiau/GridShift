@@ -1,0 +1,78 @@
+Reserva corrigida: Rota_13_09_10_Direita / (244.10, -4.60, 301.40) -> (244.10, -4.60, 261.40)
+Reserva corrigida: Rota_08_09_10_Reta / (244.10, -4.60, 301.40) -> (244.10, -4.60, 261.40)
+Reserva corrigida: Rota_10_03_02_Esquerda / (124.10, -4.60, 261.40) -> (124.10, -4.60, 301.40)
+Reserva corrigida: Rota_06_09_10_Esquerda / (244.10, -4.60, 301.40) -> (244.10, -4.60, 261.40)
+Associações antigas de cruzamento corrigidas pela geometria: 4
+Elemento de paisagem removido do corredor viário: Props_BillBoard_large (1) de (379.60, -4.60, 202.10) para (479.60, -4.60, 202.10)
+Elemento de paisagem removido do corredor viário: Props_Windmill (27) de (389.20, -4.60, 262.10) para (489.20, -4.60, 262.10)
+Elemento de paisagem removido do corredor viário: Props_Windmill (28) de (389.20, -4.60, 205.10) para (489.20, -4.60, 205.10)
+Aproximação inexistente na rede antiga descartada: Route8_2
+Rotas dirigidas novas=15
+1 vaga de baliza: objetivo opcional para tráfego ambiente; veículos em entrega são excluídos
+Destinos novos=5
+CALÇADA VALIDADA; conferir porta: P-617c97720290 / Building_Auto Service / (174.60, -4.36, 162.40)
+CALÇADA VALIDADA; conferir porta: P-69bdedc3fc03 / Building_Bakery (1) / (333.60, -4.36, 133.40)
+CALÇADA VALIDADA; conferir porta: P-c4815e1bfc39 / Building_Bakery (2) / (214.10, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P-64c280ddaed5 / Building_Bar (2) / (228.10, -4.36, 191.90)
+CALÇADA VALIDADA; conferir porta: P-b99081e7ab23 / Building_Bar (3) / (151.10, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P-a158a36d1124 / Building_Bar (4) / (166.60, -4.36, 191.90)
+CALÇADA VALIDADA; conferir porta: P-b8fd062e3227 / Building_Books Shop / (234.60, -4.36, 162.40)
+CALÇADA VALIDADA; conferir porta: P-1a1b4706b4db / Building_Chicken Shop (2) / (205.10, -4.36, 209.90)
+CALÇADA VALIDADA; conferir porta: P-1594b1a6b1e3 / Building_Clothing / (222.10, -4.36, 251.90)
+CALÇADA VALIDADA; conferir porta: P-0c00ee1948d5 / Building_Coffee Shop (2) / (252.60, -4.36, 177.90)
+CALÇADA VALIDADA; conferir porta: P-d1e7e9851410 / Building_Drug Store / (192.60, -4.36, 180.90)
+CALÇADA VALIDADA; conferir porta: P-516520096c04 / Building_Factory / (334.10, -4.36, 191.90)
+CALÇADA VALIDADA; conferir porta: P-f3d5f5be4846 / Building_Fast Food (1) / (265.10, -4.36, 131.90)
+CALÇADA VALIDADA; conferir porta: P-b64d98d7a04a / Building_Gift Shop (2) / (169.60, -4.36, 131.90)
+CALÇADA VALIDADA; conferir porta: P-95804dfa29f5 / Building_Gift Shop (4) / (192.60, -4.36, 231.40)
+PORTA VALIDADA: P-6fa13e6398a0 / Building_House_01_color01 (1) / (262.70, -3.98, 318.46)
+AJUSTE MANUAL: P-63f30d32494b / Building_House_01_color01 (2) sem acesso de calçada validado
+PORTA VALIDADA: P-4550cc3a2865 / Building_House_01_color02 / (312.70, -3.98, 318.66)
+PORTA VALIDADA: P-745db8120bf5 / Building_House_02_color01 (2) / (222.62, -3.98, 318.83)
+PORTA VALIDADA: P-d2f4a5bf3bd7 / Building_House_02_color02 (1) / (339.62, -3.98, 318.53)
+PORTA VALIDADA: P-4542aa1beb83 / Building_House_02_color03 (1) / (290.72, -3.98, 318.53)
+CALÇADA VALIDADA; conferir porta: P-30fc00d2afd4 / Building_House_03_color03 (1) / (234.60, -4.36, 131.90)
+PORTA VALIDADA: P-770cfcee55ec / Building_House_03_color03 (2) / (285.42, -4.51, 188.32)
+PORTA VALIDADA: P-faca876e59d1 / Building_House_04_color03 (2) / (193.56, -4.40, 321.28)
+CALÇADA VALIDADA; conferir porta: P-a99ced940b80 / Building_Pizza (5) / (294.60, -4.36, 163.90)
+CALÇADA VALIDADA; conferir porta: P-9516ca93e6c6 / Building_Residential_color01 / (132.60, -4.36, 177.90)
+CALÇADA VALIDADA; conferir porta: P-56d0959a5415 / Building_Residential_color01 (1) / (268.10, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P-2c493749ba51 / Building_Residential_color03 (2) / (157.60, -4.36, 209.90)
+CALÇADA VALIDADA; conferir porta: P-073ca044b28c / Building_Shoes Shop / (234.60, -4.36, 222.40)
+CALÇADA VALIDADA; conferir porta: P-bae0b9dcf093 / Building_Stadium / (274.10, -4.36, 209.90)
+AJUSTE MANUAL: P-e035d8f07564 / Building_Super Market sem acesso de calçada validado
+CALÇADA VALIDADA; conferir porta: P7-7101ac6682ac / Building_Auto Service / (174.60, -4.36, 162.40)
+CALÇADA VALIDADA; conferir porta: P7-764c7bef2f5c / Building_Bakery (1) / (332.10, -4.36, 131.90)
+CALÇADA VALIDADA; conferir porta: P7-37b89836d17e / Building_Bakery (2) / (214.10, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P7-f192942ad916 / Building_Bar (2) / (234.60, -4.36, 183.90)
+CALÇADA VALIDADA; conferir porta: P7-84393e1629f3 / Building_Bar (3) / (154.10, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P7-6d120b4aff64 / Building_Bar (4) / (174.60, -4.36, 185.40)
+CALÇADA VALIDADA; conferir porta: P7-1ed6b94b3ceb / Building_Books Shop / (234.60, -4.36, 162.40)
+CALÇADA VALIDADA; conferir porta: P7-a5ca53600ae8 / Building_Chicken Shop (2) / (192.60, -4.36, 220.90)
+CALÇADA VALIDADA; conferir porta: P7-af69ac44ac2a / Building_Clothing / (234.60, -4.36, 239.40)
+CALÇADA VALIDADA; conferir porta: P7-9b089222f256 / Building_Coffee Shop (1) / (200.60, -4.36, 131.90)
+AJUSTE MANUAL: P7-2a455523134c / Building_Coffee Shop (2) sem acesso de calçada validado
+CALÇADA VALIDADA; conferir porta: P7-5ee7019fd195 / Building_Drug Store / (203.60, -4.36, 191.90)
+CALÇADA VALIDADA; conferir porta: P7-7a7b173367de / Building_Factory / (323.60, -4.36, 191.90)
+CALÇADA VALIDADA; conferir porta: P7-223723d045fd / Building_Fruits  Shop / (132.60, -4.36, 162.40)
+AJUSTE MANUAL: P7-8ac7f03ce14d / Building_Gas Station sem acesso de calçada validado
+AJUSTE MANUAL: P7-7cf5c520fc99 / Building_House_01_color01 (2) sem acesso de calçada validado
+PORTA VALIDADA: P7-16cc47941fc1 / Building_House_02_color01 (2) / (222.62, -3.98, 318.83)
+CALÇADA VALIDADA; conferir porta: P7-e717ae250518 / Building_House_03_color03 (2) / (294.60, -4.36, 177.90)
+AJUSTE MANUAL: P7-29197e9ef3ad / Building_House_04_color03 (2) sem acesso de calçada validado
+CALÇADA VALIDADA; conferir porta: P7-a5f627af8944 / Building_Pizza (4) / (214.10, -4.36, 253.40)
+CALÇADA VALIDADA; conferir porta: P7-9e02fcba4585 / Building_Pizza (5) / (280.60, -4.36, 149.90)
+CALÇADA VALIDADA; conferir porta: P7-9dba99ac5e8d / Building_Pizza (6) / (214.10, -4.36, 193.40)
+CALÇADA VALIDADA; conferir porta: P7-24299823259d / Building_Residential_color01 / (145.10, -4.36, 191.90)
+AJUSTE MANUAL: P7-097e3a8e8d4d / Building_Restaurant (3) sem acesso de calçada validado
+CALÇADA VALIDADA; conferir porta: P7-e1df86e18d63 / Building_Restaurant (4) / (132.60, -4.36, 166.90)
+CALÇADA VALIDADA; conferir porta: P7-c78707e60937 / Building_Shoes Shop / (234.60, -4.36, 222.40)
+CALÇADA VALIDADA; conferir porta: P7-f5cb54e5da25 / Building_Stadium / (296.10, -4.36, 229.90)
+AJUSTE MANUAL: P7-3982bc7dc163 / Building_Super Market sem acesso de calçada validado
+CALÇADA VALIDADA; conferir porta: P8-3c3711d3d427 / Building_Books Shop_Bairro8_0 / (388.10, -4.36, 209.90)
+CALÇADA VALIDADA; conferir porta: P8-cb5c6dc4ebf3 / Building_Chicken Shop (1)_Bairro8_1 / (414.60, -4.36, 223.90)
+CALÇADA VALIDADA; conferir porta: P8-71e9a6b91056 / Building_Chicken Shop (2)_Bairro8_2 / (392.60, -4.36, 251.90)
+PORTA VALIDADA: P8-c5459f0acec2 / Building_House_01_color01 (1)_Bairro8_0 / (441.86, -3.98, 218.80)
+PORTA VALIDADA: P8-35e849e67c8f / Building_House_01_color01 (2)_Bairro8_1 / (441.86, -3.98, 246.80)
+Expansão: 1 quarteirão, 3 ligações viárias bidirecionais, 8 peças de rua, 2 cruzamentos novos; prédios=5
+Grafo: 3828 nós, 31 travessias; entradas=14

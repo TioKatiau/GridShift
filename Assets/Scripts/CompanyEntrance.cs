@@ -27,11 +27,13 @@ public class CompanyEntrance : MonoBehaviour
     private bool trocandoCena;
 
     private Vector3 promptPosicaoInicial;
+    private PlayerMovement movement;
     private void OnEnable() { InteractionFocus.Register(this, interactionDistance); }
     private void OnDisable() { InteractionFocus.Remove(this); }
 
     private void Start()
     {
+        if(player!=null)movement=player.GetComponent<PlayerMovement>();
         if (interactionPrompt != null)
         {
             interactionPrompt.SetActive(false);
@@ -50,7 +52,7 @@ public class CompanyEntrance : MonoBehaviour
 
     private void Update()
     {
-        if (Time.timeScale<=0 || player == null || trocandoCena || (WorldSession.Instance != null &&
+        if (Time.timeScale<=0 || (movement!=null&&movement.ControlsBlocked) || player == null || trocandoCena || (WorldSession.Instance != null &&
             (WorldSession.Instance.Busy || UnityEngine.SceneManagement.SceneManager.GetActiveScene() != gameObject.scene)))
         {
             if (interactionPrompt != null) interactionPrompt.SetActive(false);
@@ -74,7 +76,7 @@ public class CompanyEntrance : MonoBehaviour
             }
 
             if (Keyboard.current != null &&
-                Keyboard.current.eKey.wasPressedThisFrame && InteractionFocus.Consume())
+                GridShiftControls.Down(GSAction.Interact) && InteractionFocus.Consume())
             {
                 StartCoroutine(TrocarCena());
             }

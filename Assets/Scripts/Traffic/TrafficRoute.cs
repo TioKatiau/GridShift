@@ -4,6 +4,7 @@ using UnityEngine;
 public class TrafficRoute : MonoBehaviour
 {
     [Header("Pontos ordenados no centro da faixa; curvas devem ser amostradas")]
+    public string stableId;
     public Transform[] pontos;
     [Tooltip("Limite desta via em m/s; zero usa o limite do veículo.")]
     [SerializeField, Min(0f)] private float velocidadeMaxima;
@@ -73,6 +74,12 @@ public class TrafficRoute : MonoBehaviour
         return true;
     }
     // Escolha única por travessia. Não usa proximidade de postes para adivinhar a direção do sinal.
+    public IEnumerable<TrafficRoute> Connections(){
+        if(!Valida)yield break;bool explicitRoutes=proximasRotas!=null&&proximasRotas.Length>0;if(!explicitRoutes&&!conectarAutomaticamente)yield break;
+        IEnumerable<TrafficRoute> candidates=explicitRoutes?proximasRotas:(Application.isPlaying?(IEnumerable<TrafficRoute>)ativas:FindObjectsByType<TrafficRoute>(FindObjectsSortMode.None));
+        var end=pontos[pontos.Length-1].position;var incoming=(end-pontos[pontos.Length-2].position).normalized;
+        foreach(var candidate in candidates){if(candidate==null||candidate==this||!candidate.isActiveAndEnabled||!candidate.Valida)continue;if(Vector3.Distance(end,candidate.pontos[0].position)>Mathf.Min(1,raioConexao))continue;var outgoing=(candidate.pontos[1].position-candidate.pontos[0].position).normalized;if(Vector3.Dot(incoming,outgoing)<-.3f)continue;yield return candidate;}
+    }
     public TrafficRoute EncontrarProximaRota()
     {
         if (!Valida) return null;
@@ -109,3 +116,4 @@ public class TrafficRoute : MonoBehaviour
         if (saidaCruzamento != null) { Gizmos.color = Color.green; Gizmos.DrawWireSphere(Saida, 1f); }
     }
 }
+

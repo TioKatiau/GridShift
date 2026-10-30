@@ -1,0 +1,50 @@
+{
+  "result": "SUCCESS",
+  "voice": "No narration, dubbing, TTS or voice recording included",
+  "outputs": [
+    {
+      "file": "GridShift_Pitch_Sem_Audio.mp4",
+      "bytes": 39686062,
+      "sha256": "c89c07912087411208ec2b61137312957bd0f6354b46457adc94ea506da566a1",
+      "tracks": [
+        {
+          "type": "vide",
+          "codec": "avc1",
+          "seconds": 100,
+          "samples": 3000,
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        }
+      ],
+      "decode": "SUCCESS"
+    },
+    {
+      "file": "GridShift_Pitch_Com_Trilha.mp4",
+      "bytes": 42304482,
+      "sha256": "59d75be07afd19b3ea7c3266e25b356d50e60ffc70085e406924a18ed2f2efb3",
+      "tracks": [
+        {
+          "type": "vide",
+          "codec": "avc1",
+          "seconds": 100,
+          "samples": 3000,
+          "width": 1920,
+          "height": 1080,
+          "fps": 30
+        },
+        {
+          "type": "soun",
+          "codec": "mp4a",
+          "seconds": 100.02133333333333,
+          "samples": 4689,
+          "width": 0,
+          "height": 0,
+          "fps": 46.87999893356084
+        }
+      ],
+      "decode": "SUCCESS"
+    }
+  ],
+  "sources": 19
+}

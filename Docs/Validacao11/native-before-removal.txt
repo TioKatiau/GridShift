@@ -1,0 +1,47 @@
+PASS login nativo aceita identificação arbitrária e descarta senha
+PASS perfil novo possui cinco slots vazios
+PASS criar Slot 01 independente
+PASS substituição recusada sem confirmação
+PASS nova partida inicia narrativa
+PASS nova empresa começa dentro do Office
+PASS frota original permanece sem duplicação
+PASS G abre tablet com animação nativa
+PASS tablet possui Unity UI funcional
+PASS formulário nativo cria entrega real
+PASS aba nativa Visão Geral
+PASS aba nativa Frota
+PASS aba nativa Financeiro
+PASS aba nativa Funcionários
+PASS aba nativa Missões
+PASS aba nativa Upgrades
+PASS aba nativa Mapa
+PASS aba nativa Configurações
+PASS rastreamento de veículo é selecionado por ID
+PASS missão pode ser desmarcada
+PASS ESC guarda tablet e restaura controle
+PASS ESC do tablet não abre pausa
+PASS ESC seguinte abre pausa
+PASS salvamento manual exige confirmação de sobrescrita
+PASS save manual guarda empresa e frota completa
+PASS senha não é gravada no save
+PASS entrega recebe veículo compatível
+PASS upgrade usa saldo real
+PASS salvar entrega em andamento
+PASS ler estado completo versionado
+PASS retorno ao menu encerra sessão anterior
+PASS carregar restaura a cena Office e gerenciadores
+PASS recarregar não duplica veículos nem entregas
+PASS saldo e upgrade restaurados
+PASS rastreamentos persistem no save
+PASS veículo retoma entrega em rota estável
+PASS computador mantém zoom e painel nativo
+PASS monitor exibe central Urban Flow nativa
+PASS ESC sai do computador e restaura câmera
+PASS voltar à cidade preserva a sessão
+PASS HUD 3D reaparece após Office com avatar anteriormente inativo
+PASS missão selecionada continua visível
+PASS mapa ampliado preserva seleção de veículo
+PASS rastreamento pode ser desativado e reativado
+PASS entrega restaurada conclui fisicamente
+PASS recompensa permanece única após carregar e concluir
+PASS gravar progresso final do Slot 01

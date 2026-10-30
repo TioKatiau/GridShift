@@ -1,0 +1,29 @@
+PASS tablet: painel ocupa 95% das duas dimensões da superfície real
+PASS tablet: aba mantém nome Funcionários
+PASS tablet: lista longa usa rolagem
+PASS tablet: roda do mouse desloca ScrollRect nativo
+PASS contador inicial 11/12 sem entrega real não concede bônus
+PASS entrega em transporte não conta como concluída
+PASS entrega concluída aguarda confirmação sem recompensa antecipada
+PASS confirmação concede bônus da missão inicial
+PASS segunda confirmação não repete recompensa
+PASS três entregas e reputação não substituem especialista e upgrade
+PASS upgrade sozinho não conclui missão composta
+PASS contratação real de especialista utiliza sistema financeiro
+PASS todos os requisitos individualizados liberam confirmação
+PASS missão composta concede recompensa somente após confirmar
+PASS estado da missão é salvo e lido pelo armazenamento versionado
+PASS estado e recompensa única sobrevivem à restauração
+PASS migração de campanha v1 não confia em contador ou status de conclusão antigos
+PASS migração usa versão 2 da campanha mantendo formato dos slots
+PASS contratação pelo tablet altera contador sem sobrescrever categoria
+PASS computer: painel ocupa 95% das duas dimensões da superfície real
+PASS computer: aba mantém nome Funcionários
+PASS computer: lista longa usa rolagem
+PASS computer: roda do mouse desloca ScrollRect nativo
+PASS coleta atrás exige volta pelo grafo dirigido
+PASS trajeto em laço percorre ruas conectadas sem cortar de volta para a coleta
+PASS ao retornar à via de coleta o mapa não desenha outra volta
+PASS rota acompanhada termina no alvo real de coleta ou descarga
+PASS recalcular substitui trajeto e atualiza os pontos exibidos
+PASS parar acompanhamento remove traçado sem cancelar entrega ou veículo

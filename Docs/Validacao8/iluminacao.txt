@@ -1,0 +1,2 @@
+PASS postes novos registrados no ciclo e orçamento: 6
+RESULT SUCCESS

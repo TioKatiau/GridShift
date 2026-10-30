@@ -1,0 +1,23 @@
+GRIDSHIFT — KIT DE INTERFACE (PNG)
+
+Arquivos PNG individuais: logos, fundos, botões, sliders, painéis, toggles e ícones.
+O kit usa grafite/azul-escuro e amarelo, seguindo o HUD já apresentado no GridShift.
+As duas prévias ficam em 08_Previews e não são sprites para a interface final.
+
+COMO IMPORTAR:
+1. Copie as pastas do kit para Assets/UI/GridShift_UI_Kit/.
+2. Selecione os PNGs de interface no Unity > Inspector > Texture Type: Sprite (2D and UI) > Apply.
+3. Para fundos, crie Canvas > Image, carregue Fundo_Menu_Principal ou Fundo_Configuracoes e ajuste para preencher a tela.
+4. Para botões, adicione UI > Button e defina um PNG sem texto na Image; crie o nome do botão com TextMeshPro (assim reutiliza sprites).
+5. Para hover/pressionado, use Button > Transition: Sprite Swap e associe Botao_Amarelo_Hover, Botao_Amarelo_Pressionado.
+6. Para volume, monte: Fundo_Volume_Separado (opcional), Slider_Trilho_Vazio, Slider_Preenchimento_Amarelo e Slider_Puxador. Configure a lógica com UI Slider, não somente imagens.
+7. Para toggles, utilize Toggle_Ligado / Toggle_Desligado e para checkbox Checkbox_Marcado / Checkbox_Vazio.
+8. Para painéis e botões escaláveis, defina Border no Sprite Editor e Image Type: Sliced para evitar distorcer os cantos. Escolha uma borda que preserve a moldura no PNG.
+9. Use Canvas Scaler > Scale With Screen Size, Reference Resolution 1920x1080; ajuste os anchors para cada tela.
+10. As logos com fundo transparente podem ser usadas no menu principal, splash e loading.
+
+IMPORTANTE:
+- Este kit são recursos visuais; você ainda deve conectar botões e sliders aos scripts do jogo.
+- As imagens de botão são propositalmente sem texto para servir em português/inglês.
+- 'GS_Simbolo_Transparente.png' é uma nova proposta, não a reprodução de um arquivo de marca existente.
+- Preserve a marca original do usuário, caso deseje usar a logo já presente no projeto.

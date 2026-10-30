@@ -1,0 +1,569 @@
+BUILDING Building_Clothing Center: (228.47, 1.20, 245.54), Extents: (6.06, 5.80, 6.08) JUNCTION (244.10, -4.60, 261.40) crossings=2
+TIME 2,021896 owner= pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.90) Idle current=2701 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_1 (252.60, -4.38, 249.90) Idle current=3074 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_2 (252.60, -4.38, 271.40) Idle current=2704 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_3 (252.60, -4.38, 273.40) Idle current=2302 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_4 (234.60, -4.38, 253.40) Idle current=2694 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_5 (232.60, -4.37, 253.40) Idle current=2227 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_6 (254.10, -4.38, 253.40) Idle current=2706 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_7 (256.10, -4.38, 253.40) Idle current=2790 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+TIME 7,023577 owner= pedestrian=
+CrossingTest_0 (252.20, -4.38, 252.81) Walking current=2701 next=2701 target=(252.60, -4.38, 251.90) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_1 (253.68, -4.38, 252.34) Walking current=2701 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_2 (252.60, -4.38, 272.36) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=False
+CrossingTest_3 (252.57, -4.38, 269.94) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (234.86, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (252.62, -4.38, 253.43) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2702 exitClear=True
+CrossingTest_7 (253.66, -4.38, 253.65) Walking current=2706 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 233.71) WAITING_TRAFFIC_LIGHT blocker=
+TIME 12,0342 owner= pedestrian=
+CrossingTest_0 (252.33, -4.38, 252.42) Walking current=2705 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_1 (253.90, -4.38, 252.14) Walking current=2701 next=2705 target=(254.10, -4.38, 251.90) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (252.62, -4.38, 253.43) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2702 exitClear=True
+CrossingTest_7 (253.20, -4.38, 253.88) Walking current=2706 next=2706 target=(254.10, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT blocker=
+TIME 17,03994 owner= pedestrian=
+CrossingTest_0 (252.24, -4.38, 252.23) Walking current=2705 next=2705 target=(254.10, -4.38, 251.90) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_1 (253.52, -4.38, 253.79) Walking current=2705 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (252.62, -4.38, 253.43) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2702 exitClear=True
+CrossingTest_7 (253.74, -4.38, 252.56) Walking current=2701 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.98, -4.60, 292.31) MOVING blocker=
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Container_color02_separate (269.49, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 22,04719 owner= pedestrian=CrossingTest_6
+CrossingTest_0 (252.56, -4.38, 253.22) Walking current=2701 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CrossingTest_1 (253.78, -4.38, 252.24) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_0 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (249.59, -4.57, 253.42) Crossing current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_7 (254.34, -4.38, 252.52) Walking current=2705 next=2702 target=(252.60, -4.38, 253.40) cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=-1 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+TIME 27,06004 owner= pedestrian=CrossingTest_6
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_7 crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_7 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_7 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_7 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (244.07, -4.57, 253.41) Crossing current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_7 (252.70, -4.38, 253.39) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+TIME 32,07273 owner= pedestrian=CrossingTest_6
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (238.57, -4.57, 253.40) Crossing current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 235.26) WAITING_PEDESTRIAN blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+TIME 37,07598 owner=Transito_Vehicle_Car_color02_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (252.60, -4.38, 273.35) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2302 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=2,779998 plan=False goal=2698 exitClear=True
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (236.16, -4.38, 253.40) Idle current=2698 next=-1 target=none cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_6 crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 273.58) MOVING blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 236.49) WAITING_VEHICLE blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) BLOCKED_INTERSECTION blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 42,08144 owner=Transito_Vehicle_Car_color02_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (253.82, -4.38, 270.55) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (235.13, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color02_separate (245.98, -4.60, 261.26) MOVING blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 236.52) WAITING_VEHICLE blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) BLOCKED_INTERSECTION blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 47,09564 owner=Transito_Vehicle_Ambulance_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (253.77, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.60, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (233.35, -4.38, 252.67) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color02_separate (259.55, -4.60, 258.20) MOVING blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 236.52) WAITING_VEHICLE blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Ambulance_separate (247.30, -4.60, 245.25) STUCK blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 52,09899 owner=Transito_Vehicle_Ambulance_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.60, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.16) WAITING_TRAFFIC_LIGHT blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Ambulance_separate (245.83, -4.60, 257.05) MOVING blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 57,10795 owner=Transito_Vehicle_Ambulance_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.60, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Ambulance_separate (232.76, -4.60, 264.59) MOVING blocker=
+CAR Transito_Vehicle_Container_color02_separate (261.80, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+TIME 62,10958 owner=Transito_Vehicle_Container_color02_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=1,159999 plan=False goal=2302 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (233.51, -4.38, 252.83) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Container_color02_separate (254.70, -4.60, 264.60) MOVING blocker=
+TIME 67,12459 owner=Transito_Vehicle_Container_color02_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=4,559996 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (233.91, -4.38, 253.17) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 273.03) MOVING blocker=
+TIME 72,13696 owner= pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.90) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=4,559996 plan=True goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT blocker=
+TIME 77,14446 owner= pedestrian=CrossingTest_2
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.63, -4.38, 269.19) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.28) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (274.93, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT blocker=
+TIME 82,14548 owner= pedestrian=CrossingTest_2
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (252.62, -4.57, 263.69) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 269.94) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_PEDESTRIAN blocker=CrossingTest_2
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 232.16) WAITING_PEDESTRIAN blocker=Transito_Vehicle_SUV_color01_separate
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT blocker=
+TIME 87,15784 owner= pedestrian=CrossingTest_2
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (252.61, -4.57, 258.19) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.49) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 236.87) WAITING_PEDESTRIAN blocker=Transito_Vehicle_SUV_color01_separate
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 283.70) WAITING_TRAFFIC_LIGHT blocker=
+TIME 92,17156 owner=Transito_Vehicle_SUV_color01_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0,6999995 plan=False goal=2702 exitClear=True
+CrossingTest_2 (252.60, -4.38, 253.48) Idle current=2702 next=-1 target=none cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2703 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_SUV_color01_separate (247.30, -4.60, 245.56) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 237.31) BLOCKED_INTERSECTION blocker=Transito_Vehicle_SUV_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 228.09) BLOCKED_INTERSECTION blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Container_color02_separate (247.30, -4.60, 283.86) MOVING blocker=
+TIME 97,18143 owner=Transito_Vehicle_SUV_color01_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0,6999995 plan=False goal=2702 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (252.60, -4.38, 253.48) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=2,279998 plan=False goal=3074 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (232.63, -4.38, 251.93) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=0 blocked=0 approach=0 plan=True goal=2226 exitClear=False
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_2 crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_SUV_color01_separate (244.97, -4.60, 258.53) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 245.20) BLOCKED_INTERSECTION blocker=Transito_Vehicle_SUV_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 235.23) BLOCKED_INTERSECTION blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Container_color02_separate (246.71, -4.60, 294.87) MOVING blocker=
+TIME 102,1922 owner=Transito_Vehicle_SUV_color01_separate pedestrian=
+CrossingTest_0 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=-1 target=none cross=False blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (253.94, -4.38, 253.41) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (232.99, -4.38, 252.29) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0,6999995 plan=False goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_SUV_color01_separate (231.54, -4.60, 264.60) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 245.20) BLOCKED_INTERSECTION blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 236.66) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+TIME 107,1974 owner=Transito_Vehicle_Car_color01_separate pedestrian=
+CrossingTest_0 (255.83, -4.38, 253.39) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 270.45) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (235.14, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 259.55) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 246.83) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (274.20, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=Transito_Vehicle_Truck_color03_separate
+TIME 112,2077 owner=Transito_Vehicle_Car_color01_separate pedestrian=
+CrossingTest_0 (258.76, -4.38, 252.22) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (236.07, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 284.44) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 270.96) MOVING blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (271.75, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 117,2226 owner=Transito_Vehicle_Car_color01_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (236.07, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Truck_color03_separate (261.81, -4.60, 264.60) BLOCKED_INTERSECTION blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.16) MOVING blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (271.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 122,2273 owner=Transito_Vehicle_Truck_color03_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (236.07, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Truck_color03_separate (259.79, -4.60, 264.60) MOVING blocker=
+CAR Transito_Vehicle_Car_color02_separate (240.58, -4.60, 293.01) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (270.27, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 127,2335 owner=Transito_Vehicle_Truck_color03_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (236.07, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Truck_color03_separate (238.94, -4.60, 264.60) MOVING blocker=
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_TRAFFIC_LIGHT blocker=Transito_Vehicle_Truck_color03_separate
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (253.51, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 132,2365 owner=Transito_Vehicle_Car_color01_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=True
+CrossingTest_4 (234.14, -4.38, 251.90) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (236.07, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_6 (231.12, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_5 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Truck_color03_separate (213.45, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=Transito_Vehicle_Ambulance_separate
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (228.98, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 137,2487 owner= pedestrian=CrossingTest_5
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (235.95, -4.38, 253.39) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=False
+CrossingTest_5 (240.20, -4.57, 253.40) Crossing current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2698 exitClear=True
+CrossingTest_6 (233.90, -4.38, 253.20) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2698 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=CrossingTest_5
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (213.35, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=Transito_Vehicle_Truck_color03_separate
+TIME 142,2581 owner= pedestrian=CrossingTest_5
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (235.82, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (245.70, -4.57, 253.40) Crossing current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2698 exitClear=True
+CrossingTest_6 (235.17, -4.38, 253.39) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (211.65, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 147,2737 owner= pedestrian=CrossingTest_5
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 271.37) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2704 exitClear=False
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (251.21, -4.38, 253.40) Crossing current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2698 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0,7599995 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 277.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 285.20) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 276.72) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 152,2751 owner=Transito_Vehicle_Car_color02_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 270.47) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (254.34, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 270.07) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.23, -4.60, 292.20) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (247.30, -4.60, 281.63) WAITING_VEHICLE blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 157,28 owner=Transito_Vehicle_Car_color02_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 269.94) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 255.05) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (246.92, -4.60, 294.10) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 162,281 owner=Transito_Vehicle_SUV_color02_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 269.94) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color02_separate (240.90, -4.60, 239.80) MOVING blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 253.95) MOVING blocker=
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 167,2811 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 269.94) WaitingToCross current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (260.30, -4.60, 264.60) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 282.05) BLOCKED_INTERSECTION blocker=Transito_Vehicle_Car_color01_separate
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 172,2811 owner= pedestrian=CrossingTest_3
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.57, 264.66) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN blocker=CrossingTest_3
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 177,2879 owner= pedestrian=CrossingTest_3
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.57, 259.16) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 182,2968 owner= pedestrian=CrossingTest_3
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2786 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 253.68) Crossing current=2703 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2703 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=3,799997 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (260.30, -4.60, 264.60) WAITING_PEDESTRIAN blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_Car_color01_separate (211.56, -4.60, 264.60) WAITING_VEHICLE blocker=Transito_Vehicle_Truck_color03_separate
+TIME 187,3069 owner=Transito_Vehicle_Car_color03_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (254.57, -4.38, 251.90) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=1,519999 plan=True goal=2786 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=2,199998 plan=False goal=2702 exitClear=True
+CrossingTest_3 (252.60, -4.38, 253.48) Idle current=2702 next=-1 target=none cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2703 exitClear=False
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_3 crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (250.29, -4.60, 263.90) MOVING blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 192,3178 owner=Transito_Vehicle_Car_color03_separate pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (253.61, -4.38, 252.42) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2702 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (235.40, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+CAR Transito_Vehicle_Car_color03_separate (241.40, -4.60, 254.55) MOVING blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 197,3192 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.63, -4.38, 253.37) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2702 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_1 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_1 crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Car_color03_separate (240.90, -4.60, 232.14) WAITING_TRAFFIC_LIGHT blocker=
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 202,3257 owner= pedestrian=CrossingTest_1
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.63, -4.38, 254.26) Crossing current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 251.52) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2702 exitClear=False
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 207,3284 owner= pedestrian=CrossingTest_1
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.62, -4.57, 259.76) Crossing current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 253.37) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2702 exitClear=False
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_3 crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=False
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker=CrossingTest_3 crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 212,3344 owner= pedestrian=CrossingTest_1
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.61, -4.57, 265.26) Crossing current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2702 exitClear=True
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=False
+CrossingTest_4 (234.10, -4.38, 251.95) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2229 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.49) WAITING_TRAFFIC_LIGHT blocker=
+TIME 217,3348 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.60, -4.38, 270.73) Walking current=2703 next=2301 target=(252.60, -4.38, 271.90) cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker=CrossingTest_1 crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (234.10, -4.38, 252.87) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_SUV_color02_separate (247.30, -4.60, 285.67) MOVING blocker=
+TIME 222,3448 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (252.60, -4.38, 276.18) Walking current=2303 next=2304 target=(252.60, -4.38, 276.40) cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (236.06, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+TIME 227,3454 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (252.60, -4.38, 281.59) Walking current=2307 next=2308 target=(252.60, -4.38, 282.40) cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (236.06, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+TIME 232,3457 owner= pedestrian=
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=False
+CrossingTest_1 (252.60, -4.38, 287.01) Walking current=2311 next=2312 target=(252.60, -4.38, 288.40) cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=False
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (236.06, -4.38, 253.40) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2698 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=False
+CrossingTest_6 (231.13, -4.38, 251.92) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2223 exitClear=True
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker=CrossingTest_4 crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=False
+TIME 237,3463 owner= pedestrian=CrossingTest_4
+CrossingTest_0 (259.08, -4.38, 251.92) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2795 exitClear=True
+CrossingTest_1 (252.60, -4.38, 292.44) Walking current=922 next=923 target=(252.60, -4.38, 293.40) cross=False blocker= crossings=1 blocked=0 approach=0 plan=False goal=2702 exitClear=False
+CrossingTest_2 (257.57, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=3,039997 plan=True goal=2792 exitClear=True
+CrossingTest_3 (252.60, -4.38, 251.43) WaitingToCross current=2702 next=2703 target=(252.60, -4.38, 269.90) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=3075 exitClear=True
+CrossingTest_4 (238.06, -4.57, 253.40) Crossing current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=False goal=2698 exitClear=True
+CrossingTest_5 (254.56, -4.38, 253.40) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2787 exitClear=True
+CrossingTest_6 (232.29, -4.38, 251.91) WaitingToCross current=2698 next=2702 target=(252.60, -4.38, 253.40) cross=True blocker= crossings=1 blocked=0 approach=0 plan=True goal=2698 exitClear=False
+CrossingTest_7 (256.07, -4.38, 251.93) WaitingToCross current=2702 next=2698 target=(236.10, -4.38, 253.40) cross=True blocker= crossings=0 blocked=0 approach=0 plan=True goal=2789 exitClear=True
+CAR Transito_Vehicle_Truck_color01_separate (261.81, -4.60, 264.60) WAITING_PEDESTRIAN blocker=

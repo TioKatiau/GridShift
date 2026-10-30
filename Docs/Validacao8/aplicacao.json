@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-25",
+  "backup": "C:\\Users\\Gb191\\.codex\\backups\\GridShift-v8-before-20261025",
+  "scene_before_sha256": "066a1b0240c77d339977b062cc0b25a9658c5a3cf845a329141bf2ba77c45f4c",
+  "scene_after_sha256": "bf583fdbbe6b69cbbff8c22e4493d01168306495e8f2baa3403ffc5ef6097ee9",
+  "office_sha256": "e3a7ea8ff675f17e0738e0238a9050da2e665703eba01d7afadc820397d8bb9b",
+  "office_preserved": true,
+  "created_scripts": [
+    "Assets\\Scripts\\GridShiftCityBoundary.cs",
+    "Assets\\Scripts\\GridShiftMapDrag.cs",
+    "Assets\\Scripts\\Editor\\GridShiftV8Checks.cs",
+    "Assets\\Scripts\\Editor\\GridShiftV8PlayChecks.cs",
+    "Assets\\Scripts\\Editor\\GridShiftV8Setup.cs",
+    "Assets\\Scripts\\Traffic\\TrafficParkingBay.cs"
+  ],
+  "modified_scripts": [
+    "Assets\\Scripts\\DeliveryManager.cs",
+    "Assets\\Scripts\\DeliveryPoint.cs",
+    "Assets\\Scripts\\GridShiftDeliveryBridge.cs",
+    "Assets\\Scripts\\GridShiftMapMarkers.cs",
+    "Assets\\Scripts\\GridShiftOperationsUI.cs",
+    "Assets\\Scripts\\GridShiftPerformanceDiagnostics.cs",
+    "Assets\\Scripts\\GridShiftUwbTerminal.cs",
+    "Assets\\Scripts\\PedestrianAgent.cs",
+    "Assets\\Scripts\\PedestrianManager.cs",
+    "Assets\\Scripts\\Traffic\\TrafficCar.cs",
+    "Assets\\Scripts\\Traffic\\TrafficJunction.cs",
+    "Assets\\Scripts\\Traffic\\TrafficManager.cs"
+  ],
+  "reports": [
+    "estrutura.txt",
+    "transito.txt",
+    "cidade-play.txt",
+    "navegador.txt",
+    "pedestres.txt",
+    "desempenho.txt",
+    "regressao-core.txt",
+    "ofertas-auditoria.txt",
+    "casas-limites.txt",
+    "iluminacao.txt"
+  ],
+  "applied_scene": "Assets/Scenes/SampleScene.unity",
+  "scene_matches_tested": true
+}

@@ -1,0 +1,4 @@
+Pontos validados: 31
+MainMenu como cena inicial; SampleScene e Office preservadas.
+Modo local DEMO; nenhum endpoint do Urban Flow inventado.
+GS original disponível: 32x20; Urban Flow original ainda não fornecida.

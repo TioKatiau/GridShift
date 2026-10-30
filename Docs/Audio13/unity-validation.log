@@ -1,0 +1,1167 @@
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.0/staging' branch; Version is '6000.0.83f1 (dacc44548933) revision 14339140'; Using compiler version '193933523'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gb191" at "2026-10-30T00:32:56.7745177Z"
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'pt' Physical Memory: 32636 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-30T00:32:56Z
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.83f1\Editor\Unity.exe
+-batchmode
+-projectPath
+C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation
+-executeMethod
+GridShiftAudioChecks.Batch
+-logFile
+C:\Users\Gb191\AppData\Local\Temp\gridshift13-release.log
+Successfully changed project path to: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation
+C:/Users/Gb191/AppData/Local/Temp/GridShift11Validation
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [23304]  Target information:
+
+Player connection [23304]  * "[IP] 192.168.1.120 [Port] 55505 [Flags] 2 [Guid] 250902520 [EditorId] 250902520 [Version] 1048832 [Id] WindowsEditor(7,PC-do-GUGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23304]  * "[IP] 26.77.109.142 [Port] 55505 [Flags] 2 [Guid] 250902520 [EditorId] 250902520 [Version] 1048832 [Id] WindowsEditor(7,PC-do-GUGU) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [23304] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [23304] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-12352" after 0.6 seconds.
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 1.27 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.83f1 (dacc44548933)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Gb191/AppData/Local/Temp/GridShift11Validation/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Radeon RX 5500 XT (ID=0x7340)
+    Vendor:   ATI
+    VRAM:     8151 MB
+    Driver:   32.0.21030.2001
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+Using cacheserver namespaces - metadata:defaultmetadata, artifacts:defaultartifacts
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+[Licensing::Client] Error: HandshakeResponse reported an error:
+	ResponseCode: 505
+	ResponseStatus: Unsupported protocol version '1.18.3'.
+[Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Gb191"
+[Licensing::IpcConnector] LicenseClient-Gb191 channel disconnected successfully.
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gb191-6000.0.83" at "2026-10-30T00:32:58.2807981Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 9156, path: "C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              c9b3dfc38412419dbcd1af1cafff23f2
+  Correlation Id:          d08e1312f3d41d6070ce695c1c1e0594
+  External correlation Id: 1451584964235041728
+  Machine Id:              EZpMzAAB4D6ShNj/INv22tDlzjo=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Gb191-6000.0.83" (connect: 0.00s, validation: 0.00s, handshake: 0.01s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Gb191-6000.0.83-notifications" at "2026-10-30T00:32:58.2891336Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: 4673378981913-UnityPersXXXX
+  Product: Unity Personal
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 1.52s
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.83f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004176 seconds.
+- Loaded All Assemblies, in  0.450 seconds
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.434 seconds
+Domain Reload Profiling: 881ms
+	BeginReloadAssembly (160ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (45ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (169ms)
+		LoadAssemblies (155ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (166ms)
+			TypeCache.Refresh (164ms)
+				TypeCache.ScanAssembly (151ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (435ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (391ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (93ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 60 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ai.assistant@2.19.0-pre.2 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ai.assistant@8d1e3e89e3a7)
+    com.unity.ai.inference@2.6.1 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ai.inference@9a123aee5df7)
+    com.unity.ai.navigation@2.0.14 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ai.navigation@134dd6a3b97b)
+    com.unity.collab-proxy@2.13.5 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.collab-proxy@120d77864ebc)
+    com.unity.ide.rider@3.0.38 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+    com.unity.inputsystem@1.20.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194)
+    com.unity.timeline@1.8.12 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.timeline@8cd8509afae5)
+    com.unity.visualscripting@1.9.12 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.visualscripting@4edfcc09512f)
+    com.unity.collections@2.6.8 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.collections@84e8eb3fc12e)
+    com.unity.burst@1.8.30 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.burst@2f3d916873ea)
+    com.unity.dt.app-ui@1.3.6 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.dt.app-ui@3bbd9e4c5c92)
+    com.unity.nuget.newtonsoft-json@3.2.2 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64)
+    com.unity.mathematics@1.3.2 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.mathematics@8017b507cc74)
+    com.unity.nuget.mono-cecil@1.11.6 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.nuget.mono-cecil@ecb9724e46ff)
+    com.unity.searcher@4.9.3 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.searcher@1e17ce91558d)
+    com.unity.test-framework.performance@3.5.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.test-framework.performance@8b56083ec0f0)
+  Built-in packages:
+    com.unity.multiplayer.center@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.multiplayer.center@f3fb577b3546)
+    com.unity.render-pipelines.universal@17.0.4 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.render-pipelines.universal@7bda08004641)
+    com.unity.test-framework@1.6.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.test-framework@082c24152fd4)
+    com.unity.ugui@2.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ugui@4433950e33ba)
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.ext.nunit@2.0.5 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.ext.nunit@031a54704bff)
+    com.unity.render-pipelines.core@17.0.4 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.render-pipelines.core@36dd213002aa)
+    com.unity.shadergraph@17.0.4 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.shadergraph@14250cfec0ec)
+    com.unity.render-pipelines.universal-config@17.0.3 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.render-pipelines.universal-config@dd206bf35d04)
+    com.unity.2d.sprite@1.0.0 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.2d.sprite@0eb6ea2c7181)
+    com.unity.rendering.light-transport@1.0.1 (location: C:\Users\Gb191\AppData\Local\Temp\GridShift11Validation\Library\PackageCache\com.unity.rendering.light-transport@9bd588f963c0)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.accessibility/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ai/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ai/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.androidjni/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.animation/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.animation/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.assetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.audio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.audio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.cloth/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.director/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.director/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.hierarchycore/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imageconversion/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.imgui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.jsonserialize/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.particlesystem/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.physics2d/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.screencapture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.subsystems/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrain/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.terrainphysics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.tilemap/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.ui/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.ui/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.uielements/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.umbra/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unityanalytics/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequest/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestassetbundle/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestaudio/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequesttexture/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.unitywebrequestwww/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.vehicles/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.video/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.video/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.wind/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.wind/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+A meta data file (.meta) exists but its asset 'Packages/com.unity.modules.xr/package.ModuleCompilationTrigger' can't be found. When moving or deleting files outside of Unity, please ensure that the corresponding .meta file is moved or deleted along with it.
+Couldn't delete Packages/com.unity.modules.xr/package.ModuleCompilationTrigger.meta because it's in an immutable folder.
+[ScriptCompilation] Requested script compilation because: Assetdatabase observed changes in script compilation related files
+Refreshing native plugins compatible for Editor in 3.71 ms, found 5 plugins.
+Starting: C:\Program Files\Unity\Hub\Editor\6000.0.83f1\Editor\Data\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/Gb191/AppData/Local/Temp/GridShift11Validation
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 3s426ms
+[1105/1456  0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[1448/1456  2s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+Assets\Scripts\PauseMenu.cs(14,87): warning CS0108: 'PauseMenu.animation' hides inherited member 'Component.animation'. Use the new keyword if hiding was intended.
+
+Assets\Scripts\Compass.cs(16,9): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Hodaart\CasualCharacterCollection3\Scene\Scripts\EventSystemEnsurer.cs(13,17): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+
+Assets\Scripts\GridShiftUI.cs(7,262): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Scripts\GridShiftOperationsUI.cs(77,459): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+
+Assets\Scripts\Traffic\TrafficParkingBay.cs(23,32): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+
+Assets\Scripts\Traffic\TrafficParkingBay.cs(43,40): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+
+Assets\Scripts\GridShiftSavesUI.cs(11,147): warning CS0414: The field 'GridShiftSavesUI.login' is assigned but its value is never used
+[1450/1456  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 131 defines and 343 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1451/1456  0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 133 defines and 320 references
+
+processors: Unity.Jobs.CodeGen.JobsILPostProcessor, zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+running Unity.Jobs.CodeGen.JobsILPostProcessor
+
+running zzzUnity.Burst.CodeGen.BurstILPostProcessor
+[1453/1456  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[1454/1456  0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (3.37 seconds), 6 items updated, 1456 evaluated
+Assets\Scripts\PauseMenu.cs(14,87): warning CS0108: 'PauseMenu.animation' hides inherited member 'Component.animation'. Use the new keyword if hiding was intended.
+Assets\Scripts\Compass.cs(16,9): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Hodaart\CasualCharacterCollection3\Scene\Scripts\EventSystemEnsurer.cs(13,17): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets\Scripts\GridShiftUI.cs(7,262): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Scripts\GridShiftOperationsUI.cs(77,459): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Scripts\Traffic\TrafficParkingBay.cs(23,32): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+Assets\Scripts\Traffic\TrafficParkingBay.cs(43,40): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+Assets\Scripts\GridShiftSavesUI.cs(11,147): warning CS0414: The field 'GridShiftSavesUI.login' is assigned but its value is never used
+AssetDatabase: script compilation time: 4.004057s
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.766 seconds
+Refreshing native plugins compatible for Editor in 3.56 ms, found 5 plugins.
+Missing types referenced from component UniversalRenderPipelineGlobalSettings on game object UniversalRenderPipelineGlobalSettings:
+	UnityEngine.PathTracing.Core.WorldRenderPipelineResources, Unity.PathTracing.Runtime (1 object)
+	UnityEngine.Rendering.LightmapSamplingSettings, Unity.RenderPipelines.Core.Runtime (1 object)
+	UnityEngine.Rendering.RenderingDebuggerRuntimeResources, Unity.RenderPipelines.Core.Runtime (1 object)
+	UnityEngine.Rendering.URPReflectionProbeSettings, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.UnifiedRayTracing.RayTracingRenderPipelineResources, Unity.UnifiedRayTracing.Runtime (1 object)
+	UnityEngine.Rendering.Universal.OnTilePostProcessResource, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.Universal.URPTerrainShaderSetting, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.Universal.UniversalRenderPipelineRuntimeTerrainShaders, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.VrsRenderPipelineRuntimeResources, Unity.RenderPipelines.Core.Runtime (1 object)
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 4.07 ms, found 5 plugins.
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.981 seconds
+Domain Reload Profiling: 7738ms
+	BeginReloadAssembly (349ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (37ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (140ms)
+	RebuildCommonClasses (43ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (1279ms)
+		LoadAssemblies (814ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (583ms)
+			TypeCache.Refresh (453ms)
+				TypeCache.ScanAssembly (433ms)
+			BuildScriptInfoCaches (112ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (5982ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5645ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (262ms)
+			ProcessInitializeOnLoadAttributes (4999ms)
+			ProcessInitializeOnLoadMethodAttributes (353ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Refreshing native plugins compatible for Editor in 3.86 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.74 ms.
+Asset Pipeline Refresh (id=c2aeca0c46dd2cf44a6aa5e0c6b95b1b): Total: 13.660 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=7035 ms
+		Asset DB Callback time: managed=698 ms, native=44 ms
+		Scripting: domain reloads=1, domain reload time=1766 ms, compile time=4007 ms, other=107 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=4, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.002ms
+	InvokePackagesCallback: 36.205ms
+	ApplyChangesToAssetFolders: 0.718ms
+	Scan: 430.439ms
+	OnSourceAssetsModified: 1.030ms
+	CategorizeAssetsWithTransientArtifact: 108.739ms
+	ProcessAssetsWithTransientArtifactChanges: 145.610ms
+	CategorizeAssets: 114.295ms
+	ImportOutOfDateAssets: 6002.151ms (1991.851ms without children)
+		CompileScripts: 4006.916ms
+		ReloadNativeAssets: 0.036ms
+		UnloadImportedAssets: 0.797ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.568ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.980ms
+	PostProcessAllAssets: 700.981ms
+	Hotreload: 7.018ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.003ms
+	UnloadStreamsBegin: 3.248ms
+	PersistCurrentRevisions: 0.218ms
+	UnloadStreamsEnd: 0.001ms
+	GenerateScriptTypeHashes: 21.989ms
+	Untracked: 6109.372ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 4.809ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-GridShift
+Unloading 59 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 10224 unused Assets / (19.4 MB). Loaded Objects now: 10983.
+Memory consumption went from 256.8 MB to 237.4 MB.
+Total: 34.536300 ms (FindLiveObjects: 1.340000 ms CreateObjectMapping: 1.508700 ms MarkObjects: 20.242300 ms  DeleteObjects: 11.443200 ms)
+
+Asset Pipeline Refresh (id=a013128e8d0017047b73aa0f74bd9415): Total: 0.120 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Refreshing native plugins compatible for Editor in 7.26 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Start importing Assets/Audio/Ambient/Bird_Chirp.wav using Guid(3e933739bb7c59d4391ff96f7689cb78) (AudioImporter) -> (artifact id: '56af52221c92121096bcc43bd5913dea') in 0.0866142 seconds
+Refreshing native plugins compatible for Editor in 6.16 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Asset Pipeline Refresh (id=ac6578af47f728a4d8e49bb783da5b40): Total: 0.153 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Ambient/City_Ambience_Day.wav using Guid(347f611a894673f4db87c5b6fd28271e) (AudioImporter) -> (artifact id: 'bee277f10484fbdc912ce4ce7bb868c6') in 0.091453 seconds
+Refreshing native plugins compatible for Editor in 3.40 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=bdd425c2f9c54914da9c4ff9d0680795): Total: 0.126 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Ambient/City_Ambience_Night.wav using Guid(5bd6fd4bbbc8b154e871118510ccfa5b) (AudioImporter) -> (artifact id: '93543fc306b28394e18e16fb461d2891') in 0.0975204 seconds
+Refreshing native plugins compatible for Editor in 5.48 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Asset Pipeline Refresh (id=151eb4c295b7dbe4698e3faadc646416): Total: 0.132 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Ambient/Green_Wind.wav using Guid(50388242bb8c0554b8b429876f005ec6) (AudioImporter) -> (artifact id: '10e99fbe50c802b3af6e1c0ee24b308e') in 0.0860164 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=7d6681de2b5970949974111164e0335d): Total: 0.119 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Ambient/Night_Insects.wav using Guid(b9321caf88d4f854f8d81fb6b102187c) (AudioImporter) -> (artifact id: '8f2bee47598e0752cf8fa0f48c3280e4') in 0.0528131 seconds
+Refreshing native plugins compatible for Editor in 3.38 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Asset Pipeline Refresh (id=b6af72d37d18036449ed3315e280c99a): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Ambient/Pedestrian_Murmur.wav using Guid(690518b50c3885d4e85b399046f7c83f) (AudioImporter) -> (artifact id: '2563dcd7ea38a9e4e51f49ce112bb764') in 0.05367 seconds
+Refreshing native plugins compatible for Editor in 3.42 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=2c0d50b68f016a9439c9d4356100e968): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Cargo_Collected.wav using Guid(ec1dac02f2279504bab3be5e0841164c) (AudioImporter) -> (artifact id: '3349e78b27dfab0de69a73cfc3b76767') in 0.0550945 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Asset Pipeline Refresh (id=45c9f8e8169a5ea409996e2483ad3772): Total: 0.082 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Delivery_Accepted.wav using Guid(80bf535e8a561844db95053f90c0929b) (AudioImporter) -> (artifact id: 'b5b4b1986b5cbd063e0085ddcee9ed65') in 0.0587781 seconds
+Refreshing native plugins compatible for Editor in 3.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Asset Pipeline Refresh (id=89feee6b8c9729747bc6ef10364d2223): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Delivery_Cancelled.wav using Guid(c184a6fc59371e745842e175394f8a18) (AudioImporter) -> (artifact id: '1a3afc173a9fe99d1a5ecf0beab88d5e') in 0.0606622 seconds
+Refreshing native plugins compatible for Editor in 3.93 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Asset Pipeline Refresh (id=b980f58635761454593d1805bff1c6a1): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Delivery_Completed.wav using Guid(902e9801271709341bbf9ff5343e9049) (AudioImporter) -> (artifact id: 'b542bb637d4237ce31068dd8a0b61b0b') in 0.0593082 seconds
+Refreshing native plugins compatible for Editor in 3.39 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=14a5b96cc108fe347bd2a4949f7f3b71): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Delivery_Late.wav using Guid(975ba37f813675d42a24aef96e727168) (AudioImporter) -> (artifact id: '03d112e20ddd94705752fce2801e2f3a') in 0.0598557 seconds
+Refreshing native plugins compatible for Editor in 3.62 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=5b87ab59145e390409f4e8ec701b2125): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Deliveries/Vehicle_Assigned.wav using Guid(13c3909603d7d26448e83cfd7b6f29c4) (AudioImporter) -> (artifact id: 'b71252eca182e3f7e7bd83d07e03db78') in 0.0530428 seconds
+Refreshing native plugins compatible for Editor in 3.38 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=47d5eeecad64f454f98cbc5613d50ebc): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Bill_Paid.wav using Guid(ad812f73f54e42d44804464ec1652fa8) (AudioImporter) -> (artifact id: 'f771d18769a9a779ee3601d8f89a48f9') in 0.0591854 seconds
+Refreshing native plugins compatible for Editor in 3.50 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Asset Pipeline Refresh (id=651f386edb3f5f9468fc8df3e4a3bbc9): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Employee_Hired.wav using Guid(a2eb0737466cb2a449507c749daf06fc) (AudioImporter) -> (artifact id: 'c8c03f2950a3989e598fa70ff82bcdb0') in 0.0585852 seconds
+Refreshing native plugins compatible for Editor in 3.72 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=ee47f148e9485934085583673f47502d): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Money_Received.wav using Guid(51d634a0f20b44a4eafa3c015cc9e15a) (AudioImporter) -> (artifact id: '8a23ca31af2233773c91a0798ad45dac') in 0.0598491 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=2df755e5307fe944b8240d2ea0190cdd): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Reputation_Up.wav using Guid(c4fa861bafeab0147bd43eec42348081) (AudioImporter) -> (artifact id: '0b54c708e4301e04e64b654f82431650') in 0.0586658 seconds
+Refreshing native plugins compatible for Editor in 3.65 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=501fa2bfbb0d5b34eac7fe1b03d931da): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Service_Completed.wav using Guid(72b1f171b0705ce4db79074fcb7a658b) (AudioImporter) -> (artifact id: '8225b09d9ece26fa80efdeb62c12a73b') in 0.0585705 seconds
+Refreshing native plugins compatible for Editor in 3.37 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=631d9fda0ed62364d8e9b82266b0c8fe): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Financial/Upgrade_Purchased.wav using Guid(01778049848254d4eaf662a3aa5a2c20) (AudioImporter) -> (artifact id: 'b1c2ca8a896d3c514827645e5e4d9b2f') in 0.0590704 seconds
+Refreshing native plugins compatible for Editor in 3.39 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=d2c46bc5214b215448779734c9bbbc57): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Asphalt_1.wav using Guid(c560a28bbcffe2645b29b97074c62221) (AudioImporter) -> (artifact id: '23b2a099b20c1aee3cfec4288cb153a7') in 0.0543589 seconds
+Refreshing native plugins compatible for Editor in 3.30 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=a270ef57e8125de44b44e57c73c8c4b3): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Asphalt_2.wav using Guid(f811fd05fe1b478419cd48ac72b06c94) (AudioImporter) -> (artifact id: 'b6b48be94a4c2c74f923b693030913d5') in 0.0511043 seconds
+Refreshing native plugins compatible for Editor in 3.44 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=7066b212143292241aa48fd3641b511a): Total: 0.079 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Asphalt_3.wav using Guid(6b065f26b080a9942b68dc46fdacfb6e) (AudioImporter) -> (artifact id: '2ff9a4dc56654c750529185544db24b8') in 0.0641294 seconds
+Refreshing native plugins compatible for Editor in 3.98 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=071f0b60223fd754da1be562a933910a): Total: 0.091 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Concrete_1.wav using Guid(49aa6ac16ab02134d8880e343d42255c) (AudioImporter) -> (artifact id: '1f7e868a41cdd05c262d8222239765e5') in 0.0600292 seconds
+Refreshing native plugins compatible for Editor in 3.44 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=e93a0a32c59b1b44c96a797a416cef9f): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Concrete_2.wav using Guid(f09b3636e8ba831479589a7506eca348) (AudioImporter) -> (artifact id: '0403960eeac1832064d6afde3df4359e') in 0.0541396 seconds
+Refreshing native plugins compatible for Editor in 3.96 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Asset Pipeline Refresh (id=f0b1cdaf62c814148bc19672ac7a55b5): Total: 0.083 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Concrete_3.wav using Guid(68db4b623a2d67f4c905fd33505f873e) (AudioImporter) -> (artifact id: 'cf7dffd191a4d5355495803a57ce69c1') in 0.0597766 seconds
+Refreshing native plugins compatible for Editor in 3.41 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=a3a03431c1d11bf43909488efc989824): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Grass_1.wav using Guid(733d19bad914a644c988f270fb2b68d1) (AudioImporter) -> (artifact id: 'e100ca0d52b3aa51c17436f3d6f3eb72') in 0.0531132 seconds
+Refreshing native plugins compatible for Editor in 3.44 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=398d088e53355ea458070e3f65e0df31): Total: 0.081 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Grass_2.wav using Guid(3b3f22232f8d289428bc220bf5793d8c) (AudioImporter) -> (artifact id: 'b595629a4b1631ed4a287a1d004d4460') in 0.0585885 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=58e051047809ed84fb7b05c0249ad1d0): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Grass_3.wav using Guid(1d8e74a82db39d94095b45ffcb81ccb2) (AudioImporter) -> (artifact id: 'e6a82bbe05a72a2cc45cbc31956a923c') in 0.0621743 seconds
+Refreshing native plugins compatible for Editor in 3.51 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Asset Pipeline Refresh (id=bb19bd89c27876b49b57feef80f81da3): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Office_1.wav using Guid(aef12b2f3f6504a42807d68d49685b22) (AudioImporter) -> (artifact id: '45b4f9e9abd5ae3764a3c3ca2b1e090e') in 0.0527596 seconds
+Refreshing native plugins compatible for Editor in 5.12 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Asset Pipeline Refresh (id=2611c80c2992bc745bff6f4712ea4f9e): Total: 0.083 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Office_2.wav using Guid(d8227a4ce027ff14db9f81a748ff3ca7) (AudioImporter) -> (artifact id: 'e9fedc63bd2eabda04c6a53e368d7c91') in 0.0610243 seconds
+Refreshing native plugins compatible for Editor in 3.51 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=387bd37e53e5efa4f818a64adc818c69): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Footstep_Office_3.wav using Guid(00af2f31f4639d54e933661081954ab0) (AudioImporter) -> (artifact id: '98d1ec64d8820a860407da3ff8b3eb91') in 0.0564255 seconds
+Refreshing native plugins compatible for Editor in 3.70 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=1793af97807370240bff2e0c2f353214): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Jump.wav using Guid(164e7f3cc53371b45b3d7f0677e637dd) (AudioImporter) -> (artifact id: '155cd81376bb7dbcb7e0f4c045caf000') in 0.0629552 seconds
+Refreshing native plugins compatible for Editor in 4.73 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Asset Pipeline Refresh (id=049bb656228735145af921a99b04ece9): Total: 0.090 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Footsteps/Land.wav using Guid(fb703b7584c783143b5504a655561473) (AudioImporter) -> (artifact id: '7ca25610ac8824e267da9a4c1535e188') in 0.058655 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Asset Pipeline Refresh (id=7eee1ac347318ec49b0e86da79f31dd1): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Missions/Act_Unlocked.wav using Guid(0f99ec749511ea74f8464ce1b06b7d79) (AudioImporter) -> (artifact id: 'bf6d79081b31eb57d5d0359bda277dab') in 0.0535365 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Asset Pipeline Refresh (id=dd5f0dcaaf6924343b06bb1ad939862c): Total: 0.080 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Missions/Mission_Completed.wav using Guid(43f5a1ffc2d3fe84a8ed19555fb017a2) (AudioImporter) -> (artifact id: '7d53ed6e353aad11c1c9355bfe980a02') in 0.0586178 seconds
+Refreshing native plugins compatible for Editor in 4.35 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Asset Pipeline Refresh (id=fe8a94efcf4856f4e97405326ba021e7): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Music/Menu_CityInMotion.wav using Guid(46e7816970462a74aa74f0a43c038470) (AudioImporter) -> (artifact id: '840c2114ce8300b65d521b5042bc4ea2') in 0.5534003 seconds
+Refreshing native plugins compatible for Editor in 3.31 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=05fd4927b11adc24ebafe42090720eec): Total: 0.580 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=573 ms
+		Asset DB Callback time: managed=1 ms, native=5 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 4
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.121ms
+	Scan: 8.495ms
+	OnSourceAssetsModified: 0.000ms
+	CategorizeAssetsWithTransientArtifact: 0.010ms
+	ProcessAssetsWithTransientArtifactChanges: 0.091ms
+	CategorizeAssets: 3.826ms
+	ImportOutOfDateAssets: 557.297ms (0.100ms without children)
+		ImportManagerImport: 554.805ms (0.913ms without children)
+			ImportInProcess: 553.860ms
+			UpdateCategorizedAssets: 0.032ms
+		ReloadNativeAssets: 0.036ms
+		UnloadImportedAssets: 0.299ms
+		ReloadImportedAssets: 0.345ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.941ms
+		InitializingProgressBar: 0.007ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.765ms
+	PostProcessAllAssets: 3.369ms
+	Hotreload: 3.529ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.269ms
+	UnloadStreamsBegin: 0.050ms
+	PersistCurrentRevisions: 0.260ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 3.059ms
+
+Start importing Assets/Audio/Music/Mission_ForwardMotion.wav using Guid(4ff58769fe8afe043bf72e091aa1892d) (AudioImporter) -> (artifact id: 'bd741b0b20609bc29a95728035ac07e8') in 0.5356392 seconds
+Refreshing native plugins compatible for Editor in 3.57 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Asset Pipeline Refresh (id=9e6c0c4a0d1858b45951b51e1f1e6a8d): Total: 0.564 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=556 ms
+		Asset DB Callback time: managed=1 ms, native=5 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 4
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.157ms
+	Scan: 9.710ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.013ms
+	ProcessAssetsWithTransientArtifactChanges: 0.115ms
+	CategorizeAssets: 2.715ms
+	ImportOutOfDateAssets: 539.846ms (0.140ms without children)
+		ImportManagerImport: 537.009ms (0.789ms without children)
+			ImportInProcess: 536.194ms
+			UpdateCategorizedAssets: 0.026ms
+		ReloadNativeAssets: 0.043ms
+		UnloadImportedAssets: 0.535ms
+		ReloadImportedAssets: 0.292ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.280ms
+		InitializingProgressBar: 0.018ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.528ms
+	PostProcessAllAssets: 3.555ms
+	Hotreload: 3.967ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.281ms
+	UnloadStreamsBegin: 0.042ms
+	PersistCurrentRevisions: 0.427ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 3.075ms
+
+Start importing Assets/Audio/Music/Office_AfterHours.wav using Guid(bcb2c9da3a9730449a69ab4fa1fffd4e) (AudioImporter) -> (artifact id: '164ff62329e0da2429ed88725900da9e') in 0.5651705 seconds
+Refreshing native plugins compatible for Editor in 3.34 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=2d9f3057402a43a46b080e85778e8fd2): Total: 0.593 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=1 (actual=1, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=585 ms
+		Asset DB Callback time: managed=2 ms, native=5 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 4
+	InvokeCustomDependenciesCallbacks: 0.000ms
+	InvokePackagesCallback: 0.000ms
+	ApplyChangesToAssetFolders: 0.125ms
+	Scan: 9.092ms
+	OnSourceAssetsModified: 0.000ms
+	CategorizeAssetsWithTransientArtifact: 0.010ms
+	ProcessAssetsWithTransientArtifactChanges: 0.092ms
+	CategorizeAssets: 3.888ms
+	ImportOutOfDateAssets: 568.813ms (0.128ms without children)
+		ImportManagerImport: 566.313ms (0.750ms without children)
+			ImportInProcess: 565.539ms
+			UpdateCategorizedAssets: 0.024ms
+		ReloadNativeAssets: 0.036ms
+		UnloadImportedAssets: 0.332ms
+		ReloadImportedAssets: 0.266ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.147ms
+		InitializingProgressBar: 0.007ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.582ms
+	PostProcessAllAssets: 3.866ms
+	Hotreload: 3.567ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.281ms
+	UnloadStreamsBegin: 0.047ms
+	PersistCurrentRevisions: 0.213ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 3.031ms
+
+Start importing Assets/Audio/Office/Computer_Close.wav using Guid(447c1e11400b01e41889e068b0f483b6) (AudioImporter) -> (artifact id: 'b4a638ca6beaed2283d3b30247b7bd67') in 0.059259 seconds
+Refreshing native plugins compatible for Editor in 4.23 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.17 ms.
+Asset Pipeline Refresh (id=f5060b00773ff7644a5411c2aaf8e9e7): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Office/Computer_Open.wav using Guid(e7b5bd0c7d74ee143b2c6fcc0278361f) (AudioImporter) -> (artifact id: '6588abc78f042599951aa4083f66d5c5') in 0.0577548 seconds
+Refreshing native plugins compatible for Editor in 3.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=aa0525439a02bee4ca084f6b1c13d67d): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Office/Office_Ventilation.wav using Guid(65805ba771cf98740bfa170498c63799) (AudioImporter) -> (artifact id: '6eb5685412c13f1697d3f2a959e17ae0') in 0.0820147 seconds
+Refreshing native plugins compatible for Editor in 3.49 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=6c60970026194184da1ab2126baaf4bc): Total: 0.110 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/SaveSystem/Save_Completed.wav using Guid(485eeeb94f0f49a46abd69eab0cc9a8f) (AudioImporter) -> (artifact id: '6158b2fc963f2c2bddddc1a67638a8a6') in 0.0571924 seconds
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=0234536c86bc1e943a9e20f9bf9a14f4): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/SaveSystem/Save_Deleted.wav using Guid(8b4ba0354fb7ef24886cd5091e929ea2) (AudioImporter) -> (artifact id: '78dcd80bcff2078d8b046278a077fad4') in 0.0575044 seconds
+Refreshing native plugins compatible for Editor in 3.40 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=63455bdf810aa0147af7d64f91174749): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/SaveSystem/Save_Loaded.wav using Guid(e5f70a5f7daf7df449e9a89017c1b7a5) (AudioImporter) -> (artifact id: 'ba80970d3e071d1c3c1e56828f41b864') in 0.0597353 seconds
+Refreshing native plugins compatible for Editor in 4.61 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Asset Pipeline Refresh (id=9b262bcee5c6174439897d06e2e03831): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/SaveSystem/Save_Selected.wav using Guid(ddff43a2ac7178f498dece7d35fdd96e) (AudioImporter) -> (artifact id: 'c905d134e680253bef7eedf780c8e261') in 0.0610378 seconds
+Refreshing native plugins compatible for Editor in 3.47 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=3bfd8db11f7e50b4b930d928b67cbe3c): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Tablet/Tablet_Close.wav using Guid(eca011342ecbd464db39e6258f0a0b0b) (AudioImporter) -> (artifact id: 'ed4365cd572fafc3af2601a4d83bc19d') in 0.0610429 seconds
+Refreshing native plugins compatible for Editor in 3.43 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=76c2e7dfd22f1a4479e1614586045415): Total: 0.091 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Tablet/Tablet_Open.wav using Guid(563f477ab96045743ab59e5b9e3aaa86) (AudioImporter) -> (artifact id: 'ebbe0b4af1fb427b1d169218f1f64fb2') in 0.0580397 seconds
+Refreshing native plugins compatible for Editor in 5.20 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=b4ab2b6a1e257c34ca35ee725b9585bd): Total: 0.088 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/Logo_GS.wav using Guid(e1963923f9d07a144b3af006ab42d33a) (AudioImporter) -> (artifact id: '3109722d9bf477db8aa45ac9953ba452') in 0.0653886 seconds
+Refreshing native plugins compatible for Editor in 4.42 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=ad6eb6faec739e448bd3d6e70cf2c98f): Total: 0.093 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/Notification.wav using Guid(825bf7bd0df6bf4478ff790207735cf6) (AudioImporter) -> (artifact id: '34255a0be89967b0787a101559e65487') in 0.0600273 seconds
+Refreshing native plugins compatible for Editor in 3.45 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=aed74b8d68824624a9db09c8bd9564b2): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Cancel.wav using Guid(746f46f1b5fcd2f458dac2d524b796f3) (AudioImporter) -> (artifact id: '58a017c4ac8fdc8722a4f20b11cd472f') in 0.0604098 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.13 ms.
+Asset Pipeline Refresh (id=b369518eac3f3bf4ba66a29ed3589063): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Click.wav using Guid(7b13d01ce1596774b8b75c72ad8ec17b) (AudioImporter) -> (artifact id: 'c7769b6c43e2b43cf948a28c8fc4e242') in 0.0414045 seconds
+Refreshing native plugins compatible for Editor in 3.29 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=d18eaa348c30d884f9f0bc1330ea0754): Total: 0.069 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Confirm.wav using Guid(9d2655d6d46fc94488a67054bdd0a455) (AudioImporter) -> (artifact id: 'cf730d503129b614eafd07b51b217156') in 0.0587477 seconds
+Refreshing native plugins compatible for Editor in 4.26 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=fef539d8e1263fc488d0ceaf027fd27b): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Error.wav using Guid(9e3abeb74f32104418aac1e2809faaaf) (AudioImporter) -> (artifact id: '4c9ec76491ca148f76340318cdd77f82') in 0.0578764 seconds
+Refreshing native plugins compatible for Editor in 3.35 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=5eb45dd7f26ebea49b69509b4c55d452): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Hover.wav using Guid(47c0c693faf7207459d9c59d9d63695e) (AudioImporter) -> (artifact id: '63ba18cc5549746dda3cf59d12bcc8d7') in 0.0361641 seconds
+Refreshing native plugins compatible for Editor in 3.55 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=0828b27b2bb0b6c45ad1059261072048): Total: 0.063 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/UI/UI_Tab.wav using Guid(d30afc567b15d2e418db0b0609dbe252) (AudioImporter) -> (artifact id: '7041911ea0ddb84a3860f18b01af1480') in 0.0582668 seconds
+Refreshing native plugins compatible for Editor in 3.77 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=c1acdfdaf22663f4babf7487ed547806): Total: 0.085 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Car_Brake.wav using Guid(9a6772ea7d38bef4588b7ebc38523e0b) (AudioImporter) -> (artifact id: 'a15ad6e26846c78f6dab361979cdfa6b') in 0.0609274 seconds
+Refreshing native plugins compatible for Editor in 3.56 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=b9cab18efbcaf2040917b8da75dba4dd): Total: 0.090 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Car_Engine_Loop.wav using Guid(372062fec7120e34d92189eb082205eb) (AudioImporter) -> (artifact id: 'b4661366bef5092053b240c8a78023ef') in 0.0620322 seconds
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=bb48f693b9471344cb6c276ad9b6b5c1): Total: 0.091 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Car_Horn.wav using Guid(a925c8d74377d864f943a3c6c136114c) (AudioImporter) -> (artifact id: '4ede693ff6df9f102cfebb801ae1f407') in 0.0654805 seconds
+Refreshing native plugins compatible for Editor in 4.11 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=ce759fb720fdc094fb7d5e9138209ede): Total: 0.094 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Car_Road_Loop.wav using Guid(aaf99a6852fe48f48891afa8ba998e5b) (AudioImporter) -> (artifact id: '279a7e251a483be7725562e600a98950') in 0.0617212 seconds
+Refreshing native plugins compatible for Editor in 4.52 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=26e5d5823fd61184cbf712943927ab42): Total: 0.090 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Truck_Brake.wav using Guid(8213f19d12e85db4cafffabf97c838a3) (AudioImporter) -> (artifact id: 'ec2200c451972791f51915d5544b5587') in 0.0575406 seconds
+Refreshing native plugins compatible for Editor in 3.43 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=4a47c83c82bc01e4a8b2494caff591e2): Total: 0.086 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Truck_Engine_Loop.wav using Guid(d09c90732a9c9184d88e2136e22ad1e9) (AudioImporter) -> (artifact id: 'fe5a37f079899a5ba7b3d8f12a01f11a') in 0.0621495 seconds
+Refreshing native plugins compatible for Editor in 5.93 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Asset Pipeline Refresh (id=5da71fdbf5e25d440907f426624d0d7d): Total: 0.095 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Truck_Horn.wav using Guid(9c9eedf826a07f4418b3fb5ebf02c379) (AudioImporter) -> (artifact id: '3eecca0e1b00822994a10c3d6f21541c') in 0.0662836 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=c971225f994497e49855dabe4de0d6b5): Total: 0.106 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Truck_Reverse.wav using Guid(f6d8d4303f8f7a743a1f890cf34d388b) (AudioImporter) -> (artifact id: '769327ba93dc3c4c1c16272b55995766') in 0.0577755 seconds
+Refreshing native plugins compatible for Editor in 3.66 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Asset Pipeline Refresh (id=5bb53cb616e889f448534084be2737e7): Total: 0.087 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing Assets/Audio/Vehicles/Truck_Road_Loop.wav using Guid(7091a789ad9f3ee43a5405fc496c0cdd) (AudioImporter) -> (artifact id: '13bfacaf4529200b8ad483910add40b4') in 0.0616571 seconds
+Refreshing native plugins compatible for Editor in 4.27 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Asset Pipeline Refresh (id=c632353f47d3a0c4d9616286f81d5358): Total: 0.089 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Start importing ProjectSettings/EditorBuildSettings.asset using Guid(0000000000000000b000000000000000) (LibraryAssetImporter) -> (artifact id: 'febe698214a3ec02380299a3da5f688e') in 0.0028549 seconds
+Start importing Assets/Resources/GridShiftAudioLibrary.asset using Guid(6690b7e68b004f049ab383bc1ffbee7d) (NativeFormatImporter) -> (artifact id: '40fbed630d5a205e2ef25dff03287112') in 0.0021771 seconds
+Refreshing native plugins compatible for Editor in 3.38 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Asset Pipeline Refresh (id=8b0badb93e39f4d4eb82fb9c74d234b8): Total: 0.033 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+Loaded scene 'Library/Unused/5747bbe847fc47d4a94a5abb648f3e98'
+	Deserialize:            1.242 ms
+	Integration:            1.577 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       13.043 ms
+	Total Operation Time:   15.865 ms
+Loaded scene 'Library/Unused/4de5c34f83f3c8b46912352a192c79cb'
+	Deserialize:            0.386 ms
+	Integration:            0.876 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   1.278 ms
+Loaded scene 'Library/Unused/ab96c600a1f33614ab215037d3b91691'
+	Deserialize:            0.388 ms
+	Integration:            1.188 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   1.593 ms
+Loaded scene 'Library/Unused/8cbf523c654ada14e9534c521182f369'
+	Deserialize:            0.376 ms
+	Integration:            0.207 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   0.599 ms
+Loaded scene 'Library/Unused/8f9b505c2e12b4a41bdd98de404b72eb'
+	Deserialize:            0.451 ms
+	Integration:            1.433 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   1.902 ms
+Loaded scene 'Library/Unused/bdf4ee169f550054c910b95469f59376'
+	Deserialize:            0.532 ms
+	Integration:            0.266 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   0.814 ms
+Loaded scene 'Library/Unused/f0cfaf0b3549e0e41a165c5172cff3aa'
+	Deserialize:            0.601 ms
+	Integration:            1.122 ms
+	Integration of assets:  0.003 ms
+	Thread Wait Time:       0.021 ms
+	Total Operation Time:   1.747 ms
+Loaded scene 'Library/Unused/3f34259e5f360884e8729eb4da1d5092'
+	Deserialize:            0.466 ms
+	Integration:            1.094 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.015 ms
+	Total Operation Time:   1.576 ms
+Loaded scene 'Library/Unused/ba760db8c42e5b140afb25a1b6f7b6e5'
+	Deserialize:            0.407 ms
+	Integration:            1.310 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   1.735 ms
+Loaded scene 'Library/Unused/d7ea6eab211e5c4479dee15c42db6e8e'
+	Deserialize:            0.928 ms
+	Integration:            0.252 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.031 ms
+	Total Operation Time:   1.212 ms
+Loaded scene 'Library/Unused/c6d7f997a115be245aa2eed3afb3c6f3'
+	Deserialize:            0.570 ms
+	Integration:            0.214 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   0.799 ms
+Loaded scene 'Library/Unused/ef6ac7e8dc57e0e45a17b9f0c3d34718'
+	Deserialize:            0.398 ms
+	Integration:            0.198 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   0.602 ms
+Loaded scene 'Library/Unused/f32c7e3a081d7f74da56e196d0663d4e'
+	Deserialize:            0.420 ms
+	Integration:            0.197 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   0.625 ms
+Loaded scene 'Library/Unused/506960d01a6ac33419fee3156e020c9a'
+	Deserialize:            0.462 ms
+	Integration:            0.201 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   0.670 ms
+Loaded scene 'Library/Unused/5a62586e81bc05a4abcda7877ea2ea35'
+	Deserialize:            0.578 ms
+	Integration:            0.209 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.008 ms
+	Total Operation Time:   0.796 ms
+Loaded scene 'Library/Unused/23a5a8558fac89b48b3924478c511346'
+	Deserialize:            0.379 ms
+	Integration:            0.355 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   0.741 ms
+Loaded scene 'Library/Unused/84bd69755432a4748a6d94627f2b6b9d'
+	Deserialize:            0.499 ms
+	Integration:            1.095 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.013 ms
+	Total Operation Time:   1.608 ms
+Loaded scene 'Library/Unused/39f702a103693734fbb313b873596619'
+	Deserialize:            0.507 ms
+	Integration:            0.632 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.007 ms
+	Total Operation Time:   1.147 ms
+Loaded scene 'Library/Unused/2b091bcb5aa2cd3418f86057159a14e2'
+	Deserialize:            0.491 ms
+	Integration:            0.189 ms
+	Integration of assets:  0.001 ms
+	Thread Wait Time:       0.006 ms
+	Total Operation Time:   0.687 ms
+GridShift Audio 13: 63 clips, 7 mixer groups ready.
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+GridShiftAudioSetup:Install () (at Assets/Scripts/Editor/GridShiftAudioSetup.cs:42)
+GridShiftAudioChecks:Batch () (at Assets/Scripts/Editor/GridShiftAudioChecks.cs:16)
+
+(Filename: Assets/Scripts/Editor/GridShiftAudioSetup.cs Line: 42)
+
+Opening scene 'Assets/Scenes/MainMenu.unity'
+Unloading 29 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Assets/Scenes/MainMenu.unity'
+	Deserialize:            4.547 ms
+	Integration:            343.603 ms
+	Integration of assets:  0.519 ms
+	Thread Wait Time:       0.014 ms
+	Total Operation Time:   348.683 ms
+Unloading 228 unused Assets / (15.5 MB). Loaded Objects now: 11010.
+Memory consumption went from 230.0 MB to 214.5 MB.
+Total: 20.298300 ms (FindLiveObjects: 0.592500 ms CreateObjectMapping: 0.720100 ms MarkObjects: 18.296400 ms  DeleteObjects: 0.687900 ms)
+
+D3D11 device created for Microsoft Media Foundation video decoding.
+[Project] Loading completed in 26.056 seconds
+	Project init time: 				17.096 seconds
+		Template init time: 		0.000 seconds
+		Package Manager init time: 		0.560 seconds
+		Asset Database init time: 		0.397 seconds
+		Global illumination init time: 	0.004 seconds
+		Assemblies load time: 			0.913 seconds
+		Unity extensions init time: 	0.017 seconds
+		Asset Database refresh time: 	13.660 seconds
+	Scene opening time: 			8.530 seconds
+##utp:{"type":"ProjectInfo","version":2,"phase":"Immediate","time":1793320402467,"processId":12352,"projectLoad":26.0556819,"projectInit":17.0960341,"templateInit":0.0,"packageManagerInit":0.5601645,"assetDatabaseInit":0.3971334,"globalIlluminationInit":0.0039088,"assembliesLoad":0.9130591,"unityExtensionsInit":0.0167407,"assetDatabaseRefresh":13.6601874,"sceneOpening":8.5295355}
+##utp:{"type":"EditorInfo","version":2,"phase":"Immediate","time":1793320402467,"processId":12352,"editorVersion":"6000.0.83f1 (dacc44548933)","branch":"6000.0/staging","buildType":"Release","platform":"Windows"}
+Reloading assemblies for play mode.
+Reloading assemblies after forced synchronous recompile.
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.278 seconds
+Refreshing native plugins compatible for Editor in 4.16 ms, found 5 plugins.
+Missing types referenced from component UniversalRenderPipelineGlobalSettings on game object UniversalRenderPipelineGlobalSettings:
+	UnityEngine.PathTracing.Core.WorldRenderPipelineResources, Unity.PathTracing.Runtime (1 object)
+	UnityEngine.Rendering.LightmapSamplingSettings, Unity.RenderPipelines.Core.Runtime (1 object)
+	UnityEngine.Rendering.RenderingDebuggerRuntimeResources, Unity.RenderPipelines.Core.Runtime (1 object)
+	UnityEngine.Rendering.URPReflectionProbeSettings, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.UnifiedRayTracing.RayTracingRenderPipelineResources, Unity.UnifiedRayTracing.Runtime (1 object)
+	UnityEngine.Rendering.Universal.OnTilePostProcessResource, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.Universal.URPTerrainShaderSetting, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.Universal.UniversalRenderPipelineRuntimeTerrainShaders, Unity.RenderPipelines.Universal.Runtime (1 object)
+	UnityEngine.Rendering.VrsRenderPipelineRuntimeResources, Unity.RenderPipelines.Core.Runtime (1 object)
+Native extension for WindowsStandalone target not found
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.918 seconds
+Domain Reload Profiling: 3192ms
+	BeginReloadAssembly (645ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (21ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (441ms)
+	RebuildCommonClasses (41ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (504ms)
+		LoadAssemblies (219ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (401ms)
+			TypeCache.Refresh (10ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (369ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1919ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1559ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (250ms)
+			ProcessInitializeOnLoadAttributes (877ms)
+			ProcessInitializeOnLoadMethodAttributes (404ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Asset Pipeline Refresh (id=783c9567e6f2b354ba4cb497127c75e4): Total: 3.434 seconds - Initiated by StopAssetImportingV2(ForceSynchronousImport | ForceDomainReload)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=2081 ms
+		Asset DB Callback time: managed=41 ms, native=0 ms
+		Scripting: domain reloads=1, domain reload time=1308 ms, compile time=1 ms, other=0 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 2.567ms
+	ApplyChangesToAssetFolders: 0.446ms
+	Scan: 0.001ms
+	OnSourceAssetsModified: 0.002ms
+	CategorizeAssetsWithTransientArtifact: 0.006ms
+	ProcessAssetsWithTransientArtifactChanges: 8.447ms
+	CategorizeAssets: 94.520ms
+	ImportOutOfDateAssets: 1938.224ms (1930.581ms without children)
+		CompileScripts: 1.477ms
+		CollectScriptTypesHashes: 3.179ms
+		ReloadNativeAssets: 0.915ms
+		UnloadImportedAssets: 0.113ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.279ms
+		InitializingProgressBar: 0.001ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.678ms
+	PostProcessAllAssets: 41.891ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.228ms
+	UnloadStreamsBegin: 0.053ms
+	PersistCurrentRevisions: 0.209ms
+	UnloadStreamsEnd: 0.002ms
+	GenerateScriptTypeHashes: 6.387ms
+	Untracked: 1347.185ms
+
+Refreshing native plugins compatible for Editor in 3.90 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 3.55 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 3.95 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Refreshing native plugins compatible for Editor in 3.49 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 3.18 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 3.72 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Refreshing native plugins compatible for Editor in 5.53 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Refreshing native plugins compatible for Editor in 3.51 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            1.937 ms
+	Integration:            1144.495 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.027 ms
+	Total Operation Time:   1146.462 ms
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+[Licensing::Client] Error: Code 404 while processing request (status: Found 0 entitlement groups and 0 free entitlements matching requested entitlement ids)
+Asset Pipeline Refresh (id=c9fd0f830b2690a47bfd2d15b5303db6): Total: 0.087 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+Created GICache directory at C:/Users/Gb191/AppData/LocalLow/Unity/Caches/GiCache. Took: 0.019s, timestamps: [30.891 - 30.909]
+Unloading 409 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.899100 ms
+Asset 'Character 04': Transition 'AnyState -> Idle' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+Asset 'Character 04': Transition 'AnyState -> A_Walk A' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+Asset 'Character 04': Transition 'AnyState -> A_Run A' in state 'AnyState' doesn't have an Exit Time or any condition, transition will be ignored
+Loaded scene 'Assets/Scenes/SampleScene.unity'
+	Deserialize:            731.454 ms
+	Integration:            551.392 ms
+	Integration of assets:  55.473 ms
+	Thread Wait Time:       33.121 ms
+	Total Operation Time:   1371.440 ms
+There are 2 audio listeners in the scene. Please ensure there is always exactly one audio listener in the scene.
+Unloading 697 unused Assets / (337.4 KB). Loaded Objects now: 33296.
+Memory consumption went from 345.9 MB to 345.5 MB.
+Total: 43.289300 ms (FindLiveObjects: 4.481800 ms CreateObjectMapping: 1.769500 ms MarkObjects: 36.304200 ms  DeleteObjects: 0.732400 ms)
+
+TrimDiskCacheJob: Current cache size 1mb
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+There are no audio listeners in the scene. Please ensure there is always one audio listener in the scene
+Loaded scene 'Assets/Scenes/Office.unity'
+	Deserialize:            104.286 ms
+	Integration:            29.891 ms
+	Integration of assets:  14.087 ms
+	Thread Wait Time:       29.672 ms
+	Total Operation Time:   177.937 ms
+Start importing Assets/MinimapTexture.renderTexture using Guid(99f7447e47b6bcb43b3813b7273a2414) (NativeFormatImporter) -> (artifact id: 'f9f1b12c81cff0ff0efeafd1dc9f172b') in 0.0081332 seconds
+Refreshing native plugins compatible for Editor in 6.01 ms, found 5 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Asset Pipeline Refresh (id=aafb5ec69bd0ffa4496f85820c8b2f3a): Total: 0.449 seconds - Initiated by StopAssetImportingV2(NoUpdateAssetOptions)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=2 ms, native=105 ms
+		Asset DB Callback time: managed=320 ms, native=20 ms
+		Scripting: domain reloads=0, domain reload time=0 ms, compile time=0 ms, other=0 ms
+		Project Asset Count: scripts=2138, non-scripts=4547
+		Asset File Changes: new=0, changed=0, moved=0, deleted=0
+		Scan Filter Count: 2
+	InvokeCustomDependenciesCallbacks: 0.001ms
+	InvokePackagesCallback: 0.001ms
+	ApplyChangesToAssetFolders: 0.272ms
+	Scan: 21.168ms
+	OnSourceAssetsModified: 0.001ms
+	CategorizeAssetsWithTransientArtifact: 0.014ms
+	ProcessAssetsWithTransientArtifactChanges: 0.298ms
+	CategorizeAssets: 57.358ms
+	ImportOutOfDateAssets: 13.690ms (0.674ms without children)
+		ImportManagerImport: 9.785ms (1.171ms without children)
+			ImportInProcess: 8.613ms
+		ReloadNativeAssets: 0.396ms
+		UnloadImportedAssets: 0.549ms
+		ReloadImportedAssets: 0.000ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 1.647ms
+		InitializingProgressBar: 0.009ms
+		PostProcessAllAssetNotificationsAddChangedAssets: 0.001ms
+		OnDemandSchedulerStart: 0.629ms
+	PostProcessAllAssets: 328.194ms
+	Hotreload: 13.264ms
+	GatherAllCurrentPrimaryArtifactRevisions: 0.394ms
+	UnloadStreamsBegin: 2.265ms
+	PersistCurrentRevisions: 0.251ms
+	UnloadStreamsEnd: 0.002ms
+	Untracked: 12.005ms
+
+[Physics::Module] Cleanup current backned.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input System polling thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-Gb191-6000.0.83-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-Gb191-6000.0.83 channel disconnected successfully.
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+Checking for leaked weakptr:
+  Found no leaked weakptrs.
+[Package Manager] Server process was shutdown
+##utp:{"type":"MemoryLeaks","version":2,"phase":"Immediate","time":1793320472015,"processId":12352,"allocatedMemory":19782236,"memoryLabels":[{"Default":28597},{"Permanent":15356},{"NewDelete":104833},{"Thread":4230344},{"Manager":819497},{"VertexData":1832},{"Geometry":816},{"VFX":-104},{"Texture":296},{"Shader":88011},{"Material":24},{"GfxDevice":56864},{"Animation":392},{"Audio":4040},{"FontEngine":256},{"Physics":2081},{"Serialization":59858},{"Input":14824},{"JobScheduler":33024},{"TextLib":160},{"Mono":32},{"MonoCode":824},{"ScriptingNativeRuntime":155060},{"BaseObject":1620112},{"Resource":1304},{"Renderer":2928},{"Transform":4646},{"File":9783},{"WebCam":616},{"Culling":32},{"Terrain":11394},{"Wind":24},{"STL":40},{"String":9788},{"DynamicArray":130328},{"HashMap":119830},{"Utility":2660078},{"Curl":48},{"PoolAlloc":2584},{"AI":104},{"TypeTree":5005},{"ScriptManager":512},{"RuntimeInitializeOnLoadManager":64},{"SpriteAtlas":112},{"GI":7888},{"Director":8240},{"CloudService":6304},{"WebRequest":18116},{"VR":45969},{"SceneManager":496},{"Video":208},{"LazyScriptCache":32},{"Camera":17},{"Secure":265},{"SerializationCache":1576},{"APIUpdating":10320},{"Subsystems":336},{"VirtualTexturing":57888},{"StaticSafetyDebugInfo":278528},{"Analytics":464},{"Hierarchy":272},{"CoreStats":12536},{"Identifiers":6192},{"Gui":80},{"EditorUtility":141381},{"VersionControl":4},{"Undo":947},{"AssetDatabase":8947069},{"EditorGi":328},{"UnityConnect":24208},{"Upm":2036},{"DrivenProperties":72},{"LocalIPC":211},{"ProfilerEditor":9746},{"CoreBusinessMetrics":3498},{"Licensing":696},{"AssetReference":32},{"IPCStream":32}]}

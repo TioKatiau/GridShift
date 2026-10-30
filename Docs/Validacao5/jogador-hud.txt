@@ -1,0 +1,27 @@
+INFO SampleScene RootMotion=False
+PASS SampleScene altura real com Update/Animator normais: 1,925838
+PASS aterrissagem após Espaço mantido
+PASS Espaço mantido executou somente um salto
+PASS segundo salto após soltar e pressionar novamente
+PASS segundo comando no ar ignorado
+PASS HUD existente usa controlador integrado
+PASS respiração real do HUD sutil e limitada: 0,001192968
+PASS configuração desliga movimento do HUD e retorna à âncora
+PASS caminhada/corrida reais: 5,400905m / 8,999207m
+PASS FOV gradual e head bob limitado durante corrida
+PASS câmera retorna ao repouso sem movimento involuntário
+PASS configurações desligam os efeitos de corrida
+PASS menu instalado automaticamente
+PASS pausa bloqueia controles e tempo
+PASS ESC fecha somente configurações
+PASS ESC continua jogo e restaura controles
+PASS pausa recusada durante transição
+INFO Office RootMotion=False
+PASS Office altura real com Update/Animator normais: 1,687575
+PASS aterrissagem após Espaço mantido
+PASS Espaço mantido executou somente um salto
+PASS segundo salto após soltar e pressionar novamente
+PASS segundo comando no ar ignorado
+PASS ESC sai do PC sem abrir pausa
+
+RESULT SUCCESS

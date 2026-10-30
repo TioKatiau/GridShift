@@ -1,0 +1,6 @@
+PASS 10 testes existentes de trânsito
+BASELINE reserva de 20 m reproduz carro parado no segundo verde
+PASS cruzamentos separados por 40 m: vermelho respeitado, reserva anterior liberada e retomada no verde
+PASS grupo da mesma direção, fluxo oposto bloqueado e reserva mantida até o último pedestre
+PASS vermelho mantido durante travessia; novos grupos encerrados; verde completo começa após faixa livre
+RESULT SUCCESS

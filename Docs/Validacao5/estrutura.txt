@@ -1,0 +1,6 @@
+PASS SampleScene velocidades 5,4 / 9; tablet, câmera e prefabs configurados
+PASS Office velocidades 5,4 / 9; tablet, câmera e prefabs configurados
+PASS cobertura de todos os pisos, collider e folga vertical: Center: (0.32, 3.98, -2.55), Extents: (9.19, 0.13, 7.92)
+PASS iluminação local: 20 spots ativos; ambiente global não modificado pelo controlador
+PASS 57 sinais, três cores exclusivas e seis fases sem verdes conflitantes
+RESULT SUCCESS

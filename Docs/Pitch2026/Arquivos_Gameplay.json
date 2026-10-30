@@ -1,0 +1,344 @@
+[
+  {
+    "file": "clipes/01_cidade_abertura.mp4",
+    "description": "Simulação e gerenciamento de logística urbana",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 6.4,
+        "samples": 192,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      }
+    ],
+    "bytes": 29734919,
+    "sha256": "2bdcd7b62bd5072cfdad0feaedf5e1a7c850be2603e8851e738c5ea059c6a479"
+  },
+  {
+    "file": "clipes/02_transito.mp4",
+    "description": "Trânsito.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 9502831,
+    "sha256": "828810123ee83be703afab1bd3ab088d120237aa4c66f73f634bdacb1bdf85a4"
+  },
+  {
+    "file": "clipes/03_caminhao.mp4",
+    "description": "Planejamento.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 8978907,
+    "sha256": "2697e8d436a8c79630daec1301335686ce3c58a18a48f77d65d42d979b1362d7"
+  },
+  {
+    "file": "clipes/04_pedestres.mp4",
+    "description": "Logística. Cada entrega importa.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 9666276,
+    "sha256": "cff7934c092efbe8f38ff9f1ac0b57408fea51f749891f8386e04dbf80b48681"
+  },
+  {
+    "file": "clipes/05_tablet_abre.mp4",
+    "description": "Gerencie sua transportadora.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 992584,
+    "sha256": "c1af4c93f89a27425b61458053dfae8ec1ccdbec7ca55b652f5db770164a0946"
+  },
+  {
+    "file": "clipes/06_contratos.mp4",
+    "description": "Planeje entregas.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 846517,
+    "sha256": "f8ffc2e19f647d9cd554a517c121a948b148f5a2019db26e66c288a35b43e75b"
+  },
+  {
+    "file": "clipes/07_frota.mp4",
+    "description": "Acompanhe sua frota.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 936120,
+    "sha256": "b4efc8f15a8515efffd8c2fde361ff122595982b13f45735ffd734f3eaa56b8d"
+  },
+  {
+    "file": "clipes/08_mapa_rotas.mp4",
+    "description": "Rotas. Veículos. Destinos.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 519899,
+    "sha256": "e98c6975a8fa5de3c2fc7095d3a5b74bd4d35c42258796f73caa4ac704e077f4"
+  },
+  {
+    "file": "clipes/09_caminhao_operacao.mp4",
+    "description": "Da operação à cidade.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 9678380,
+    "sha256": "dc5f0a6a71aef00378b416b8933fe551b215314322a2f9ad0721340f5c71e701"
+  },
+  {
+    "file": "clipes/10_office.mp4",
+    "description": "Não basta entregar.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 3.4,
+        "samples": 102,
+        "width": 1920,
+        "height": 1080,
+        "fps": 30
+      }
+    ],
+    "bytes": 5069057,
+    "sha256": "ec0eeaf0e8a972e2736c1700d84db620fa9ad9a125a29b5f85e3457d7640e09d"
+  },
+  {
+    "file": "clipes/11_financeiro.mp4",
+    "description": "É preciso administrar.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 508282,
+    "sha256": "d41cb7d56481b35d17ebf1378d8ba5e882e7e166c36c98c38ba743890f709c62"
+  },
+  {
+    "file": "clipes/12_funcionarios.mp4",
+    "description": "Pessoas movem a empresa.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 507839,
+    "sha256": "51a6d2d2e724b118d5f422913117fb8bb359d8485f95f478ba4647e6b8cf899e"
+  },
+  {
+    "file": "clipes/13_upgrades.mp4",
+    "description": "Invista no próximo passo.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 520855,
+    "sha256": "bdc799ec93f9b02266126a67796013f2379b1102ca336533235d877b12aaffce"
+  },
+  {
+    "file": "clipes/14_missoes.mp4",
+    "description": "Cada decisão constrói sua história.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 555112,
+    "sha256": "702f24eb69efece8c6c6498ed07a76b3794a6e5a4e967b19c0cc3a8b8e6de75e"
+  },
+  {
+    "file": "clipes/15_office_detalhe.mp4",
+    "description": "Sua empresa faz parte da cidade.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 4.4,
+        "samples": 132,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 6251098,
+    "sha256": "8fc16d0da56a15139585c77a56eb2533d74cc56680becfc4316b6a2b37efcaa2"
+  },
+  {
+    "file": "clipes/16_primeira_pessoa.mp4",
+    "description": "Uma cidade dinâmica.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 8039130,
+    "sha256": "5d0aec1ead396591ce3f85bfd7e1ec11f398e70934a85f7a4617c2ee0893a238"
+  },
+  {
+    "file": "clipes/17_cidade_noite.mp4",
+    "description": "Do dia à noite.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 11110488,
+    "sha256": "05ba62b10f5d2accdcc37f8aa9733b89ad613c6a27c5e5d7ce634535ffc27859"
+  },
+  {
+    "file": "clipes/18_transito_noite.mp4",
+    "description": "Decisões que fazem a diferença.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 6109732,
+    "sha256": "81e2a7c6211ec289b1e3dfec5c5bc5e8fab2a5f111a5e4aff8572f403ad0ad83"
+  },
+  {
+    "file": "clipes/19_cidade_final.mp4",
+    "description": "A próxima entrega é só o começo.",
+    "origin": "Real runtime capture of GridShift Unity project, isolated checkout; no invented scene",
+    "tracks": [
+      {
+        "type": "vide",
+        "codec": "avc1",
+        "seconds": 5.4,
+        "samples": 162,
+        "width": 1920,
+        "height": 1080,
+        "fps": 29.999999999999996
+      }
+    ],
+    "bytes": 19915442,
+    "sha256": "8e76b662efd5c42f91fcd230bdef5b472cecc0b17ab99f84654732139c96e01c"
+  }
+]

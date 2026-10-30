@@ -1,0 +1,2 @@
+opposing_pedestrians=12 completed=12 minimum_gap=0,6614586 failure=
+RESULT SUCCESS

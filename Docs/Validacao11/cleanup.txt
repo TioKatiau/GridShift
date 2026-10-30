@@ -1,0 +1,1 @@
+Componentes do navegador removidos das cenas e prefabs gerados.

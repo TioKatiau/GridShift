@@ -1,0 +1,34 @@
+PASS F1 reabre tutorial com foco
+PASS tela de controles disponível
+PASS M amplia mapa real da cidade
+PASS M reduz mapa
+PASS login local renderizado no CEF a 200%
+PASS painel exige identificação local
+PASS textura renderizada não está preta: computador-login-local
+INFO computador-login-local image enabled=True cull=False alpha=1
+PASS ponte recusa criação antes do login demo
+PASS login abre painel e descarta senha temporária
+INFO contratos-disponiveis image enabled=True cull=False alpha=1
+OFERTA RESPOSTA Pedido recebido pela simulação local.
+PASS contrato disponível cria entrega real de 5 kg
+PASS oferta foi consumida sem duplicar
+PASS pedido personalizado de 500 kg validado no jogo
+PASS textura renderizada não está preta: computador-operacoes
+INFO computador-operacoes image enabled=True cull=False alpha=1
+PASS guia usa as teclas atuais do jogo
+PASS modo demo visitante preserva a mesma empresa
+PASS tecla G não guarda tablet enquanto um campo está em edição
+PASS M do navegador não abre mapa sobre tablet
+PASS textura renderizada não está preta: tablet-operacoes
+INFO tablet-operacoes image enabled=True cull=False alpha=1
+PASS saldo vem das entregas concluídas
+PASS histórico separado mostra conclusões reais
+PASS textura renderizada não está preta: tablet-historico
+INFO tablet-historico image enabled=True cull=False alpha=1
+PASS upgrade comprável com recompensa real
+PASS compra web desconta saldo e aumenta capacidade real
+PASS textura renderizada não está preta: tablet-upgrades
+INFO tablet-upgrades image enabled=True cull=False alpha=1
+PASS ESC restaura controles sem pausa indevida
+Erros: 
+RESULT SUCCESS

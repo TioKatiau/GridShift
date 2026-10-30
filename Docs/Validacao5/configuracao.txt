@@ -1,0 +1,1 @@
+Office e SampleScene configuradas: zoom 150%, tablet e referências, HUD e corrida, cobertura e luminárias locais. Semáforos padronizados pelo reparo visual existente.

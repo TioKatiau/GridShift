@@ -35,7 +35,8 @@ public class HudBottomZoom : MonoBehaviour
         Quaternion targetRotation;
 
         // SEGURANDO BOTÃO DIREITO
-        if (Mouse.current.rightButton.isPressed)
+        var player=GetComponentInParent<PlayerMovement>();
+        if (Mouse.current.rightButton.isPressed && Time.timeScale>0 && (player==null||!player.ControlsBlocked))
         {
             targetPosition = zoomPosition;
             targetScale = originalScale * zoomScale;

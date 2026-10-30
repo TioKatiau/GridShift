@@ -5,4 +5,5 @@ public static class GamePreferences {
  public static bool RunBob {get=>PlayerPrefs.GetInt("GS.RunBob",1)!=0;set{PlayerPrefs.SetInt("GS.RunBob",value?1:0);}}
  public static float HeadBob {get=>PlayerPrefs.GetFloat("GS.HeadBob",.6f);set{PlayerPrefs.SetFloat("GS.HeadBob",Mathf.Clamp01(value));}}
  public static void Save(){PlayerPrefs.Save();}
+ public static float HudMotion {get=>PlayerPrefs.GetFloat("GS.HudMotion",1);set{PlayerPrefs.SetFloat("GS.HudMotion",Mathf.Clamp01(value));}}
 }

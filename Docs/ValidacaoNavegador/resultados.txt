@@ -1,0 +1,134 @@
+PASS Office vincula o UWB instalado ao computador existente
+PASS textura real do Chromium: 1600x1600
+PASS controles do jogador bloqueados enquanto usa o PC
+PASS um único EventSystem ativo
+PASS mapeamento cursor/textura 1,1
+PASS mapeamento cursor/textura 1,2
+PASS mapeamento cursor/textura 1,3
+PASS mapeamento cursor/textura 2,1
+PASS mapeamento cursor/textura 2,2
+PASS mapeamento cursor/textura 2,3
+PASS mapeamento cursor/textura 3,1
+PASS mapeamento cursor/textura 3,2
+PASS mapeamento cursor/textura 3,3
+INFO site https://urbanlink-flow.onrender.com/; conteúdo=Ir para o conteúdo
+Entregas
+Monitor de Fluxos
+Previsões
+Agenda
+Mapa
+Acessar plataforma
+
+Logística urbana, com clareza.
+
+Conecte-se. Simule.
+Transforme sua cidade.
+
+Planeje entregas, compare percursos e acompanhe cada etapa da sua operação em um só lugar.
+
+Comece a planejar
+Conheça a plataforma
+↗
+Planejamento simples
+Visão da operação
+
+Planejamento de rotas
+
+Percursos ilustrativos
+Ilustração
+Origem
+Destino
+Percurso A
+Percurso B
+Representação esquemática para demonstrar a comparação.
+Conectando possibilidades
+
+Da cidade ao seu próximo percurso.
+
+ENTREGAS
+PERCURSOS
+INDICADORES
+
+Uma plataforma. Uma visão mais clara.
+
+01
+A PLATAFORMA
+
+Planejamento simples.
+Operação organizada.
+
+Os recursos essenciais para transformar informações em decisões.
+
+Dados da operação
+
+Acompanhe entregas e indicadores em uma visão centralizada.
+
+Ver indicadores
+↗
+Conheça a plataforma
+
+Entenda como organizar o planejamento de suas entregas.
+
+Como funciona
+↗
+Operações logísticas
+
+Consulte a agenda e acompanhe o andamento de cada entrega.
+
+Ver entregas
+↗
+Simule rotas
+
+Compare percursos e estime o tempo em diferentes cenários.
+
+Comparar percursos
+↗
+
+02
+COMO FUNCIONA
+
+Uma entrega.
+Três passos para planejar.
+
+Cadastre uma entrega, escolha um cenário de circulação e veja como o percurso influencia o prazo.
+
+Explore a simulação
+01
+Organize a entrega
+
+Informe origem, destino, carga e prazo.
+
+02
+Compare os percursos
+
+Simule os cenários e veja a estimativa de tempo.
+
+03
+Acompanhe a operação
+
+Atualize o andamento e c
+PASS conteúdo HTML do UrbanLink Flow real recebido
+PASS botão real Acessar localizado
+PASS clique pelo EventSystem navegou no site real
+PASS redimensionamento real textura/viewport CEF (1600, 900)
+PASS proporção preservada em (1600, 900)
+PASS redimensionamento real textura/viewport CEF (1920, 1080)
+PASS proporção preservada em (1920, 1080)
+PASS cliques esquerdo/direito em posições diferentes chegaram ao Chromium
+PASS arraste manteve botão pressionado no Chromium
+PASS digitação de letras e números pelo novo Input System
+PASS Backspace funcional
+PASS Ctrl+A seleciona texto
+PASS Ctrl+C e Ctrl+V usando clipboard real do Chromium
+PASS Tab muda campo de texto
+PASS Enter chegou ao campo
+PASS foco e texto acentuado mantidos quando o mouse sai da tela
+PASS E/W/Shift/Espaço não acionam porta, movimento ou pulo durante o uso
+PASS scroll do novo Input System chegou ao Chromium
+PASS ESC libera navegador e jogador sem abrir pausa
+PASS animação restaura posição, rotação e FOV originais
+PASS teclado não é capturado após sair
+PASS reentrada e saída preservam foco/controles 0
+PASS reentrada e saída preservam foco/controles 1
+Erros de execução: 
+RESULT SUCCESS

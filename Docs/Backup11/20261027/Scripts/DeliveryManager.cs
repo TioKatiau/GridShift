@@ -1,0 +1,58 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
+
+public sealed class DeliveryManager:MonoBehaviour {
+ public static DeliveryManager Instance{get;private set;}
+ public TrafficManager traffic;
+ public DeliveryPoint[] points=Array.Empty<DeliveryPoint>();
+ public float lightThresholdKg=20,truckThresholdKg=200,carCapacityKg=200,truckCapacityKg=2500,loadingSeconds=2,unloadingSeconds=2;
+ public float baseReward=20,rewardPerKg=.03f,rewardPerMeter=.25f;
+ public int maximumOrders=500;
+ public List<DeliveryOrder> orders=new List<DeliveryOrder>();
+ public List<CompanyVehicle> fleet=new List<CompanyVehicle>();
+ public float Money{get;private set;}public GridShiftCompany Company{get;private set;}
+ public string SelectedId{get;private set;}
+ public string LastNotification{get;private set;}
+ public float NotificationAt{get;private set;}
+ public event Action StateChanged;
+ float nextDispatch,nextFleet;int version;public CompanyProgression Progression{get;private set;}
+ public int Version=>version;public string DemoUser{get;private set;}public bool DemoAuthorized=>!string.IsNullOrEmpty(DemoUser);public bool DemoLogin(string user){if(string.IsNullOrWhiteSpace(user)||user.Length>80)return false;DemoUser=user.Trim();Changed();return true;}public void DemoLogout(){DemoUser=null;Changed();}
+ public DeliveryDemoServer LocalServer{get;private set;}
+ public string DemoUrl{get{if(LocalServer==null){try{string path=System.IO.Path.Combine(Application.streamingAssetsPath,"GridShiftDemo/index.html");LocalServer=new DeliveryDemoServer(System.IO.File.ReadAllText(path));}catch(Exception e){Notify("Painel local indisponível: "+e.Message);return null;}}return LocalServer.Url;}}
+ void Awake(){if(Instance!=null&&Instance!=this){Destroy(this);return;}Instance=this;Progression=GetComponent<CompanyProgression>();if(Progression==null)Progression=gameObject.AddComponent<CompanyProgression>();if(traffic==null)traffic=GetComponent<TrafficManager>();if(traffic==null)traffic=FindFirstObjectByType<TrafficManager>();Company=GetComponent<GridShiftCompany>();if(Company==null)Company=gameObject.AddComponent<GridShiftCompany>();}
+ void OnDestroy(){LocalServer?.Dispose();if(Instance==this)Instance=null;}
+ void Update(){foreach(var o in orders)if(o.status!=DeliveryStatus.Completed)o.elapsedSeconds+=Time.deltaTime;if(Time.time>=nextFleet){nextFleet=Time.time+1;AdoptFleet();}if(Time.time>=nextDispatch){nextDispatch=Time.time+.5f;Dispatch();}}
+ void AdoptFleet(){if(traffic==null)return;foreach(var driver in traffic.Vehicles){if(driver==null||driver.Guidance!=null||driver.HasParkingGoal||driver.GetComponent<CompanyVehicle>()!=null||!driver.enabled)continue;var box=driver.GetComponent<BoxCollider>();bool heavy=box!=null&&box.size.z>7;var kind=heavy?FleetKind.Truck:FleetKind.Car;if(fleet.Count(v=>v!=null&&v.kind==kind)>=(heavy?1:Progression.FleetCars))continue;var vehicle=driver.gameObject.AddComponent<CompanyVehicle>();vehicle.Configure(this,"GS-"+(heavy?"T":"C")+(fleet.Count(v=>v.kind==kind)+1).ToString("00"),kind,(heavy?truckCapacityKg:carCapacityKg)*Progression.Capacity);fleet.Add(vehicle);Changed();}}
+ public DeliveryPoint Point(string id)=>points.FirstOrDefault(p=>p!=null&&p.id==id);
+ public DeliveryOrder Selected=>orders.FirstOrDefault(o=>o.id==SelectedId);
+ public void Select(string id){if(orders.Any(o=>o.id==id)){SelectedId=id;Changed();}}
+ public bool TryCreate(DeliveryRequest request,out DeliveryOrder order,out string error){order=null;error=null;if(request==null){error="Pedido ausente.";return false;}if(!string.IsNullOrEmpty(request.requestId)){order=orders.FirstOrDefault(o=>o.requestId==request.requestId);if(order!=null)return true;}
+  if(orders.Count>=maximumOrders){error="Limite de pedidos da sessão atingido.";return false;}if(string.IsNullOrWhiteSpace(request.goods)||request.goods.Trim().Length>120){error="Informe a mercadoria, com até 120 caracteres.";return false;}if(float.IsNaN(request.weightKg)||float.IsInfinity(request.weightKg)||request.weightKg<=0||request.weightKg>100000){error="Peso inválido.";return false;}
+  var pickup=Point(request.pickupId);var destination=Point(request.destinationId);if(pickup==null||destination==null||!pickup.Valid||!destination.Valid||pickup==destination||!Progression.Unlocked(pickup)||!Progression.Unlocked(destination)){error="Escolha origem e destino diferentes com acesso válido.";return false;}var path=DeliveryRouting.Find(pickup.route,destination.route,pickup.route==destination.route);if(path==null){error="Não existe conexão dirigida entre os locais.";return false;}
+  if(!Enum.IsDefined(typeof(DeliveryKind),request.kind)){error="Tipo de entrega inválido.";return false;}float length=path.Sum(DeliveryRouting.Length);order=new DeliveryOrder{id=Guid.NewGuid().ToString("N"),requestId=string.IsNullOrEmpty(request.requestId)?Guid.NewGuid().ToString("N"):request.requestId,goods=request.goods.Trim(),weightKg=request.weightKg,kind=request.kind,deadlineSeconds=request.kind==DeliveryKind.Urgent?900:0,pickupId=pickup.id,destinationId=destination.id,createdAt=DateTime.UtcNow.ToString("O"),status=DeliveryStatus.WaitingVehicle,estimatedMeters=length,reward=(baseReward+request.weightKg*rewardPerKg+length*rewardPerMeter)*Progression.Profit*(request.kind==DeliveryKind.Urgent?1.4f:request.kind==DeliveryKind.Priority?1.2f:1)};orders.Add(order);SelectedId=order.id;Notify("Nova entrega · "+order.goods);Changed();return true;
+ }
+ public void Dispatch(){int busy=fleet.Count(v=>v!=null&&v.Order!=null);foreach(var order in orders.OrderByDescending(o=>o.kind==DeliveryKind.Urgent?2:o.kind==DeliveryKind.Priority?1:0)){if(busy>=Progression.Concurrent)break;if(order.status!=DeliveryStatus.WaitingVehicle||!string.IsNullOrEmpty(order.vehicleId))continue;var pickup=Point(order.pickupId);var destination=Point(order.destinationId);if(pickup==null||!pickup.Valid||destination==null||!destination.Valid){order.status=DeliveryStatus.WaitingRoute;Changed();continue;}var kind=order.weightKg>truckThresholdKg?FleetKind.Truck:FleetKind.Car;var choices=fleet.Where(v=>v!=null&&v.Available&&v.kind==kind&&v.capacityKg>=order.weightKg).OrderBy(v=>(v.transform.position-pickup.Stop).sqrMagnitude);foreach(var vehicle in choices){if(DeliveryRouting.Find(vehicle.driver.RotaAtual,pickup.route,DeliveryRouting.Behind(vehicle.driver,pickup))==null)continue;if(vehicle.Assign(order)){busy++;Notify("Veículo designado · "+vehicle.id);break;}}}}
+ public void Complete(DeliveryOrder order){if(order==null||!orders.Contains(order)||order.rewardPaid)return;order.status=DeliveryStatus.Completed;order.completedAt=DateTime.UtcNow.ToString("O");order.rewardPaid=true;if(order.kind==DeliveryKind.Urgent&&order.elapsedSeconds>order.deadlineSeconds)order.reward/=1.4f;TryChangeMoney(Mathf.Max(0,order.reward),"delivery:"+order.id,order.requestId!=null&&(order.requestId.StartsWith("mission:")||order.requestId.StartsWith("offer:"))?"Contratos":"Entregas",order.goods);Company.Missions.DeliveryPaid(order);Notify("Entrega concluída · +R$ "+order.reward.ToString("0.00"));Changed();}
+ public bool TrySpend(float cost){return !float.IsNaN(cost)&&!float.IsInfinity(cost)&&cost>=0&&TryChangeMoney(-cost,"spend:"+Guid.NewGuid().ToString("N"),"Upgrades","Melhoria da empresa");}
+ public bool TryChangeMoney(float amount,string transactionId,string category,string description){if(float.IsNaN(amount)||float.IsInfinity(amount)||string.IsNullOrEmpty(transactionId)||Company==null||Company.Finance==null||Company.Finance.Has(transactionId)||Money+amount<0||float.IsInfinity(Money+amount))return false;Money=Mathf.Round((Money+amount)*100)/100;Company.Finance.Record(transactionId,amount,category,description);Changed();return true;}
+ public void Notify(string text){LastNotification=text;NotificationAt=Time.unscaledTime;Changed();}
+ public void Changed(){version++;StateChanged?.Invoke();}
+ public DeliverySnapshot Snapshot(){var snapshot=new DeliverySnapshot{money=Money,selectedId=SelectedId,orders=orders,upgrades=Progression.Catalog(),offers=Offers(),company=Company.Ready?Company.Snapshot():null,gameDay=Company.Day,concurrentLimit=Progression.Concurrent};foreach(var p in points)if(p!=null)snapshot.points.Add(new DeliveryPointSnapshot{id=p.id,name=p.displayName,type=p.establishmentType,accessible=p.Valid,unlocked=Progression.Unlocked(p),requiredExpansion=p.requiredExpansion,x=p.Stop.x,z=p.Stop.z});foreach(var v in fleet)if(v!=null)snapshot.fleet.Add(new FleetSnapshot{id=v.id,kind=v.kind.ToString(),state=v.state.ToString(),deliveryId=v.Order?.id,capacityKg=v.capacityKg,speed=v.driver.VelocidadeAtual,maximumSpeed=v.driver.MaximumSpeed,x=v.transform.position.x,z=v.transform.position.z});return snapshot;}
+ List<DeliveryOffer> cachedOffers;int cachedAcceptedOffers=-1,cachedDistrict=-1,cachedAvailability;DeliveryPoint[] cachedOfferPoints;
+ public List<DeliveryOffer> Offers(){
+  int accepted=orders.Count(o=>o.requestId!=null&&o.requestId.StartsWith("offer:",StringComparison.Ordinal));int district=Progression.Level("district"),availability=17;
+  foreach(var p in points)if(p!=null&&p.Valid&&Progression.Unlocked(p))availability=unchecked(availability*31+p.GetInstanceID());
+  if(cachedOffers==null||cachedAcceptedOffers!=accepted||cachedDistrict!=district||cachedAvailability!=availability||cachedOfferPoints!=points){cachedOffers=BuildOffers();cachedAcceptedOffers=accepted;cachedDistrict=district;cachedAvailability=availability;cachedOfferPoints=points;}var result=new List<DeliveryOffer>(cachedOffers);var special=Company.EventOffer();if(special!=null)result.Add(special);return result;
+ }
+ List<DeliveryOffer> BuildOffers(){var available=points.Where(p=>p!=null&&p.Valid&&Progression.Unlocked(p)).OrderBy(p=>p.id).ToArray();var result=new List<DeliveryOffer>();if(available.Length<2)return result;int cycle=orders.Count(o=>o.requestId!=null&&o.requestId.StartsWith("offer:",StringComparison.Ordinal))/6;float[] weights={5,500,50,150,1800,20};string[] goods={"Documentos empresariais","Materiais de construção","Medicamentos urgentes","Peças prioritárias","Reposição do depósito","Compra do bairro"};for(int i=0;i<6;i++){var a=available[(i+cycle*6)%available.Length];
+ var reachable=new HashSet<TrafficRoute>{a.route};var pending=new Queue<TrafficRoute>();pending.Enqueue(a.route);while(pending.Count>0){var current=pending.Dequeue();foreach(var next in current.Connections())if(reachable.Add(next))pending.Enqueue(next);}
+ var options=available.Where(p=>p!=a&&reachable.Contains(p.route)).OrderBy(p=>(p.Stop-a.Stop).sqrMagnitude).ToArray();if(options.Length==0)continue;var b=i==4?options.Last():options[0];string id="OF-"+cycle+"-"+i+"-"+a.id+"-"+b.id;if(orders.Any(o=>o.requestId=="offer:"+id))continue;result.Add(new DeliveryOffer{id=id,goods=goods[i],weightKg=weights[i],kind=(DeliveryKind)i,pickupId=a.id,destinationId=b.id});}return result;}
+ public bool Accept(string id,out string error){var existing=orders.FirstOrDefault(o=>o.requestId=="offer:"+id);if(existing!=null){error=null;Select(existing.id);return true;}var offer=Offers().FirstOrDefault(o=>o.id==id);if(offer==null){error="Oferta indisponível. Atualize o painel.";return false;}return TryCreate(new DeliveryRequest{requestId="offer:"+id,goods=offer.goods,weightKg=offer.weightKg,kind=offer.kind,pickupId=offer.pickupId,destinationId=offer.destinationId},out _,out error);}
+ public void RestoreEconomy(float value,List<DeliveryOrder> saved,string selected){Money=Mathf.Max(0,value);orders=saved??new List<DeliveryOrder>();SelectedId=selected;Changed();}
+}
+
+
+
+
