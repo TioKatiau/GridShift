@@ -1,6 +1,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 public static class InteractionFocus {
+ sealed class ScenePlayer {public PlayerMovement player;public float retryAt;}
+ static readonly Dictionary<int,ScenePlayer> players=new Dictionary<int,ScenePlayer>();
+ static InteractionFocus(){UnityEngine.SceneManagement.SceneManager.sceneUnloaded+=scene=>players.Remove(scene.handle);}
+ public static PlayerMovement PlayerFor(MonoBehaviour target){int handle=target.gameObject.scene.handle;if(!players.TryGetValue(handle,out var entry)){entry=new ScenePlayer();players[handle]=entry;}if(entry.player!=null&&entry.player.gameObject.activeInHierarchy)return entry.player;if(Time.unscaledTime<entry.retryAt)return null;entry.retryAt=Time.unscaledTime+.5f;foreach(var candidate in Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None))if(candidate.gameObject.scene.handle==handle){entry.player=candidate;return candidate;}return null;}
  static readonly Dictionary<MonoBehaviour,float> targets=new Dictionary<MonoBehaviour,float>();
  static int consumed=-1;
  public static void Register(MonoBehaviour target,float range){targets[target]=range;}

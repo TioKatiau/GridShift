@@ -11,7 +11,7 @@ public class InteractionPrompt : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (cam == null)
+        if (cam == null || !cam.isActiveAndEnabled)
             cam = Camera.main;
 
         if (cam == null)

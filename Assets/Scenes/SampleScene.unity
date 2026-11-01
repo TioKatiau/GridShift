@@ -9780,6 +9780,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 22"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 69866537}
+  personalOnly: 0
   vehicleStop: {fileID: 1381197497}
   establishment: {fileID: 805183034}
   route: {fileID: 386176908}
@@ -10482,6 +10483,7 @@ MonoBehaviour:
   displayName: "Oficina \xB7 Auto Service"
   establishmentType: Oficina
   pedestrianAccess: {fileID: 78391870}
+  personalOnly: 0
   vehicleStop: {fileID: 1093639079}
   establishment: {fileID: 1907829011}
   route: {fileID: 413289433}
@@ -15033,6 +15035,62 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 178269315}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &116487549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 116487551}
+  - component: {fileID: 116487550}
+  m_Layer: 0
+  m_Name: GridShiftDepot16Receiving
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &116487550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116487549}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccc1228c0044edf85a1a4e4a8e0101a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: GS-DEPOT16
+  displayName: "Dep\xF3sito GridShift \xB7 Expedi\xE7\xE3o"
+  establishmentType: "Dep\xF3sito"
+  pedestrianAccess: {fileID: 116487551}
+  personalOnly: 1
+  vehicleStop: {fileID: 1017138698}
+  establishment: {fileID: 0}
+  route: {fileID: 2082406690}
+  segment: 0
+  accessNeedsReview: 0
+  accessible: 1
+  requiredExpansion: 0
+--- !u!4 &116487551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116487549}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 338.95264, y: -4.5749993, z: 221.3235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2025473767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &116586747
 GameObject:
@@ -20321,6 +20379,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 02 color03 (1)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 155605187}
+  personalOnly: 0
   vehicleStop: {fileID: 1636194394}
   establishment: {fileID: 1392037306}
   route: {fileID: 695350339}
@@ -31137,6 +31196,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 02 color01 (2)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 226674569}
+  personalOnly: 0
   vehicleStop: {fileID: 909711814}
   establishment: {fileID: 742434953}
   route: {fileID: 1278374964}
@@ -32251,6 +32311,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 01 color02"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 234493330}
+  personalOnly: 0
   vehicleStop: {fileID: 516566137}
   establishment: {fileID: 1477922573}
   route: {fileID: 695350339}
@@ -32945,6 +33006,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 04 color03 (2)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 239642342}
+  personalOnly: 0
   vehicleStop: {fileID: 735561182}
   establishment: {fileID: 967321353}
   route: {fileID: 1278374964}
@@ -51952,6 +52014,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Books Shop"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 382485307}
+  personalOnly: 0
   vehicleStop: {fileID: 2100321811}
   establishment: {fileID: 1739762400}
   route: {fileID: 1284689359}
@@ -58744,6 +58807,7 @@ MonoBehaviour:
   displayName: "Posto \xB7 Parceiro 15"
   establishmentType: Posto
   pedestrianAccess: {fileID: 425632187}
+  personalOnly: 0
   vehicleStop: {fileID: 971031958}
   establishment: {fileID: 1093288492}
   route: {fileID: 1825212080}
@@ -63628,6 +63692,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Parceiro 26"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 465374878}
+  personalOnly: 0
   vehicleStop: {fileID: 561792932}
   establishment: {fileID: 2001316576}
   route: {fileID: 137857504}
@@ -70730,6 +70795,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Parceiro 07"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 515680067}
+  personalOnly: 0
   vehicleStop: {fileID: 1567789040}
   establishment: {fileID: 1739762400}
   route: {fileID: 228474869}
@@ -75294,6 +75360,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 13"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 544637426}
+  personalOnly: 0
   vehicleStop: {fileID: 1288288932}
   establishment: {fileID: 316049113}
   route: {fileID: 288354304}
@@ -80983,6 +81050,7 @@ MonoBehaviour:
   displayName: "Bairro Leste \xB7 Building_Chicken Shop (2)_Bairro8_2"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 584386287}
+  personalOnly: 0
   vehicleStop: {fileID: 925319688}
   establishment: {fileID: 1876694277}
   route: {fileID: 508839407}
@@ -83218,6 +83286,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Bar (4)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 605387103}
+  personalOnly: 0
   vehicleStop: {fileID: 1078396196}
   establishment: {fileID: 965143977}
   route: {fileID: 2007141346}
@@ -86069,6 +86138,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 09"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 633132606}
+  personalOnly: 0
   vehicleStop: {fileID: 381521403}
   establishment: {fileID: 1227545500}
   route: {fileID: 47577752}
@@ -86218,6 +86288,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Drug Store"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 633474454}
+  personalOnly: 0
   vehicleStop: {fileID: 1084455610}
   establishment: {fileID: 1987050238}
   route: {fileID: 1394207579}
@@ -87236,6 +87307,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Shoes Shop"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 643958513}
+  personalOnly: 0
   vehicleStop: {fileID: 596732680}
   establishment: {fileID: 2001316576}
   route: {fileID: 47577752}
@@ -87502,6 +87574,7 @@ MonoBehaviour:
   displayName: "Padaria \xB7 Bakery (2)"
   establishmentType: Padaria
   pedestrianAccess: {fileID: 645687122}
+  personalOnly: 0
   vehicleStop: {fileID: 1358384718}
   establishment: {fileID: 676666231}
   route: {fileID: 1794572080}
@@ -88719,6 +88792,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 23"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 653360083}
+  personalOnly: 0
   vehicleStop: {fileID: 26146144}
   establishment: {fileID: 1990472367}
   route: {fileID: 2007141346}
@@ -89673,6 +89747,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Parceiro 08"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 660210852}
+  personalOnly: 0
   vehicleStop: {fileID: 1615402656}
   establishment: {fileID: 1334675046}
   route: {fileID: 2020526989}
@@ -93232,6 +93307,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Stadium"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 690893987}
+  personalOnly: 0
   vehicleStop: {fileID: 135997393}
   establishment: {fileID: 1550843276}
   route: {fileID: 1222234202}
@@ -98491,6 +98567,7 @@ MonoBehaviour:
   displayName: "Padaria \xB7 Bakery (1)"
   establishmentType: Padaria
   pedestrianAccess: {fileID: 725630374}
+  personalOnly: 0
   vehicleStop: {fileID: 463269582}
   establishment: {fileID: 1770982915}
   route: {fileID: 1780096546}
@@ -102142,6 +102219,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 Parceiro 17"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 754028015}
+  personalOnly: 0
   vehicleStop: {fileID: 1393262166}
   establishment: {fileID: 742434953}
   route: {fileID: 363171355}
@@ -105478,6 +105556,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 03 color03 (2)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 776526864}
+  personalOnly: 0
   vehicleStop: {fileID: 508685001}
   establishment: {fileID: 1666826338}
   route: {fileID: 1012152484}
@@ -107466,6 +107545,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Bar (3)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 789266141}
+  personalOnly: 0
   vehicleStop: {fileID: 1537897217}
   establishment: {fileID: 1452481771}
   route: {fileID: 1295502387}
@@ -109083,6 +109163,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Residential color03 (2)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 801452352}
+  personalOnly: 0
   vehicleStop: {fileID: 2006356044}
   establishment: {fileID: 1683256895}
   route: {fileID: 89760561}
@@ -113028,6 +113109,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 Parceiro 16"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 831650853}
+  personalOnly: 0
   vehicleStop: {fileID: 643716120}
   establishment: {fileID: 1752019313}
   route: {fileID: 363171355}
@@ -113478,6 +113560,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Residential color01 (1)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 835157250}
+  personalOnly: 0
   vehicleStop: {fileID: 119848596}
   establishment: {fileID: 556379310}
   route: {fileID: 536839800}
@@ -121820,6 +121903,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Clothing"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 897306012}
+  personalOnly: 0
   vehicleStop: {fileID: 14730936}
   establishment: {fileID: 1227545500}
   route: {fileID: 1173176756}
@@ -123066,6 +123150,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Fast Food (1)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 907703252}
+  personalOnly: 0
   vehicleStop: {fileID: 1150174125}
   establishment: {fileID: 1043084039}
   route: {fileID: 807912508}
@@ -126683,6 +126768,7 @@ MonoBehaviour:
   displayName: "Oficina \xB7 Parceiro 01"
   establishmentType: Oficina
   pedestrianAccess: {fileID: 936449528}
+  personalOnly: 0
   vehicleStop: {fileID: 1516342445}
   establishment: {fileID: 1907829011}
   route: {fileID: 1394207579}
@@ -148631,6 +148717,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 06"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1096925831}
+  personalOnly: 0
   vehicleStop: {fileID: 921286629}
   establishment: {fileID: 965143977}
   route: {fileID: 413289433}
@@ -151788,6 +151875,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 20"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1116398031}
+  personalOnly: 0
   vehicleStop: {fileID: 383073385}
   establishment: {fileID: 1337184503}
   route: {fileID: 1173176756}
@@ -152373,6 +152461,7 @@ MonoBehaviour:
   displayName: "Bairro Leste \xB7 Building_House_01_color01 (2)_Bairro8_1"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 1120593321}
+  personalOnly: 0
   vehicleStop: {fileID: 1303489840}
   establishment: {fileID: 606532662}
   route: {fileID: 993005196}
@@ -179753,6 +179842,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 04"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1204771122}
+  personalOnly: 0
   vehicleStop: {fileID: 150331228}
   establishment: {fileID: 1367177774}
   route: {fileID: 1284689359}
@@ -180374,6 +180464,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Gift Shop (4)"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 1209490993}
+  personalOnly: 0
   vehicleStop: {fileID: 397613633}
   establishment: {fileID: 712242022}
   route: {fileID: 1168738675}
@@ -186383,6 +186474,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 24"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1263775646}
+  personalOnly: 0
   vehicleStop: {fileID: 954832892}
   establishment: {fileID: 1863909968}
   route: {fileID: 811728635}
@@ -186470,6 +186562,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Gift Shop (2)"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 1264591259}
+  personalOnly: 0
   vehicleStop: {fileID: 1785469843}
   establishment: {fileID: 2117054563}
   route: {fileID: 928824373}
@@ -193526,6 +193619,7 @@ MonoBehaviour:
   displayName: "Padaria \xB7 Parceiro 02"
   establishmentType: Padaria
   pedestrianAccess: {fileID: 1320539170}
+  personalOnly: 0
   vehicleStop: {fileID: 1938693553}
   establishment: {fileID: 1770982915}
   route: {fileID: 1205592528}
@@ -206035,6 +206129,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 Parceiro 18"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 1408799757}
+  personalOnly: 0
   vehicleStop: {fileID: 1189714319}
   establishment: {fileID: 1666826338}
   route: {fileID: 1707335131}
@@ -209869,6 +209964,7 @@ MonoBehaviour:
   displayName: "Padaria \xB7 Parceiro 03"
   establishmentType: Padaria
   pedestrianAccess: {fileID: 1428627273}
+  personalOnly: 0
   vehicleStop: {fileID: 1716408795}
   establishment: {fileID: 676666231}
   route: {fileID: 1330129216}
@@ -218184,6 +218280,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Bar (2)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1489830952}
+  personalOnly: 0
   vehicleStop: {fileID: 1469925380}
   establishment: {fileID: 1367177774}
   route: {fileID: 2001576549}
@@ -222559,6 +222656,7 @@ MonoBehaviour:
   displayName: "Cafeteria \xB7 Parceiro 10"
   establishmentType: Cafeteria
   pedestrianAccess: {fileID: 1522770672}
+  personalOnly: 0
   vehicleStop: {fileID: 2060975330}
   establishment: {fileID: 162631430}
   route: {fileID: 1794572080}
@@ -224050,6 +224148,7 @@ MonoBehaviour:
   displayName: "Cafeteria \xB7 Coffee Shop (2)"
   establishmentType: Cafeteria
   pedestrianAccess: {fileID: 1531779542}
+  personalOnly: 0
   vehicleStop: {fileID: 455925539}
   establishment: {fileID: 568093305}
   route: {fileID: 228474869}
@@ -227239,6 +227338,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Pizza (5)"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1552778370}
+  personalOnly: 0
   vehicleStop: {fileID: 1453900833}
   establishment: {fileID: 1251132877}
   route: {fileID: 1707335131}
@@ -234814,6 +234914,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 21"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1610282890}
+  personalOnly: 0
   vehicleStop: {fileID: 1920478720}
   establishment: {fileID: 1251132877}
   route: {fileID: 536839800}
@@ -242670,6 +242771,7 @@ MonoBehaviour:
   displayName: "Bairro Leste \xB7 Building_Chicken Shop (1)_Bairro8_1"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 1666726662}
+  personalOnly: 0
   vehicleStop: {fileID: 1860304963}
   establishment: {fileID: 259469210}
   route: {fileID: 468960716}
@@ -244443,6 +244545,7 @@ MonoBehaviour:
   displayName: "Bairro Leste \xB7 Building_Books Shop_Bairro8_0"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 1678435144}
+  personalOnly: 0
   vehicleStop: {fileID: 1851947540}
   establishment: {fileID: 484701471}
   route: {fileID: 1331108245}
@@ -246127,6 +246230,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 02 color02 (1)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 1697567146}
+  personalOnly: 0
   vehicleStop: {fileID: 311437666}
   establishment: {fileID: 1989107429}
   route: {fileID: 695350339}
@@ -251371,6 +251475,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 27"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1732932789}
+  personalOnly: 0
   vehicleStop: {fileID: 114966631}
   establishment: {fileID: 1550843276}
   route: {fileID: 1729689179}
@@ -253542,6 +253647,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 01 color01 (2)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 1750525372}
+  personalOnly: 0
   vehicleStop: {fileID: 1936966363}
   establishment: {fileID: 1752019313}
   route: {fileID: 1278374964}
@@ -257649,6 +257755,7 @@ MonoBehaviour:
   displayName: "Mercado \xB7 Parceiro 28"
   establishmentType: Mercado
   pedestrianAccess: {fileID: 1779043880}
+  personalOnly: 0
   vehicleStop: {fileID: 676186034}
   establishment: {fileID: 1351060578}
   route: {fileID: 2020526989}
@@ -261114,6 +261221,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 12"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1809411506}
+  personalOnly: 0
   vehicleStop: {fileID: 1223266934}
   establishment: {fileID: 1987050238}
   route: {fileID: 2001576549}
@@ -272457,6 +272565,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 03 color03 (1)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 1888549674}
+  personalOnly: 0
   vehicleStop: {fileID: 1000607031}
   establishment: {fileID: 756126091}
   route: {fileID: 1330129216}
@@ -278159,6 +278268,7 @@ MonoBehaviour:
   displayName: "Mercado \xB7 Super Market"
   establishmentType: Mercado
   pedestrianAccess: {fileID: 1930354443}
+  personalOnly: 0
   vehicleStop: {fileID: 2056128384}
   establishment: {fileID: 1351060578}
   route: {fileID: 475460894}
@@ -278739,6 +278849,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Parceiro 14"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 1933182269}
+  personalOnly: 0
   vehicleStop: {fileID: 1299492971}
   establishment: {fileID: 495763599}
   route: {fileID: 232418233}
@@ -278920,6 +279031,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 05"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1935147076}
+  personalOnly: 0
   vehicleStop: {fileID: 136655027}
   establishment: {fileID: 1452481771}
   route: {fileID: 928824373}
@@ -282301,6 +282413,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Residential color01"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1960459279}
+  personalOnly: 0
   vehicleStop: {fileID: 1913694139}
   establishment: {fileID: 1990472367}
   route: {fileID: 232418233}
@@ -284163,6 +284276,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Factory"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 1980159223}
+  personalOnly: 0
   vehicleStop: {fileID: 1017138698}
   establishment: {fileID: 316049113}
   route: {fileID: 2082406690}
@@ -287143,6 +287257,7 @@ MonoBehaviour:
   displayName: "Bairro Leste \xB7 Building_House_01_color01 (1)_Bairro8_0"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 2000638235}
+  personalOnly: 0
   vehicleStop: {fileID: 1953956240}
   establishment: {fileID: 1988423926}
   route: {fileID: 993005196}
@@ -291506,6 +291621,7 @@ MonoBehaviour:
   - {fileID: 584386288}
   - {fileID: 2000638236}
   - {fileID: 1120593322}
+  - {fileID: 116487550}
   lightThresholdKg: 20
   truckThresholdKg: 200
   carCapacityKg: 200
@@ -291532,7 +291648,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 116487551}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2025781086
@@ -292638,6 +292755,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 Parceiro 19"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 2036391095}
+  personalOnly: 0
   vehicleStop: {fileID: 1907243958}
   establishment: {fileID: 967321353}
   route: {fileID: 363171355}
@@ -295015,6 +295133,7 @@ MonoBehaviour:
   displayName: "Resid\xEAncia \xB7 House 01 color01 (1)"
   establishmentType: "Resid\xEAncia"
   pedestrianAccess: {fileID: 2059100896}
+  personalOnly: 0
   vehicleStop: {fileID: 665890086}
   establishment: {fileID: 1012837567}
   route: {fileID: 695350339}
@@ -297104,6 +297223,7 @@ MonoBehaviour:
   displayName: "Pr\xE9dio \xB7 Parceiro 25"
   establishmentType: "Pr\xE9dio"
   pedestrianAccess: {fileID: 2070644331}
+  personalOnly: 0
   vehicleStop: {fileID: 1336980733}
   establishment: {fileID: 1927147886}
   route: {fileID: 1990469232}
@@ -298201,6 +298321,7 @@ MonoBehaviour:
   displayName: "Com\xE9rcio \xB7 Chicken Shop (2)"
   establishmentType: "Com\xE9rcio"
   pedestrianAccess: {fileID: 2078534312}
+  personalOnly: 0
   vehicleStop: {fileID: 1221841370}
   establishment: {fileID: 1334675046}
   route: {fileID: 386176908}
@@ -305591,6 +305712,7 @@ MonoBehaviour:
   displayName: "Cafeteria \xB7 Parceiro 11"
   establishmentType: Cafeteria
   pedestrianAccess: {fileID: 2125050748}
+  personalOnly: 0
   vehicleStop: {fileID: 1782898380}
   establishment: {fileID: 568093305}
   route: {fileID: 1012152484}

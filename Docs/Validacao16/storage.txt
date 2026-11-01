@@ -1,0 +1,6 @@
+PASS save v4 sem campos novos mantém encomenda pessoal carregada
+PASS save v5 aceita carga vinculada a pedido ativo
+PASS save rejeita carga da van sem pedido correspondente
+PASS save rejeita etiqueta pronta sem conferência e embalagem
+PASS versão futura v6 não é interpretada como save atual
+RESULT SUCCESS

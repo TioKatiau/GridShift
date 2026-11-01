@@ -1,0 +1,5 @@
+Depot=(339.95, -4.57, 221.32)
+Van=(342.65, -4.47, 221.02)
+Anchor=P-516520096c04 Prédio · Factory
+Clear footprint=9.6 x 7.6 m; road-centre separation >=7 m
+Model=existing pickup with closed low-poly cargo body

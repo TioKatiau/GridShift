@@ -1,0 +1,104 @@
+# Expansão GridShift 16 — 100 objetivos
+
+Estados: Não iniciado; Em desenvolvimento; Implementado; Testado; Bloqueado por dependência. Testado descreve o cenário da evidência, não cobertura universal. Os estados parciais não equivalem a conclusão da ideia inteira.
+
+- **001 — Entregar encomendas pessoalmente**: **Testado**. Fase 1. Entrega pessoal e caminhada reais; preservar regressão ao incorporar novos módulos. Dependências: base existente.
+- **002 — Tocar campainhas**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001, 031.
+- **003 — Confirmação de recebimento**: **Em desenvolvimento**. Fase 4. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001, 031.
+- **004 — Cliente ausente**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001, 031.
+- **005 — Entregas múltiplas**: **Não iniciado**. Fase 1. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **006 — Mercadorias frágeis**: **Não iniciado**. Fase 1. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **007 — Entregas urgentes**: **Em desenvolvimento**. Fase 1. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **008 — Entregas em estabelecimentos**: **Em desenvolvimento**. Fase 4. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **009 — Armários de encomendas**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001, 031.
+- **010 — Comprovante de entrega**: **Testado**. Fase 5. Comprovante interno com pedido, destinatário, calendário e transação únicos. Dependências: 001.
+- **011 — Separar encomendas**: **Testado**. Fase 3. Um pedido por vez, setores A/B e recusa de destino errado. Dependências: 001.
+- **012 — Escanear códigos de barras**: **Testado**. Fase 3. Código próprio da caixa física, associado ao ID real do pedido. Dependências: 011.
+- **013 — Embalar produtos**: **Testado**. Fase 3. Caixa pequena até 5 kg e média até 20 kg; incompatibilidade recusada. Dependências: 011.
+- **014 — Colocar etiquetas**: **Testado**. Fase 3. Etiqueta física com código e destino, restaurada após carregar. Dependências: 011.
+- **015 — Carregar caminhões**: **Em desenvolvimento**. Fase 3. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 011, 021.
+- **016 — Organizar prateleiras**: **Em desenvolvimento**. Fase 3. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 011.
+- **017 — Conferir mercadorias recebidas**: **Em desenvolvimento**. Fase 3. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 011.
+- **018 — Corrigir pedidos trocados**: **Não iniciado**. Fase 3. Planejado; sem implementação completa reivindicada. Dependências: 011.
+- **019 — Usar carrinhos de transporte**: **Não iniciado**. Fase 3. Planejado; sem implementação completa reivindicada. Dependências: 011, 005.
+- **020 — Gerenciar as docas**: **Não iniciado**. Fase 3. Planejado; sem implementação completa reivindicada. Dependências: 011, 021.
+- **021 — Dirigir uma van da empresa**: **Testado**. Fase 2. Furgão adaptado de picape existente; controle físico testado no pátio, não em todas as vias. Dependências: 001.
+- **022 — Estacionar para descarregar**: **Em desenvolvimento**. Fase 2. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **023 — Abastecer veículos**: **Em desenvolvimento**. Fase 2. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **024 — Levar veículos à oficina**: **Em desenvolvimento**. Fase 2. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **025 — Inspecionar caminhões**: **Em desenvolvimento**. Fase 2. Inspeção presencial da van; inspeção de outros modelos ainda depende de integração. Dependências: 021.
+- **026 — Lavar veículos**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 021.
+- **027 — Ajudar funcionários na descarga**: **Não iniciado**. Fase 2. Planejado; sem implementação completa reivindicada. Dependências: 001, 015.
+- **028 — Trocar motoristas**: **Em desenvolvimento**. Fase 5. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **029 — Buscar mercadorias esquecidas**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **030 — Resolver problemas operacionais**: **Em desenvolvimento**. Fase 6. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **031 — Padaria**: **Em desenvolvimento**. Fase 4. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **032 — Supermercado**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **033 — Loja de eletrônicos**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **034 — Farmácia fictícia**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **035 — Loja de roupas**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **036 — Restaurante**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **037 — Fábrica**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **038 — Papelaria**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **039 — Centro comercial**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **040 — Agência de serviços empresariais**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **041 — Conversar com moradores**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001, 031.
+- **042 — Conhecer novos comerciantes**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **043 — Negociar preços**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 031, 041.
+- **044 — Entrevistar funcionários**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **045 — Resolver reclamações**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **046 — Treinar funcionários**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **047 — Criar clientes fiéis**: **Não iniciado**. Fase 4. Planejado; sem implementação completa reivindicada. Dependências: 031, 041.
+- **048 — NPCs com rotinas**: **Em desenvolvimento**. Fase 8. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **049 — Clientes recebendo caixas**: **Em desenvolvimento**. Fase 4. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001, 031.
+- **050 — Reações ao crescimento da empresa**: **Em desenvolvimento**. Fase 4. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **051 — Atender telefone**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **052 — Assinar documentos**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **053 — Organizar arquivos**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **054 — Realizar reuniões**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **055 — Planejar a semana**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **056 — Quadro de operações**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **057 — Entrevistas no escritório**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **058 — Personalizar a decoração**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **059 — Revisar relatórios**: **Em desenvolvimento**. Fase 5. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **060 — Encerrar expediente**: **Não iniciado**. Fase 5. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **061 — Obras nas ruas**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **062 — Congestionamentos especiais**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **063 — Feira comercial**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **064 — Clima variável**: **Em desenvolvimento**. Fase 8. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **065 — Problemas de energia no Office**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **066 — Alteração de endereço**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **067 — Aumento de demanda**: **Em desenvolvimento**. Fase 6. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **068 — Pedidos surpresa**: **Em desenvolvimento**. Fase 6. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **069 — Novas áreas desbloqueadas**: **Em desenvolvimento**. Fase 6. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001.
+- **070 — Eventos sazonais**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **071 — O Pacote Perdido**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **072 — Entrega de Última Hora**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **073 — O Novo Funcionário**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **074 — Operação Noturna**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **075 — Cliente Insatisfeito**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **076 — A Grande Encomenda**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **077 — A Primeira Parceria**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **078 — Corrida Contra o Relógio**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **079 — Dia de Inspeção**: **Não iniciado**. Fase 6. Planejado; sem implementação completa reivindicada. Dependências: 001, 031, 048.
+- **080 — Desafio da VetorLog**: **Em desenvolvimento**. Fase 6. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 001, 031, 048.
+- **081 — Mochila de entregas**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 005.
+- **082 — Carrinho de cargas**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 019.
+- **083 — Leitor de códigos avançado**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 012.
+- **084 — Bicicleta de entregas**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 021, 005.
+- **085 — Van própria**: **Em desenvolvimento**. Fase 7. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **086 — Uniforme GridShift**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **087 — Depósito maior**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 011, 020.
+- **088 — Escritório melhor**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **089 — Habilidades profissionais**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **090 — Conquistas internas**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **091 — Organização de caminhão**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **092 — Conferência rápida**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **093 — Planejamento de rotas**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **094 — Treinamento de direção**: **Em desenvolvimento**. Fase 7. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **095 — Desafio de estacionamento**: **Em desenvolvimento**. Fase 7. Há base parcial no projeto; requisitos completos ainda pendentes. Dependências: 021.
+- **096 — Controle de estoque**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **097 — Negociação comercial**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 031, 041.
+- **098 — Treinamento logístico**: **Testado**. Fase 7. Missão Operador de Expedição: preparar, carregar, conduzir e entregar; bônus único. Dependências: 011, 012, 013, 014.
+- **099 — Desafio semanal**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 001.
+- **100 — Operação de Grande Escala**: **Não iniciado**. Fase 7. Planejado; sem implementação completa reivindicada. Dependências: 015, 020, 027, 093, 098.

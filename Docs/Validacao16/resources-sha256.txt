@@ -1,0 +1,4 @@
+Recursos incorporados após RESULT SUCCESS do ciclo V16.
+Scripts C# comparados com a cópia de validação: hashes idênticos antes da incorporação.
+A107C73A193B5B4DD26EF51AB641EA985B246F6A59FB531C911C01FD1C358250  Assets\Resources\GridShiftActiveConfig.asset
+A2B950E965C41B34914F6EA82BA0B64842392088C5BDCBD827A4C3ECA9F36ABB  Assets\Resources\GridShiftPlayerVan.prefab

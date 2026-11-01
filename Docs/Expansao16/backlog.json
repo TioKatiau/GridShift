@@ -1,0 +1,1242 @@
+[
+  {
+    "id": "001",
+    "name": "Entregar encomendas pessoalmente",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/regression-deliveries.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 1,
+    "dependencies": [],
+    "scope": "Entrega pessoal e caminhada reais; preservar regressão ao incorporar novos módulos."
+  },
+  {
+    "id": "002",
+    "name": "Tocar campainhas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "003",
+    "name": "Confirmação de recebimento",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "004",
+    "name": "Cliente ausente",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "005",
+    "name": "Entregas múltiplas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 1",
+    "phase": 1,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "006",
+    "name": "Mercadorias frágeis",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 1",
+    "phase": 1,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "007",
+    "name": "Entregas urgentes",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 1",
+    "phase": 1,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "008",
+    "name": "Entregas em estabelecimentos",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "009",
+    "name": "Armários de encomendas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "010",
+    "name": "Comprovante de entrega",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Comprovante interno com pedido, destinatário, calendário e transação únicos."
+  },
+  {
+    "id": "011",
+    "name": "Separar encomendas",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 3,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Um pedido por vez, setores A/B e recusa de destino errado."
+  },
+  {
+    "id": "012",
+    "name": "Escanear códigos de barras",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Código próprio da caixa física, associado ao ID real do pedido."
+  },
+  {
+    "id": "013",
+    "name": "Embalar produtos",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Caixa pequena até 5 kg e média até 20 kg; incompatibilidade recusada."
+  },
+  {
+    "id": "014",
+    "name": "Colocar etiquetas",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Etiqueta física com código e destino, restaurada após carregar."
+  },
+  {
+    "id": "015",
+    "name": "Carregar caminhões",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011",
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "016",
+    "name": "Organizar prateleiras",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "017",
+    "name": "Conferir mercadorias recebidas",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "018",
+    "name": "Corrigir pedidos trocados",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "019",
+    "name": "Usar carrinhos de transporte",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011",
+      "005"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "020",
+    "name": "Gerenciar as docas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 3",
+    "phase": 3,
+    "dependencies": [
+      "011",
+      "021"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "021",
+    "name": "Dirigir uma van da empresa",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 2,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Furgão adaptado de picape existente; controle físico testado no pátio, não em todas as vias."
+  },
+  {
+    "id": "022",
+    "name": "Estacionar para descarregar",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 2",
+    "phase": 2,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "023",
+    "name": "Abastecer veículos",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 2",
+    "phase": 2,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "024",
+    "name": "Levar veículos à oficina",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 2",
+    "phase": 2,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "025",
+    "name": "Inspecionar caminhões",
+    "status": "Em desenvolvimento",
+    "evidence": "Docs/Validacao16/runtime.txt: inspeção presencial da van; caminhões ainda pendentes",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 2,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Inspeção presencial da van; inspeção de outros modelos ainda depende de integração."
+  },
+  {
+    "id": "026",
+    "name": "Lavar veículos",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "027",
+    "name": "Ajudar funcionários na descarga",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 2",
+    "phase": 2,
+    "dependencies": [
+      "001",
+      "015"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "028",
+    "name": "Trocar motoristas",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "029",
+    "name": "Buscar mercadorias esquecidas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "030",
+    "name": "Resolver problemas operacionais",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "031",
+    "name": "Padaria",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "032",
+    "name": "Supermercado",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "033",
+    "name": "Loja de eletrônicos",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "034",
+    "name": "Farmácia fictícia",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "035",
+    "name": "Loja de roupas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "036",
+    "name": "Restaurante",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "037",
+    "name": "Fábrica",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "038",
+    "name": "Papelaria",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "039",
+    "name": "Centro comercial",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "040",
+    "name": "Agência de serviços empresariais",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "041",
+    "name": "Conversar com moradores",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "042",
+    "name": "Conhecer novos comerciantes",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "043",
+    "name": "Negociar preços",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "031",
+      "041"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "044",
+    "name": "Entrevistar funcionários",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "045",
+    "name": "Resolver reclamações",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "046",
+    "name": "Treinar funcionários",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "047",
+    "name": "Criar clientes fiéis",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "031",
+      "041"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "048",
+    "name": "NPCs com rotinas",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 8",
+    "phase": 8,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "049",
+    "name": "Clientes recebendo caixas",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001",
+      "031"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "050",
+    "name": "Reações ao crescimento da empresa",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 4",
+    "phase": 4,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "051",
+    "name": "Atender telefone",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "052",
+    "name": "Assinar documentos",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "053",
+    "name": "Organizar arquivos",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "054",
+    "name": "Realizar reuniões",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "055",
+    "name": "Planejar a semana",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "056",
+    "name": "Quadro de operações",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "057",
+    "name": "Entrevistas no escritório",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "058",
+    "name": "Personalizar a decoração",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "059",
+    "name": "Revisar relatórios",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "060",
+    "name": "Encerrar expediente",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 5",
+    "phase": 5,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "061",
+    "name": "Obras nas ruas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "062",
+    "name": "Congestionamentos especiais",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "063",
+    "name": "Feira comercial",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "064",
+    "name": "Clima variável",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 8",
+    "phase": 8,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "065",
+    "name": "Problemas de energia no Office",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "066",
+    "name": "Alteração de endereço",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "067",
+    "name": "Aumento de demanda",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "068",
+    "name": "Pedidos surpresa",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "069",
+    "name": "Novas áreas desbloqueadas",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "070",
+    "name": "Eventos sazonais",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "071",
+    "name": "O Pacote Perdido",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "072",
+    "name": "Entrega de Última Hora",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "073",
+    "name": "O Novo Funcionário",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "074",
+    "name": "Operação Noturna",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "075",
+    "name": "Cliente Insatisfeito",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "076",
+    "name": "A Grande Encomenda",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "077",
+    "name": "A Primeira Parceria",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "078",
+    "name": "Corrida Contra o Relógio",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "079",
+    "name": "Dia de Inspeção",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "080",
+    "name": "Desafio da VetorLog",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 6",
+    "phase": 6,
+    "dependencies": [
+      "001",
+      "031",
+      "048"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "081",
+    "name": "Mochila de entregas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "005"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "082",
+    "name": "Carrinho de cargas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "019"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "083",
+    "name": "Leitor de códigos avançado",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "012"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "084",
+    "name": "Bicicleta de entregas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "021",
+      "005"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "085",
+    "name": "Van própria",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "086",
+    "name": "Uniforme GridShift",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "087",
+    "name": "Depósito maior",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "011",
+      "020"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "088",
+    "name": "Escritório melhor",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "089",
+    "name": "Habilidades profissionais",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "090",
+    "name": "Conquistas internas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "091",
+    "name": "Organização de caminhão",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "092",
+    "name": "Conferência rápida",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "093",
+    "name": "Planejamento de rotas",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "094",
+    "name": "Treinamento de direção",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "095",
+    "name": "Desafio de estacionamento",
+    "status": "Em desenvolvimento",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "021"
+    ],
+    "scope": "Há base parcial no projeto; requisitos completos ainda pendentes."
+  },
+  {
+    "id": "096",
+    "name": "Controle de estoque",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "097",
+    "name": "Negociação comercial",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "031",
+      "041"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "098",
+    "name": "Treinamento logístico",
+    "status": "Testado",
+    "evidence": "Docs/Validacao16/runtime.txt",
+    "next": "Ampliar regressão e cenários sem substituir os sistemas existentes",
+    "phase": 7,
+    "dependencies": [
+      "011",
+      "012",
+      "013",
+      "014"
+    ],
+    "scope": "Missão Operador de Expedição: preparar, carregar, conduzir e entregar; bônus único."
+  },
+  {
+    "id": "099",
+    "name": "Desafio semanal",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "001"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  },
+  {
+    "id": "100",
+    "name": "Operação de Grande Escala",
+    "status": "Não iniciado",
+    "evidence": "",
+    "next": "Implementar requisitos restantes na fase 7",
+    "phase": 7,
+    "dependencies": [
+      "015",
+      "020",
+      "027",
+      "093",
+      "098"
+    ],
+    "scope": "Planejado; sem implementação completa reivindicada."
+  }
+]

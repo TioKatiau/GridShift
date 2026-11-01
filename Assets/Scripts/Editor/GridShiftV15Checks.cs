@@ -56,7 +56,7 @@ public sealed class GridShiftV15Runner:MonoBehaviour {
   Check(order.status==DeliveryStatus.Transporting&&player.CameraTransform.GetComponentsInChildren<Renderer>().Any(r=>r.name.StartsWith("Encomenda ")),"caixa real fica vinculada à câmera após coletar");
   GridShiftV11Capture.Save("v15-carrying",player.CameraTransform.GetComponent<Camera>());
   var store=manager.GetComponent<DeliveryPersistence>();Check(store.Save(),"salvar operação pessoal carregando caixa");
-  Check(DeliverySaveStore.Read(out var saved)&&saved.version==4&&saved.orders.Any(o=>o.id==order.id&&o.mode==DeliveryMode.Personal&&o.status==DeliveryStatus.Transporting),"save v4 preserva modalidade e caixa carregada");
+  Check(DeliverySaveStore.Read(out var saved)&&saved.version>=4&&saved.orders.Any(o=>o.id==order.id&&o.mode==DeliveryMode.Personal&&o.status==DeliveryStatus.Transporting),"save v4 preserva modalidade e caixa carregada");
   DeliverySaveStore.Pending=saved;yield return SceneManager.LoadSceneAsync("SampleScene",LoadSceneMode.Single);
   while(DeliveryManager.Instance==null||!DeliveryManager.Instance.GetComponent<DeliveryPersistence>().Ready)yield return null;
   manager=DeliveryManager.Instance;store=manager.GetComponent<DeliveryPersistence>();player=Object.FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None).First(p=>p.gameObject.scene.name=="SampleScene");player.BlockControls(false);order=manager.PersonalOrder;yield return new WaitForSeconds(.5f);

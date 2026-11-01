@@ -1,0 +1,16 @@
+PASS corredor livre permite deslocamento
+PASS destino livre isoladamente não detecta parede intermediária
+PASS varredura impede atravessar parede fina entre posições
+PASS retirar obstáculo libera trajeto sem ignorar colisões
+PASS destino ocupado permanece bloqueado
+PASS gatilho de interação não bloqueia passagem
+PASS destino real acessível pelo grafo
+PASS velocidade e distância refletem caminhada física
+PASS pedestre bloqueado não mantém animação de caminhada
+PASS gravação real de save v3 em destino temporário
+PASS leitura v3 preserva saldo e slot
+PASS segunda gravação atômica produz backup
+PASS arquivo corrompido recupera backup anterior válido
+PASS versão futura desconhecida é recusada
+PASS partida v1 continua legível sem apagar o original
+RESULT SUCCESS

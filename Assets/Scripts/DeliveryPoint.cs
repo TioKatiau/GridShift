@@ -2,6 +2,7 @@ using UnityEngine;
 public sealed class DeliveryPoint:MonoBehaviour {
  public string id,displayName,establishmentType="Comércio";
  public Transform pedestrianAccess;
+ public bool personalOnly;
  public Transform vehicleStop;
  public Transform establishment;
  public TrafficRoute route;

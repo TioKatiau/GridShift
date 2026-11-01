@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32d00d6f76318e4dbb2d97726c64b9c, type: 3}
+  m_Name: GridShiftActiveConfig
+  m_EditorClassIdentifier: 
+  vanPrefab: {fileID: 4188660172479520487, guid: aa02a2b4629e49248a38840e27369217, type: 3}
+  floorMaterial: {fileID: 2100000, guid: e51fd827cacba3247b4dff93c049c415, type: 2}
+  structureMaterial: {fileID: 2100000, guid: 0dbb882c5a022ad4299d0e4519ca6618, type: 2}
+  accentMaterial: {fileID: 2100000, guid: f41f11ac8ec3da3498abb2d7763ac77f, type: 2}
+  depotPosition: {x: 339.95264, y: -4.5749993, z: 221.3235}
+  vanPosition: {x: 342.65265, y: -4.4749994, z: 221.0235}
+  depotRotation: {x: 0, y: 0, z: 0, w: 1}
+  vanRotation: {x: 0, y: 0, z: 0, w: 1}
+  depotPointId: GS-DEPOT16

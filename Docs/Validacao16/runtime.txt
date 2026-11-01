@@ -1,0 +1,59 @@
+PASS van pessoal não possui controle autônomo concorrente
+PASS inspeção presencial consulta combustível e condição reais da van
+PASS pedido real aceito no quadro do depósito:
+PASS pedido aguarda preparação física
+PASS coleta recusada antes da liberação
+PASS embalagem exige conferência anterior
+PASS leitor recusa código que não pertence à encomenda
+PASS caixa física possui identificador próprio e pedido vinculado
+PASS leitor confere código da caixa real:
+PASS caixa pequena rejeita carga de oito quilos
+PASS caixa média compatível embala o pedido
+PASS etiqueta registra endereço e peso reais
+PASS salvar preparação intermediária
+PASS save v5 inclui preparação e van
+PASS recarregar preserva exatamente a etapa de preparação
+PASS etiqueta física da caixa restaura o identificador do pedido
+PASS separação recusa setor de destino errado
+PASS encomenda separada no setor correto
+PASS expedição libera somente pedido preparado
+PASS retirar pacote preparado da prateleira:
+PASS guardar encomenda real no compartimento da van
+PASS carga na van não pode ser entregue remotamente
+PASS existe posição de acesso com espaço para o corpo do jogador
+PASS entrar na van por acesso livre
+PASS condução mantém uma câmera principal ativa
+PASS motor reproduz áudio existente no canal Vehicles
+PASS pausa congela condução sem perder estado do motorista
+TRACE van_moved=1,274302 speed=3,838938 fuel=99,99814
+PASS condução move Rigidbody real e consome combustível empresarial
+PASS direção altera orientação física da van em movimento
+PASS não desembarca com veículo em movimento
+PASS colisão real impede atravessar obstáculo estático
+PASS ré desloca o veículo para trás sem controle autônomo
+PASS frear, estacionar e desembarcar em ponto seguro
+PASS saída restaura controlador e câmera do jogador
+PASS carga e posição da van persistem no save
+PASS retomar o assento após desembarque seguro: Pare a van antes de sair.
+PASS save ao volante registra desembarque seguro para restauração
+PASS carregar restaura uma única van, posição e carga corretas
+PASS carregar save ao volante restaura jogador fora da van com controles válidos
+PASS queda fora do mundo recupera van sem perder encomenda
+PASS retirar encomenda após carregar a partida
+PASS pedido preparado e transportado é entregue no destino real
+PASS pagamento permanece único após fluxo depósito e van
+PASS missão operacional verifica preparação, condução e entrega concluídas
+PASS bônus da missão operacional é liberado após ações reais
+PASS missão operacional não paga bônus duas vezes
+PASS abastecimento utiliza despesa real e restaura combustível
+PASS tablet permanece funcional após condução e entrega
+PASS equipamentos mostram van e acesso real ao depósito
+PASS comprovante apresenta a transação real da entrega
+PASS aceitar nova operação após concluir a primeira
+PASS delegação exige operador realmente contratado
+PASS contratação existente habilita operador logístico
+PASS operador assume preparação com custo financeiro real
+PASS preparação delegada em andamento é salva
+PASS operador contratado retoma e conclui preparação após carregar
+PASS serviço delegado não é cobrado duas vezes após carregar
+RESULT SUCCESS

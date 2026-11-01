@@ -47,30 +47,38 @@ public sealed partial class DeliveryManager {
   error=null;var order=PersonalOrder;
   if(order==null){error="Nenhuma entrega pessoal ativa.";return false;}
   string expected=order.status==DeliveryStatus.ToPickup?order.pickupId:order.destinationId;
-  if(pointId!=expected||!GridShiftDeliveryAccess.TryGet(Point(expected),out var at)||!GridShiftDeliveryAccess.InReach(player,at)){error="Aproxime-se do acesso correto, sem obstáculos.";return false;}
+  var operations=GetComponent<GridShiftActiveOperations>();
+  if(operations?.Van!=null&&operations.Van.CargoOrderId==order.id){error="Estacione e retire a encomenda do compartimento da van.";return false;}
+  if(order.status==DeliveryStatus.ToPickup&&order.depotRequired&&!order.depotReleased){error="Prepare e libere a encomenda nas estações do depósito.";return false;}
+  bool access=GridShiftDeliveryAccess.TryGet(Point(expected),out var at);if(order.depotRequired&&order.status==DeliveryStatus.ToPickup&&operations?.Depot!=null)at=operations.Origin(order);
+  if(pointId!=expected||!access||!GridShiftDeliveryAccess.InReach(player,at)){error="Aproxime-se do acesso correto, sem obstáculos.";return false;}
   var mission=Company.State.missions.FirstOrDefault(m=>m.id=="personal-express"&&m.orderId==order.id);
   if(order.status==DeliveryStatus.ToPickup){order.status=DeliveryStatus.Transporting;if(mission!=null)mission.step=2;GridShiftAudio.Play("Cargo_Collected","SFX",.4f);Notify("Encomenda coletada · leve até "+Point(order.destinationId).displayName);}
-  else if(order.status==DeliveryStatus.Transporting){int reputation=Company.State.reputation;Complete(order);if(mission!=null)mission.step=3;int delta=Company.State.reputation-reputation;Notify("ENTREGA CONCLUÍDA · R$ "+order.reward.ToString("N2")+" · Reputação "+(delta>=0?"+":"")+delta);}
+  else if(order.status==DeliveryStatus.Transporting){int reputation=Company.State.reputation;Complete(order);if(mission!=null)mission.step=3;var depotMission=Company.State.missions.FirstOrDefault(m=>m.id=="depot-workflow"&&m.orderId==order.id&&!m.rewardClaimed);if(depotMission!=null)depotMission.step=9;int delta=Company.State.reputation-reputation;Notify("ENTREGA CONCLUÍDA · R$ "+order.reward.ToString("N2")+" · Reputação "+(delta>=0?"+":"")+delta);}
   else{error="Etapa de entrega inválida.";return false;}
   Changed();GetComponent<DeliveryPersistence>()?.RequestSave();return true;
  }
 }
 
 public sealed class GridShiftPersonalDelivery:MonoBehaviour {
- DeliveryManager manager;PlayerMovement player;GameObject package;GridShiftPackageInteraction target;string shownOrder;float searchAt;Vector3 heldVelocity,lastWalk;bool measuring,finishing;readonly RaycastHit[] walls=new RaycastHit[16];
+ public GridShiftPackageIdentity PackageIdentity=>package!=null?package.GetComponent<GridShiftPackageIdentity>():null;
+ DeliveryManager manager;PlayerMovement player;GameObject package;GridShiftPackageInteraction target;string shownOrder;Vector3 heldVelocity,lastWalk;bool measuring,finishing;readonly RaycastHit[] walls=new RaycastHit[16];
  void Awake(){manager=GetComponent<DeliveryManager>();}
  void Update(){
   if(manager==null||manager.Restoring||finishing)return;var order=manager.PersonalOrder;
-  if(Time.unscaledTime>=searchAt){searchAt=Time.unscaledTime+.5f;player=FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None).FirstOrDefault(p=>p.gameObject.scene.name=="SampleScene");}
+  player=InteractionFocus.PlayerFor(this);
   if(order==null){Clear();return;}
   if(shownOrder!=order.id){Clear();shownOrder=order.id;}
   var point=manager.Point(order.status==DeliveryStatus.ToPickup?order.pickupId:order.destinationId);
   if(!GridShiftDeliveryAccess.TryGet(point,out var at))return;
+  var operations=manager.GetComponent<GridShiftActiveOperations>();if(order.depotRequired&&order.status==DeliveryStatus.ToPickup&&operations?.Depot!=null)at=operations.Origin(order);
   if(target==null){var go=new GameObject("PersonalDeliveryInteraction");go.transform.SetParent(transform,false);target=go.AddComponent<GridShiftPackageInteraction>();target.owner=this;}
   target.transform.position=at;target.pointId=point.id;target.caption=order.status==DeliveryStatus.ToPickup?"Pegar encomenda":"Entregar encomenda";
-  if(package==null){package=GridShiftDeliveryAccess.Package(transform);package.name="Encomenda "+order.id;}
+  if(package==null){package=GridShiftDeliveryAccess.Package(transform);package.name="Encomenda "+order.id;var identity=package.AddComponent<GridShiftPackageIdentity>();identity.orderId=order.id;identity.packageId="PKG-"+order.id;}
+  PackageIdentity.ShowLabel(order.depotRequired&&!order.depotLabelled?"Conferência pendente":manager.Point(order.destinationId).displayName);
   bool city=SceneManager.GetActiveScene().name=="SampleScene";
   bool carrying=order.status==DeliveryStatus.Transporting;
+  if(carrying&&operations?.Van!=null&&operations.Van.CargoOrderId==order.id){package.SetActive(false);if(player!=null)player.CarrySpeedMultiplier=1;measuring=false;return;}
   if(carrying&&city&&player!=null){if(measuring){float moved=Vector3.ProjectOnPlane(player.transform.position-lastWalk,Vector3.up).magnitude;if(moved<3)order.travelledMeters+=moved;}lastWalk=player.transform.position;measuring=true;}else measuring=false;
   if(player!=null)player.CarrySpeedMultiplier=carrying?Mathf.Lerp(1,.85f,order.weightKg/manager.lightThresholdKg):1;
   if(carrying&&player!=null&&player.CameraTransform!=null){
@@ -89,10 +97,10 @@ public sealed class GridShiftPersonalDelivery:MonoBehaviour {
 }
 
 public sealed class GridShiftPackageInteraction:MonoBehaviour {
- public GridShiftPersonalDelivery owner;public string pointId,caption;TMP_Text label;PlayerMovement player;float searchAt;
+ public GridShiftPersonalDelivery owner;public string pointId,caption;TMP_Text label;PlayerMovement player;
  void OnEnable(){InteractionFocus.Register(this,2.5f);}void OnDisable(){InteractionFocus.Remove(this);}
  void Start(){var go=new GameObject("PackagePrompt",typeof(TextMeshPro));go.transform.SetParent(transform,false);go.transform.localPosition=Vector3.up*1.1f;label=go.GetComponent<TextMeshPro>();label.fontSize=2.5f;label.alignment=TextAlignmentOptions.Center;label.rectTransform.sizeDelta=new Vector2(4,1);label.color=new Color(1,.83f,.2f);}
- void Update(){if(Time.unscaledTime>=searchAt){searchAt=Time.unscaledTime+.5f;player=FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None).FirstOrDefault(p=>p.gameObject.scene==gameObject.scene);}
+ void Update(){player=InteractionFocus.PlayerFor(this);
   bool near=GridShiftDeliveryAccess.InReach(player,transform.position)&&InteractionFocus.Selected(this,player.transform);
   if(label!=null){float distance=player!=null?Vector3.Distance(player.transform.position,transform.position):float.PositiveInfinity;bool marker=player!=null&&!player.ControlsBlocked&&distance>3&&distance<120;label.gameObject.SetActive(near||marker);if(near||marker){label.text=near?"["+GridShiftControls.KeyName(GSAction.Interact)+"] "+caption:caption+" · "+distance.ToString("0")+" m";label.transform.rotation=player.CameraTransform.rotation;}}
   if(near&&GridShiftControls.Down(GSAction.Interact)&&InteractionFocus.Consume()){owner.Interact(pointId);GridShiftControls.SuppressFrame();}
