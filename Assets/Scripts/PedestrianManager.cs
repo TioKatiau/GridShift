@@ -56,9 +56,9 @@ public class PedestrianManager:MonoBehaviour {
   return !Physics.CapsuleCast(a+Vector3.up*.6f,a+Vector3.up*1.55f,.29f,(b-a).normalized,Vector3.Distance(a,b),~(1<<9),QueryTriggerInteraction.Ignore);
  }
  public bool ResidenceAllowed(int index){if(!graph.nodes[index].entrance)return false;foreach(var door in excludedEntrances)if(door!=null&&Vector3.ProjectOnPlane(graph.nodes[index].position-door.transform.position,Vector3.up).sqrMagnitude<25)return false;return true;}
- public bool Path(int from,int target,Queue<int> path,int blockedFrom=-1,int blockedTo=-1,bool sidewalkOnly=false,PedestrianAgent avoidAgent=null){
+ public bool Path(int from,int target,Queue<int> path,int blockedFrom=-1,int blockedTo=-1,bool sidewalkOnly=false,PedestrianAgent avoidAgent=null,bool allowServiceEntrance=false){
   var nodes=graph.nodes;if(target<0||target>=nodes.Length||from<0||from>=nodes.Length)return false;
-  if(nodes[target].entrance&&!ResidenceAllowed(target))return false;
+  if(nodes[target].entrance&&!ResidenceAllowed(target)&&!allowServiceEntrance)return false;
   if(previous==null||previous.Length!=nodes.Length){previous=new int[nodes.Length];searchQueue=new int[nodes.Length];}
   for(int i=0;i<previous.Length;i++)previous[i]=-1;int first=0,last=0;searchQueue[last++]=from;previous[from]=from;
   while(first<last&&previous[target]<0){int node=searchQueue[first++];foreach(int other in nodes[node].neighbours){if(sidewalkOnly&&graph.Crossing(node,other)>=0)continue;if((node==blockedFrom&&other==blockedTo)||(node==blockedTo&&other==blockedFrom))continue;if(previous[other]>=0)continue;if(avoidAgent!=null&&(nodes[other].position-nodes[target].position).sqrMagnitude>100)continue;if(avoidAgent!=null&&!Clear(avoidAgent,nodes[other].position,separation+.03f))continue;
@@ -90,7 +90,7 @@ public class PedestrianManager:MonoBehaviour {
   poolRoot=new GameObject("PoolPedestres").transform;poolRoot.SetParent(transform);poolRoot.gameObject.SetActive(false);
   if(excludedEntrances.Length==0)excludedEntrances=FindObjectsByType<CompanyEntrance>(FindObjectsSortMode.None);
   for(int i=0;i<graph.nodes.Length;i++)if(ResidenceAllowed(i))Entrances.Add(i);
-  while(true){active.RemoveAll(a=>a==null);if(active.Count<TargetCount)Spawn();else if(active.Count>TargetCount)foreach(var a in active.ToArray())if(!Visible(a.transform.position)){Recycle(a);break;}yield return new WaitForSeconds(.8f);}
+  while(true){active.RemoveAll(a=>a==null);if(active.Count<TargetCount)Spawn();else if(active.Count>TargetCount)foreach(var a in active.ToArray())if(!a.ExternalControl&&!Visible(a.transform.position)){Recycle(a);break;}yield return new WaitForSeconds(.8f);}
  }
  public bool Visible(Vector3 position){if(playerCamera==null||!playerCamera.isActiveAndEnabled)return false;GeometryUtility.CalculateFrustumPlanes(playerCamera,planes);return GeometryUtility.TestPlanesAABB(planes,new Bounds(position+Vector3.up,Vector3.one*2));}
  public bool Clear(PedestrianAgent self,Vector3 position,float gap){
@@ -160,6 +160,6 @@ public class PedestrianManager:MonoBehaviour {
   PedestrianAgent agent;if(pool.Count>0)agent=pool.Dequeue();else{var go=Instantiate(models[Random.Range(0,models.Length)],poolRoot);agent=go.AddComponent<PedestrianAgent>();}
   agent.gameObject.SetActive(false);agent.transform.SetParent(transform);agent.enabled=true;agent.Initialize(this,n,Random.Range(speeds.x,speeds.y));agent.gameObject.SetActive(true);active.Add(agent);return true;
  }return false;}
- public void Recycle(PedestrianAgent agent){if(!active.Remove(agent))return;agent.gameObject.SetActive(false);agent.transform.SetParent(poolRoot);pool.Enqueue(agent);}
+ public void Recycle(PedestrianAgent agent){if(agent.ExternalControl)return;if(!active.Remove(agent))return;agent.gameObject.SetActive(false);agent.transform.SetParent(poolRoot);pool.Enqueue(agent);}
 }
 

@@ -1,0 +1,2 @@
+Receiving areas with ground validated=64
+Prefab=Assets/Resources/DeliveryPackage.prefab

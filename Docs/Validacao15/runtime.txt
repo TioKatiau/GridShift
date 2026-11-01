@@ -1,0 +1,38 @@
+PASS oferta leve real possui dois acessos físicos
+PASS aceitar entrega pessoal: 
+PASS pedido pessoal não é designado à frota
+PASS carga pesada não pode ser assumida pelo jogador
+PASS destino não permite coletar encomenda da origem
+PASS obstáculo físico impede coleta através de parede
+TRACE pickup=(234.60, -4.38, 222.40) player=(234.60, -4.23, 222.40) camera=(234.60, -2.43, 222.18) blocked=False scene=SampleScene reach=True
+PASS coleta física no acesso de origem: 
+PASS caixa real fica vinculada à câmera após coletar
+PASS salvar operação pessoal carregando caixa
+PASS save v4 preserva modalidade e caixa carregada
+PASS recarregar a cena restaura exatamente uma caixa e a operação pessoal
+PASS origem não recebe encomenda destinada a outro local
+PASS percurso de passeio conecta coleta ao destino pessoal
+PASS jogador percorre caminho real carregando caixa com CharacterController
+PASS entrega física confirmada no destino: 
+PASS entrega libera pagamento real e conclui pedido
+PASS repetir conclusão não duplica pagamento
+PASS conclusão limpa encomenda e acompanhamento
+PASS missão expressa exige entrega pessoal realmente concluída
+PASS histórico pago persiste no mesmo armazenamento
+PASS tablet real abre após entrega pessoal
+PASS interface possui seção separada de concluídas
+PASS histórico concluído não recebe botão de acompanhamento
+PASS aceitar contrato pesado pela frota existente
+TRACE fleet=WaitingVehicle phase=0 vehicle= stop= courier=
+TRACE fleet=ToPickup phase=0 vehicle=GS-T01 stop=Nenhum courier=
+TRACE fleet=ToPickup phase=0 vehicle=GS-T01 stop=Semaforo courier=
+TRACE fleet=Transporting phase=0 vehicle=GS-T01 stop=Semaforo courier=
+TRACE fleet=Transporting phase=0 vehicle=GS-T01 stop=Semaforo courier=
+PASS salvar descarga com entregador em percurso
+PASS recarregar mantém descarga pendente e posição lógica do entregador
+PASS pose de transporte encontra e posiciona os braços do modelo real
+PASS aproximar observador ativa modelo animado do entregador
+TRACE fleet=Unloading phase=1 vehicle=GS-T01 stop=Semaforo courier=Entregador a caminho do recebimento
+TRACE fleet=Unloading phase=4 vehicle=GS-T01 stop=Semaforo courier=Embarcando no veículo
+PASS caminhão percorre rota, entregador entrega e retorna antes do pagamento
+RESULT SUCCESS

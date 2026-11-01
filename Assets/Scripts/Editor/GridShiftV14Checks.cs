@@ -48,7 +48,7 @@ public static class GridShiftV14Checks {
    // Exercise the real JSON store with disposable files, never personal slots.
    string saveDirectory=Path.GetFullPath("Temp/V14Saves-"+Guid.NewGuid().ToString("N"));
    string savePath=Path.Combine(saveDirectory,"slot-01.json");
-   var save=new DeliverySaveData{slot=1,profileId="v14-isolated",money=42,company=new CompanyCampaignState()};
+   var save=new DeliverySaveData{version=3,slot=1,profileId="v14-isolated",money=42,company=new CompanyCampaignState()};
    Check(DeliverySaveStore.WriteAt(savePath,save),"gravação real de save v3 em destino temporário");
    bool readable=DeliverySaveStore.ReadAt(savePath,out var loaded,out bool recovered);
    Check(readable&&!recovered&&loaded.money==42&&loaded.slot==1,"leitura v3 preserva saldo e slot");

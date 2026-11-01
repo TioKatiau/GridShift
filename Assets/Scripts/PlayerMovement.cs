@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     public int JumpsExecuted => jumpsExecuted;
     private readonly RaycastHit[] groundHits = new RaycastHit[12];
     public float VerticalVelocity => verticalVelocity;
+    public float CarrySpeedMultiplier {get;set;}=1;
     public bool ControlsBlocked => controlsBlocked;
     public Transform CameraTransform => cameraTransform;
     public void BlockControls(bool blocked) { controlsBlocked = blocked; }
@@ -92,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             if (animator != null) { animator.ResetTrigger("Jump"); animator.SetTrigger("Jump"); }
         }
         verticalVelocity += Mathf.Min(gravity, -.1f) * dt;
-        Vector3 velocity = (transform.forward * input.y + transform.right * input.x) * (running ? sprintSpeed : moveSpeed);
+        Vector3 velocity = (transform.forward * input.y + transform.right * input.x) * (running ? sprintSpeed : moveSpeed) * Mathf.Clamp(CarrySpeedMultiplier,.65f,1f);
         velocity.y = verticalVelocity;
         CollisionFlags flags = controller.Move(velocity * dt);
         if ((flags & CollisionFlags.Above) != 0 && verticalVelocity > 0f) verticalVelocity = 0f;

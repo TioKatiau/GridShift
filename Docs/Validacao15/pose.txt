@@ -1,0 +1,2 @@
+Applied=True hand_before=(-0.26, 0.79, -0.14) hand_after=(-0.15, 1.04, 0.38) hand_gap=1,228781E-07
+RESULT SUCCESS

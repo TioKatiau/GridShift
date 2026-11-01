@@ -4,6 +4,8 @@ public class PedestrianAgent:MonoBehaviour {
  public enum Activity { Idle,Walking,WaitingToCross,Crossing,EnteringBuilding }
  [SerializeField] Activity activity;
  public Activity CurrentActivity=>activity;
+ public bool ExternalControl {get;set;}
+ public void BindVisualAnimator(){animator=GetComponentInChildren<Animator>(true);if(animator==null)return;animator.runtimeAnimatorController=Manager.controller;animator.applyRootMotion=false;animator.cullingMode=AnimatorCullingMode.CullUpdateTransforms;}
  public float DistanceWalked {get;private set;}
  public int CrossingsCompleted {get;private set;}
  public PedestrianManager Manager {get;private set;}
@@ -21,6 +23,7 @@ public class PedestrianAgent:MonoBehaviour {
  readonly Queue<int> recentDestinations=new Queue<int>();
  int recoveryAttempts;float actualSpeed,currentVelocity;
  public Collider Obstacle {get;set;}
+ public int CurrentNode=>current;
  public int DestinationNode=>goal;
  public int NextNode=>next;
  public float NoProgressSeconds=>next<0?0:Mathf.Max(0,Time.time-progressAt);
@@ -40,10 +43,10 @@ public class PedestrianAgent:MonoBehaviour {
   body.position=transform.position=manager.graph.nodes[node].position;lastPosition=transform.position;
  }
  void OnDisable(){Manager?.LeaveCrossingQueue(this);if(crossing!=null)crossing.junction.LeaveCrossing(this);crossing=null;}
- public bool WalkTo(int target){if(crossingCommitted)return false;Manager?.LeaveCrossingQueue(this);crossing=null;path.Clear();next=-1;pause=0;return Destination(target);}
+ public bool WalkTo(int target){if(crossingCommitted)return false;Manager?.LeaveCrossingQueue(this);crossing=null;path.Clear();next=-1;pause=0;bool found=Destination(target);if(found&&Vector3.Distance(body.position,Manager.graph.nodes[current].position)>.08f)next=current;return found;}
  bool Destination(int target=-1){
   var nodes=Manager.graph.nodes;
-  if(target>=0){goal=target;return Manager.Path(current,target,path);}
+  if(target>=0){goal=target;return Manager.Path(current,target,path,allowServiceEntrance:ExternalControl);}
   for(int attempt=0;attempt<12;attempt++){
    int candidate=Random.Range(0,nodes.Length);
    if(Random.value<Manager.buildingProbability&&Manager.Entrances.Count>0)candidate=Manager.Entrances[Random.Range(0,Manager.Entrances.Count)];
@@ -84,7 +87,7 @@ public class PedestrianAgent:MonoBehaviour {
    if(yieldTime<=0)yielding=false;return;
   }
   if(pause>0){pause-=dt;Animate(0);return;}
-  if(next<0){if(path.Count==0&&!Destination()){pause=1;Animate(0);return;}next=path.Dequeue();int index=Manager.graph.Crossing(current,next);
+  if(next<0){if(path.Count==0&&ExternalControl){Animate(0);return;}if(path.Count==0&&!Destination()){pause=1;Animate(0);return;}next=path.Dequeue();int index=Manager.graph.Crossing(current,next);
    if(index>=0)crossing=Manager.graph.crossings[index];}
   if(crossing!=null&&!crossingCommitted){
    activity=Activity.WaitingToCross;
@@ -122,7 +125,7 @@ public class PedestrianAgent:MonoBehaviour {
    current=next;next=-1;
    if(crossing!=null){crossing.junction.LeaveCrossing(this);Manager.LeaveCrossingQueue(this);if(!crossingRetreat)CrossingsCompleted++;crossing=null;crossingRetreat=crossingCommitted=false;activity=Activity.Walking;}
    if(path.Count==0){
-    if(Manager.ResidenceAllowed(current)){activity=Activity.EnteringBuilding;StartCoroutine(EnterBuilding());return;}
+    if(!ExternalControl&&Manager.ResidenceAllowed(current)){activity=Activity.EnteringBuilding;StartCoroutine(EnterBuilding());return;}
     pause=Random.Range(Manager.destinationPause.x,Manager.destinationPause.y);activity=Activity.Idle;
    }
    Animate(0);return;
@@ -136,7 +139,7 @@ public class PedestrianAgent:MonoBehaviour {
   Vector3 desired=Vector3.MoveTowards(body.position,target,Mathf.Min(travelSpeed*dt,delta.magnitude));
   if(Physics.Raycast(desired+Vector3.up*1.5f,Vector3.down,out var floor,3,~(1<<9),QueryTriggerInteraction.Ignore)) {
       bool entrancePath=Manager.graph.nodes[current].entrancePath||Manager.graph.nodes[next].entrancePath;
-      if(floor.normal.y<.8f||(!entrancePath&&!floor.collider.name.StartsWith("Road "))||floor.collider.GetComponentInParent<TrafficCar>()!=null||Mathf.Abs(floor.point.y+.025f-body.position.y)>.4f||(crossing==null&&!Manager.Supported(desired,body.position.y,entrancePath))) { Blocked(direction,dt);return; }
+      if(floor.normal.y<.8f||(!entrancePath&&!floor.collider.name.StartsWith("Road "))||floor.collider.GetComponentInParent<TrafficCar>()!=null||Mathf.Abs(floor.point.y+.025f-body.position.y)>.4f||(crossing==null&&!Manager.Supported(desired,body.position.y,entrancePath||ExternalControl))) { Blocked(direction,dt);return; }
       desired.y=floor.point.y+.025f;
   } else { Blocked(direction,dt);return; }
   bool playerApproaching=Manager.player!=null&&Vector3.Distance(Manager.player.position,body.position)<(Manager.player.GetComponent<PlayerMovement>()?.IsRunning==true?2.4f:1.5f)&&Vector3.Dot(Manager.player.position-body.position,direction)>0;
@@ -160,8 +163,8 @@ public class PedestrianAgent:MonoBehaviour {
  }
  void Replan(){
   replanAt=Time.time+3;int blocked=next;replacementPath.Clear();recoveryAttempts++;
-  bool found=goal>=0&&recoveryAttempts<=3&&Manager.Path(current,goal,replacementPath,current,blocked);
-  if(!found){path.Clear();found=Destination();if(found){foreach(int n in path)replacementPath.Enqueue(n);}}
+  bool found=goal>=0&&recoveryAttempts<=3&&Manager.Path(current,goal,replacementPath,current,blocked,allowServiceEntrance:ExternalControl);
+  if(!found&&!ExternalControl){path.Clear();found=Destination();if(found){foreach(int n in path)replacementPath.Enqueue(n);}}
   if(found){path.Clear();foreach(int n in replacementPath)path.Enqueue(n);next=current;yielding=false;progressNode=-1;}
   else {pause=3;progressAt=Time.time;}
  }
