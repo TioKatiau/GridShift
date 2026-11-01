@@ -1,0 +1,8 @@
+PASS cinco veículos respeitam vermelho
+PASS pedestre reserva faixa antes do verde
+PASS verde não permite invadir faixa ocupada por pedestre
+Green16s crossed=4 starts=0,36; 0,80; 1,26; 1,46; 1,80 minimum bumper gap=2,152
+PASS fila mista mantém folga e não apresenta interpenetração
+PASS vários veículos seguem no mesmo verde sem esperar liberação total
+PASS saída bloqueada impede entrada mesmo com verde
+RESULT SUCCESS

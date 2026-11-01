@@ -109,6 +109,16 @@ public class PedestrianManager:MonoBehaviour {
   if(n==hits.Length)return false;
   for(int i=0;i<n;i++)if(self==null||!hits[i].transform.IsChildOf(self.transform)){if(self!=null)self.Obstacle=hits[i];return false;}return true;
  }
+ // Validate the swept body as well as the endpoint: thin walls and moving
+ // vehicles must not be skipped by a kinematic MovePosition.
+ public bool CanStep(PedestrianAgent self,Vector3 from,Vector3 to){
+  if(!Clear(self,to,separation))return false;
+  var delta=to-from;float distance=delta.magnitude;if(distance<.00001f)return true;
+  if(Physics.CapsuleCast(from+Vector3.up*.6f,from+Vector3.up*1.55f,.27f,delta/distance,out var hit,distance,~(1<<9),QueryTriggerInteraction.Ignore)){
+   if(self!=null)self.Obstacle=hit.collider;return false;
+  }
+  return true;
+ }
  // Pick a free walking direction before two bodies meet at the same graph node.
  // A shared right-hand preference separates opposing flows without leaving the sidewalk.
  public bool CrowdStep(PedestrianAgent self,Vector3 target,float distance,out Vector3 step){

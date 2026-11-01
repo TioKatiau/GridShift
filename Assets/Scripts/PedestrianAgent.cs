@@ -56,6 +56,10 @@ public class PedestrianAgent:MonoBehaviour {
 
  void FixedUpdate(){
   if(Manager==null)return;float dt=Time.fixedDeltaTime;
+  // The animator and footstep observers consume displacement, not requested speed.
+  float measured=Vector3.ProjectOnPlane(body.position-lastPosition,Vector3.up).magnitude;
+  DistanceWalked+=measured;lastPosition=body.position;
+  Animate(measured/Mathf.Max(dt,.0001f));
   // A waiting person can occupy a graph waypoint without blocking the whole sidewalk.
   // Continue to the following waypoint only when the entire bypass is supported and clear.
   if(!yielding&&crossing==null&&next>=0&&path.Count>0&&!Manager.graph.nodes[next].entrance&&Manager.graph.Crossing(current,next)<0&&Manager.graph.Crossing(next,path.Peek())<0&&Vector3.Distance(body.position,Manager.graph.nodes[next].position)<1.6f&&!Manager.Clear(this,Manager.graph.nodes[next].position,Manager.separation)&&Manager.SidewalkSegment(this,body.position,Manager.graph.nodes[path.Peek()].position)){
@@ -75,7 +79,7 @@ public class PedestrianAgent:MonoBehaviour {
     while(next>=0&&path.Count>0&&Vector3.Dot(Manager.graph.nodes[next].position-body.position,yieldDirection)<-.1f&&Manager.graph.Crossing(next,path.Peek())<0&&Manager.SidewalkSegment(this,body.position,Manager.graph.nodes[path.Peek()].position)){current=next;next=path.Dequeue();progressNode=-1;}
     return;
    }
-   if(moving&&Manager.Supported(step,body.position.y)&&Manager.Clear(this,step,Manager.separation)){body.MoveRotation(Quaternion.RotateTowards(body.rotation,Quaternion.LookRotation(Vector3.ProjectOnPlane(step-body.position,Vector3.up)),120*dt));body.MovePosition(step);Animate(speed);yieldTime-=dt;}
+   if(moving&&Manager.Supported(step,body.position.y)&&Manager.CanStep(this,body.position,step)){body.MoveRotation(Quaternion.RotateTowards(body.rotation,Quaternion.LookRotation(Vector3.ProjectOnPlane(step-body.position,Vector3.up)),120*dt));body.MovePosition(step);yieldTime-=dt;}
    else {Animate(0);yieldTime-=dt;}
    if(yieldTime<=0)yielding=false;return;
   }
@@ -101,8 +105,8 @@ public class PedestrianAgent:MonoBehaviour {
     if(!approachPlanned)approachBlocked+=dt;
     var deltaWait=targetWait-body.position;deltaWait.y=0;
     if(deltaWait.magnitude>.05f){var step=Vector3.MoveTowards(body.position,targetWait,speed*dt);
-     if(Manager.Supported(step,body.position.y)&&Manager.Clear(this,step,Manager.separation)){
-      body.MoveRotation(Quaternion.RotateTowards(body.rotation,Quaternion.LookRotation(deltaWait),180*dt));body.MovePosition(step);approachBlocked=0;Animate(speed);return;
+     if(Manager.Supported(step,body.position.y)&&Manager.CanStep(this,body.position,step)){
+      body.MoveRotation(Quaternion.RotateTowards(body.rotation,Quaternion.LookRotation(deltaWait),180*dt));body.MovePosition(step);approachBlocked=0;return;
      }
      approachBlocked+=dt;
 
@@ -139,12 +143,11 @@ public class PedestrianAgent:MonoBehaviour {
   Vector3 avoided=desired;bool crowdStep=crossing==null&&Manager.CrowdStep(this,target,Mathf.Min(speed*dt,delta.magnitude),out avoided);
   if(crowdStep){desired=avoided;direction=(desired-body.position).normalized;travelSpeed=speed;}
   if(!crowdStep&&crossing==null&&playerApproaching&&Manager.TryYield(this,direction,out yieldTarget)){BeginYield(direction);Animate(0);return;}
-  if(!Manager.Clear(this,desired,Manager.separation)){
+  if(!Manager.CanStep(this,body.position,desired)){
    Blocked(direction,dt);return;
   }
   var rotation=Quaternion.RotateTowards(body.rotation,Quaternion.LookRotation(direction),180*dt);
   body.MoveRotation(rotation);body.MovePosition(desired);blockedTime=0;activity=crossing==null?Activity.Walking:Activity.Crossing;
-  DistanceWalked+=Vector3.Distance(lastPosition,desired);lastPosition=desired;Animate(travelSpeed);
  }
  void Blocked(Vector3 direction,float dt){Animate(0);blockedTime+=dt;if(crossing!=null){
    if(blockedTime>3&&!crossingRetreat){var back=Manager.graph.nodes[current].position-body.position;back.y=0;var step=body.position+back.normalized*.15f;if(back.sqrMagnitude>.01f&&Manager.Clear(this,step,Manager.separation)){next=current;path.Clear();goal=-1;crossingRetreat=true;blockedTime=0;}}
