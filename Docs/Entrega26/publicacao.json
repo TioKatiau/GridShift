@@ -1,0 +1,36 @@
+{
+  "repository": "https://github.com/TioKatiau/GridShift",
+  "release": "https://github.com/TioKatiau/GridShift/releases/tag/v26.0",
+  "itch": "https://tiokatiau.itch.io/gridshift",
+  "devlog": "https://tiokatiau.itch.io/gridshift/devlog/1778549/gridshift-26-casa-logstica-e-uma-entrega-completa",
+  "assets": [
+    {
+      "name": "GridShift26_Windows.zip",
+      "size": 173642678,
+      "sha256": "9f6a5963bd7f346c37e441e37c245faaf71e3c98efbb779fde68f3c28a7e00ae",
+      "url": "https://github.com/TioKatiau/GridShift/releases/download/v26.0/GridShift26_Windows.zip",
+      "server_digest": "sha256:9f6a5963bd7f346c37e441e37c245faaf71e3c98efbb779fde68f3c28a7e00ae"
+    },
+    {
+      "name": "GDD.pdf",
+      "size": 85894,
+      "sha256": "2c34b38b8e1398c72427b7caf963944e3ba344a0f6c132ae1e5bdc61dbb82aa2",
+      "url": "https://github.com/TioKatiau/GridShift/releases/download/v26.0/GDD.pdf",
+      "server_digest": "sha256:2c34b38b8e1398c72427b7caf963944e3ba344a0f6c132ae1e5bdc61dbb82aa2"
+    },
+    {
+      "name": "Testes_Bugs.pdf",
+      "size": 82336,
+      "sha256": "9f9d2d23cf705421a670ba3f4f5497235a6a3b52219670f034489f4aad7ad9ae",
+      "url": "https://github.com/TioKatiau/GridShift/releases/download/v26.0/Testes_Bugs.pdf",
+      "server_digest": "sha256:9f9d2d23cf705421a670ba3f4f5497235a6a3b52219670f034489f4aad7ad9ae"
+    },
+    {
+      "name": "Devlog.pdf",
+      "size": 82281,
+      "sha256": "519bc247f30556e9f885b436524a79514ab57f84563cfe7db610e80f962958f5",
+      "url": "https://github.com/TioKatiau/GridShift/releases/download/v26.0/Devlog.pdf",
+      "server_digest": "sha256:519bc247f30556e9f885b436524a79514ab57f84563cfe7db610e80f962958f5"
+    }
+  ]
+}

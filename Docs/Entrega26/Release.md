@@ -25,3 +25,8 @@ Build Windows gerada sem erros. 165 verificações aprovadas no executável com 
 O jogo contém morte permanente: morrer remove a partida correspondente. O login é local e não representa autenticação de e-mail on-line. A barra Fome atual representa reserva alimentar. Leia as pendências no registro de bugs.
 
 O código do jogo utiliza packs de terceiros. Os arquivos-fonte do novo kit de apartamento não são redistribuídos no repositório; a build inclui os recursos necessários à execução.
+
+## Página e devlog
+
+[Jogar no itch.io](https://tiokatiau.itch.io/gridshift) · [Devlog da versão 26](https://tiokatiau.itch.io/gridshift/devlog/1778549/gridshift-26-casa-logstica-e-uma-entrega-completa). O jogo e os três PDFs também estão disponíveis na página.
+

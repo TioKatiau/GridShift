@@ -8,7 +8,7 @@ Simulação de logística e vida cotidiana em uma cidade 3D low poly. Projeto In
 
 [Baixar o protótipo Windows 26.0](https://github.com/TioKatiau/GridShift/releases/tag/v26.0). Extraia a pasta completa e execute GridShift.exe. Não execute diretamente dentro do ZIP.
 
-Página do autor no itch.io: https://tiokatiau.itch.io/ . O índice da entrega registra a página do jogo quando a publicação estiver confirmada.
+[Jogar pelo itch.io](https://tiokatiau.itch.io/gridshift) · [Devlog publicado](https://tiokatiau.itch.io/gridshift/devlog/1778549/gridshift-26-casa-logstica-e-uma-entrega-completa). O ZIP e os três documentos também estão disponíveis na página.
 
 W/A/S/D: movimentar ou dirigir. Mouse: câmera. E: interagir. G: tablet. F1: ajuda. Esc: pausa. Os controles adicionais podem ser consultados e remapeados no jogo.
 
@@ -42,3 +42,4 @@ Anna Clara Lara Pereira — Multimídia; Geovanna Lopes Fagundes Dalla — Desig
 ## Qualidade
 
 Revisão 26: 72 checks específicos e 165 regressões no Editor. Entrega Windows: 165 checks no executável, perfil temporário, RESULT SUCCESS. Há pendências documentadas de Animator, cobertura exploratória e desempenho; não se afirma ausência de todos os bugs.
+

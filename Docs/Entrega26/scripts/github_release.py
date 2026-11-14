@@ -34,3 +34,19 @@ elif sys.argv[1]=='upload':
     path=Path(sys.argv[2]); url=release['upload_url'].split('{')[0]+'?name='+quote(path.name)
     result=request('POST',url,path.read_bytes(),'application/octet-stream')
     print(result['browser_download_url'])
+elif sys.argv[1]=='finalize':
+    release=json.loads(Path('Docs/Entrega26/github-release.json').read_text())
+    body=Path('Docs/Entrega26/Release.md').read_text(encoding='utf-8-sig')
+    result=request('PATCH',f'https://api.github.com/repos/{repo}/releases/{release["id"]}',{'body':body})
+    expected={'GridShift26_Windows.zip':Path('Builds/GridShift26_Windows.zip')}
+    expected.update({n+'.pdf':Path('Docs/Entrega26/'+n+'.pdf') for n in ('GDD','Testes_Bugs','Devlog')})
+    import hashlib
+    receipt={'repository':'https://github.com/'+repo,'release':result['html_url'],'itch':'https://tiokatiau.itch.io/gridshift','devlog':'https://tiokatiau.itch.io/gridshift/devlog/1778549/gridshift-26-casa-logstica-e-uma-entrega-completa','assets':[]}
+    for name,path in expected.items():
+        asset=next(a for a in result['assets'] if a['name']==name)
+        digest=hashlib.sha256(path.read_bytes()).hexdigest()
+        assert asset['size']==path.stat().st_size,(name,'size mismatch')
+        if asset.get('digest'):assert asset['digest']=='sha256:'+digest,(name,'digest mismatch')
+        receipt['assets'].append({'name':name,'size':asset['size'],'sha256':digest,'url':asset['browser_download_url'],'server_digest':asset.get('digest')})
+    Path('Docs/Entrega26/publicacao.json').write_text(json.dumps(receipt,ensure_ascii=False,indent=2),encoding='utf-8')
+    print('Release verified: '+str(len(receipt['assets']))+' assets match local files')
