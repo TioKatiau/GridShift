@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
-public enum GSAction{Forward,Back,Left,Right,Run,Jump,Tablet,Interact,Map,Pause,Controls,Tutorial,Upgrades,Deliveries}
+public enum GSAction{Forward,Back,Left,Right,Run,Jump,Tablet,Interact,Map,Pause,Controls,Tutorial,Upgrades,Deliveries,VehicleLights,LeftIndicator,RightIndicator,Hazard}
 public static class GridShiftControls {
  public static readonly GSAction[] Actions=(GSAction[])Enum.GetValues(typeof(GSAction));
- static readonly Key[] defaults={Key.W,Key.S,Key.A,Key.D,Key.LeftShift,Key.Space,Key.G,Key.E,Key.M,Key.Escape,Key.F2,Key.F1,Key.U,Key.J};
- static readonly string[] labels={"Avançar","Recuar","Esquerda","Direita","Correr","Pular","Tablet / guardar","Interagir / computador","Ampliar mapa","Pausa / voltar","Tela de controles","Tutorial","Upgrades da empresa","Painel de entregas"};
+ static readonly Key[] defaults={Key.W,Key.S,Key.A,Key.D,Key.LeftShift,Key.Space,Key.G,Key.E,Key.M,Key.Escape,Key.F2,Key.F1,Key.U,Key.J,Key.L,Key.Z,Key.X,Key.V};
+ static readonly string[] labels={"Avançar","Recuar","Esquerda","Direita","Correr","Pular","Tablet / guardar","Interagir / computador","Ampliar mapa","Pausa / voltar","Tela de controles","Tutorial","Upgrades da empresa","Painel de entregas","Faróis: apagado / baixo / alto","Seta esquerda","Seta direita","Pisca-alerta"};
  static Dictionary<GSAction,Key> bindings;static int suppressed=-1;
  public static bool Capturing{get;set;}
  public static string Prefix="GS.Keys.";

@@ -1,7 +1,8 @@
-using System.Collections;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+using System.Collections;using UnityEngine;using UnityEngine.SceneManagement;
 public sealed class GridShiftCampaignWorld:MonoBehaviour {
- GameObject merchant;IEnumerator Start(){var company=GetComponent<GridShiftCompany>();while(!company.Ready)yield return null;var config=company.Balance;if(config.merchantPrefab==null)yield break;merchant=Instantiate(config.merchantPrefab,config.merchantPosition,config.merchantRotation);merchant.name="Carlos — Comerciante GridShift";SceneManager.MoveGameObjectToScene(merchant,gameObject.scene);}
- void OnDestroy(){if(merchant!=null)Destroy(merchant);}
+ [SerializeField]GameObject merchant;[SerializeField]bool sceneAuthored;
+ public void AuthorScene(){if(merchant==null){var config=Resources.Load<GridShiftCampaignBalance>("GridShiftCampaignBalance");if(config==null||config.merchantPrefab==null)return;merchant=Instantiate(config.merchantPrefab,config.merchantPosition,config.merchantRotation);merchant.name="Carlos — Mentor GridShift";SceneManager.MoveGameObjectToScene(merchant,gameObject.scene);BuildAppearance();}merchant.GetComponent<GridShiftMerchant>()?.AuthorScene();sceneAuthored=true;}
+ void BuildAppearance(){var catalog=Resources.Load<GridShiftCitizenCatalog>("GridShiftCitizenCatalog");if(catalog==null||catalog.models.Length==0)return;foreach(var renderer in merchant.GetComponentsInChildren<Renderer>())renderer.enabled=false;var model=Instantiate(catalog.models[GridShiftCitizen.StableIndex("Carlos-mentor",catalog.models.Length)],merchant.transform,false);model.name="Carlos appearance";foreach(var collider in model.GetComponentsInChildren<Collider>())collider.enabled=false;var animator=model.GetComponentInChildren<Animator>();if(animator!=null){animator.runtimeAnimatorController=catalog.controller;animator.applyRootMotion=false;}}
+ IEnumerator Start(){var company=GetComponent<GridShiftCompany>();while(company==null||!company.Ready){company=GetComponent<GridShiftCompany>();yield return null;}if(merchant==null){var config=company.Balance;if(config.merchantPrefab==null)yield break;merchant=Instantiate(config.merchantPrefab,config.merchantPosition,config.merchantRotation);merchant.name="Carlos — Mentor GridShift";SceneManager.MoveGameObjectToScene(merchant,gameObject.scene);BuildAppearance();}GridShiftMentor.Carlos=merchant.transform;}
+ void OnDestroy(){if(Application.isPlaying&&!sceneAuthored&&merchant!=null)Destroy(merchant);}
 }

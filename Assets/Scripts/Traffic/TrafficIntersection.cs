@@ -9,6 +9,9 @@ public class TrafficIntersection : MonoBehaviour
     [Header("Tempos")]
     [SerializeField] private float tempoVerde = 10f;
     [SerializeField] private float tempoAmarelo = 3f;
+    [SerializeField, Min(1f)] private float allRedDuration = 1f;
+    public bool AllRedClearance => etapa==2||etapa==5;
+    public float AllRedDuration => Mathf.Max(1f,allRedDuration);
 
     private float contador;
     private int etapa = 0;
@@ -41,12 +44,12 @@ public class TrafficIntersection : MonoBehaviour
         else if (etapa == 1)
             tempoAtual = tempoAmarelo;
         else if (etapa == 2)
-            tempoAtual = 4f;
+            tempoAtual = Mathf.Max(4f,AllRedDuration);
         else if (etapa == 3)
             tempoAtual = tempoVerde;
         else if (etapa == 4)
             tempoAtual = tempoAmarelo;
-        else tempoAtual = 4f;
+        else tempoAtual = Mathf.Max(4f,AllRedDuration);
 
         if (contador >= tempoAtual)
         {

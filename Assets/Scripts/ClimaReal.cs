@@ -22,6 +22,8 @@ public class ClimaReal : MonoBehaviour
     [Header("ATUALIZAÇÃO")]
     [SerializeField] private float intervaloAtualizacao = 300f;
 
+    private void Update(){if(WorldSession.Instance==null)return;if(climaText!=null)climaText.text=GridShiftWeather.Description;if(imagemClima!=null)imagemClima.sprite=WorldSession.Instance.ClockHour<6||WorldSession.Instance.ClockHour>=18?luaSprite:solSprite;}
+
     private void Start()
     {
         Debug.Log("🔥 CLIMAMANAGER INICIOU!");
@@ -89,14 +91,14 @@ public class ClimaReal : MonoBehaviour
             dados.current.temperature_2m
         );
 
-        temperaturaText.text = temperatura + "°C";
+        if(temperaturaText!=null)temperaturaText.text = temperatura + "°C";
 
 
         // =========================
         // CONDIÇÃO DO TEMPO
         // =========================
 
-        climaText.text = TraduzirClima(
+        if(climaText!=null)climaText.text = TraduzirClima(
             dados.current.weather_code
         );
 
@@ -107,13 +109,13 @@ public class ClimaReal : MonoBehaviour
 
         if (dados.current.is_day == 1)
         {
-            imagemClima.sprite = solSprite;
+            if(imagemClima!=null)imagemClima.sprite = solSprite;
 
             Debug.Log("É DIA → mostrando SOL");
         }
         else
         {
-            imagemClima.sprite = luaSprite;
+            if(imagemClima!=null)imagemClima.sprite = luaSprite;
 
             Debug.Log("É NOITE → mostrando LUA");
         }

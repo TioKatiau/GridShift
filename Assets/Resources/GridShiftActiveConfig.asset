@@ -16,8 +16,9 @@ MonoBehaviour:
   floorMaterial: {fileID: 2100000, guid: e51fd827cacba3247b4dff93c049c415, type: 2}
   structureMaterial: {fileID: 2100000, guid: 0dbb882c5a022ad4299d0e4519ca6618, type: 2}
   accentMaterial: {fileID: 2100000, guid: f41f11ac8ec3da3498abb2d7763ac77f, type: 2}
-  depotPosition: {x: 339.95264, y: -4.5749993, z: 221.3235}
-  vanPosition: {x: 342.65265, y: -4.4749994, z: 221.0235}
-  depotRotation: {x: 0, y: 0, z: 0, w: 1}
-  vanRotation: {x: 0, y: 0, z: 0, w: 1}
+  depotPosition: {x: 332.5, y: -4.369999, z: 193.06693}
+  vanPosition: {x: 332.5, y: -4.519999, z: 159.76692}
+  depotRotation: {x: 0, y: 1, z: -0, w: -0}
+  vanRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  factoryPointId: P-516520096c04
   depotPointId: GS-DEPOT16

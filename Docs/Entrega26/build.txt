@@ -1,0 +1,5 @@
+Succeeded
+Errors=0
+Bytes=443885763
+MissingComponents=0
+Scenes=Assets/Scenes/MainMenu.unity,Assets/Scenes/SampleScene.unity,Assets/Scenes/FactoryInterior.unity,Assets/Scenes/Apartment.unity

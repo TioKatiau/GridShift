@@ -176,7 +176,7 @@ public class TrafficCar : MonoBehaviour
 
     private void Start()
     {
-        corpo = GetComponent<Rigidbody>();
+        corpo = GetComponent<Rigidbody>();if(GetComponent<GridShiftVehicleLamps>()==null)gameObject.AddComponent<GridShiftVehicleLamps>();
         if (corpo == null) { Falhar("Adicione um Rigidbody cinemático ao veículo."); return; }
         if (carroceria == null) carroceria = GetComponent<BoxCollider>();
         if (rota == null || !rota.Valida || carroceria == null || !carroceria.enabled || carroceria.isTrigger || carroceria.transform != transform)

@@ -183,8 +183,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capacityKg: 80
-  maxSpeed: 12
-  reverseSpeed: 4
+  maxSpeed: 19
+  reverseSpeed: 5
 --- !u!1 &6368375086503909227
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,9 @@ public class Compass : MonoBehaviour
     {
         compassText = directions.GetComponent<TMP_Text>();
 
+        directions.parent.localScale *= .75f;
+        compassText.fontSize *= .85f;
+        compassText.characterSpacing = -2;
         compassText.enableWordWrapping = false;
         compassText.ForceMeshUpdate();
 

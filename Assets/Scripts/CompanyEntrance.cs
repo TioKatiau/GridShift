@@ -13,7 +13,7 @@ public class CompanyEntrance : MonoBehaviour
     [SerializeField] private float interactionDistance = 3f;
 
     [Header("Cena")]
-    [SerializeField] private string cenaDestino = "Office";
+    [SerializeField] private string cenaDestino = "Apartment";
 
     [Header("Flutuação do Texto")]
     [SerializeField] private float alturaFlutuacao = 0.15f;
@@ -33,6 +33,7 @@ public class CompanyEntrance : MonoBehaviour
 
     private void Start()
     {
+        cenaDestino="Apartment";if(interactionPrompt!=null){foreach(var text in interactionPrompt.GetComponentsInChildren<TMPro.TMP_Text>(true))text.text="[E] Entrar em casa";}
         if(player!=null)movement=player.GetComponent<PlayerMovement>();
         if (interactionPrompt != null)
         {

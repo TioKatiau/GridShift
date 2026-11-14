@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716def02ea0de9742845f7c07f9bd0d8, type: 3}
+  m_Name: GridShiftAvatarCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::GridShiftAvatarCatalog
+  models:
+  - {fileID: 1269732038753989939, guid: 279f1dda9e7c04547a6d911a24fbdb27, type: 3}
+  - {fileID: 2309723075528755019, guid: 33bc1f934866e7e4cb948d4e91583ad7, type: 3}
+  - {fileID: 7991801982922302228, guid: 511360e24f9537847883ac60846acb65, type: 3}
+  - {fileID: 154388780924900145, guid: b5e72261d3bade445a487cf39241b9e1, type: 3}
+  - {fileID: 7811840277152121123, guid: 26cb390cdb9f9324b9e3c392481d3f52, type: 3}
+  - {fileID: 2435576558972593079, guid: 520771fc35fa30944a0e3bd83336d718, type: 3}
+  - {fileID: 9060057356481871309, guid: 8751137878f1ccd43b23adff98794837, type: 3}
+  - {fileID: 798455259384903363, guid: 30942fa5118190b40b09665147de8295, type: 3}
+  - {fileID: 6634142007410195099, guid: b11a23505ecf9f648a666928184e5e64, type: 3}
+  - {fileID: 7118684400768075108, guid: 55d56054c108ef243ac88dcdf3ecf8f2, type: 3}
+  toneTexture: {fileID: 2800000, guid: f86382b39976935439c4272115b2513e, type: 3}

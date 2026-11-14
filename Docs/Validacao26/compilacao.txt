@@ -1,0 +1,12 @@
+Assets\Scripts\GridShiftCharacterEditor.cs(7,235): warning CS0108: 'GridShiftCharacterEditor.camera' hides inherited member 'Component.camera'. Use the new keyword if hiding was intended.
+Assets\Scripts\PauseMenu.cs(14,87): warning CS0108: 'PauseMenu.animation' hides inherited member 'Component.animation'. Use the new keyword if hiding was intended.
+Assets\Scripts\GridShiftV19Film.cs(15,174): warning CS0108: 'GridShiftV19Film.camera' hides inherited member 'Component.camera'. Use the new keyword if hiding was intended.
+Assets\Scripts\Compass.cs(19,9): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Hodaart\CasualCharacterCollection3\Scene\Scripts\EventSystemEnsurer.cs(13,17): warning CS0618: 'Object.FindObjectOfType<T>()' is obsolete: 'Object.FindObjectOfType has been deprecated. Use Object.FindFirstObjectByType instead or if finding any instance is acceptable the faster Object.FindAnyObjectByType'
+Assets\Scripts\GridShiftUI.cs(7,262): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Scripts\GridShiftOperationsUI.cs(86,459): warning CS0618: 'TMP_Text.enableWordWrapping' is obsolete: 'The enabledWordWrapping property is now obsolete. Please use the textWrappingMode property instead.'
+Assets\Scripts\Traffic\TrafficParkingBay.cs(23,32): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+Assets\Scripts\Traffic\TrafficParkingBay.cs(43,40): warning CS0252: Possible unintended reference comparison; to get a value comparison, cast the left hand side to type 'Object'
+Assets\Scripts\GridShiftSavesUI.cs(11,185): warning CS0414: The field 'GridShiftSavesUI.login' is assigned but its value is never used
+Assets\Scripts\GridShiftOperationsUI.cs(13,642): warning CS0414: The field 'GridShiftOperationsUI.oldStep' is assigned but its value is never used
+CompilerExitCode=0

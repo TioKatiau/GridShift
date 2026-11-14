@@ -12,7 +12,7 @@ public class WorldSession : MonoBehaviour
     [SerializeField] private string cityScene = "SampleScene";
     [SerializeField] private Vector3 officeOffset = new Vector3(10000f, 0f, 0f);
     public bool Busy { get; private set; }
-    public bool InOffice { get; private set; }
+    private bool inInterior;public bool InOffice=>inInterior&&office.name=="Apartment";public bool InApartment=>InOffice;public bool InFactory=>inInterior&&office.name=="FactoryInterior";public bool InInterior=>inInterior;
     private GameObject cityPlayer;
     private bool playerWasActive;
     private Scene office;
@@ -20,6 +20,7 @@ public class WorldSession : MonoBehaviour
     private bool clockInitialized,calendarRestored; private double calendarDays;public double CalendarDays=>calendarDays;public float SecondsPerDay=>clockDuration;public void RestoreCalendar(double value){if(!double.IsNaN(value)&&!double.IsInfinity(value)&&value>=0){calendarDays=value;calendarRestored=true;}}
     public float ClockTime => clockTime;
     public void RestoreClock(float value){if(!float.IsNaN(value)&&!float.IsInfinity(value))clockTime=Mathf.Repeat(value,clockDuration);}
+    public void AdvanceHours(float hours){if(hours<=0)return;clockTime=Mathf.Repeat(clockTime+hours/24*clockDuration,clockDuration);calendarDays+=hours/24;}
     public float ClockHour => Mathf.Repeat(clockTime / clockDuration * 24f, 24f);
     public void InitializeClock(float time, float duration)
     {
@@ -31,7 +32,7 @@ public class WorldSession : MonoBehaviour
     private void Awake()
     {
         if (Instance != null && Instance != this) { Destroy(gameObject); return; }
-        Instance = this;
+        Instance = this;GridShiftRoadSurface22.Install(gameObject.scene);if(GetComponent<GridShiftWeather>()==null)gameObject.AddComponent<GridShiftWeather>();
     }
     private void OnDestroy() { if (Instance == this) Instance = null; }
     public Coroutine RequestTransition(string destination, Transform player) => StartCoroutine(Transition(destination, player));
@@ -55,9 +56,10 @@ public class WorldSession : MonoBehaviour
     }
     public IEnumerator Transition(string destination, Transform player)
     {
-        if (Busy) yield break;
+        if (Busy) yield break;if(destination=="Office")destination="Apartment";
         if (!Application.CanStreamedLevelBeLoaded(destination)) { Debug.LogError("Cena não incluída no Build: " + destination, this); yield break; }
-        Busy = true;
+        if(destination==cityScene&&InFactory){var delivery=DeliveryManager.Instance?.GetComponent<GridShiftPersonalDelivery>();if(delivery!=null&&!delivery.CanExitFactory(out var reason))DeliveryManager.Instance.Notify(reason+" A caixa continua com você; volte para concluir a preparação.");}
+        Busy = true;DeliveryManager.Instance?.GetComponent<GridShiftPersonalDelivery>()?.PrepareSceneTransition();
         if (FadeManager.Instance != null) yield return FadeManager.Instance.FadeOut();
         if (FadeManager.Instance != null) FadeManager.Instance.BeginLoading();
         float loadingStarted=Time.realtimeSinceStartup;
@@ -75,12 +77,13 @@ public class WorldSession : MonoBehaviour
             if (cityPlayer != null) cityPlayer.SetActive(playerWasActive);
             foreach (var item in presentation) if (item.Key != null) item.Key.enabled = item.Value;
             presentation.Clear();
+            GridShiftAudio.Instance?.RefreshListener();
             if (office.IsValid() && office.isLoaded) yield return SceneManager.UnloadSceneAsync(office);
-            InOffice = false;
+            inInterior = false;
         }
         else
         {
-            if (InOffice) { Busy = false;if(FadeManager.Instance!=null){FadeManager.Instance.EndLoading();yield return FadeManager.Instance.FadeIn();} yield break; }
+            if (InInterior) { Busy = false;if(FadeManager.Instance!=null){FadeManager.Instance.EndLoading();yield return FadeManager.Instance.FadeIn();} yield break; }
             cityPlayer = player != null ? player.gameObject : null;
             playerWasActive = cityPlayer != null && cityPlayer.activeSelf;
             Scene city = SceneManager.GetSceneByName(cityScene);
@@ -90,6 +93,7 @@ public class WorldSession : MonoBehaviour
                 if (b is Camera || b is AudioListener || b is Canvas || b is EventSystem || b is Light)
                 { presentation[b] = b.enabled; b.enabled = false; }
             if (cityPlayer != null) cityPlayer.SetActive(false);
+            GridShiftAudio.Instance?.RefreshListener();
             var operation = SceneManager.LoadSceneAsync(destination, LoadSceneMode.Additive);
             if (operation == null)
             {
@@ -105,16 +109,17 @@ public class WorldSession : MonoBehaviour
             foreach (GameObject root in office.GetRootGameObjects())
             {
                 // Não move Canvas sobreposto: suas coordenadas são controladas pela UI.
-                if (root.GetComponent<Canvas>() == null) root.transform.position += officeOffset;
+                if (root.GetComponent<Canvas>() == null) root.transform.position += destination=="FactoryInterior"?new Vector3(0,1000,0):officeOffset;
             }
-            SceneManager.SetActiveScene(office); PrepareOfficeInput(office); InOffice = true;
+            SceneManager.SetActiveScene(office); PrepareOfficeInput(office); inInterior = true;Physics.SyncTransforms();if(destination=="Apartment"){var house=Object.FindFirstObjectByType<GridShiftApartment>();if(house!=null)house.Configure();}
+            GridShiftAudio.Instance?.RefreshListener();
         }
         Physics.SyncTransforms();
         float remaining=.3f-(Time.realtimeSinceStartup-loadingStarted);if(remaining>0)yield return new WaitForSecondsRealtime(remaining);
         if(FadeManager.Instance!=null)FadeManager.Instance.EndLoading();
         Cursor.lockState = CursorLockMode.Locked; Cursor.visible = false;
         if (FadeManager.Instance != null) yield return FadeManager.Instance.FadeIn();
-        Busy = false;
+        InteractionFocus.Invalidate();Busy = false;
     }
 }
 

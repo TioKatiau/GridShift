@@ -11,7 +11,7 @@ public enum DeliveryKind{Standard,Heavy,Urgent,Priority,Long,Local}
  public string id,requestId,goods,pickupId,destinationId,vehicleId,createdAt,completedAt;
  public float weightKg,estimatedMeters,travelledMeters,reward;
  public DeliveryStatus status;
- public bool depotRequired,depotScanned,depotPacked,depotLabelled,depotSorted,depotReleased;public int depotZone;public float depotAutomationRemaining,personalDrivenMeters;
+ public bool depotPicked,depotTutorial;public bool depotRequired,depotScanned,depotPacked,depotLabelled,depotSorted,depotReleased;public int depotZone;public float depotAutomationRemaining,personalDrivenMeters;
  public DeliveryMode mode;public double completedDay;public int courierPhase,courierNode;public Vector3 courierPosition;public bool courierInitialized;
  public bool rewardPaid;public DeliveryKind kind;public float elapsedSeconds,deadlineSeconds;
 }

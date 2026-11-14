@@ -35,7 +35,11 @@ public class PlayerMovement : MonoBehaviour
     public bool ControlsBlocked => controlsBlocked;
     public Transform CameraTransform => cameraTransform;
     public void BlockControls(bool blocked) { controlsBlocked = blocked; }
+    public void BindAppearance(Animator next){if(next==null)return;if(appearanceController==null&&animator!=null)appearanceController=animator.runtimeAnimatorController;if(appearanceController!=null)next.runtimeAnimatorController=appearanceController;animator=next;animator.applyRootMotion=false;}
+    RuntimeAnimatorController appearanceController;
     private void Awake() {
+        if(GetComponent<GridShiftPlayerAppearance>()==null)gameObject.AddComponent<GridShiftPlayerAppearance>();
+        if(GetComponent<GridShiftPlayerImpact>()==null)gameObject.AddComponent<GridShiftPlayerImpact>();
         controller = GetComponent<CharacterController>(); controller.minMoveDistance = 0f;
         if (animator != null) animator.applyRootMotion = false;
     }

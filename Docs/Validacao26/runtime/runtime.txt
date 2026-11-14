@@ -1,0 +1,74 @@
+PASS menu sem botão demonstrativo
+PASS perfil temporário
+PASS personagem criado
+PASS van usa uma geometria de carga da cena sem duplicação
+PASS ações do apartamento reutilizam as referências da cena
+PASS posição editada do interruptor não é sobrescrita ao iniciar
+PASS mãos e efeitos têm modelos editáveis na cena
+PASS modelo do HUD presente na cena do apartamento
+PASS layout editado na cena é aplicado ao HUD funcional
+PASS oito interruptores em cômodos
+PASS luz da cozinha fica no cômodo do fogão
+PASS gavetas, móveis e armários vazios sem abertura
+PASS portas de armários para o limbo bloqueadas
+PASS fundo e iluminação acompanham noite
+PASS fundo externo sem cidade duplicada
+PASS noite conserva só dois cômodos acesos por padrão
+RAIN state=True description=Chuva count=4 Rain beyond home windows:True:12;Rain beyond home windows:True:12;Rain beyond home windows:True:12;Rain beyond home windows:True:12
+PASS chuva fica fora da casa e fora do minimapa
+PASS vidros mostram exterior sem reflexo cinza do pacote
+PASS nublado atualiza ambiente e interrompe emissão da chuva
+PASS chuva retoma sem esperar gotas antigas desaparecerem
+PASS E no interruptor acende banheiro
+PASS luz escolhida persiste no save
+PASS porta da banheira corre sem girar durante a abertura
+PASS E abre e entra no banho BathTub_Base_01
+PASS personagem dentro do banho sem bloquear na borda
+PASS save dentro do banho usa saída segura
+PASS mira na torneira seleciona banho
+PASS E inicia banho após entrar
+PASS água durante banho
+PASS câmera do banho olha torneira sem apontar ao chão
+PASS mira na porta seleciona saída do banho
+PASS saída restaura controle e posição segura
+PASS E abre e entra no banho Shower_Base_01
+PASS personagem dentro do banho sem bloquear na borda
+PASS save dentro do banho usa saída segura
+PASS mira na torneira seleciona banho
+PASS E inicia banho após entrar
+PASS água durante banho
+PASS câmera do banho olha torneira sem apontar ao chão
+PASS mira na porta seleciona saída do banho
+PASS saída restaura controle e posição segura
+PASS pedido aceito 0
+PASS tutorial e pedido padrão distintos
+PASS caixa correta coletada
+PASS conferência física
+PASS embalagem compatível
+PASS pedido pronto em transporte
+PASS identidade da caixa preparada
+PASS interior não desenha rota de rua
+PASS mesma caixa preservada nas mãos após descarregar fábrica 0
+PASS caixa visível na cidade 0
+PASS rota usa coordenadas da cidade e destino da entrega
+PASS destino acessível
+PASS entrega real concluída 0
+PASS pedido aceito 1
+PASS tutorial e pedido padrão distintos
+PASS caixa correta coletada
+PASS saída incompleta conserva caixa e permite voltar
+PASS conferência física
+PASS embalagem compatível
+PASS preparação padrão label
+PASS preparação padrão sort-b
+PASS preparação padrão release
+PASS pedido pronto em transporte
+PASS identidade da caixa preparada
+PASS interior não desenha rota de rua
+PASS mesma caixa preservada nas mãos após descarregar fábrica 1
+PASS caixa visível na cidade 1
+PASS rota usa coordenadas da cidade e destino da entrega
+PASS destino acessível
+PASS entrega real concluída 1
+PASS entregas e casa salvas
+RESULT SUCCESS

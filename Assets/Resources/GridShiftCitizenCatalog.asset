@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d39b14569a185148af4db8d7f22148c, type: 3}
+  m_Name: GridShiftCitizenCatalog
+  m_EditorClassIdentifier: Assembly-CSharp::GridShiftCitizenCatalog
+  models:
+  - {fileID: 6992360245988857, guid: e7960ca7e82a51144ac57591496310c6, type: 3}
+  - {fileID: 7873621286350765, guid: 67940ab91e14440409bfe800dcb3ed43, type: 3}
+  - {fileID: 6157916868785764055, guid: 927c723bc1d858245994b6f3977c5f6a, type: 3}
+  - {fileID: 7025317360818597346, guid: c789233b8f1e0db45819b1105599e47b, type: 3}
+  - {fileID: 3613509038339085887, guid: e5e7ee9e267ceab4c82af64dcce4e420, type: 3}
+  - {fileID: 6811592647384369502, guid: 6d535459e860e5e4a848937305732499, type: 3}
+  - {fileID: 2168590115626787667, guid: 833822f34cc798143afe014bc4743ff2, type: 3}
+  - {fileID: 6128125313740500714, guid: 8e2407cfbae80e044bae21b813043ac3, type: 3}
+  - {fileID: 1585272512566830274, guid: 8415c15ca6ae0194fb7b22a9f13c5224, type: 3}
+  - {fileID: 8916784938708422293, guid: 3d6a1920cc4fcbc44bf765a76a7d1327, type: 3}
+  controller: {fileID: 9100000, guid: a40855ecaeee8ed448630b2ac36c1a01, type: 2}

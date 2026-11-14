@@ -3,7 +3,7 @@ using UnityEngine;
 [System.Serializable]
 public class TrafficVehicleModel
 {
-    public GameObject prefab;
+    public GameObject prefab;public bool usePrefabCollider;
     public bool pesado;
     public Vector2 velocidade = new Vector2(4.5f, 6.5f);
     public Vector2 aceleracao = new Vector2(1.1f, 1.8f);
@@ -14,10 +14,10 @@ public static class TrafficVehicleFactory
 {
     public static Bounds Measure(GameObject go)
     {
-        Bounds bounds = new Bounds(); bool first = true;
+        Bounds bounds = new Bounds(); bool first = true;var lamps=go.GetComponent<GridShiftVehicleLamps>();
         foreach (Renderer renderer in go.GetComponentsInChildren<Renderer>(true))
         {
-            Bounds local = renderer.localBounds;
+            if(lamps!=null&&lamps.IsLens(renderer))continue;Bounds local = renderer.localBounds;
             for (int x = -1; x <= 1; x += 2) for (int y = -1; y <= 1; y += 2) for (int z = -1; z <= 1; z += 2)
             {
                 Vector3 p = go.transform.InverseTransformPoint(renderer.transform.TransformPoint(local.center + Vector3.Scale(local.extents, new Vector3(x, y, z))));
@@ -33,7 +33,7 @@ public static class TrafficVehicleFactory
         body.collisionDetectionMode = CollisionDetectionMode.ContinuousSpeculative;
         foreach (Collider collider in go.GetComponentsInChildren<Collider>(true)) collider.enabled = false;
         BoxCollider box = go.GetComponent<BoxCollider>(); if (box == null) box = go.AddComponent<BoxCollider>();
-        Bounds bounds = Measure(go); box.center = bounds.center; box.size = bounds.size; box.enabled = true; box.isTrigger = false;
+        if(!profile.usePrefabCollider){Bounds bounds = Measure(go); box.center = bounds.center; box.size = bounds.size;}box.enabled = true; box.isTrigger = false;
         int layer = LayerMask.NameToLayer("TrafficCar"); if (layer >= 0) go.layer = layer;
         foreach (Animator animator in go.GetComponentsInChildren<Animator>(true)) animator.applyRootMotion = false;
         TrafficCar driver = go.GetComponent<TrafficCar>(); if (driver == null) driver = go.AddComponent<TrafficCar>();

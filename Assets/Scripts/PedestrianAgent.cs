@@ -4,7 +4,7 @@ public class PedestrianAgent:MonoBehaviour {
  public enum Activity { Idle,Walking,WaitingToCross,Crossing,EnteringBuilding }
  [SerializeField] Activity activity;
  public Activity CurrentActivity=>activity;
- public bool ExternalControl {get;set;}
+ public bool ExternalControl {get;set;}public bool DialoguePaused {get;set;}
  public void BindVisualAnimator(){animator=GetComponentInChildren<Animator>(true);if(animator==null)return;animator.runtimeAnimatorController=Manager.controller;animator.applyRootMotion=false;animator.cullingMode=AnimatorCullingMode.CullUpdateTransforms;}
  public float DistanceWalked {get;private set;}
  public int CrossingsCompleted {get;private set;}
@@ -40,7 +40,7 @@ public class PedestrianAgent:MonoBehaviour {
    animator=GetComponentInChildren<Animator>();if(animator!=null){animator.runtimeAnimatorController=manager.controller;animator.applyRootMotion=false;animator.cullingMode=AnimatorCullingMode.CullUpdateTransforms;}
   }
   foreach(var t in GetComponentsInChildren<Transform>())t.gameObject.layer=9;
-  body.position=transform.position=manager.graph.nodes[node].position;lastPosition=transform.position;
+  body.position=transform.position=manager.graph.nodes[node].position;lastPosition=transform.position;if(GetComponent<GridShiftCitizen>()==null)gameObject.AddComponent<GridShiftCitizen>();
  }
  void OnDisable(){Manager?.LeaveCrossingQueue(this);if(crossing!=null)crossing.junction.LeaveCrossing(this);crossing=null;}
  public bool WalkTo(int target){if(crossingCommitted)return false;Manager?.LeaveCrossingQueue(this);crossing=null;path.Clear();next=-1;pause=0;bool found=Destination(target);if(found&&Vector3.Distance(body.position,Manager.graph.nodes[current].position)>.08f)next=current;return found;}
@@ -58,7 +58,7 @@ public class PedestrianAgent:MonoBehaviour {
  }
 
  void FixedUpdate(){
-  if(Manager==null)return;float dt=Time.fixedDeltaTime;
+  if(Manager==null)return;if(DialoguePaused){Animate(0);return;}float dt=Time.fixedDeltaTime;
   // The animator and footstep observers consume displacement, not requested speed.
   float measured=Vector3.ProjectOnPlane(body.position-lastPosition,Vector3.up).magnitude;
   DistanceWalked+=measured;lastPosition=body.position;

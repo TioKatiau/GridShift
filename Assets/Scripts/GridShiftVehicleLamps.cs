@@ -1,0 +1,19 @@
+using UnityEngine;
+public sealed class GridShiftVehicleLamps:MonoBehaviour {
+ public int mode=1,indicator;
+ [SerializeField]Light[] headlights;[SerializeField]Renderer[] lenses;[SerializeField]Material white,amber,red;[SerializeField]bool sceneAuthored;
+ bool personal,initialized,ownsMaterials;int previous=int.MinValue;MaterialPropertyBlock properties;
+ public bool IsLens(Renderer renderer){if(lenses==null)return false;for(int i=0;i<lenses.Length;i++)if(lenses[i]==renderer)return true;return false;}
+ public void AuthorScene(){if(sceneAuthored)return;Build();sceneAuthored=true;ownsMaterials=false;}
+ void Start(){personal=GetComponent<GridShiftPlayerVan>()!=null;properties=new MaterialPropertyBlock();if(!sceneAuthored)Build();initialized=true;}
+ void Build(){var box=GetComponent<BoxCollider>();var size=box!=null?box.size:new Vector3(2,2,4);var center=box!=null?box.center:Vector3.up;headlights=new Light[2];lenses=new Renderer[8];white=Mat(new Color(.9f,.94f,1));amber=Mat(new Color(1,.45f,.015f));red=Mat(new Color(.8f,.015f,.01f));ownsMaterials=true;
+ for(int i=0;i<2;i++){float x=center.x+(i==0?-1:1)*size.x*.34f;var at=new Vector3(x,Mathf.Max(.65f,center.y*.55f),center.z+size.z*.5f+.035f);var go=new GameObject("Headlamp");go.transform.SetParent(transform,false);go.transform.localPosition=at;var light=go.AddComponent<Light>();light.type=LightType.Spot;light.spotAngle=62;light.range=30;light.intensity=3;light.color=new Color(.95f,.95f,.85f);light.shadows=LightShadows.None;headlights[i]=light;lenses[i]=Lens(at,white);lenses[2+i]=Lens(at+new Vector3(i==0?-.17f:.17f,-.06f,0),amber);lenses[4+i]=Lens(new Vector3(x,at.y,center.z-size.z*.5f-.04f),red);lenses[6+i]=Lens(new Vector3(x,at.y-.14f,center.z-size.z*.5f-.05f),amber);}}
+ static Material Mat(Color color){var m=new Material(Shader.Find("Universal Render Pipeline/Lit")){color=color};m.EnableKeyword("_EMISSION");return m;}
+ Renderer Lens(Vector3 at,Material material){var g=GameObject.CreatePrimitive(PrimitiveType.Cube);g.name="Vehicle lamp lens";g.transform.SetParent(transform,false);g.transform.localPosition=at;g.transform.localScale=new Vector3(.16f,.09f,.025f);g.GetComponent<Collider>().enabled=false;var r=g.GetComponent<Renderer>();r.sharedMaterial=material;return r;}
+ void Emission(Renderer r,Color color){properties.Clear();properties.SetColor("_EmissionColor",color);r.SetPropertyBlock(properties);}
+ void LateUpdate(){if(!initialized||headlights==null)return;var sharedCamera=GridShiftViewCache.Camera;float hour=WorldSession.Instance!=null?WorldSession.Instance.ClockHour:12;bool on=personal?mode>0:hour<6||hour>=18||GridShiftWeather.Raining;bool near=personal||sharedCamera==null||(sharedCamera.transform.position-transform.position).sqrMagnitude<180*180;bool blink=indicator!=0&&Mathf.Repeat(Time.time,1)<.5f;int state=(on?1:0)|(near?2:0)|(blink?4:0)|((indicator+2)<<3)|(mode<<6);if(state==previous)return;previous=state;
+ foreach(var light in headlights){light.enabled=on&&near;light.range=personal&&mode==2?55:30;light.spotAngle=personal&&mode==2?45:62;light.intensity=personal&&mode==2?5:3;}for(int i=0;i<2;i++){Emission(lenses[i],Color.white*(on?2:.02f));Emission(lenses[4+i],Color.red*(on?.6f:.02f));bool side=indicator==2||indicator==(i==0?-1:1);lenses[2+i].enabled=side;lenses[6+i].enabled=side;Emission(lenses[2+i],new Color(1,.4f,0)*(blink?3:.01f));Emission(lenses[6+i],new Color(1,.4f,0)*(blink?3:.01f));}}
+ void OnDestroy(){if(!Application.isPlaying||!ownsMaterials)return;if(white!=null)Destroy(white);if(amber!=null)Destroy(amber);if(red!=null)Destroy(red);}
+}
+
+public static class GridShiftViewCache {static Camera camera;static float until;public static Camera Camera {get{if(camera==null||!camera.isActiveAndEnabled||Time.unscaledTime>=until){camera=UnityEngine.Camera.main;until=Time.unscaledTime+.15f;}return camera;}}}

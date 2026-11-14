@@ -56,7 +56,7 @@ public sealed class GridShiftAudio : MonoBehaviour {
  void Start(){AudioListener.volume=1;Scan();ApplyVolumes(true);while(pending.Count>0){var r=pending.Dequeue();Emit(r.id,r.channel,r.gain,Vector3.zero,false,r.interval);}}
  void OnDestroy(){SceneManager.sceneLoaded-=Loaded;SceneManager.activeSceneChanged-=Changed;if(Instance==this){Instance=null;foreach(var v in attached)if(v!=null)Destroy(v);}}
  void OnApplicationPause(bool paused){if(paused)PlayerPrefs.Save();}void OnApplicationQuit(){PlayerPrefs.Save();}
- void Loaded(Scene s,LoadSceneMode m){scanAt=0;}void Changed(Scene a,Scene b){scanAt=0;havePlayer=false;pedestrianPosition.Clear();pedestrianStride.Clear();}
+ void Loaded(Scene s,LoadSceneMode m){Scan();}void Changed(Scene a,Scene b){Scan();havePlayer=false;pedestrianPosition.Clear();pedestrianStride.Clear();}
  public AudioSource Source(string name,string group,bool loop,Transform parent=null){var go=new GameObject(name);go.transform.SetParent(parent!=null?parent:transform,false);var s=go.AddComponent<AudioSource>();s.playOnAwake=false;s.loop=loop;s.volume=0;s.dopplerLevel=0;s.reverbZoneMix=0;s.outputAudioMixerGroup=Group(group);s.priority=group=="UI"?32:group=="Music"?64:160;return s;}
  public AudioMixerGroup Group(string group)=>groups.TryGetValue(group,out var g)?g:null;
  public AudioClip Clip(string id)=>clips.TryGetValue(id,out var c)?c:null;
@@ -74,7 +74,7 @@ public sealed class GridShiftAudio : MonoBehaviour {
  void ApplyVolumes(bool instant){for(int i=0;i<Channels.Length;i++){volumes[i]=instant?GetVolume(Channels[i]):Mathf.MoveTowards(volumes[i],GetVolume(Channels[i]),Time.unscaledDeltaTime*2);Library.mixer.SetFloat(Channels[i]+"Volume",ToDecibels(volumes[i]));}}
  void Scan(){scanAt=Time.unscaledTime+1;var active=SceneManager.GetActiveScene();PlayerMovement next=null;foreach(var p in FindObjectsByType<PlayerMovement>(FindObjectsSortMode.None))if(p.gameObject.scene==active&&p.isActiveAndEnabled){next=p;break;}
   if(next!=player){player=next;havePlayer=false;stride=0;if(player!=null){lastPlayer=player.transform.position;grounded=player.IsGrounded;jumps=player.JumpsExecuted;}}
-  Camera view=player!=null&&player.CameraTransform!=null?player.CameraTransform.GetComponent<Camera>():Camera.main;
+  Camera view=Camera.main;if(view==null&&player!=null&&player.CameraTransform!=null)view=player.CameraTransform.GetComponent<Camera>();
   AudioListener chosen=null;if(view!=null&&view.isActiveAndEnabled){chosen=view.GetComponent<AudioListener>();if(chosen==null)chosen=view.gameObject.AddComponent<AudioListener>();}
   if(chosen==null)chosen=fallback;
   foreach(var l in FindObjectsByType<AudioListener>(FindObjectsInactive.Include,FindObjectsSortMode.None))l.enabled=l==chosen;
@@ -85,7 +85,7 @@ public sealed class GridShiftAudio : MonoBehaviour {
  }
  void Update(){using(marker.Auto())Tick();}
  void Tick(){if(Library==null)return;if(Time.unscaledTime>=scanAt)Scan();ApplyVolumes(false);
-  bool menu=SceneManager.GetActiveScene().name=="MainMenu",inside=SceneManager.GetActiveScene().name=="Office";
+  bool menu=SceneManager.GetActiveScene().name=="MainMenu",inside=SceneManager.GetActiveScene().name=="Apartment"||SceneManager.GetActiveScene().name=="Office"||SceneManager.GetActiveScene().name=="FactoryInterior";
   float dt=Time.unscaledDeltaTime;indoor=Mathf.MoveTowards(indoor,inside?1:0,dt*.8f);
   float hour=WorldSession.Instance!=null?WorldSession.Instance.ClockHour:12;
   float daylight=Mathf.SmoothStep(0,1,Mathf.InverseLerp(5,7,hour))*(1-Mathf.SmoothStep(0,1,Mathf.InverseLerp(17,19,hour)));
@@ -99,7 +99,8 @@ public sealed class GridShiftAudio : MonoBehaviour {
   if(Time.unscaledTime>=worldAt){worldAt=Time.unscaledTime+.25f;SelectVehicles(menu||inside||Time.timeScale<=0);Deadlines(m);}
   if(!menu&&!inside&&Time.timeScale>0)People(park,daylight);
  }
- void LateUpdate(){Footsteps();}
+ public void RefreshListener(){Scan();}
+ void LateUpdate(){if(listener==null||!listener.gameObject.activeInHierarchy||(listener.TryGetComponent<Camera>(out var listenerCamera)&&listenerCamera!=null&&!listenerCamera.isActiveAndEnabled))Scan();Footsteps();}
  void Deadlines(DeliveryManager m){if(m==null){observedManager=null;lateOrders.Clear();return;}bool baseline=observedManager!=m||m.Restoring;if(baseline){observedManager=m;lateOrders.Clear();}
   foreach(var o in m.orders)if(o.status!=DeliveryStatus.Completed&&o.deadlineSeconds>0&&o.elapsedSeconds>o.deadlineSeconds&&lateOrders.Add(o.id)&&!baseline)Play("Delivery_Late","SFX",.25f,2);
  }
@@ -117,7 +118,7 @@ public sealed class GridShiftAudio : MonoBehaviour {
   if(!grounded&&on&&Time.timeScale>0)Play("Land","Footsteps",.5f,.3f);grounded=on;
   if(!player.enabled||player.ControlsBlocked||Time.timeScale<=0||(WorldSession.Instance!=null&&WorldSession.Instance.Busy)||!on||delta.sqrMagnitude>4){stride=0;return;}
   delta.y=0;if(delta.sqrMagnitude<.000001f)return;stride+=delta.magnitude;float length=player.IsRunning?1.65f:1.95f;
-  if(stride>=length){stride%=length;string surface=SceneManager.GetActiveScene().name=="Office"?"Office":"Concrete";
+  if(stride>=length){stride%=length;string surface=SceneManager.GetActiveScene().name!="SampleScene"?"Office":"Concrete";
    if(Physics.Raycast(now+Vector3.up*.4f,Vector3.down,out var hit,2,~0,QueryTriggerInteraction.Ignore)){var tag=hit.collider.GetComponentInParent<GridShiftFootstepSurface>();if(tag!=null)surface=tag.surface.ToString();else if(hit.collider is TerrainCollider)surface="Grass";}
    Play("Footstep_"+surface+"_"+(stepVariant++%3+1),"Footsteps",player.IsRunning?.65f:.42f,.03f);
   }

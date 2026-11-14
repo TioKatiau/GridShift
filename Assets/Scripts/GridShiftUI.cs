@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 public static class GridShiftUI {
- public static RectTransform Rect(string name,Transform parent,Vector2 size){var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);var r=go.GetComponent<RectTransform>();r.sizeDelta=size;return r;}
+ public static RectTransform Rect(string name,Transform parent,Vector2 size){GridShiftUILayout.Notify();var go=new GameObject(name,typeof(RectTransform));go.transform.SetParent(parent,false);var r=go.GetComponent<RectTransform>();r.sizeDelta=size;return r;}
  public static void Stretch(RectTransform r,Vector2 min,Vector2 max){r.anchorMin=Vector2.zero;r.anchorMax=Vector2.one;r.offsetMin=min;r.offsetMax=max;}
  public static TMP_Text Text(Transform parent,string value,int font=24,float height=38){var r=Rect("Label",parent,new Vector2(700,height));var t=r.gameObject.AddComponent<TextMeshProUGUI>();t.text=value;t.fontSize=font;t.color=Color.white;t.raycastTarget=false;t.enableWordWrapping=true;return t;}
  public static Button Button(Transform parent,string label,UnityEngine.Events.UnityAction action,float height=48,bool primary=false){var r=Rect(label,parent,new Vector2(700,height));r.gameObject.AddComponent<Image>();var b=r.gameObject.AddComponent<Button>();var text=Text(r,label,23,height);text.alignment=TextAlignmentOptions.Center;Stretch(text.rectTransform,new Vector2(52,3),new Vector2(-28,-3));b.onClick.AddListener(action);GridShiftUITheme.Button(b,primary);return b;}

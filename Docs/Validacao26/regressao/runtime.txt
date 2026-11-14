@@ -1,0 +1,184 @@
+PASS perfil temporário de regressão preparado sem botão demonstrativo
+NOTE: isolated new company; real E key/focus and physical state. Position fixtures stage each station and client; not an uninterrupted manual road journey.
+PASS empresa nova inicia boas-vindas sem recompensas
+PASS empresa nova recebe equipe e capital originais
+PASS interface contém botão: COMEÇAR
+PASS tutorial avança somente pela ação concluída: passo 2
+PASS tutorial avança somente pela ação concluída: passo 2
+PASS área inicial oferece chão e corredor reais livres
+TRACE movement=27,00002 walked=2,100006 ran=2,100006 looked=17,99985
+PASS tutorial avança somente pela ação concluída: passo 3
+PASS mira seleciona mentor Carlos, sem quadro
+PASS E abre conversa presencial com Carlos
+PASS interface contém botão: Encerrar conversa
+PASS tutorial avança somente pela ação concluída: passo 4
+PASS G abre o tablet real
+PASS tablet oculta geometria do HUD 3D sem sobreposição
+PASS tutorial avança somente pela ação concluída: passo 4
+PASS tutorial avança somente pela ação concluída: passo 5
+PASS ação física disponível: Entrar no centro de distribuição
+TRACE focus=True reachable=True eye=(332.50, -2.45, 194.24) target=(332.50, -4.37, 193.07)
+PASS mira real seleciona Entrar no centro de distribuição
+PASS E carrega FactoryInterior aditiva
+PASS tutorial avança somente pela ação concluída: passo 6
+PASS transição conserva sessão, frota e única van
+PASS Factory preserva posição real da van
+PASS quiosque antigo removido
+PASS um listener ativo dentro da Factory
+PASS ação física disponível: Conversar com atendente
+TRACE focus=True reachable=True eye=(-7.00, 1001.77, -4.80) target=(-7.00, 1000.00, -7.20)
+PASS mira real seleciona Conversar com atendente
+PASS E abre diálogo presencial do funcionário
+PASS tutorial avança somente pela ação concluída: passo 6
+PASS interface contém botão: Encerrar conversa
+PASS tutorial avança somente pela ação concluída: passo 7
+PASS ação física disponível: Consultar pedidos
+TRACE focus=True reachable=True eye=(5.00, 1001.77, -7.70) target=(5.00, 1000.00, -6.40)
+PASS mira real seleciona Consultar pedidos
+PASS E abre terminal real de pedidos
+PASS interface contém botão: Aceitar primeira entrega / novo pedido
+PASS tutorial avança somente pela ação concluída: passo 8
+PASS primeiro pedido real pequeno aponta para outro cliente acessível
+PASS mira seleciona a caixa do pedido correto
+PASS E retira caixa sem antecipar conferência
+PASS tutorial avança somente pela ação concluída: passo 9
+PASS salvar dentro da Factory com caixa em mãos
+PASS save v6 guarda interior e etapa exata
+PASS leitura de save v5 mantém pedidos e van existentes
+PASS slot 1 preserva interior, pedido e caixa
+PASS slot 2 preserva interior, pedido e caixa
+PASS slot 3 preserva interior, pedido e caixa
+PASS slot 4 preserva interior, pedido e caixa
+PASS slot 5 preserva interior, pedido e caixa
+PASS carregar slot 1 restaura Factory e tutorial
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS slot 1 retorna à cidade com E
+PASS carregar slot 2 restaura Factory e tutorial
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS slot 2 retorna à cidade com E
+PASS carregar slot 3 restaura Factory e tutorial
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS slot 3 retorna à cidade com E
+PASS carregar slot 4 restaura Factory e tutorial
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS slot 4 retorna à cidade com E
+PASS carregar slot 5 restaura Factory e tutorial
+PASS recarregar retorna ao interior sem reiniciar preparação
+PASS recarregar não duplica van
+PASS leitor rejeita código incorreto
+PASS ação física disponível: Conferir encomenda
+TRACE focus=True reachable=True eye=(-6.00, 1001.77, -2.30) target=(-6.00, 1000.00, -1.20)
+PASS mira real seleciona Conferir encomenda
+PASS E confere ID físico da encomenda
+PASS tutorial avança somente pela ação concluída: passo 10
+PASS ação física disponível: Embalar encomenda
+TRACE focus=True reachable=True eye=(5.00, 1001.77, 0.50) target=(5.00, 1000.00, 1.70)
+PASS mira real seleciona Embalar encomenda
+PASS E prepara primeira caixa e etiqueta para expedição
+PASS tutorial avança somente pela ação concluída: passo 10
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS E retorna à cidade e mantém van estacionada
+PASS tutorial avança somente pela ação concluída: passo 11
+PASS caixa e pedido permanecem após descarregar interior
+PASS abrir compartimento para testar acesso real
+PASS abertura reconhece mira ampla x=-0,6
+PASS abertura reconhece mira ampla x=0
+PASS abertura reconhece mira ampla x=0,6
+PASS capacidade insuficiente rejeita carga sem perder caixa
+PASS caixa com identidade diferente não é armazenada
+PASS parede real bloqueia mira e transferência
+PASS interação continua limitada à proximidade real
+PASS fechar após verificação preserva caixa em mãos
+PASS ação física disponível: Abrir compartimento
+TRACE focus=True reachable=True eye=(329.66, -2.68, 159.77) target=(330.14, -4.60, 159.77)
+PASS mira real seleciona Abrir compartimento
+PASS E abre tampa inteiramente
+PASS dobradiça superior fixa eleva a borda inferior em vez de girar pelo centro
+PASS tutorial avança somente pela ação concluída: passo 11
+PASS abertura ampla seleciona Guardar com prioridade no mesmo alvo
+PASS início da animação ainda não registra carga nem avança guia
+PASS tutorial avança somente pela ação concluída: passo 11
+PASS save durante animação mantém estado lógico anterior seguro
+PASS somente transferência concluída registra pedido na van
+PASS mesma caixa identificada sai das mãos e repousa no compartimento
+PASS nenhuma representação duplicada e peso utilizado real
+PASS tutorial avança somente pela ação concluída: passo 12
+PASS ação física disponível: Fechar compartimento
+TRACE focus=True reachable=True eye=(329.16, -2.68, 159.77) target=(329.80, -2.38, 159.77)
+PASS mira real seleciona Fechar compartimento
+PASS E na alça fecha sem descartar carga
+PASS abrir novamente preserva identidade da carga
+PASS pressões repetidas não iniciam animações concorrentes
+PASS tampa e carga permanecem coerentes após repetir interação
+PASS save da caixa guardada e tampa aberta
+PASS recarregar restaura carga, tampa e passo reconhecido
+PASS recarregar deixa somente caixa no veículo, sem caixa nas mãos
+PASS acesso lateral possui espaço para personagem
+PASS ação física disponível: Entrar na van
+TRACE focus=True reachable=True eye=(332.85, -2.60, 161.54) target=(332.89, -4.60, 161.21)
+PASS mira real seleciona Entrar na van
+PASS E entra na van por porta lateral
+PASS uma câmera principal ativa durante direção no executável
+PASS mouse real do Input System gira a câmera e scroll altera zoom
+PASS câmera recua antes de atravessar parede real
+PASS tecla de avanço configurada movimenta a van pelo controle real
+PASS M abre mapa real dirigindo
+PASS Rigidbody percorre três metros reais no tutorial
+PASS tutorial avança somente pela ação concluída: passo 13
+PASS van parada permite saída segura
+PASS ação física disponível: Abrir compartimento
+TRACE focus=True reachable=True eye=(280.10, -2.68, 201.04) target=(280.10, -4.60, 200.56)
+PASS mira real seleciona Abrir compartimento
+PASS ação física disponível: Retirar encomenda
+TRACE focus=True reachable=True eye=(280.10, -2.68, 201.04) target=(280.10, -4.60, 200.56)
+PASS mira real seleciona Retirar encomenda
+PASS E retira carga junto ao cliente pelo mesmo alvo
+PASS tutorial avança somente pela ação concluída: passo 14
+PASS destino tem entrada física acessível
+PASS E na entrada do cliente conclui entrega e registra pagamento real
+PASS entrega concluída não paga novamente
+PASS tutorial avança somente pela ação concluída: passo 15
+PASS aba Financeiro real conclui etapa financeira
+PASS salvamento final usa persistência existente
+PASS tutorial completo exige ações reais até pagamento e save
+PASS campanha reconhece pagamento real da primeira entrega sem bônus duplicado
+PASS reiniciar ou pular ajuda não concede recompensa
+PASS relógio e calendário continuam dentro da Factory
+PASS novo pedido padrão usa o mesmo sistema real
+PASS pedido após tutorial mantém preparação completa de carga média
+PASS coleta física padrão permanece disponível
+PASS conferência padrão usa caixa correta
+PASS caixa pequena rejeita carga média
+PASS embalagem média aceita peso compatível
+PASS impressão registra etiqueta real
+PASS setor incorreto não libera encomenda
+PASS separação correta confirma setor B
+PASS expedição padrão mantém encadeamento completo
+PASS save conserva preparação padrão e economia
+PASS ação física disponível: Sair do centro de distribuição
+TRACE focus=True reachable=True eye=(0.00, 1001.77, -8.50) target=(0.00, 1000.00, -9.70)
+PASS mira real seleciona Sair do centro de distribuição
+PASS Office mantém transição aditiva existente
+PASS Casa retorna sem duplicar gerenciador
+PASS áudio mantém um listener após todas transições
+PASS expansão 20 e velocidade da van presentes na build
+PASS farol alto real ativo no player
+PASS faróis pessoais apagam no player
+PASS pisca-alerta liga no player
+PASS chuva é ativada no executável
+PASS partículas e shader de chuva disponíveis na build
+PASS clima nublado no executável
+PASS cidadãos com esqueleto humanoide e nome na build
+PASS ragdoll físico cria juntas na build
+PASS ragdoll libera física temporária
+RESULT SUCCESS
